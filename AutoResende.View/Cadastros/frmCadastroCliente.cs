@@ -101,5 +101,10 @@ namespace AutoResende.View
         {
 
         }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
