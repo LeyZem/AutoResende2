@@ -45,79 +45,142 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmCadastroCliente.cs">
+    <Compile Include="Cadastros\frmCadastroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCadastroCliente.Designer.cs">
+    <Compile Include="Cadastros\frmCadastroCliente.Designer.cs">
       <DependentUpon>frmCadastroCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCadastroFornecedor.cs">
+    <Compile Include="Cadastros\frmCadastroFornecedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCadastroFornecedor.Designer.cs">
+    <Compile Include="Cadastros\frmCadastroFornecedor.Designer.cs">
       <DependentUpon>frmCadastroFornecedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCadastroFuncionario.cs">
+    <Compile Include="Cadastros\frmCadastroFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCadastroFuncionario.Designer.cs">
+    <Compile Include="Cadastros\frmCadastroFuncionario.Designer.cs">
       <DependentUpon>frmCadastroFuncionario.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCadastroMercadoria.cs">
+    <Compile Include="Cadastros\frmCadastroMercadoria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCadastroMercadoria.Designer.cs">
+    <Compile Include="Cadastros\frmCadastroMercadoria.Designer.cs">
       <DependentUpon>frmCadastroMercadoria.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCadastroOrdemServico.cs">
+    <Compile Include="Cadastros\frmCadastroOrdemServico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCadastroOrdemServico.Designer.cs">
+    <Compile Include="Cadastros\frmCadastroOrdemServico.Designer.cs">
       <DependentUpon>frmCadastroOrdemServico.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCadastroTipoServico.cs">
+    <Compile Include="Cadastros\frmCadastroTipoServico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCadastroTipoServico.Designer.cs">
+    <Compile Include="Cadastros\frmCadastroTipoServico.Designer.cs">
       <DependentUpon>frmCadastroTipoServico.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCadastroVeiculo.cs">
+    <Compile Include="Cadastros\frmCadastroVeiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCadastroVeiculo.Designer.cs">
+    <Compile Include="Cadastros\frmCadastroVeiculo.Designer.cs">
       <DependentUpon>frmCadastroVeiculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPrincipal.cs">
+    <Compile Include="Cadastros\frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPrincipal.Designer.cs">
+    <Compile Include="Cadastros\frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaCliente.Designer.cs">
+      <DependentUpon>frmConsultaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaFornecedor.Designer.cs">
+      <DependentUpon>frmConsultaFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaFuncionario.Designer.cs">
+      <DependentUpon>frmConsultaFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaMercadoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaMercadoria.Designer.cs">
+      <DependentUpon>frmConsultaMercadoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaOrdemServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaOrdemServico.Designer.cs">
+      <DependentUpon>frmConsultaOrdemServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaTipoServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaTipoServico.Designer.cs">
+      <DependentUpon>frmConsultaTipoServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmConsultaVeiculo.Designer.cs">
+      <DependentUpon>frmConsultaVeiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmCadastroCliente.resx">
+    <EmbeddedResource Include="Cadastros\frmCadastroCliente.resx">
       <DependentUpon>frmCadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCadastroFornecedor.resx">
+    <EmbeddedResource Include="Cadastros\frmCadastroFornecedor.resx">
       <DependentUpon>frmCadastroFornecedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCadastroFuncionario.resx">
+    <EmbeddedResource Include="Cadastros\frmCadastroFuncionario.resx">
       <DependentUpon>frmCadastroFuncionario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCadastroMercadoria.resx">
+    <EmbeddedResource Include="Cadastros\frmCadastroMercadoria.resx">
       <DependentUpon>frmCadastroMercadoria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCadastroOrdemServico.resx">
+    <EmbeddedResource Include="Cadastros\frmCadastroOrdemServico.resx">
       <DependentUpon>frmCadastroOrdemServico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCadastroTipoServico.resx">
+    <EmbeddedResource Include="Cadastros\frmCadastroTipoServico.resx">
       <DependentUpon>frmCadastroTipoServico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCadastroVeiculo.resx">
+    <EmbeddedResource Include="Cadastros\frmCadastroVeiculo.resx">
       <DependentUpon>frmCadastroVeiculo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPrincipal.resx">
+    <EmbeddedResource Include="Cadastros\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\frmConsultaCliente.resx">
+      <DependentUpon>frmConsultaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\frmConsultaFornecedor.resx">
+      <DependentUpon>frmConsultaFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\frmConsultaFuncionario.resx">
+      <DependentUpon>frmConsultaFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\frmConsultaMercadoria.resx">
+      <DependentUpon>frmConsultaMercadoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\frmConsultaOrdemServico.resx">
+      <DependentUpon>frmConsultaOrdemServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\frmConsultaTipoServico.resx">
+      <DependentUpon>frmConsultaTipoServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\frmConsultaVeiculo.resx">
+      <DependentUpon>frmConsultaVeiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -147,6 +210,7 @@
       <Name>AutoResende.Model</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

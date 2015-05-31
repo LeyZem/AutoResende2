@@ -4095,7 +4095,7 @@
         9DdAhM5DkYpUpJ+i5InriZx3vEg/1ekpT/k/d446x4QAtR8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ptpConsultaFuncionario.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAA2WZJREFUeF7s
         fQV4FVny/Sgzw8DgbgkJgYTgDgnuEoK7u7t7CEGDBUgIkuAuwd354z7IMDDu7juyu+dfp7pv0jwCw/7W
@@ -5028,7 +5028,7 @@
         9DdAhM5DkYpUpJ+i5InriZx3vEg/1ekpT/k/d446x4QAtR8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ptpConsultaTipoServico.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAA2WZJREFUeF7s
         fQV4FVny/Sgzw8DgbgkJgYTgDgnuEoK7u7t7CEGDBUgIkuAuwd354z7IMDDu7juyu+dfp7pv0jwCw/7W
@@ -5961,7 +5961,7 @@
         9DdAhM5DkYpUpJ+i5InriZx3vEg/1ekpT/k/d446x4QAtR8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox8.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ptpConsultaVeiculo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAA2WZJREFUeF7s
         fQV4FVny/Sgzw8DgbgkJgYTgDgnuEoK7u7t7CEGDBUgIkuAuwd354z7IMDDu7juyu+dfp7pv0jwCw/7W
@@ -6894,7 +6894,7 @@
         9DdAhM5DkYpUpJ+i5InriZx3vEg/1ekpT/k/d446x4QAtR8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ptpConsultaFornecedor.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAA2WZJREFUeF7s
         fQV4FVny/Sgzw8DgbgkJgYTgDgnuEoK7u7t7CEGDBUgIkuAuwd354z7IMDDu7juyu+dfp7pv0jwCw/7W
@@ -9693,7 +9693,7 @@
         9DdAhM5DkYpUpJ+i5InriZx3vEg/1ekpT/k/d446x4QAtR8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox12.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ptpConsultaCliente.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAA2WZJREFUeF7s
         fQV4FVny/Sgzw8DgbgkJgYTgDgnuEoK7u7t7CEGDBUgIkuAuwd354z7IMDDu7juyu+dfp7pv0jwCw/7W
@@ -10626,7 +10626,7 @@
         9DdAhM5DkYpUpJ+i5InriZx3vEg/1ekpT/k/d446x4QAtR8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox13.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ptpConsultaOrdemServico.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAA2WZJREFUeF7s
         fQV4FVny/Sgzw8DgbgkJgYTgDgnuEoK7u7t7CEGDBUgIkuAuwd354z7IMDDu7juyu+dfp7pv0jwCw/7W
@@ -11559,7 +11559,7 @@
         9DdAhM5DkYpUpJ+i5InriZx3vEg/1ekpT/k/d446x4QAtR8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox14.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ptpConsultaMercadoria.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAA2WZJREFUeF7s
         fQV4FVny/Sgzw8DgbgkJgYTgDgnuEoK7u7t7CEGDBUgIkuAuwd354z7IMDDu7juyu+dfp7pv0jwCw/7W

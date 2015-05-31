@@ -103,5 +103,47 @@ namespace AutoResende.View
             frmCadastroFornecedor frm = new frmCadastroFornecedor();
             frm.Show();
         }
+
+        private void ptpConsultaFuncionario_MouseClick(object sender, MouseEventArgs e)
+        {
+            frmConsultaFuncionario frm = new frmConsultaFuncionario();
+            frm.Show();
+        }
+
+        private void ptpConsultaMercadoria_MouseClick(object sender, MouseEventArgs e)
+        {
+            frmConsultaMercadoria frm = new frmConsultaMercadoria();
+            frm.Show();
+        }
+
+        private void ptpConsultaOrdemServico_MouseClick(object sender, MouseEventArgs e)
+        {
+            frmConsultaOrdemServico frm = new frmConsultaOrdemServico();
+            frm.Show();
+        }
+
+        private void ptpConsultaVeiculo_MouseClick(object sender, MouseEventArgs e)
+        {
+            frmConsultaVeiculo frm = new frmConsultaVeiculo();
+            frm.Show();
+        }
+
+        private void ptpConsultaTipoServico_MouseClick(object sender, MouseEventArgs e)
+        {
+            frmConsultaTipoServico frm = new frmConsultaTipoServico();
+            frm.Show();
+        }
+
+        private void ptpConsultaCliente_MouseClick(object sender, MouseEventArgs e)
+        {
+            frmConsultaCliente frm = new frmConsultaCliente();
+            frm.Show();
+        }
+
+        private void ptpConsultaFornecedor_MouseClick(object sender, MouseEventArgs e)
+        {
+            frmConsultaFornecedor frm = new frmConsultaFornecedor();
+            frm.Show();
+        }
     }
 }

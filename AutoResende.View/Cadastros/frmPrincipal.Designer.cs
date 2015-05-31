@@ -40,35 +40,44 @@
             this.ptbCadastroFuncionario = new System.Windows.Forms.PictureBox();
             this.lblFornecedor = new System.Windows.Forms.Label();
             this.ptbCadastroFornecedor = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.ptpConsultaFuncionario = new System.Windows.Forms.PictureBox();
+            this.ptpConsultaTipoServico = new System.Windows.Forms.PictureBox();
+            this.ptpConsultaVeiculo = new System.Windows.Forms.PictureBox();
+            this.ptpConsultaFornecedor = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.ptpConsultaCliente = new System.Windows.Forms.PictureBox();
+            this.ptpConsultaOrdemServico = new System.Windows.Forms.PictureBox();
+            this.ptpConsultaMercadoria = new System.Windows.Forms.PictureBox();
             this.lblCadastroMercadoria = new System.Windows.Forms.Label();
             this.ptbCadastroMercadoria = new System.Windows.Forms.PictureBox();
             this.lblCadastroOrdemServico = new System.Windows.Forms.Label();
             this.ptbOrdemServico = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCadastroTipoServico)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCadastroVeiculo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCadastroCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCadastroFuncionario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCadastroFornecedor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptpConsultaFuncionario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptpConsultaTipoServico)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptpConsultaVeiculo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptpConsultaFornecedor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptpConsultaCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptpConsultaOrdemServico)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptpConsultaMercadoria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCadastroMercadoria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbOrdemServico)).BeginInit();
             this.SuspendLayout();
@@ -237,62 +246,66 @@
             this.ptbCadastroFornecedor.Click += new System.EventHandler(this.ptbCadastroFornecedor_Click);
             this.ptbCadastroFornecedor.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptbCadastroFornecedor_MouseClick);
             // 
-            // pictureBox3
+            // ptpConsultaFuncionario
             // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(384, 79);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(149, 132);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 47;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.ptbConsultaServicos_Click);
+            this.ptpConsultaFuncionario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptpConsultaFuncionario.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ptpConsultaFuncionario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptpConsultaFuncionario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptpConsultaFuncionario.Image = ((System.Drawing.Image)(resources.GetObject("ptpConsultaFuncionario.Image")));
+            this.ptpConsultaFuncionario.Location = new System.Drawing.Point(384, 79);
+            this.ptpConsultaFuncionario.Name = "ptpConsultaFuncionario";
+            this.ptpConsultaFuncionario.Size = new System.Drawing.Size(149, 132);
+            this.ptpConsultaFuncionario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptpConsultaFuncionario.TabIndex = 47;
+            this.ptpConsultaFuncionario.TabStop = false;
+            this.ptpConsultaFuncionario.Click += new System.EventHandler(this.ptbConsultaServicos_Click);
+            this.ptpConsultaFuncionario.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptpConsultaFuncionario_MouseClick);
             // 
-            // pictureBox4
+            // ptpConsultaTipoServico
             // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(536, 214);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(149, 132);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 48;
-            this.pictureBox4.TabStop = false;
+            this.ptpConsultaTipoServico.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptpConsultaTipoServico.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ptpConsultaTipoServico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptpConsultaTipoServico.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptpConsultaTipoServico.Image = ((System.Drawing.Image)(resources.GetObject("ptpConsultaTipoServico.Image")));
+            this.ptpConsultaTipoServico.Location = new System.Drawing.Point(536, 214);
+            this.ptpConsultaTipoServico.Name = "ptpConsultaTipoServico";
+            this.ptpConsultaTipoServico.Size = new System.Drawing.Size(149, 132);
+            this.ptpConsultaTipoServico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptpConsultaTipoServico.TabIndex = 48;
+            this.ptpConsultaTipoServico.TabStop = false;
+            this.ptpConsultaTipoServico.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptpConsultaTipoServico_MouseClick);
             // 
-            // pictureBox8
+            // ptpConsultaVeiculo
             // 
-            this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox8.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(384, 214);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(149, 132);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 49;
-            this.pictureBox8.TabStop = false;
+            this.ptpConsultaVeiculo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptpConsultaVeiculo.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ptpConsultaVeiculo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptpConsultaVeiculo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptpConsultaVeiculo.Image = ((System.Drawing.Image)(resources.GetObject("ptpConsultaVeiculo.Image")));
+            this.ptpConsultaVeiculo.Location = new System.Drawing.Point(384, 214);
+            this.ptpConsultaVeiculo.Name = "ptpConsultaVeiculo";
+            this.ptpConsultaVeiculo.Size = new System.Drawing.Size(149, 132);
+            this.ptpConsultaVeiculo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptpConsultaVeiculo.TabIndex = 49;
+            this.ptpConsultaVeiculo.TabStop = false;
+            this.ptpConsultaVeiculo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptpConsultaVeiculo_MouseClick);
             // 
-            // pictureBox9
+            // ptpConsultaFornecedor
             // 
-            this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox9.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(384, 350);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(149, 132);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 50;
-            this.pictureBox9.TabStop = false;
+            this.ptpConsultaFornecedor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptpConsultaFornecedor.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ptpConsultaFornecedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptpConsultaFornecedor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptpConsultaFornecedor.Image = ((System.Drawing.Image)(resources.GetObject("ptpConsultaFornecedor.Image")));
+            this.ptpConsultaFornecedor.Location = new System.Drawing.Point(384, 350);
+            this.ptpConsultaFornecedor.Name = "ptpConsultaFornecedor";
+            this.ptpConsultaFornecedor.Size = new System.Drawing.Size(149, 132);
+            this.ptpConsultaFornecedor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptpConsultaFornecedor.TabIndex = 50;
+            this.ptpConsultaFornecedor.TabStop = false;
+            this.ptpConsultaFornecedor.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptpConsultaFornecedor_MouseClick);
             // 
             // pictureBox10
             // 
@@ -322,47 +335,50 @@
             this.pictureBox11.TabIndex = 52;
             this.pictureBox11.TabStop = false;
             // 
-            // pictureBox12
+            // ptpConsultaCliente
             // 
-            this.pictureBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox12.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(688, 214);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(149, 132);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 53;
-            this.pictureBox12.TabStop = false;
+            this.ptpConsultaCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptpConsultaCliente.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ptpConsultaCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptpConsultaCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptpConsultaCliente.Image = ((System.Drawing.Image)(resources.GetObject("ptpConsultaCliente.Image")));
+            this.ptpConsultaCliente.Location = new System.Drawing.Point(688, 214);
+            this.ptpConsultaCliente.Name = "ptpConsultaCliente";
+            this.ptpConsultaCliente.Size = new System.Drawing.Size(149, 132);
+            this.ptpConsultaCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptpConsultaCliente.TabIndex = 53;
+            this.ptpConsultaCliente.TabStop = false;
+            this.ptpConsultaCliente.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptpConsultaCliente_MouseClick);
             // 
-            // pictureBox13
+            // ptpConsultaOrdemServico
             // 
-            this.pictureBox13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox13.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(688, 79);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(149, 132);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 54;
-            this.pictureBox13.TabStop = false;
+            this.ptpConsultaOrdemServico.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptpConsultaOrdemServico.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ptpConsultaOrdemServico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptpConsultaOrdemServico.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptpConsultaOrdemServico.Image = ((System.Drawing.Image)(resources.GetObject("ptpConsultaOrdemServico.Image")));
+            this.ptpConsultaOrdemServico.Location = new System.Drawing.Point(688, 79);
+            this.ptpConsultaOrdemServico.Name = "ptpConsultaOrdemServico";
+            this.ptpConsultaOrdemServico.Size = new System.Drawing.Size(149, 132);
+            this.ptpConsultaOrdemServico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptpConsultaOrdemServico.TabIndex = 54;
+            this.ptpConsultaOrdemServico.TabStop = false;
+            this.ptpConsultaOrdemServico.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptpConsultaOrdemServico_MouseClick);
             // 
-            // pictureBox14
+            // ptpConsultaMercadoria
             // 
-            this.pictureBox14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox14.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(536, 79);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(149, 132);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 55;
-            this.pictureBox14.TabStop = false;
+            this.ptpConsultaMercadoria.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptpConsultaMercadoria.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ptpConsultaMercadoria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptpConsultaMercadoria.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptpConsultaMercadoria.Image = ((System.Drawing.Image)(resources.GetObject("ptpConsultaMercadoria.Image")));
+            this.ptpConsultaMercadoria.Location = new System.Drawing.Point(536, 79);
+            this.ptpConsultaMercadoria.Name = "ptpConsultaMercadoria";
+            this.ptpConsultaMercadoria.Size = new System.Drawing.Size(149, 132);
+            this.ptpConsultaMercadoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptpConsultaMercadoria.TabIndex = 55;
+            this.ptpConsultaMercadoria.TabStop = false;
+            this.ptpConsultaMercadoria.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptpConsultaMercadoria_MouseClick);
             // 
             // lblCadastroMercadoria
             // 
@@ -448,27 +464,153 @@
             this.label2.TabIndex = 61;
             this.label2.Text = "CONSULTAS";
             // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.BackColor = System.Drawing.Color.SlateGray;
+            this.label4.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.label4.Location = new System.Drawing.Point(384, 181);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(149, 30);
+            this.label4.TabIndex = 63;
+            this.label4.Text = "Funcionário";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.BackColor = System.Drawing.Color.SlateGray;
+            this.label5.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.label5.Location = new System.Drawing.Point(384, 316);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(149, 30);
+            this.label5.TabIndex = 64;
+            this.label5.Text = "Veículo";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.BackColor = System.Drawing.Color.SlateGray;
+            this.label6.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.label6.Location = new System.Drawing.Point(536, 181);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(149, 30);
+            this.label6.TabIndex = 65;
+            this.label6.Text = "Mercadoria";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.BackColor = System.Drawing.Color.SlateGray;
+            this.label7.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.label7.Location = new System.Drawing.Point(536, 316);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(149, 30);
+            this.label7.TabIndex = 66;
+            this.label7.Text = "Tipo de Serviço";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.BackColor = System.Drawing.Color.SlateGray;
+            this.label8.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.label8.Location = new System.Drawing.Point(688, 181);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(149, 30);
+            this.label8.TabIndex = 67;
+            this.label8.Text = "Ordem de Serviço";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label9.BackColor = System.Drawing.Color.SlateGray;
+            this.label9.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.label9.Location = new System.Drawing.Point(688, 316);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(149, 30);
+            this.label9.TabIndex = 68;
+            this.label9.Text = "Cliente";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label10.BackColor = System.Drawing.Color.SlateGray;
+            this.label10.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.label10.Location = new System.Drawing.Point(384, 452);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(149, 30);
+            this.label10.TabIndex = 69;
+            this.label10.Text = "Fornecedor";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label11.BackColor = System.Drawing.Color.SlateGray;
+            this.label11.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.label11.Location = new System.Drawing.Point(536, 452);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(149, 30);
+            this.label11.TabIndex = 70;
+            this.label11.Text = "Movimentação?????";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label12.BackColor = System.Drawing.Color.SlateGray;
+            this.label12.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.label12.Location = new System.Drawing.Point(688, 452);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(149, 30);
+            this.label12.TabIndex = 71;
+            this.label12.Text = "Movimentação?????";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(981, 524);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblCadastroOrdemServico);
             this.Controls.Add(this.ptbOrdemServico);
             this.Controls.Add(this.lblCadastroMercadoria);
             this.Controls.Add(this.ptbCadastroMercadoria);
-            this.Controls.Add(this.pictureBox14);
-            this.Controls.Add(this.pictureBox13);
-            this.Controls.Add(this.pictureBox12);
+            this.Controls.Add(this.ptpConsultaMercadoria);
+            this.Controls.Add(this.ptpConsultaOrdemServico);
+            this.Controls.Add(this.ptpConsultaCliente);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.ptpConsultaFornecedor);
+            this.Controls.Add(this.ptpConsultaVeiculo);
+            this.Controls.Add(this.ptpConsultaTipoServico);
+            this.Controls.Add(this.ptpConsultaFuncionario);
             this.Controls.Add(this.lblFornecedor);
             this.Controls.Add(this.ptbCadastroFornecedor);
             this.Controls.Add(this.lblTipoServico);
@@ -489,15 +631,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptbCadastroCliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCadastroFuncionario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCadastroFornecedor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptpConsultaFuncionario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptpConsultaTipoServico)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptpConsultaVeiculo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptpConsultaFornecedor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptpConsultaCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptpConsultaOrdemServico)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptpConsultaMercadoria)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCadastroMercadoria)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbOrdemServico)).EndInit();
             this.ResumeLayout(false);
@@ -518,21 +660,30 @@
         internal System.Windows.Forms.PictureBox ptbCadastroFuncionario;
         internal System.Windows.Forms.Label lblFornecedor;
         internal System.Windows.Forms.PictureBox ptbCadastroFornecedor;
-        internal System.Windows.Forms.PictureBox pictureBox3;
-        internal System.Windows.Forms.PictureBox pictureBox4;
-        internal System.Windows.Forms.PictureBox pictureBox8;
-        internal System.Windows.Forms.PictureBox pictureBox9;
+        internal System.Windows.Forms.PictureBox ptpConsultaFuncionario;
+        internal System.Windows.Forms.PictureBox ptpConsultaTipoServico;
+        internal System.Windows.Forms.PictureBox ptpConsultaVeiculo;
+        internal System.Windows.Forms.PictureBox ptpConsultaFornecedor;
         internal System.Windows.Forms.PictureBox pictureBox10;
         internal System.Windows.Forms.PictureBox pictureBox11;
-        internal System.Windows.Forms.PictureBox pictureBox12;
-        internal System.Windows.Forms.PictureBox pictureBox13;
-        internal System.Windows.Forms.PictureBox pictureBox14;
+        internal System.Windows.Forms.PictureBox ptpConsultaCliente;
+        internal System.Windows.Forms.PictureBox ptpConsultaOrdemServico;
+        internal System.Windows.Forms.PictureBox ptpConsultaMercadoria;
         internal System.Windows.Forms.Label lblCadastroMercadoria;
         internal System.Windows.Forms.PictureBox ptbCadastroMercadoria;
         internal System.Windows.Forms.Label lblCadastroOrdemServico;
         internal System.Windows.Forms.PictureBox ptbOrdemServico;
         internal System.Windows.Forms.Label label1;
         internal System.Windows.Forms.Label label2;
+        internal System.Windows.Forms.Label label4;
+        internal System.Windows.Forms.Label label5;
+        internal System.Windows.Forms.Label label6;
+        internal System.Windows.Forms.Label label7;
+        internal System.Windows.Forms.Label label8;
+        internal System.Windows.Forms.Label label9;
+        internal System.Windows.Forms.Label label10;
+        internal System.Windows.Forms.Label label11;
+        internal System.Windows.Forms.Label label12;
     }
 }
 
