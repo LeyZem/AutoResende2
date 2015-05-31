@@ -8,3 +8,15 @@ E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende.Vie
 E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende.View\AutoResende.View\obj\Debug\AutoResende.View.exe
 E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende.View\AutoResende.View\obj\Debug\AutoResende.View.pdb
 E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende.View\AutoResende.View\obj\Debug\AutoResende.View.frmCadastroServico.resources
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\bin\Debug\AutoResende.View.exe.config
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.exe
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.pdb
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\bin\Debug\AutoResende.View.exe
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\bin\Debug\AutoResende.View.pdb
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\bin\Debug\AutoResende.Model.dll
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\bin\Debug\AutoResende.Model.pdb
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.csprojResolveAssemblyReference.cache
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmCadastroServico.resources
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmPrincipal.resources
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.Properties.Resources.resources
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.csproj.GenerateResource.Cache
