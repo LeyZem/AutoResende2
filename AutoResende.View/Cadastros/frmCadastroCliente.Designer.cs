@@ -31,19 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroCliente));
             this.btnFechar = new System.Windows.Forms.Button();
             this.lblCódigo = new System.Windows.Forms.Label();
-            this.Cad_cli_forn = new System.Windows.Forms.Label();
+            this.Cad_clientes = new System.Windows.Forms.Label();
             this.Btn_Gravar = new System.Windows.Forms.Button();
             this.txt_Codigo = new System.Windows.Forms.TextBox();
-            this.lbltipo = new System.Windows.Forms.Label();
             this.lbltppessoa = new System.Windows.Forms.Label();
             this.lblcep = new System.Windows.Forms.Label();
             this.lblcidade = new System.Windows.Forms.Label();
             this.lbltel = new System.Windows.Forms.Label();
             this.txtnome = new System.Windows.Forms.TextBox();
             this.lblnome = new System.Windows.Forms.Label();
-            this.Btn_Novo = new System.Windows.Forms.Button();
-            this.Btn_Buscar = new System.Windows.Forms.Button();
-            this.Btn_Apagar = new System.Windows.Forms.Button();
             this.lblfantasia = new System.Windows.Forms.Label();
             this.txtfantasia = new System.Windows.Forms.TextBox();
             this.lbllogradouro = new System.Windows.Forms.Label();
@@ -51,12 +47,10 @@
             this.txt_cpf = new System.Windows.Forms.TextBox();
             this.lblcpf = new System.Windows.Forms.Label();
             this.txt_inscEstadual = new System.Windows.Forms.TextBox();
-            this.lblinscestadual = new System.Windows.Forms.Label();
             this.txt_rg = new System.Windows.Forms.TextBox();
             this.lblrg = new System.Windows.Forms.Label();
             this.txt_bairro = new System.Windows.Forms.TextBox();
             this.lblbairro = new System.Windows.Forms.Label();
-            this.txt_complemento = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.lblpais = new System.Windows.Forms.Label();
             this.lblestado = new System.Windows.Forms.Label();
@@ -69,7 +63,6 @@
             this.txtcep = new System.Windows.Forms.TextBox();
             this.txtnumero = new System.Windows.Forms.TextBox();
             this.cmbpais = new System.Windows.Forms.ComboBox();
-            this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.cmbtppessoa = new System.Windows.Forms.ComboBox();
             this.cmbestado = new System.Windows.Forms.ComboBox();
             this.txtcel = new System.Windows.Forms.TextBox();
@@ -78,6 +71,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Btn_Apagar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -116,18 +112,18 @@
             this.lblCódigo.Text = "Código";
             this.lblCódigo.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Cad_cli_forn
+            // Cad_clientes
             // 
-            this.Cad_cli_forn.AutoSize = true;
-            this.Cad_cli_forn.BackColor = System.Drawing.Color.Brown;
-            this.Cad_cli_forn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cad_cli_forn.ForeColor = System.Drawing.Color.White;
-            this.Cad_cli_forn.Location = new System.Drawing.Point(211, 18);
-            this.Cad_cli_forn.Name = "Cad_cli_forn";
-            this.Cad_cli_forn.Size = new System.Drawing.Size(353, 36);
-            this.Cad_cli_forn.TabIndex = 38;
-            this.Cad_cli_forn.Text = "Clientes / Fornecedores";
-            this.Cad_cli_forn.Click += new System.EventHandler(this.label2_Click);
+            this.Cad_clientes.AutoSize = true;
+            this.Cad_clientes.BackColor = System.Drawing.Color.Brown;
+            this.Cad_clientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cad_clientes.ForeColor = System.Drawing.Color.White;
+            this.Cad_clientes.Location = new System.Drawing.Point(211, 18);
+            this.Cad_clientes.Name = "Cad_clientes";
+            this.Cad_clientes.Size = new System.Drawing.Size(311, 36);
+            this.Cad_clientes.TabIndex = 38;
+            this.Cad_clientes.Text = "Cadastro de Clientes";
+            this.Cad_clientes.Click += new System.EventHandler(this.label2_Click);
             // 
             // Btn_Gravar
             // 
@@ -148,23 +144,12 @@
             this.txt_Codigo.Size = new System.Drawing.Size(114, 26);
             this.txt_Codigo.TabIndex = 41;
             // 
-            // lbltipo
-            // 
-            this.lbltipo.AutoSize = true;
-            this.lbltipo.BackColor = System.Drawing.Color.Transparent;
-            this.lbltipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltipo.Location = new System.Drawing.Point(220, 169);
-            this.lbltipo.Name = "lbltipo";
-            this.lbltipo.Size = new System.Drawing.Size(43, 20);
-            this.lbltipo.TabIndex = 42;
-            this.lbltipo.Text = "Tipo";
-            // 
             // lbltppessoa
             // 
             this.lbltppessoa.AutoSize = true;
             this.lbltppessoa.BackColor = System.Drawing.Color.Transparent;
             this.lbltppessoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltppessoa.Location = new System.Drawing.Point(220, 208);
+            this.lbltppessoa.Location = new System.Drawing.Point(222, 169);
             this.lbltppessoa.Name = "lbltppessoa";
             this.lbltppessoa.Size = new System.Drawing.Size(73, 20);
             this.lbltppessoa.TabIndex = 43;
@@ -225,56 +210,23 @@
             this.lblnome.Text = "Nome";
             this.lblnome.Click += new System.EventHandler(this.label8_Click);
             // 
-            // Btn_Novo
-            // 
-            this.Btn_Novo.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Btn_Novo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_Novo.Location = new System.Drawing.Point(422, 720);
-            this.Btn_Novo.Name = "Btn_Novo";
-            this.Btn_Novo.Size = new System.Drawing.Size(172, 39);
-            this.Btn_Novo.TabIndex = 51;
-            this.Btn_Novo.Text = "Novo";
-            this.Btn_Novo.UseVisualStyleBackColor = false;
-            // 
-            // Btn_Buscar
-            // 
-            this.Btn_Buscar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Buscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_Buscar.Location = new System.Drawing.Point(616, 720);
-            this.Btn_Buscar.Name = "Btn_Buscar";
-            this.Btn_Buscar.Size = new System.Drawing.Size(172, 39);
-            this.Btn_Buscar.TabIndex = 52;
-            this.Btn_Buscar.Text = "Buscar";
-            this.Btn_Buscar.UseVisualStyleBackColor = false;
-            // 
-            // Btn_Apagar
-            // 
-            this.Btn_Apagar.BackColor = System.Drawing.Color.Salmon;
-            this.Btn_Apagar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_Apagar.Location = new System.Drawing.Point(804, 720);
-            this.Btn_Apagar.Name = "Btn_Apagar";
-            this.Btn_Apagar.Size = new System.Drawing.Size(172, 39);
-            this.Btn_Apagar.TabIndex = 53;
-            this.Btn_Apagar.Text = "Apagar";
-            this.Btn_Apagar.UseVisualStyleBackColor = false;
-            // 
             // lblfantasia
             // 
             this.lblfantasia.AutoSize = true;
             this.lblfantasia.BackColor = System.Drawing.Color.Transparent;
             this.lblfantasia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblfantasia.Location = new System.Drawing.Point(579, 174);
+            this.lblfantasia.Location = new System.Drawing.Point(579, 211);
             this.lblfantasia.Name = "lblfantasia";
-            this.lblfantasia.Size = new System.Drawing.Size(79, 20);
+            this.lblfantasia.Size = new System.Drawing.Size(83, 20);
             this.lblfantasia.TabIndex = 55;
-            this.lblfantasia.Text = "Fantasia";
+            this.lblfantasia.Text = "Dat Nasc";
             // 
             // txtfantasia
             // 
-            this.txtfantasia.Location = new System.Drawing.Point(713, 168);
+            this.txtfantasia.Location = new System.Drawing.Point(1067, 205);
             this.txtfantasia.MaxLength = 40;
             this.txtfantasia.Name = "txtfantasia";
-            this.txtfantasia.Size = new System.Drawing.Size(637, 26);
+            this.txtfantasia.Size = new System.Drawing.Size(281, 26);
             this.txtfantasia.TabIndex = 54;
             // 
             // lbllogradouro
@@ -299,7 +251,7 @@
             // 
             // txt_cpf
             // 
-            this.txt_cpf.Location = new System.Drawing.Point(713, 205);
+            this.txt_cpf.Location = new System.Drawing.Point(713, 169);
             this.txt_cpf.Name = "txt_cpf";
             this.txt_cpf.Size = new System.Drawing.Size(217, 26);
             this.txt_cpf.TabIndex = 59;
@@ -309,7 +261,7 @@
             this.lblcpf.AutoSize = true;
             this.lblcpf.BackColor = System.Drawing.Color.Transparent;
             this.lblcpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcpf.Location = new System.Drawing.Point(579, 208);
+            this.lblcpf.Location = new System.Drawing.Point(579, 172);
             this.lblcpf.Name = "lblcpf";
             this.lblcpf.Size = new System.Drawing.Size(43, 20);
             this.lblcpf.TabIndex = 58;
@@ -317,25 +269,14 @@
             // 
             // txt_inscEstadual
             // 
-            this.txt_inscEstadual.Location = new System.Drawing.Point(713, 244);
+            this.txt_inscEstadual.Location = new System.Drawing.Point(332, 205);
             this.txt_inscEstadual.Name = "txt_inscEstadual";
-            this.txt_inscEstadual.Size = new System.Drawing.Size(357, 26);
+            this.txt_inscEstadual.Size = new System.Drawing.Size(194, 26);
             this.txt_inscEstadual.TabIndex = 61;
-            // 
-            // lblinscestadual
-            // 
-            this.lblinscestadual.AutoSize = true;
-            this.lblinscestadual.BackColor = System.Drawing.Color.Transparent;
-            this.lblinscestadual.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblinscestadual.Location = new System.Drawing.Point(577, 244);
-            this.lblinscestadual.Name = "lblinscestadual";
-            this.lblinscestadual.Size = new System.Drawing.Size(115, 20);
-            this.lblinscestadual.TabIndex = 60;
-            this.lblinscestadual.Text = "Ins. Estadual";
             // 
             // txt_rg
             // 
-            this.txt_rg.Location = new System.Drawing.Point(1067, 205);
+            this.txt_rg.Location = new System.Drawing.Point(1067, 169);
             this.txt_rg.Name = "txt_rg";
             this.txt_rg.Size = new System.Drawing.Size(217, 26);
             this.txt_rg.TabIndex = 63;
@@ -345,7 +286,7 @@
             this.lblrg.AutoSize = true;
             this.lblrg.BackColor = System.Drawing.Color.Transparent;
             this.lblrg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblrg.Location = new System.Drawing.Point(997, 208);
+            this.lblrg.Location = new System.Drawing.Point(997, 172);
             this.lblrg.Name = "lblrg";
             this.lblrg.Size = new System.Drawing.Size(36, 20);
             this.lblrg.TabIndex = 62;
@@ -370,23 +311,16 @@
             this.lblbairro.TabIndex = 66;
             this.lblbairro.Text = "Bairro";
             // 
-            // txt_complemento
-            // 
-            this.txt_complemento.Location = new System.Drawing.Point(782, 322);
-            this.txt_complemento.Name = "txt_complemento";
-            this.txt_complemento.Size = new System.Drawing.Size(251, 26);
-            this.txt_complemento.TabIndex = 65;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(647, 325);
+            this.label14.Location = new System.Drawing.Point(222, 322);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(119, 20);
+            this.label14.Size = new System.Drawing.Size(59, 20);
             this.label14.TabIndex = 64;
-            this.label14.Text = "Complemento";
+            this.label14.Text = "E-mail";
             this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // lblpais
@@ -463,9 +397,9 @@
             // 
             // txtcidade
             // 
-            this.txtcidade.Location = new System.Drawing.Point(332, 318);
+            this.txtcidade.Location = new System.Drawing.Point(331, 322);
             this.txtcidade.Name = "txtcidade";
-            this.txtcidade.Size = new System.Drawing.Size(303, 26);
+            this.txtcidade.Size = new System.Drawing.Size(675, 26);
             this.txtcidade.TabIndex = 83;
             // 
             // txtcep
@@ -747,26 +681,13 @@
             this.cmbpais.Size = new System.Drawing.Size(163, 28);
             this.cmbpais.TabIndex = 88;
             // 
-            // cmbTipo
-            // 
-            this.cmbTipo.FormattingEnabled = true;
-            this.cmbTipo.Items.AddRange(new object[] {
-            "Clientes",
-            "Fornecedor",
-            "Revendedor",
-            "Outros"});
-            this.cmbTipo.Location = new System.Drawing.Point(333, 166);
-            this.cmbTipo.Name = "cmbTipo";
-            this.cmbTipo.Size = new System.Drawing.Size(193, 28);
-            this.cmbTipo.TabIndex = 89;
-            // 
             // cmbtppessoa
             // 
             this.cmbtppessoa.FormattingEnabled = true;
             this.cmbtppessoa.Items.AddRange(new object[] {
             "Físico",
             "Jurídico"});
-            this.cmbtppessoa.Location = new System.Drawing.Point(332, 205);
+            this.cmbtppessoa.Location = new System.Drawing.Point(329, 166);
             this.cmbtppessoa.Name = "cmbtppessoa";
             this.cmbtppessoa.Size = new System.Drawing.Size(193, 28);
             this.cmbtppessoa.TabIndex = 90;
@@ -865,12 +786,43 @@
             this.pictureBox3.TabIndex = 97;
             this.pictureBox3.TabStop = false;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(713, 205);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(217, 26);
+            this.dateTimePicker1.TabIndex = 98;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(973, 208);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 20);
+            this.label1.TabIndex = 99;
+            this.label1.Text = "Org Exp.";
+            // 
+            // Btn_Apagar
+            // 
+            this.Btn_Apagar.BackColor = System.Drawing.Color.Salmon;
+            this.Btn_Apagar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_Apagar.Location = new System.Drawing.Point(450, 720);
+            this.Btn_Apagar.Name = "Btn_Apagar";
+            this.Btn_Apagar.Size = new System.Drawing.Size(172, 39);
+            this.Btn_Apagar.TabIndex = 53;
+            this.Btn_Apagar.Text = "Apagar";
+            this.Btn_Apagar.UseVisualStyleBackColor = false;
+            // 
             // frmCadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1433, 815);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.picimg_cliente);
@@ -878,7 +830,6 @@
             this.Controls.Add(this.txtcel);
             this.Controls.Add(this.cmbestado);
             this.Controls.Add(this.cmbtppessoa);
-            this.Controls.Add(this.cmbTipo);
             this.Controls.Add(this.cmbpais);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.textBox1);
@@ -887,12 +838,10 @@
             this.Controls.Add(this.lblestado);
             this.Controls.Add(this.txt_bairro);
             this.Controls.Add(this.lblbairro);
-            this.Controls.Add(this.txt_complemento);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.txt_rg);
             this.Controls.Add(this.lblrg);
             this.Controls.Add(this.txt_inscEstadual);
-            this.Controls.Add(this.lblinscestadual);
             this.Controls.Add(this.txt_cpf);
             this.Controls.Add(this.lblcpf);
             this.Controls.Add(this.lbllogradouro);
@@ -900,17 +849,14 @@
             this.Controls.Add(this.lblfantasia);
             this.Controls.Add(this.txtfantasia);
             this.Controls.Add(this.Btn_Apagar);
-            this.Controls.Add(this.Btn_Buscar);
-            this.Controls.Add(this.Btn_Novo);
             this.Controls.Add(this.lblnome);
             this.Controls.Add(this.txtnome);
             this.Controls.Add(this.lbltel);
             this.Controls.Add(this.lblcidade);
             this.Controls.Add(this.lblcep);
             this.Controls.Add(this.lbltppessoa);
-            this.Controls.Add(this.lbltipo);
             this.Controls.Add(this.Btn_Gravar);
-            this.Controls.Add(this.Cad_cli_forn);
+            this.Controls.Add(this.Cad_clientes);
             this.Controls.Add(this.lblCódigo);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.txtnumero);
@@ -940,18 +886,14 @@
 
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Label lblCódigo;
-        private System.Windows.Forms.Label Cad_cli_forn;
+        private System.Windows.Forms.Label Cad_clientes;
         private System.Windows.Forms.TextBox txt_Codigo;
-        private System.Windows.Forms.Label lbltipo;
         private System.Windows.Forms.Label lbltppessoa;
         private System.Windows.Forms.Label lblcep;
         private System.Windows.Forms.Label lblcidade;
         private System.Windows.Forms.Label lbltel;
         private System.Windows.Forms.TextBox txtnome;
         private System.Windows.Forms.Label lblnome;
-        private System.Windows.Forms.Button Btn_Novo;
-        private System.Windows.Forms.Button Btn_Buscar;
-        private System.Windows.Forms.Button Btn_Apagar;
         private System.Windows.Forms.Button Btn_Gravar;
         private System.Windows.Forms.Label lblfantasia;
         private System.Windows.Forms.TextBox txtfantasia;
@@ -960,12 +902,10 @@
         private System.Windows.Forms.TextBox txt_cpf;
         private System.Windows.Forms.Label lblcpf;
         private System.Windows.Forms.TextBox txt_inscEstadual;
-        private System.Windows.Forms.Label lblinscestadual;
         private System.Windows.Forms.TextBox txt_rg;
         private System.Windows.Forms.Label lblrg;
         private System.Windows.Forms.TextBox txt_bairro;
         private System.Windows.Forms.Label lblbairro;
-        private System.Windows.Forms.TextBox txt_complemento;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label lblpais;
         private System.Windows.Forms.Label lblestado;
@@ -978,7 +918,6 @@
         private System.Windows.Forms.TextBox txtcep;
         private System.Windows.Forms.TextBox txtnumero;
         private System.Windows.Forms.ComboBox cmbpais;
-        private System.Windows.Forms.ComboBox cmbTipo;
         private System.Windows.Forms.ComboBox cmbtppessoa;
         private System.Windows.Forms.ComboBox cmbestado;
         private System.Windows.Forms.TextBox txtcel;
@@ -987,5 +926,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Btn_Apagar;
     }
 }
