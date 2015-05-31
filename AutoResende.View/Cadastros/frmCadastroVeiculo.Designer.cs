@@ -42,8 +42,6 @@
             this.lblCombustivel = new System.Windows.Forms.Label();
             this.lblCor = new System.Windows.Forms.Label();
             this.txtCor = new System.Windows.Forms.TextBox();
-            this.lblCodigo = new System.Windows.Forms.Label();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.btnApagar = new System.Windows.Forms.Button();
             this.btnGravar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -182,24 +180,6 @@
             this.txtCor.Size = new System.Drawing.Size(114, 20);
             this.txtCor.TabIndex = 94;
             // 
-            // lblCodigo
-            // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.BackColor = System.Drawing.Color.Transparent;
-            this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(319, 152);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(46, 13);
-            this.lblCodigo.TabIndex = 97;
-            this.lblCodigo.Text = "Código";
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Location = new System.Drawing.Point(393, 152);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(114, 20);
-            this.txtCodigo.TabIndex = 96;
-            // 
             // btnApagar
             // 
             this.btnApagar.BackColor = System.Drawing.Color.Salmon;
@@ -233,8 +213,6 @@
             this.ClientSize = new System.Drawing.Size(989, 513);
             this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.btnGravar);
-            this.Controls.Add(this.lblCodigo);
-            this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.lblCor);
             this.Controls.Add(this.txtCor);
             this.Controls.Add(this.cmbCombustivel);
@@ -272,8 +250,6 @@
         private System.Windows.Forms.Label lblCombustivel;
         private System.Windows.Forms.Label lblCor;
         private System.Windows.Forms.TextBox txtCor;
-        private System.Windows.Forms.Label lblCodigo;
-        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Button btnApagar;
         private System.Windows.Forms.Button btnGravar;
     }
