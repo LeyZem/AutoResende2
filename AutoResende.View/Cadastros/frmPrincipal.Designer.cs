@@ -267,7 +267,7 @@
             this.ptpConsultaFuncionario.Location = new System.Drawing.Point(576, 122);
             this.ptpConsultaFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ptpConsultaFuncionario.Name = "ptpConsultaFuncionario";
-            this.ptpConsultaFuncionario.Size = new System.Drawing.Size(222, 202);
+            this.ptpConsultaFuncionario.Size = new System.Drawing.Size(224, 202);
             this.ptpConsultaFuncionario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptpConsultaFuncionario.TabIndex = 47;
             this.ptpConsultaFuncionario.TabStop = false;
@@ -317,7 +317,7 @@
             this.ptpConsultaFornecedor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ptpConsultaFornecedor.Name = "ptpConsultaFornecedor";
             this.ptpConsultaFornecedor.Size = new System.Drawing.Size(222, 202);
-            this.ptpConsultaFornecedor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.ptpConsultaFornecedor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptpConsultaFornecedor.TabIndex = 50;
             this.ptpConsultaFornecedor.TabStop = false;
             this.ptpConsultaFornecedor.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptpConsultaFornecedor_MouseClick);
