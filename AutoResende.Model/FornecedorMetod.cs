@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AutoResende.Model
 {
-    public partial class Cliente
+    public partial class FornecedorMetod
     {
     }
 }

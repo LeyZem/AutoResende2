@@ -46,19 +46,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AutoResende.dbml</DependentUpon>
     </Compile>
-    <Compile Include="Cliente.cs" />
-    <Compile Include="Fornecedor.cs" />
-    <Compile Include="Funcionario.cs" />
-    <Compile Include="Mercadoria.cs" />
-    <Compile Include="OrdemServico.cs" />
+    <Compile Include="ClienteMetod.cs" />
+    <Compile Include="FornecedorMetod.cs" />
+    <Compile Include="FuncionarioMetod.cs" />
+    <Compile Include="MercadoriaMetod.cs" />
+    <Compile Include="OrdemServicoMetod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="TipoServico.cs" />
-    <Compile Include="Veiculo.cs" />
+    <Compile Include="TipoServicoMetod.cs" />
+    <Compile Include="VeiculoMetod.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
