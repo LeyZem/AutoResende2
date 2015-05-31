@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroCliente));
             this.btnFechar = new System.Windows.Forms.Button();
-            this.Txt_Código = new System.Windows.Forms.Label();
+            this.lblCódigo = new System.Windows.Forms.Label();
             this.Cad_cli_forn = new System.Windows.Forms.Label();
             this.Btn_Gravar = new System.Windows.Forms.Button();
             this.txt_Codigo = new System.Windows.Forms.TextBox();
@@ -76,7 +76,7 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -113,17 +113,17 @@
             this.btnFechar.UseVisualStyleBackColor = false;
             this.btnFechar.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnFechar_MouseClick);
             // 
-            // Txt_Código
+            // lblCódigo
             // 
-            this.Txt_Código.AutoSize = true;
-            this.Txt_Código.BackColor = System.Drawing.Color.Transparent;
-            this.Txt_Código.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Código.Location = new System.Drawing.Point(220, 132);
-            this.Txt_Código.Name = "Txt_Código";
-            this.Txt_Código.Size = new System.Drawing.Size(65, 20);
-            this.Txt_Código.TabIndex = 37;
-            this.Txt_Código.Text = "Código";
-            this.Txt_Código.Click += new System.EventHandler(this.label1_Click);
+            this.lblCódigo.AutoSize = true;
+            this.lblCódigo.BackColor = System.Drawing.Color.Transparent;
+            this.lblCódigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCódigo.Location = new System.Drawing.Point(220, 132);
+            this.lblCódigo.Name = "lblCódigo";
+            this.lblCódigo.Size = new System.Drawing.Size(65, 20);
+            this.lblCódigo.TabIndex = 37;
+            this.lblCódigo.Text = "Código";
+            this.lblCódigo.Click += new System.EventHandler(this.label1_Click);
             // 
             // Cad_cli_forn
             // 
@@ -837,18 +837,18 @@
             this.comboBox4.Size = new System.Drawing.Size(163, 28);
             this.comboBox4.TabIndex = 88;
             // 
-            // comboBox5
+            // cmbTipo
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Items.AddRange(new object[] {
             "Clientes",
             "Fornecedor",
             "Revendedor",
             "Outros"});
-            this.comboBox5.Location = new System.Drawing.Point(333, 166);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(193, 28);
-            this.comboBox5.TabIndex = 89;
+            this.cmbTipo.Location = new System.Drawing.Point(333, 166);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(193, 28);
+            this.cmbTipo.TabIndex = 89;
             // 
             // comboBox1
             // 
@@ -938,6 +938,9 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.Brown;
             this.pictureBox1.Location = new System.Drawing.Point(225, 106);
             this.pictureBox1.Name = "pictureBox1";
@@ -950,7 +953,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Brown;
             this.pictureBox3.Location = new System.Drawing.Point(226, 479);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(505, 10);
+            this.pictureBox3.Size = new System.Drawing.Size(502, 10);
             this.pictureBox3.TabIndex = 97;
             this.pictureBox3.TabStop = false;
             // 
@@ -959,7 +962,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Brown;
             this.pictureBox4.Location = new System.Drawing.Point(782, 478);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(573, 10);
+            this.pictureBox4.Size = new System.Drawing.Size(571, 10);
             this.pictureBox4.TabIndex = 98;
             this.pictureBox4.TabStop = false;
             // 
@@ -977,7 +980,7 @@
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.comboBox5);
+            this.Controls.Add(this.cmbTipo);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.textBox2);
@@ -1017,7 +1020,7 @@
             this.Controls.Add(this.Txt_);
             this.Controls.Add(this.Btn_Gravar);
             this.Controls.Add(this.Cad_cli_forn);
-            this.Controls.Add(this.Txt_Código);
+            this.Controls.Add(this.lblCódigo);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
@@ -1046,7 +1049,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnFechar;
-        private System.Windows.Forms.Label Txt_Código;
+        private System.Windows.Forms.Label lblCódigo;
         private System.Windows.Forms.Label Cad_cli_forn;
         private System.Windows.Forms.TextBox txt_Codigo;
         private System.Windows.Forms.Label Txt_;
@@ -1092,7 +1095,7 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox cmbTipo;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.TextBox textBox8;
