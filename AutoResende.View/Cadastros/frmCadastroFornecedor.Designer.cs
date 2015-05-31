@@ -597,8 +597,12 @@
             this.Btn_Apagar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Btn_Apagar.BackColor = System.Drawing.Color.Salmon;
             this.Btn_Apagar.Cursor = System.Windows.Forms.Cursors.Hand;
+<<<<<<< HEAD
             this.Btn_Apagar.Location = new System.Drawing.Point(301, 472);
             this.Btn_Apagar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+=======
+            this.Btn_Apagar.Location = new System.Drawing.Point(434, 726);
+>>>>>>> origin/master
             this.Btn_Apagar.Name = "Btn_Apagar";
             this.Btn_Apagar.Size = new System.Drawing.Size(115, 25);
             this.Btn_Apagar.TabIndex = 112;
