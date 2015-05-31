@@ -23,15 +23,19 @@ namespace AutoResende.View
             Close();
         }
 
-        private void btnApagar_Click(object sender, EventArgs e)
+        private void LimpaCampos()
         {
-            txtCodigo.Text = "";
             txtCor.Text = "";
             txtDescricao.Text = "";
             txtModelo.Text = "";
             txtOdometro.Text = "";
             txtPlaca.Text = "";
             cmbCombustivel.SelectedItem = null;
+        }
+
+        private void btnApagar_Click(object sender, EventArgs e)
+        {
+            LimpaCampos();
         }
 
         private bool ValidaCampos()
@@ -74,13 +78,19 @@ namespace AutoResende.View
 
         private void btnGravar_Click(object sender, EventArgs e)
         {
-            Veiculo oVeiculo = new Veiculo();
-            oVeiculo.Modelo = txtModelo.Text;
-            oVeiculo.Descricao = txtDescricao.Text;
-            oVeiculo.Placa = txtPlaca.Text;
-            oVeiculo.Odometro = Convert.ToInt32(txtOdometro.Text);
-            oVeiculo.Cor = txtCor.Text;
+            if (ValidaCampos())
+            {
+                Veiculo oVeiculo = new Veiculo();
+                oVeiculo.Modelo = txtModelo.Text;
+                oVeiculo.Descricao = txtDescricao.Text;
+                oVeiculo.Placa = txtPlaca.Text;
+                oVeiculo.Odometro = Convert.ToInt32(txtOdometro.Text);
+                oVeiculo.Cor = txtCor.Text;
+                oVeiculo.Combustivel = cmbCombustivel.Text;
+            }
 
+            MessageBox.Show("Cadastro realizado com sucesso!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            LimpaCampos();
         }
     }
 }
