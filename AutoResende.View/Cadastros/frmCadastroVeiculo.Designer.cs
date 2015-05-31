@@ -136,6 +136,7 @@
             this.txtOdometro.Name = "txtOdometro";
             this.txtOdometro.Size = new System.Drawing.Size(114, 20);
             this.txtOdometro.TabIndex = 48;
+            this.txtOdometro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtOdometro_KeyPress);
             // 
             // cmbCombustivel
             // 

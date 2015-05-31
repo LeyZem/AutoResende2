@@ -42,32 +42,27 @@ namespace AutoResende.View
         {
             if (txtCor.Text.Trim() == "")
             {
-                MessageBox.Show("Preencha a Cor do Veículo!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                txtCor.Focus();
+                MessageBox.Show("Todos os campos devem ser preenchidos!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
             }
             else if (txtDescricao.Text.Trim() == "")
             {
-                MessageBox.Show("Preencha a Descrição do Veículo!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                txtDescricao.Focus();
+                MessageBox.Show("Todos os campos devem ser preenchidos!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
             }
             else if (txtModelo.Text.Trim() == "")
             {
-                MessageBox.Show("Preencha o Modelo do Veículo!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                txtModelo.Focus();
+                MessageBox.Show("Todos os campos devem ser preenchidos!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
             }
             else if (txtOdometro.Text.Trim() == "")
             {
-                MessageBox.Show("Preencha o Odômetro do Veículo!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                txtOdometro.Focus();
+                MessageBox.Show("Todos os campos devem ser preenchidos!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
             }
             else if (txtPlaca.Text.Trim() == "")
             {
-                MessageBox.Show("Preencha a Placa do Veículo!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                txtPlaca.Focus();
+                MessageBox.Show("Todos os campos devem ser preenchidos!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
             }
             else
@@ -78,7 +73,7 @@ namespace AutoResende.View
 
         private void btnGravar_Click(object sender, EventArgs e)
         {
-            if (ValidaCampos())
+            if (ValidaCampos()==true)
             {
                 Veiculo oVeiculo = new Veiculo();
                 oVeiculo.Modelo = txtModelo.Text;
@@ -87,10 +82,20 @@ namespace AutoResende.View
                 oVeiculo.Odometro = Convert.ToInt32(txtOdometro.Text);
                 oVeiculo.Cor = txtCor.Text;
                 oVeiculo.Combustivel = cmbCombustivel.Text;
+                MessageBox.Show("Cadastro realizado com sucesso!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LimpaCampos();
+
+            }
+        }
+
+        private void txtOdometro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
             }
 
-            MessageBox.Show("Cadastro realizado com sucesso!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
-            LimpaCampos();
         }
     }
 }
