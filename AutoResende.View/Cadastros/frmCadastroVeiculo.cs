@@ -74,7 +74,13 @@ namespace AutoResende.View
 
         private void btnGravar_Click(object sender, EventArgs e)
         {
-            Veiculo oVeiculo = new Veiculo()
+            Veiculo oVeiculo = new Veiculo();
+            oVeiculo.Modelo = txtModelo.Text;
+            oVeiculo.Descricao = txtDescricao.Text;
+            oVeiculo.Placa = txtPlaca.Text;
+            oVeiculo.Odometro = Convert.ToInt32(txtOdometro.Text);
+            oVeiculo.Cor = txtCor.Text;
+
         }
     }
 }
