@@ -21,5 +21,20 @@ namespace AutoResende.View
         {
             Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void lblCódigo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Gravar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
