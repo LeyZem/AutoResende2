@@ -1,6 +1,6 @@
 ﻿namespace AutoResende.View
 {
-    partial class frmCadastroServico
+    partial class frmCadastroVeiculo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // frmCadastroServico
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(751, 513);
-            this.Name = "frmCadastroServico";
-            this.Text = "frmCadastroServico";
-            this.ResumeLayout(false);
-
+            this.Text = "frmCadastroVeiculo";
         }
 
         #endregion

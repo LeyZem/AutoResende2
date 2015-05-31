@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AutoResende.Model
 {
-    public class Class1
+    public partial class OrdemServico
     {
     }
 }

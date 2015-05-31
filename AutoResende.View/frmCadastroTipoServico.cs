@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AutoResende.View
 {
-    public partial class frmCadastroServico : Form
+    public partial class frmCadastroTipoServico : Form
     {
-        public frmCadastroServico()
+        public frmCadastroTipoServico()
         {
             InitializeComponent();
         }
