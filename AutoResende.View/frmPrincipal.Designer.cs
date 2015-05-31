@@ -54,6 +54,7 @@
             this.lblCadastroOrdemServico = new System.Windows.Forms.Label();
             this.ptbOrdemServico = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCadastroTipoServico)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCadastroVeiculo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCadastroCliente)).BeginInit();
@@ -84,7 +85,7 @@
             this.btnFechar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFechar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFechar.Location = new System.Drawing.Point(745, 12);
+            this.btnFechar.Location = new System.Drawing.Point(943, 12);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(26, 24);
             this.btnFechar.TabIndex = 35;
@@ -98,7 +99,7 @@
             this.lblTipoServico.BackColor = System.Drawing.Color.Transparent;
             this.lblTipoServico.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipoServico.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.lblTipoServico.Location = new System.Drawing.Point(92, 341);
+            this.lblTipoServico.Location = new System.Drawing.Point(191, 339);
             this.lblTipoServico.Name = "lblTipoServico";
             this.lblTipoServico.Size = new System.Drawing.Size(142, 18);
             this.lblTipoServico.TabIndex = 44;
@@ -111,14 +112,14 @@
             this.ptbCadastroTipoServico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbCadastroTipoServico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbCadastroTipoServico.Image = ((System.Drawing.Image)(resources.GetObject("ptbCadastroTipoServico.Image")));
-            this.ptbCadastroTipoServico.Location = new System.Drawing.Point(12, 319);
+            this.ptbCadastroTipoServico.Location = new System.Drawing.Point(111, 317);
             this.ptbCadastroTipoServico.Name = "ptbCadastroTipoServico";
             this.ptbCadastroTipoServico.Size = new System.Drawing.Size(74, 62);
             this.ptbCadastroTipoServico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbCadastroTipoServico.TabIndex = 43;
             this.ptbCadastroTipoServico.TabStop = false;
-            this.ptbCadastroTipoServico.Click += new System.EventHandler(this.ptbCadastroServico_Click);
-            this.ptbCadastroTipoServico.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptbCadastroServico_MouseClick);
+            this.ptbCadastroTipoServico.Click += new System.EventHandler(this.ptbCadastroTipoServico_Click);
+            this.ptbCadastroTipoServico.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptbCadastroTipoServico_MouseClick);
             // 
             // lblVeiculo
             // 
@@ -127,7 +128,7 @@
             this.lblVeiculo.BackColor = System.Drawing.Color.Transparent;
             this.lblVeiculo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVeiculo.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.lblVeiculo.Location = new System.Drawing.Point(92, 275);
+            this.lblVeiculo.Location = new System.Drawing.Point(191, 273);
             this.lblVeiculo.Name = "lblVeiculo";
             this.lblVeiculo.Size = new System.Drawing.Size(70, 18);
             this.lblVeiculo.TabIndex = 42;
@@ -140,7 +141,7 @@
             this.lblCadastroCliente.BackColor = System.Drawing.Color.Transparent;
             this.lblCadastroCliente.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadastroCliente.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.lblCadastroCliente.Location = new System.Drawing.Point(92, 407);
+            this.lblCadastroCliente.Location = new System.Drawing.Point(191, 405);
             this.lblCadastroCliente.Name = "lblCadastroCliente";
             this.lblCadastroCliente.Size = new System.Drawing.Size(68, 18);
             this.lblCadastroCliente.TabIndex = 41;
@@ -153,7 +154,7 @@
             this.lblFuncionario.BackColor = System.Drawing.Color.Transparent;
             this.lblFuncionario.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFuncionario.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.lblFuncionario.Location = new System.Drawing.Point(90, 70);
+            this.lblFuncionario.Location = new System.Drawing.Point(189, 68);
             this.lblFuncionario.Name = "lblFuncionario";
             this.lblFuncionario.Size = new System.Drawing.Size(109, 18);
             this.lblFuncionario.TabIndex = 40;
@@ -166,12 +167,14 @@
             this.ptbCadastroVeiculo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbCadastroVeiculo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbCadastroVeiculo.Image = ((System.Drawing.Image)(resources.GetObject("ptbCadastroVeiculo.Image")));
-            this.ptbCadastroVeiculo.Location = new System.Drawing.Point(12, 251);
+            this.ptbCadastroVeiculo.Location = new System.Drawing.Point(111, 249);
             this.ptbCadastroVeiculo.Name = "ptbCadastroVeiculo";
             this.ptbCadastroVeiculo.Size = new System.Drawing.Size(74, 62);
             this.ptbCadastroVeiculo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbCadastroVeiculo.TabIndex = 39;
             this.ptbCadastroVeiculo.TabStop = false;
+            this.ptbCadastroVeiculo.Click += new System.EventHandler(this.ptbCadastroVeiculo_Click);
+            this.ptbCadastroVeiculo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptbCadastroVeiculo_MouseClick);
             // 
             // ptbCadastroCliente
             // 
@@ -180,12 +183,14 @@
             this.ptbCadastroCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbCadastroCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbCadastroCliente.Image = ((System.Drawing.Image)(resources.GetObject("ptbCadastroCliente.Image")));
-            this.ptbCadastroCliente.Location = new System.Drawing.Point(12, 387);
+            this.ptbCadastroCliente.Location = new System.Drawing.Point(111, 385);
             this.ptbCadastroCliente.Name = "ptbCadastroCliente";
             this.ptbCadastroCliente.Size = new System.Drawing.Size(74, 62);
             this.ptbCadastroCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbCadastroCliente.TabIndex = 38;
             this.ptbCadastroCliente.TabStop = false;
+            this.ptbCadastroCliente.Click += new System.EventHandler(this.ptbCadastroCliente_Click);
+            this.ptbCadastroCliente.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptbCadastroCliente_MouseClick);
             // 
             // ptbCadastroFuncionario
             // 
@@ -194,12 +199,14 @@
             this.ptbCadastroFuncionario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbCadastroFuncionario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbCadastroFuncionario.Image = ((System.Drawing.Image)(resources.GetObject("ptbCadastroFuncionario.Image")));
-            this.ptbCadastroFuncionario.Location = new System.Drawing.Point(12, 47);
+            this.ptbCadastroFuncionario.Location = new System.Drawing.Point(111, 45);
             this.ptbCadastroFuncionario.Name = "ptbCadastroFuncionario";
             this.ptbCadastroFuncionario.Size = new System.Drawing.Size(74, 62);
             this.ptbCadastroFuncionario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbCadastroFuncionario.TabIndex = 37;
             this.ptbCadastroFuncionario.TabStop = false;
+            this.ptbCadastroFuncionario.Click += new System.EventHandler(this.ptbCadastroFuncionario_Click);
+            this.ptbCadastroFuncionario.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptbCadastroFuncionario_MouseClick);
             // 
             // lblFornecedor
             // 
@@ -208,7 +215,7 @@
             this.lblFornecedor.BackColor = System.Drawing.Color.Transparent;
             this.lblFornecedor.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFornecedor.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.lblFornecedor.Location = new System.Drawing.Point(92, 478);
+            this.lblFornecedor.Location = new System.Drawing.Point(191, 476);
             this.lblFornecedor.Name = "lblFornecedor";
             this.lblFornecedor.Size = new System.Drawing.Size(109, 18);
             this.lblFornecedor.TabIndex = 46;
@@ -221,12 +228,14 @@
             this.ptbCadastroFornecedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbCadastroFornecedor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbCadastroFornecedor.Image = ((System.Drawing.Image)(resources.GetObject("ptbCadastroFornecedor.Image")));
-            this.ptbCadastroFornecedor.Location = new System.Drawing.Point(12, 455);
+            this.ptbCadastroFornecedor.Location = new System.Drawing.Point(111, 453);
             this.ptbCadastroFornecedor.Name = "ptbCadastroFornecedor";
             this.ptbCadastroFornecedor.Size = new System.Drawing.Size(74, 62);
             this.ptbCadastroFornecedor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbCadastroFornecedor.TabIndex = 45;
             this.ptbCadastroFornecedor.TabStop = false;
+            this.ptbCadastroFornecedor.Click += new System.EventHandler(this.ptbCadastroFornecedor_Click);
+            this.ptbCadastroFornecedor.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptbCadastroFornecedor_MouseClick);
             // 
             // pictureBox3
             // 
@@ -235,7 +244,7 @@
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(285, 92);
+            this.pictureBox3.Location = new System.Drawing.Point(384, 79);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(149, 132);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -250,7 +259,7 @@
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(437, 227);
+            this.pictureBox4.Location = new System.Drawing.Point(536, 214);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(149, 132);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -264,7 +273,7 @@
             this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(285, 227);
+            this.pictureBox8.Location = new System.Drawing.Point(384, 214);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(149, 132);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -278,7 +287,7 @@
             this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(285, 363);
+            this.pictureBox9.Location = new System.Drawing.Point(384, 350);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(149, 132);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -292,7 +301,7 @@
             this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(437, 363);
+            this.pictureBox10.Location = new System.Drawing.Point(536, 350);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(149, 132);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -306,7 +315,7 @@
             this.pictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(589, 363);
+            this.pictureBox11.Location = new System.Drawing.Point(688, 350);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(149, 132);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -320,7 +329,7 @@
             this.pictureBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(589, 227);
+            this.pictureBox12.Location = new System.Drawing.Point(688, 214);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(149, 132);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -334,7 +343,7 @@
             this.pictureBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(589, 92);
+            this.pictureBox13.Location = new System.Drawing.Point(688, 79);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(149, 132);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -348,7 +357,7 @@
             this.pictureBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(437, 92);
+            this.pictureBox14.Location = new System.Drawing.Point(536, 79);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(149, 132);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -362,7 +371,7 @@
             this.lblCadastroMercadoria.BackColor = System.Drawing.Color.Transparent;
             this.lblCadastroMercadoria.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadastroMercadoria.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.lblCadastroMercadoria.Location = new System.Drawing.Point(92, 140);
+            this.lblCadastroMercadoria.Location = new System.Drawing.Point(191, 138);
             this.lblCadastroMercadoria.Name = "lblCadastroMercadoria";
             this.lblCadastroMercadoria.Size = new System.Drawing.Size(107, 18);
             this.lblCadastroMercadoria.TabIndex = 57;
@@ -375,12 +384,14 @@
             this.ptbCadastroMercadoria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbCadastroMercadoria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbCadastroMercadoria.Image = ((System.Drawing.Image)(resources.GetObject("ptbCadastroMercadoria.Image")));
-            this.ptbCadastroMercadoria.Location = new System.Drawing.Point(12, 115);
+            this.ptbCadastroMercadoria.Location = new System.Drawing.Point(111, 113);
             this.ptbCadastroMercadoria.Name = "ptbCadastroMercadoria";
             this.ptbCadastroMercadoria.Size = new System.Drawing.Size(74, 62);
             this.ptbCadastroMercadoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbCadastroMercadoria.TabIndex = 56;
             this.ptbCadastroMercadoria.TabStop = false;
+            this.ptbCadastroMercadoria.Click += new System.EventHandler(this.ptbCadastroMercadoria_Click);
+            this.ptbCadastroMercadoria.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptbCadastroMercadoria_MouseClick);
             // 
             // lblCadastroOrdemServico
             // 
@@ -389,7 +400,7 @@
             this.lblCadastroOrdemServico.BackColor = System.Drawing.Color.Transparent;
             this.lblCadastroOrdemServico.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadastroOrdemServico.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.lblCadastroOrdemServico.Location = new System.Drawing.Point(92, 205);
+            this.lblCadastroOrdemServico.Location = new System.Drawing.Point(191, 203);
             this.lblCadastroOrdemServico.Name = "lblCadastroOrdemServico";
             this.lblCadastroOrdemServico.Size = new System.Drawing.Size(164, 18);
             this.lblCadastroOrdemServico.TabIndex = 59;
@@ -402,12 +413,14 @@
             this.ptbOrdemServico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbOrdemServico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbOrdemServico.Image = ((System.Drawing.Image)(resources.GetObject("ptbOrdemServico.Image")));
-            this.ptbOrdemServico.Location = new System.Drawing.Point(12, 183);
+            this.ptbOrdemServico.Location = new System.Drawing.Point(111, 181);
             this.ptbOrdemServico.Name = "ptbOrdemServico";
             this.ptbOrdemServico.Size = new System.Drawing.Size(74, 62);
             this.ptbOrdemServico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbOrdemServico.TabIndex = 58;
             this.ptbOrdemServico.TabStop = false;
+            this.ptbOrdemServico.Click += new System.EventHandler(this.ptbOrdemServico_Click);
+            this.ptbOrdemServico.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptbOrdemServico_MouseClick);
             // 
             // label1
             // 
@@ -416,18 +429,32 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label1.Location = new System.Drawing.Point(9, 12);
+            this.label1.Location = new System.Drawing.Point(108, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(147, 26);
             this.label1.TabIndex = 60;
             this.label1.Text = "CADASTRO";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.label2.Location = new System.Drawing.Point(531, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(162, 26);
+            this.label2.TabIndex = 61;
+            this.label2.Text = "CONSULTAS";
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(783, 529);
+            this.ClientSize = new System.Drawing.Size(981, 524);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblCadastroOrdemServico);
             this.Controls.Add(this.ptbOrdemServico);
@@ -505,6 +532,7 @@
         internal System.Windows.Forms.Label lblCadastroOrdemServico;
         internal System.Windows.Forms.PictureBox ptbOrdemServico;
         internal System.Windows.Forms.Label label1;
+        internal System.Windows.Forms.Label label2;
     }
 }
 
