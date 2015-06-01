@@ -31,5 +31,29 @@ namespace AutoResende.Model
                 return false;
             }
         }
+
+        public static bool Deleta(Mercadoria pMercadoria)
+        {
+            //Tentativa
+            try
+            {
+                //Conexão com o Banco de Dados
+                AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+                //String de Inserção
+                oDB.Mercadorias.DeleteOnSubmit(pMercadoria);
+                oDB.SubmitChanges();
+                oDB.Dispose();
+
+                //Retorno TRUE para configuração de mensagem de sucesso
+                return true;
+            }
+            //Exceção
+            catch (Exception)
+            {
+                //Retorno FALSE para configuração de mensagem de erro
+                return false;
+            }
+        }
     }
 }

@@ -31,5 +31,29 @@ namespace AutoResende.Model
                 return false;
             }
         }
+
+        public static bool Deleta(TipoServico pTipoServico)
+        {
+            //Tentativa
+            try
+            {
+                //Conexão com o Banco de Dados
+                AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+                //String de Inserção
+                oDB.TipoServicos.DeleteOnSubmit(pTipoServico);
+                oDB.SubmitChanges();
+                oDB.Dispose();
+
+                //Retorno TRUE para configuração de mensagem de sucesso
+                return true;
+            }
+            //Exceção
+            catch (Exception)
+            {
+                //Retorno FALSE para configuração de mensagem de erro
+                return false;
+            }
+        }
     }
 }
