@@ -204,7 +204,7 @@
             this.picimg_cliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.picimg_cliente.Image = ((System.Drawing.Image)(resources.GetObject("picimg_cliente.Image")));
             this.picimg_cliente.Location = new System.Drawing.Point(26, 15);
-            this.picimg_cliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picimg_cliente.Margin = new System.Windows.Forms.Padding(2);
             this.picimg_cliente.Name = "picimg_cliente";
             this.picimg_cliente.Size = new System.Drawing.Size(87, 85);
             this.picimg_cliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -230,7 +230,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.SaddleBrown;
             this.pictureBox2.Location = new System.Drawing.Point(1, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(866, 45);
             this.pictureBox2.TabIndex = 186;
@@ -241,7 +241,7 @@
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.BackColor = System.Drawing.Color.SaddleBrown;
             this.pictureBox3.Location = new System.Drawing.Point(142, 276);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(500, 6);
             this.pictureBox3.TabIndex = 189;
@@ -251,7 +251,7 @@
             // 
             this.txtDescricao.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtDescricao.Location = new System.Drawing.Point(142, 287);
-            this.txtDescricao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDescricao.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescricao.MaxLength = 40;
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
@@ -277,7 +277,7 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.SaddleBrown;
             this.pictureBox1.Location = new System.Drawing.Point(141, 81);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(713, 6);
             this.pictureBox1.TabIndex = 191;
@@ -326,8 +326,8 @@
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCadastroVeiculo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCadastroVeiculo";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

@@ -109,9 +109,6 @@ namespace AutoResende.View
 
         private void Btn_Apagar_Click(object sender, EventArgs e)
         {
-            txtCodigo.Text = "";
-            txtnome.Text = "";
-
 
         }
     }
