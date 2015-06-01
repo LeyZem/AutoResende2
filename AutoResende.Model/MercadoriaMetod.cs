@@ -6,7 +6,30 @@ using System.Threading.Tasks;
 
 namespace AutoResende.Model
 {
-    public partial class MercadoriaMetod
+    public class MercadoriaMetod
     {
+        public static bool Insere(Mercadoria pMercadoria)
+        {
+            //Tentativa
+            try
+            {
+                //Conexão com o Banco de Dados
+                AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+                //String de Inserção
+                oDB.Mercadorias.InsertOnSubmit(pMercadoria);
+                oDB.SubmitChanges();
+                oDB.Dispose();
+
+                //Retorno TRUE para configuração de mensagem de sucesso
+                return true;
+            }
+            //Exceção
+            catch (Exception)
+            {
+                //Retorno FALSE para configuração de mensagem de erro
+                return false;
+            }
+        }
     }
 }
