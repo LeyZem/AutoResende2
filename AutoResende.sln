@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoResende.View", "AutoRes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoResende.Model", "AutoResende.Model\AutoResende.Model.csproj", "{B32D9A16-E2E3-4168-9986-1E7FAC8A7C78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoResende.Controller", "AutoResende.Controller\AutoResende.Controller.csproj", "{BE3EAD37-CEA6-4A03-837C-4347DEA821FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B32D9A16-E2E3-4168-9986-1E7FAC8A7C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B32D9A16-E2E3-4168-9986-1E7FAC8A7C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B32D9A16-E2E3-4168-9986-1E7FAC8A7C78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE3EAD37-CEA6-4A03-837C-4347DEA821FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE3EAD37-CEA6-4A03-837C-4347DEA821FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE3EAD37-CEA6-4A03-837C-4347DEA821FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE3EAD37-CEA6-4A03-837C-4347DEA821FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
