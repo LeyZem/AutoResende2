@@ -206,12 +206,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AutoResende.Controller\AutoResende.Controller.csproj">
+      <Project>{be3ead37-cea6-4a03-837c-4347dea821fe}</Project>
+      <Name>AutoResende.Controller</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AutoResende.Model\AutoResende.Model.csproj">
       <Project>{b32d9a16-e2e3-4168-9986-1e7fac8a7c78}</Project>
       <Name>AutoResende.Model</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -21,7 +21,7 @@ namespace AutoResende.Controller
         {
             ClienteMetod.Insere(oCliente);
         }
-
+       
         public static void Insere(Fornecedor oFornecedor)
         {
             FornecedorMetod.Insere(oFornecedor);

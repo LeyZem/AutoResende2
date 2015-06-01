@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AutoResende.Model;
+using AutoResende.Controller;
+using System.Web;
 
 namespace AutoResende.View
 {
