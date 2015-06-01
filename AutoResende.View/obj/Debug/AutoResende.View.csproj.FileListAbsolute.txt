@@ -1,3 +1,6 @@
 C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\bin\Debug\AutoResende.View.exe.config
 C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.exe
 C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.pdb
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\bin\Debug\AutoResende.View.exe.config
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.exe
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.pdb
