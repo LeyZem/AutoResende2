@@ -53,7 +53,7 @@ namespace AutoResende.View
             }
             else if (txtinscEstadual.Text.Trim() == "")
             {
-                MessageBox.Show(" Inscrição Estadual de preenchimento obrigatório!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Inscrição Estadual de preenchimento obrigatório!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 txtinscEstadual.Focus();
                 return false;
             }
