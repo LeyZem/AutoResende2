@@ -45,7 +45,7 @@ namespace AutoResende.View
                 MessageBox.Show("Todos os campos devem ser preenchidos!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
             }
-            else if (txtDescricao.Text.Trim() == "")
+            else if (txtCor.Text.Trim() == "")
             {
                 MessageBox.Show("Todos os campos devem ser preenchidos!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
@@ -77,7 +77,7 @@ namespace AutoResende.View
             {
                 Veiculo oVeiculo = new Veiculo();
                 oVeiculo.Modelo = txtModelo.Text;
-                oVeiculo.Descricao = txtDescricao.Text;
+                oVeiculo.Descricao = txtCor.Text;
                 oVeiculo.Placa = txtPlaca.Text;
                 oVeiculo.Odometro = Convert.ToInt32(txtOdometro.Text);
                 oVeiculo.Cor = txtCor.Text;

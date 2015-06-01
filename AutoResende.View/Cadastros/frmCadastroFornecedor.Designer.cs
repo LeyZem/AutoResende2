@@ -41,9 +41,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.lblpais = new System.Windows.Forms.Label();
             this.lblestado = new System.Windows.Forms.Label();
-            this.txt_bairro = new System.Windows.Forms.TextBox();
+            this.txtbairro = new System.Windows.Forms.TextBox();
             this.lblbairro = new System.Windows.Forms.Label();
-            this.txt_inscEstadual = new System.Windows.Forms.TextBox();
+            this.txtinscEstadual = new System.Windows.Forms.TextBox();
             this.lblinscestadual = new System.Windows.Forms.Label();
             this.lbllogradouro = new System.Windows.Forms.Label();
             this.txtemail = new System.Windows.Forms.TextBox();
@@ -59,7 +59,7 @@
             this.btnGravar = new System.Windows.Forms.Button();
             this.lblfornecedor = new System.Windows.Forms.Label();
             this.btnFechar = new System.Windows.Forms.Button();
-            this.txtnumero = new System.Windows.Forms.TextBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
             this.txtcep = new System.Windows.Forms.TextBox();
             this.txttel1 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -78,7 +78,7 @@
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.BackColor = System.Drawing.Color.Blue;
             this.pictureBox3.Location = new System.Drawing.Point(155, 285);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(500, 6);
             this.pictureBox3.TabIndex = 146;
@@ -89,7 +89,7 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Blue;
             this.pictureBox1.Location = new System.Drawing.Point(154, 73);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(749, 6);
             this.pictureBox1.TabIndex = 145;
@@ -101,7 +101,7 @@
             this.picimg_cliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.picimg_cliente.Image = ((System.Drawing.Image)(resources.GetObject("picimg_cliente.Image")));
             this.picimg_cliente.Location = new System.Drawing.Point(27, 16);
-            this.picimg_cliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picimg_cliente.Margin = new System.Windows.Forms.Padding(2);
             this.picimg_cliente.Name = "picimg_cliente";
             this.picimg_cliente.Size = new System.Drawing.Size(87, 85);
             this.picimg_cliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -125,7 +125,7 @@
             // 
             this.txtCel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCel.Location = new System.Drawing.Point(380, 237);
-            this.txtCel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCel.Margin = new System.Windows.Forms.Padding(2);
             this.txtCel.Name = "txtCel";
             this.txtCel.Size = new System.Drawing.Size(91, 20);
             this.txtCel.TabIndex = 141;
@@ -163,7 +163,7 @@
             "SE\t ",
             "TO"});
             this.cmbestado.Location = new System.Drawing.Point(225, 190);
-            this.cmbestado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbestado.Margin = new System.Windows.Forms.Padding(2);
             this.cmbestado.Name = "cmbestado";
             this.cmbestado.Size = new System.Drawing.Size(73, 21);
             this.cmbestado.TabIndex = 140;
@@ -430,7 +430,7 @@
             "Zâmbia",
             "Zimbabué"});
             this.cmbpais.Location = new System.Drawing.Point(479, 193);
-            this.cmbpais.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbpais.Margin = new System.Windows.Forms.Padding(2);
             this.cmbpais.Name = "cmbpais";
             this.cmbpais.Size = new System.Drawing.Size(424, 21);
             this.cmbpais.TabIndex = 137;
@@ -453,7 +453,7 @@
             // 
             this.txtComentarios.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtComentarios.Location = new System.Drawing.Point(155, 299);
-            this.txtComentarios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtComentarios.Margin = new System.Windows.Forms.Padding(2);
             this.txtComentarios.MaxLength = 40;
             this.txtComentarios.Multiline = true;
             this.txtComentarios.Name = "txtComentarios";
@@ -500,14 +500,14 @@
             this.lblestado.TabIndex = 127;
             this.lblestado.Text = "Estado";
             // 
-            // txt_bairro
+            // txtbairro
             // 
-            this.txt_bairro.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_bairro.Location = new System.Drawing.Point(225, 165);
-            this.txt_bairro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_bairro.Name = "txt_bairro";
-            this.txt_bairro.Size = new System.Drawing.Size(256, 20);
-            this.txt_bairro.TabIndex = 126;
+            this.txtbairro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtbairro.Location = new System.Drawing.Point(225, 165);
+            this.txtbairro.Margin = new System.Windows.Forms.Padding(2);
+            this.txtbairro.Name = "txtbairro";
+            this.txtbairro.Size = new System.Drawing.Size(256, 20);
+            this.txtbairro.TabIndex = 126;
             // 
             // lblbairro
             // 
@@ -522,14 +522,15 @@
             this.lblbairro.TabIndex = 125;
             this.lblbairro.Text = "Bairro";
             // 
-            // txt_inscEstadual
+            // txtinscEstadual
             // 
-            this.txt_inscEstadual.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_inscEstadual.Location = new System.Drawing.Point(225, 113);
-            this.txt_inscEstadual.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_inscEstadual.Name = "txt_inscEstadual";
-            this.txt_inscEstadual.Size = new System.Drawing.Size(131, 20);
-            this.txt_inscEstadual.TabIndex = 120;
+            this.txtinscEstadual.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtinscEstadual.Location = new System.Drawing.Point(225, 113);
+            this.txtinscEstadual.Margin = new System.Windows.Forms.Padding(2);
+            this.txtinscEstadual.Name = "txtinscEstadual";
+            this.txtinscEstadual.Size = new System.Drawing.Size(131, 20);
+            this.txtinscEstadual.TabIndex = 120;
+            this.txtinscEstadual.TextChanged += new System.EventHandler(this.txt_inscEstadual_TextChanged);
             // 
             // lblinscestadual
             // 
@@ -561,7 +562,7 @@
             // 
             this.txtemail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtemail.Location = new System.Drawing.Point(584, 235);
-            this.txtemail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtemail.Margin = new System.Windows.Forms.Padding(2);
             this.txtemail.MaxLength = 40;
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(319, 20);
@@ -584,7 +585,7 @@
             // 
             this.txtfantasia.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtfantasia.Location = new System.Drawing.Point(479, 113);
-            this.txtfantasia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtfantasia.Margin = new System.Windows.Forms.Padding(2);
             this.txtfantasia.MaxLength = 40;
             this.txtfantasia.Name = "txtfantasia";
             this.txtfantasia.Size = new System.Drawing.Size(426, 20);
@@ -596,7 +597,7 @@
             this.Btn_Apagar.BackColor = System.Drawing.Color.Salmon;
             this.Btn_Apagar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_Apagar.Location = new System.Drawing.Point(434, 726);
-            this.Btn_Apagar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_Apagar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_Apagar.Name = "Btn_Apagar";
             this.Btn_Apagar.Size = new System.Drawing.Size(115, 25);
             this.Btn_Apagar.TabIndex = 112;
@@ -620,7 +621,7 @@
             // 
             this.txtRazaoSocial.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtRazaoSocial.Location = new System.Drawing.Point(479, 88);
-            this.txtRazaoSocial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRazaoSocial.Margin = new System.Windows.Forms.Padding(2);
             this.txtRazaoSocial.MaxLength = 40;
             this.txtRazaoSocial.Name = "txtRazaoSocial";
             this.txtRazaoSocial.Size = new System.Drawing.Size(426, 20);
@@ -686,7 +687,7 @@
             this.btnGravar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGravar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnGravar.Location = new System.Drawing.Point(155, 472);
-            this.btnGravar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGravar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(115, 25);
             this.btnGravar.TabIndex = 101;
@@ -726,20 +727,20 @@
             this.btnFechar.UseVisualStyleBackColor = false;
             this.btnFechar.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnFechar_MouseClick_1);
             // 
-            // txtnumero
+            // txtCidade
             // 
-            this.txtnumero.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtnumero.Location = new System.Drawing.Point(550, 166);
-            this.txtnumero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtnumero.Name = "txtnumero";
-            this.txtnumero.Size = new System.Drawing.Size(353, 20);
-            this.txtnumero.TabIndex = 136;
+            this.txtCidade.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCidade.Location = new System.Drawing.Point(550, 166);
+            this.txtCidade.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(353, 20);
+            this.txtCidade.TabIndex = 136;
             // 
             // txtcep
             // 
             this.txtcep.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtcep.Location = new System.Drawing.Point(225, 141);
-            this.txtcep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcep.Margin = new System.Windows.Forms.Padding(2);
             this.txtcep.Name = "txtcep";
             this.txtcep.Size = new System.Drawing.Size(131, 20);
             this.txtcep.TabIndex = 135;
@@ -748,7 +749,7 @@
             // 
             this.txttel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txttel1.Location = new System.Drawing.Point(225, 235);
-            this.txttel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txttel1.Margin = new System.Windows.Forms.Padding(2);
             this.txttel1.Name = "txttel1";
             this.txttel1.Size = new System.Drawing.Size(91, 20);
             this.txttel1.TabIndex = 132;
@@ -759,7 +760,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.Blue;
             this.pictureBox2.Location = new System.Drawing.Point(1, 1);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(922, 45);
             this.pictureBox2.TabIndex = 144;
@@ -769,7 +770,7 @@
             // 
             this.txtCNPJ.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCNPJ.Location = new System.Drawing.Point(225, 88);
-            this.txtCNPJ.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCNPJ.Margin = new System.Windows.Forms.Padding(2);
             this.txtCNPJ.Name = "txtCNPJ";
             this.txtCNPJ.Size = new System.Drawing.Size(131, 20);
             this.txtCNPJ.TabIndex = 147;
@@ -792,7 +793,7 @@
             // 
             this.txtLogradouro.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtLogradouro.Location = new System.Drawing.Point(479, 137);
-            this.txtLogradouro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLogradouro.Margin = new System.Windows.Forms.Padding(2);
             this.txtLogradouro.MaxLength = 40;
             this.txtLogradouro.Name = "txtLogradouro";
             this.txtLogradouro.Size = new System.Drawing.Size(425, 20);
@@ -832,9 +833,9 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lblpais);
             this.Controls.Add(this.lblestado);
-            this.Controls.Add(this.txt_bairro);
+            this.Controls.Add(this.txtbairro);
             this.Controls.Add(this.lblbairro);
-            this.Controls.Add(this.txt_inscEstadual);
+            this.Controls.Add(this.txtinscEstadual);
             this.Controls.Add(this.lblinscestadual);
             this.Controls.Add(this.lbllogradouro);
             this.Controls.Add(this.txtemail);
@@ -850,7 +851,7 @@
             this.Controls.Add(this.btnGravar);
             this.Controls.Add(this.lblfornecedor);
             this.Controls.Add(this.btnFechar);
-            this.Controls.Add(this.txtnumero);
+            this.Controls.Add(this.txtCidade);
             this.Controls.Add(this.txtcep);
             this.Controls.Add(this.txttel1);
             this.Controls.Add(this.pictureBox2);
@@ -881,9 +882,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblpais;
         private System.Windows.Forms.Label lblestado;
-        private System.Windows.Forms.TextBox txt_bairro;
+        private System.Windows.Forms.TextBox txtbairro;
         private System.Windows.Forms.Label lblbairro;
-        private System.Windows.Forms.TextBox txt_inscEstadual;
+        private System.Windows.Forms.TextBox txtinscEstadual;
         private System.Windows.Forms.Label lblinscestadual;
         private System.Windows.Forms.Label lbllogradouro;
         private System.Windows.Forms.TextBox txtemail;
@@ -899,7 +900,7 @@
         private System.Windows.Forms.Button btnGravar;
         private System.Windows.Forms.Label lblfornecedor;
         private System.Windows.Forms.Button btnFechar;
-        private System.Windows.Forms.TextBox txtnumero;
+        private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.TextBox txtcep;
         private System.Windows.Forms.TextBox txttel1;
         private System.Windows.Forms.PictureBox pictureBox2;

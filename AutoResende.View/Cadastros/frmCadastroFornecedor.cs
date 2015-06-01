@@ -43,6 +43,39 @@ namespace AutoResende.View
             LimpaCampos();
         }
 
+        private bool ValidaCampos()
+        {
+            if (txtCNPJ.Text.Trim() == "")
+            {
+                MessageBox.Show("CNPJ de preenchimento obrigatório!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtCNPJ.Focus();
+                return false;
+            }
+            else if (txtinscEstadual.Text.Trim() == "")
+            {
+                MessageBox.Show(" Inscrição Estadual de preenchimento obrigatório!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtinscEstadual.Focus();
+                return false;
+            }
+            else if (txtRazaoSocial.Text.Trim() == "")
+            {
+                MessageBox.Show("Razão Social de preenchimento obrigatório!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtRazaoSocial.Focus();
+                return false;
+            }
+            else if (txtfantasia.Text.Trim() == "")
+            {
+                MessageBox.Show("Nome Fantasia de preenchimento obrigatório!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtfantasia.Focus();
+                return false;
+            }
+            
+            else
+            {
+                return true;
+            }
+        }
+
         private void LimpaCampos()
         {
             txtCel.Text = "";
@@ -52,23 +85,42 @@ namespace AutoResende.View
             cmbestado.SelectedItem = null;
             cmbpais.SelectedItem = null;
             txttel1.Text = "";
-            txt_bairro.Text = "";
+            txtbairro.Text = "";
             txtemail.Text = "";
-            txt_inscEstadual.Text = "";
+            txtinscEstadual.Text = "";
             txtLogradouro.Text = "";
             txtCNPJ.Text = "";
             txtComentarios.Text = "";
+            txtCidade.Text = "";
         }
 
         private void btnGravar_Click(object sender, EventArgs e)
         {
-            Fornecedor oFornecedor = new Fornecedor();
-            oFornecedor.TelCel = txtCel.Text;
-            oFornecedor.CEP = txtcep.Text;
-            oFornecedor.NomeFantasia = txtfantasia.Text;
-            oFornecedor.RazaoSocial = txtRazaoSocial.Text;
-            oFornecedor.UF = cmbestado.Text;
-            
+            if (ValidaCampos() == true)
+            {
+                Fornecedor oFornecedor = new Fornecedor();
+                oFornecedor.CNPJ = txtCNPJ.Text;
+                oFornecedor.RazaoSocial = txtRazaoSocial.Text;
+                oFornecedor.InscricaoEstadual = txtinscEstadual.Text;
+                oFornecedor.NomeFantasia = txtfantasia.Text;
+                oFornecedor.CEP = txtcep.Text;
+                oFornecedor.Logradouro = txtLogradouro.Text;
+                oFornecedor.Bairro = txtbairro.Text;
+                oFornecedor.Cidade = txtCidade.Text;
+                oFornecedor.UF = cmbestado.Text;
+                oFornecedor.Pais = cmbpais.Text;
+                oFornecedor.TelRes = txttel1.Text;
+                oFornecedor.TelCel = txtCel.Text;
+                oFornecedor.email = txtemail.Text;
+                oFornecedor.Comentario = txtComentarios.Text;
+                MessageBox.Show("Cadastro realizado com sucesso!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LimpaCampos();
+            }
+        }
+
+        private void txt_inscEstadual_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
