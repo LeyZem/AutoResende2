@@ -32,7 +32,7 @@ namespace AutoResende.Model
             }
         }
 
-        public static bool Deleta(Veiculo pVeiculo)
+        public static bool Deleta(int pCodigoVeiculo)
         {
             //Tentativa
             try
@@ -40,8 +40,11 @@ namespace AutoResende.Model
                 //Conexão com o Banco de Dados
                 AutoResendeDataContext oDB = new AutoResendeDataContext();
 
-                //String de Inserção
-                oDB.Veiculos.DeleteOnSubmit(pVeiculo);
+                //String de Seleção
+                Veiculo oVeiculo = (from Seleciona in oDB.Veiculos where Seleciona.idVeiculo == pCodigoVeiculo select Seleciona).SingleOrDefault();
+
+                //String de Exclusão
+                oDB.Veiculos.DeleteOnSubmit(oVeiculo);
                 oDB.SubmitChanges();
                 oDB.Dispose();
 
@@ -54,6 +57,18 @@ namespace AutoResende.Model
                 //Retorno FALSE para configuração de mensagem de erro
                 return false;
             }
+        }
+
+        public static Veiculo Seleciona(int pCodigoVeiculo)
+        {
+            //Conexão com o Banco de Dados
+            AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+            //String de Seleção
+            Veiculo oVeiculo = (from Seleciona in oDB.Veiculos where Seleciona.idVeiculo == pCodigoVeiculo select Seleciona).SingleOrDefault();
+
+            //Retorno do Veiculo
+            return oVeiculo;
         }
     }
 }

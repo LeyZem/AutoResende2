@@ -32,7 +32,7 @@ namespace AutoResende.Model
             }
         }
 
-        public static bool Deleta(Cliente pCliente)
+        public static bool Deleta(int pCodigoCliente)
         {
             //Tentativa
             try
@@ -40,8 +40,11 @@ namespace AutoResende.Model
                 //Conexão com o Banco de Dados
                 AutoResendeDataContext oDB = new AutoResendeDataContext();
 
-                //String de Inserção
-                oDB.Clientes.DeleteOnSubmit(pCliente);
+                //String de Seleção
+                Cliente oCliente = (from Seleciona in oDB.Clientes where Seleciona.idCliente == pCodigoCliente select Seleciona).SingleOrDefault();
+
+                //String de Exclusão
+                oDB.Clientes.DeleteOnSubmit(oCliente);
                 oDB.SubmitChanges();
                 oDB.Dispose();
 
@@ -54,6 +57,18 @@ namespace AutoResende.Model
                 //Retorno FALSE para configuração de mensagem de erro
                 return false;
             }
+        }
+
+        public static Cliente Seleciona(int pCodigoCliente)
+        {
+            //Conexão com o Banco de Dados
+            AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+            //String de Seleção
+            Cliente oCliente = (from Seleciona in oDB.Clientes where Seleciona.idCliente == pCodigoCliente select Seleciona).SingleOrDefault();
+
+            //Retorno do Cliente
+            return oCliente;
         }
     }
 }

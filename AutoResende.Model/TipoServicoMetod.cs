@@ -32,7 +32,7 @@ namespace AutoResende.Model
             }
         }
 
-        public static bool Deleta(TipoServico pTipoServico)
+        public static bool Deleta(int pCodigoTipoServico)
         {
             //Tentativa
             try
@@ -40,8 +40,11 @@ namespace AutoResende.Model
                 //Conexão com o Banco de Dados
                 AutoResendeDataContext oDB = new AutoResendeDataContext();
 
-                //String de Inserção
-                oDB.TipoServicos.DeleteOnSubmit(pTipoServico);
+                //String de Seleção
+                TipoServico oTipoServico = (from Seleciona in oDB.TipoServicos where Seleciona.idTipoServico == pCodigoTipoServico select Seleciona).SingleOrDefault();
+
+                //String de Exclusão
+                oDB.TipoServicos.DeleteOnSubmit(oTipoServico);
                 oDB.SubmitChanges();
                 oDB.Dispose();
 
@@ -54,6 +57,18 @@ namespace AutoResende.Model
                 //Retorno FALSE para configuração de mensagem de erro
                 return false;
             }
+        }
+
+        public static TipoServico Seleciona(int pCodigoTipoServico)
+        {
+            //Conexão com o Banco de Dados
+            AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+            //String de Seleção
+            TipoServico oTipoServico = (from Seleciona in oDB.TipoServicos where Seleciona.idTipoServico == pCodigoTipoServico select Seleciona).SingleOrDefault();
+
+            //Retorno do Tipo de Serviço
+            return oTipoServico;
         }
     }
 }
