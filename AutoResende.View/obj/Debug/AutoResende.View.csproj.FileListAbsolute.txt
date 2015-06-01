@@ -48,3 +48,5 @@ C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoRese
 C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmConsultaVeiculo.resources
 C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.Properties.Resources.resources
 C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.csproj.GenerateResource.Cache
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\bin\Debug\AutoResende.Controller.dll
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\bin\Debug\AutoResende.Controller.pdb

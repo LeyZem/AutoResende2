@@ -1,0 +1,8 @@
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.Controller\bin\AutoResende.Controller.dll.config
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.Controller\bin\AutoResende.Controller.dll
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.Controller\bin\AutoResende.Controller.pdb
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.Controller\bin\AutoResende.Model.dll
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.Controller\bin\AutoResende.Model.pdb
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.Controller\obj\Debug\AutoResende.Controller.csprojResolveAssemblyReference.cache
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.Controller\obj\Debug\AutoResende.Controller.dll
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.Controller\obj\Debug\AutoResende.Controller.pdb

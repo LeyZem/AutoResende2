@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AutoResende.Model;
+using AutoResende.Controller;
 
 namespace AutoResende.View
 {
@@ -113,7 +114,10 @@ namespace AutoResende.View
                 oFornecedor.TelCel = txtCel.Text;
                 oFornecedor.email = txtemail.Text;
                 oFornecedor.Comentario = txtComentarios.Text;
-                MessageBox.Show("Cadastro realizado com sucesso!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //Método do WebService
+                CAutoResende.Insere(oFornecedor);
+
                 LimpaCampos();
             }
         }
