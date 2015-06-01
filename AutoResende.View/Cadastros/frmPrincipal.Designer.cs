@@ -395,7 +395,7 @@
             this.ptpConsultaMercadoria.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ptpConsultaMercadoria.Name = "ptpConsultaMercadoria";
             this.ptpConsultaMercadoria.Size = new System.Drawing.Size(222, 202);
-            this.ptpConsultaMercadoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptpConsultaMercadoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ptpConsultaMercadoria.TabIndex = 55;
             this.ptpConsultaMercadoria.TabStop = false;
             this.ptpConsultaMercadoria.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptpConsultaMercadoria_MouseClick);
@@ -421,11 +421,11 @@
             this.ptbCadastroMercadoria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbCadastroMercadoria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbCadastroMercadoria.Image = ((System.Drawing.Image)(resources.GetObject("ptbCadastroMercadoria.Image")));
-            this.ptbCadastroMercadoria.Location = new System.Drawing.Point(166, 174);
+            this.ptbCadastroMercadoria.Location = new System.Drawing.Point(166, 173);
             this.ptbCadastroMercadoria.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ptbCadastroMercadoria.Name = "ptbCadastroMercadoria";
             this.ptbCadastroMercadoria.Size = new System.Drawing.Size(110, 94);
-            this.ptbCadastroMercadoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbCadastroMercadoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbCadastroMercadoria.TabIndex = 56;
             this.ptbCadastroMercadoria.TabStop = false;
             this.ptbCadastroMercadoria.Click += new System.EventHandler(this.ptbCadastroMercadoria_Click);
