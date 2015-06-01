@@ -1,0 +1,6 @@
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.Model\bin\Debug\AutoResende.Model.dll.config
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.Model\bin\Debug\AutoResende.Model.dll
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.Model\bin\Debug\AutoResende.Model.pdb
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.Model\obj\Debug\AutoResende.Model.csprojResolveAssemblyReference.cache
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.Model\obj\Debug\AutoResende.Model.dll
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.Model\obj\Debug\AutoResende.Model.pdb

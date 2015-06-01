@@ -1,3 +1,24 @@
 E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\bin\Debug\AutoResende.View.exe.config
 E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.exe
 E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.pdb
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\bin\Debug\AutoResende.View.exe.config
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.exe
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.pdb
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.csprojResolveAssemblyReference.cache
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmCadastroCliente.resources
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmCadastroFornecedor.resources
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmCadastroFuncionario.resources
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmCadastroMercadoria.resources
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmCadastroOrdemServico.resources
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmCadastroTipoServico.resources
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmCadastroVeiculo.resources
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmPrincipal.resources
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmConsultaCliente.resources
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmConsultaFornecedor.resources
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmConsultaFuncionario.resources
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmConsultaMercadoria.resources
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmConsultaOrdemServico.resources
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmConsultaTipoServico.resources
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmConsultaVeiculo.resources
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.Properties.Resources.resources
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.csproj.GenerateResource.Cache
