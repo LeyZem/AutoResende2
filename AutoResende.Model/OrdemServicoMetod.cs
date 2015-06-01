@@ -32,7 +32,7 @@ namespace AutoResende.Model
             }
         }
 
-        public static bool Deleta(OrdemServico pOrdemServico)
+        public static bool Deleta(int pCodigoOrdemServico)
         {
             //Tentativa
             try
@@ -40,8 +40,11 @@ namespace AutoResende.Model
                 //Conexão com o Banco de Dados
                 AutoResendeDataContext oDB = new AutoResendeDataContext();
 
-                //String de Inserção
-                oDB.OrdemServicos.DeleteOnSubmit(pOrdemServico);
+                //String de Seleção
+                OrdemServico oOrdemServico = (from Seleciona in oDB.OrdemServicos where Seleciona.idOrdemServico == pCodigoOrdemServico select Seleciona).SingleOrDefault();
+
+                //String de Exclusão
+                oDB.OrdemServicos.DeleteOnSubmit(oOrdemServico);
                 oDB.SubmitChanges();
                 oDB.Dispose();
 
@@ -54,6 +57,30 @@ namespace AutoResende.Model
                 //Retorno FALSE para configuração de mensagem de erro
                 return false;
             }
+        }
+
+        public static OrdemServico Seleciona(int pCodigoOrdemServico)
+        {
+            //Conexão com o Banco de Dados
+            AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+            //String de Seleção
+            OrdemServico oOrdemServico = (from Seleciona in oDB.OrdemServicos where Seleciona.idOrdemServico == pCodigoOrdemServico select Seleciona).SingleOrDefault();
+
+            //Retorno da Ordem de Serviço
+            return oOrdemServico;
+        }
+
+        public static List<OrdemServico> ListaOrdemServicos()
+        {
+            //Conexão com o Banco de Dados
+            AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+            //String de Seleção
+            List<OrdemServico> oOrdemServicos = (from Seleciona in oDB.OrdemServicos orderby Seleciona.idOrdemServico select Seleciona).ToList<OrdemServico>();
+
+            //Retorno da Lista de Ordem de Serviço
+            return oOrdemServicos;
         }
     }
 }

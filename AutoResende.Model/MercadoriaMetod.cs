@@ -32,7 +32,7 @@ namespace AutoResende.Model
             }
         }
 
-        public static bool Deleta(Mercadoria pMercadoria)
+        public static bool Deleta(int pCodigoMercadoria)
         {
             //Tentativa
             try
@@ -40,8 +40,11 @@ namespace AutoResende.Model
                 //Conexão com o Banco de Dados
                 AutoResendeDataContext oDB = new AutoResendeDataContext();
 
-                //String de Inserção
-                oDB.Mercadorias.DeleteOnSubmit(pMercadoria);
+                //String de Seleção
+                Mercadoria oMercadoria = (from Seleciona in oDB.Mercadorias where Seleciona.idMercadoria == pCodigoMercadoria select Seleciona).SingleOrDefault();
+
+                //String de Exclusão
+                oDB.Mercadorias.DeleteOnSubmit(oMercadoria);
                 oDB.SubmitChanges();
                 oDB.Dispose();
 
@@ -54,6 +57,30 @@ namespace AutoResende.Model
                 //Retorno FALSE para configuração de mensagem de erro
                 return false;
             }
+        }
+
+        public static Mercadoria Seleciona(int pCodigoMercadoria)
+        {
+            //Conexão com o Banco de Dados
+            AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+            //String de Seleção
+            Mercadoria oMercadoria = (from Seleciona in oDB.Mercadorias where Seleciona.idMercadoria == pCodigoMercadoria select Seleciona).SingleOrDefault();
+
+            //Retorno da Ordem de Serviço
+            return oMercadoria;
+        }
+
+        public static List<Mercadoria> ListaMercadorias()
+        {
+            //Conexão com o Banco de Dados
+            AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+            //String de Seleção
+            List<Mercadoria> oMercadorias = (from Seleciona in oDB.Mercadorias orderby Seleciona.idMercadoria select Seleciona).ToList<Mercadoria>();
+
+            //Retorno da Lista de Mercadorias
+            return oMercadorias;
         }
     }
 }

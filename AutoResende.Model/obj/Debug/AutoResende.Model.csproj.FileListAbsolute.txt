@@ -4,3 +4,9 @@ E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\Au
 E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.Model\obj\Debug\AutoResende.Model.csprojResolveAssemblyReference.cache
 E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.Model\obj\Debug\AutoResende.Model.dll
 E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.Model\obj\Debug\AutoResende.Model.pdb
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.Model\bin\Debug\AutoResende.Model.dll.config
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.Model\bin\Debug\AutoResende.Model.dll
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.Model\bin\Debug\AutoResende.Model.pdb
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.Model\obj\Debug\AutoResende.Model.csprojResolveAssemblyReference.cache
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.Model\obj\Debug\AutoResende.Model.dll
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.Model\obj\Debug\AutoResende.Model.pdb

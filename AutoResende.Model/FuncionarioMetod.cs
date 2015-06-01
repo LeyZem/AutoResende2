@@ -32,7 +32,7 @@ namespace AutoResende.Model
             }
         }
 
-        public static bool Deleta(Funcionario pFuncionario)
+        public static bool Deleta(int pCodigoFuncionario)
         {
             //Tentativa
             try
@@ -40,8 +40,11 @@ namespace AutoResende.Model
                 //Conexão com o Banco de Dados
                 AutoResendeDataContext oDB = new AutoResendeDataContext();
 
-                //String de Inserção
-                oDB.Funcionarios.DeleteOnSubmit(pFuncionario);
+                //String de Seleção
+                Funcionario oFuncionario = (from Seleciona in oDB.Funcionarios where Seleciona.idFuncionario == pCodigoFuncionario select Seleciona).SingleOrDefault();
+
+                //String de Exclusão
+                oDB.Funcionarios.DeleteOnSubmit(oFuncionario);
                 oDB.SubmitChanges();
                 oDB.Dispose();
 
@@ -54,6 +57,30 @@ namespace AutoResende.Model
                 //Retorno FALSE para configuração de mensagem de erro
                 return false;
             }
+        }
+
+        public static Funcionario Seleciona(int pCodigoFuncionario)
+        {
+            //Conexão com o Banco de Dados
+            AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+            //String de Seleção
+            Funcionario oFuncionario = (from Seleciona in oDB.Funcionarios where Seleciona.idFuncionario == pCodigoFuncionario select Seleciona).SingleOrDefault();
+
+            //Retorno do Funcionario
+            return oFuncionario;
+        }
+
+        public static List<Funcionario> ListaFuncionarios()
+        {
+            //Conexão com o Banco de Dados
+            AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+            //String de Seleção
+            List<Funcionario> oFuncionarios = (from Seleciona in oDB.Funcionarios orderby Seleciona.idFuncionario select Seleciona).ToList<Funcionario>();
+
+            //Retorno da Lista de Funcionarios
+            return oFuncionarios;
         }
     }
 }

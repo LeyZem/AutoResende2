@@ -32,7 +32,7 @@ namespace AutoResende.Model
             }
         }
 
-        public static bool Deleta(Fornecedor pFornecedor)
+        public static bool Deleta(int pCodigoFornecedor)
         {
             //Tentativa
             try
@@ -40,8 +40,11 @@ namespace AutoResende.Model
                 //Conexão com o Banco de Dados
                 AutoResendeDataContext oDB = new AutoResendeDataContext();
 
-                //String de Inserção
-                oDB.Fornecedors.DeleteOnSubmit(pFornecedor);
+                //String de Seleção
+                Fornecedor oFornecedor = (from Seleciona in oDB.Fornecedors where Seleciona.idFornecedor == pCodigoFornecedor select Seleciona).SingleOrDefault();
+
+                //String de Exclusão
+                oDB.Fornecedors.DeleteOnSubmit(oFornecedor);
                 oDB.SubmitChanges();
                 oDB.Dispose();
 
@@ -54,6 +57,30 @@ namespace AutoResende.Model
                 //Retorno FALSE para configuração de mensagem de erro
                 return false;
             }
+        }
+
+        public static Fornecedor Seleciona(int pCodigoFornecedor)
+        {
+            //Conexão com o Banco de Dados
+            AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+            //String de Seleção
+            Fornecedor oFornecedor = (from Seleciona in oDB.Fornecedors where Seleciona.idFornecedor == pCodigoFornecedor select Seleciona).SingleOrDefault();
+
+            //Retorno do Fornecedor
+            return oFornecedor;
+        }
+
+        public static List<Fornecedor> ListaFornecedores()
+        {
+            //Conexão com o Banco de Dados
+            AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+            //String de Seleção
+            List<Fornecedor> oFornecedores = (from Seleciona in oDB.Fornecedors orderby Seleciona.idFornecedor select Seleciona).ToList<Fornecedor>();
+
+            //Retorno da Lista de Fornecedor
+            return oFornecedores;
         }
     }
 }
