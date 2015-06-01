@@ -70,5 +70,17 @@ namespace AutoResende.Model
             //Retorno da Ordem de Serviço
             return oMercadoria;
         }
+
+        public static List<Mercadoria> ListaMercadorias()
+        {
+            //Conexão com o Banco de Dados
+            AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+            //String de Seleção
+            List<Mercadoria> oMercadorias = (from Seleciona in oDB.Mercadorias orderby Seleciona.idMercadoria select Seleciona).ToList<Mercadoria>();
+
+            //Retorno da Lista de Mercadorias
+            return oMercadorias;
+        }
     }
 }

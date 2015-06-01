@@ -70,5 +70,17 @@ namespace AutoResende.Model
             //Retorno do Tipo de Serviço
             return oTipoServico;
         }
+
+        public static List<TipoServico> ListaTipoServicos()
+        {
+            //Conexão com o Banco de Dados
+            AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+            //String de Seleção
+            List<TipoServico> oTipoServicos = (from Seleciona in oDB.TipoServicos orderby Seleciona.idTipoServico select Seleciona).ToList<TipoServico>();
+
+            //Retorno da Lista de Tipo de Servicos
+            return oTipoServicos;
+        }
     }
 }

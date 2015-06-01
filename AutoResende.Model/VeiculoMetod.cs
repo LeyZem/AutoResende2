@@ -70,5 +70,17 @@ namespace AutoResende.Model
             //Retorno do Veiculo
             return oVeiculo;
         }
+
+        public static List<Veiculo> ListaVeiculos()
+        {
+            //Conexão com o Banco de Dados
+            AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+            //String de Seleção
+            List<Veiculo> oVeiculos = (from Seleciona in oDB.Veiculos orderby Seleciona.idVeiculo select Seleciona).ToList<Veiculo>();
+
+            //Retorno da Ordem de Serviço
+            return oVeiculos;
+        }
     }
 }

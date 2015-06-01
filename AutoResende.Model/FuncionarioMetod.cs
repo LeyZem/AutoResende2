@@ -70,5 +70,17 @@ namespace AutoResende.Model
             //Retorno do Funcionario
             return oFuncionario;
         }
+
+        public static List<Funcionario> ListaFuncionarios()
+        {
+            //Conexão com o Banco de Dados
+            AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+            //String de Seleção
+            List<Funcionario> oFuncionarios = (from Seleciona in oDB.Funcionarios orderby Seleciona.idFuncionario select Seleciona).ToList<Funcionario>();
+
+            //Retorno da Lista de Funcionarios
+            return oFuncionarios;
+        }
     }
 }

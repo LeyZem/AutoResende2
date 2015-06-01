@@ -70,5 +70,17 @@ namespace AutoResende.Model
             //Retorno do Cliente
             return oCliente;
         }
+
+        public static List<Cliente> ListaClientes()
+        {
+            //Conexão com o Banco de Dados
+            AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+            //String de Seleção
+            List<Cliente> oClientes = (from Seleciona in oDB.Clientes orderby Seleciona.idCliente select Seleciona).ToList<Cliente>();
+
+            //Retorno da Lista de Clientes
+            return oClientes;
+        }
     }
 }

@@ -70,5 +70,17 @@ namespace AutoResende.Model
             //Retorno do Fornecedor
             return oFornecedor;
         }
+
+        public static List<Fornecedor> ListaFornecedores()
+        {
+            //Conexão com o Banco de Dados
+            AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+            //String de Seleção
+            List<Fornecedor> oFornecedores = (from Seleciona in oDB.Fornecedors orderby Seleciona.idFornecedor select Seleciona).ToList<Fornecedor>();
+
+            //Retorno da Lista de Fornecedor
+            return oFornecedores;
+        }
     }
 }

@@ -23,3 +23,28 @@ E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\Au
 E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\bin\Debug\AutoResende.View.pdb
 E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\bin\Debug\AutoResende.Model.dll
 E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\bin\Debug\AutoResende.Model.pdb
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\bin\Debug\AutoResende.View.exe.config
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.exe
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.pdb
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\bin\Debug\AutoResende.View.exe
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\bin\Debug\AutoResende.View.pdb
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\bin\Debug\AutoResende.Model.dll
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\bin\Debug\AutoResende.Model.pdb
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.csprojResolveAssemblyReference.cache
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmCadastroCliente.resources
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmCadastroFornecedor.resources
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmCadastroFuncionario.resources
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmCadastroMercadoria.resources
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmCadastroOrdemServico.resources
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmCadastroTipoServico.resources
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmCadastroVeiculo.resources
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmPrincipal.resources
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmConsultaCliente.resources
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmConsultaFornecedor.resources
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmConsultaFuncionario.resources
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmConsultaMercadoria.resources
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmConsultaOrdemServico.resources
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmConsultaTipoServico.resources
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmConsultaVeiculo.resources
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.Properties.Resources.resources
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.csproj.GenerateResource.Cache
