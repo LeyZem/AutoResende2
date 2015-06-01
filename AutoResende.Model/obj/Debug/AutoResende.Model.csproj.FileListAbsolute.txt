@@ -1,0 +1,6 @@
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.Model\bin\Debug\AutoResende.Model.dll.config
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.Model\bin\Debug\AutoResende.Model.dll
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.Model\bin\Debug\AutoResende.Model.pdb
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.Model\obj\Debug\AutoResende.Model.csprojResolveAssemblyReference.cache
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.Model\obj\Debug\AutoResende.Model.dll
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.Model\obj\Debug\AutoResende.Model.pdb
