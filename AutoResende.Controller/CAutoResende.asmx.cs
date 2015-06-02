@@ -15,38 +15,56 @@ namespace AutoResende.Controller
 
     public class CAutoResende : System.Web.Services.WebService
     {
-
+        //CLIENTE
         [WebMethod]
         public static void Insere(Cliente oCliente)
         {
             ClienteMetod.Insere(oCliente);
         }
        
+
+
+        //FORNECEDOR
         public static void Insere(Fornecedor oFornecedor)
         {
             FornecedorMetod.Insere(oFornecedor);
         }
 
+
+
+        //FUNCIONÁRIO
         public static void Insere(Funcionario oFuncionario)
         {
             FuncionarioMetod.Insere(oFuncionario);
         }
 
+
+
+        //MERCADORIA
         public static void Insere(Mercadoria oMercadoria)
         {
             MercadoriaMetod.Insere(oMercadoria);
         }
 
+
+
+        //ORDEM DE SERVIÇO
         public static void Insere(OrdemServico oOrdemServico)
         {
             OrdemServicoMetod.Insere(oOrdemServico);
         }
 
+
+
+        //TIPO DE SERVIÇO
         public static void Insere(TipoServico oTipoServico)
         {
             TipoServicoMetod.Insere(oTipoServico);
         }
 
+
+
+        //VEÍCULO
         public static void Insere(Veiculo oVeiculo)
         {
             VeiculoMetod.Insere(oVeiculo);

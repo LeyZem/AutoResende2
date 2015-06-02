@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace AutoResende.Model
 {
@@ -10,9 +11,7 @@ namespace AutoResende.Model
     {
         public static bool Insere(Cliente pCliente)
         {
-            //Tentativa
-            try
-            {
+           
                 //Conexão com o Banco de Dados
                 AutoResendeDataContext oDB = new AutoResendeDataContext();
 
@@ -21,22 +20,15 @@ namespace AutoResende.Model
                 oDB.SubmitChanges();
                 oDB.Dispose();
 
+                
                 //Retorno TRUE para configuração de mensagem de sucesso
                 return true;
-            }
-            //Exceção
-            catch (Exception)
-            {
-                //Retorno FALSE para configuração de mensagem de erro
-                return false;
-            }
+           
         }
 
         public static bool Deleta(int pCodigoCliente)
         {
-            //Tentativa
-            try
-            {
+            
                 //Conexão com o Banco de Dados
                 AutoResendeDataContext oDB = new AutoResendeDataContext();
 
@@ -50,13 +42,7 @@ namespace AutoResende.Model
 
                 //Retorno TRUE para configuração de mensagem de sucesso
                 return true;
-            }
-            //Exceção
-            catch (Exception)
-            {
-                //Retorno FALSE para configuração de mensagem de erro
-                return false;
-            }
+           
         }
 
         public static Cliente Seleciona(int pCodigoCliente)

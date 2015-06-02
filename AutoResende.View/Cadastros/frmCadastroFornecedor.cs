@@ -70,7 +70,7 @@ namespace AutoResende.View
                 txtfantasia.Focus();
                 return false;
             }
-            
+
             else
             {
                 return true;
@@ -116,7 +116,15 @@ namespace AutoResende.View
                 oFornecedor.Comentario = txtComentarios.Text;
 
                 //Método do WebService
-                CAutoResende.Insere(oFornecedor);
+                try
+                {
+                    CAutoResende.Insere(oFornecedor);
+                    MessageBox.Show("Cadastro realizado com sucesso!", "CONFIRMAÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
                 LimpaCampos();
             }

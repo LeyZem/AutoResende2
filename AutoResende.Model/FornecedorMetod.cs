@@ -11,8 +11,8 @@ namespace AutoResende.Model
         public static bool Insere(Fornecedor pFornecedor)
         {
             //Tentativa
-            try
-            {
+            //try
+            //{
                 //Conexão com o Banco de Dados
                 AutoResendeDataContext oDB = new AutoResendeDataContext();
 
@@ -23,20 +23,18 @@ namespace AutoResende.Model
 
                 //Retorno TRUE para configuração de mensagem de sucesso
                 return true;
-            }
+            //}
             //Exceção
-            catch (Exception)
-            {
+            //catch (Exception ex)
+            //{
                 //Retorno FALSE para configuração de mensagem de erro
-                return false;
-            }
+                //throw new Exception("Um erro aconteceu ao salvar",ex);
+            //}
         }
 
         public static bool Deleta(int pCodigoFornecedor)
         {
-            //Tentativa
-            try
-            {
+            
                 //Conexão com o Banco de Dados
                 AutoResendeDataContext oDB = new AutoResendeDataContext();
 
@@ -50,13 +48,7 @@ namespace AutoResende.Model
 
                 //Retorno TRUE para configuração de mensagem de sucesso
                 return true;
-            }
-            //Exceção
-            catch (Exception)
-            {
-                //Retorno FALSE para configuração de mensagem de erro
-                return false;
-            }
+           
         }
 
         public static Fornecedor Seleciona(int pCodigoFornecedor)

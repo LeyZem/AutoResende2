@@ -50,3 +50,5 @@ C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoRese
 C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.csproj.GenerateResource.Cache
 C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\bin\Debug\AutoResende.Controller.dll
 C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\bin\Debug\AutoResende.Controller.pdb
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\bin\Debug\AutoResende.Controller.dll
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\bin\Debug\AutoResende.Controller.pdb

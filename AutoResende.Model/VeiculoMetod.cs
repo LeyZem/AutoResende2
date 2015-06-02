@@ -10,9 +10,7 @@ namespace AutoResende.Model
     {
         public static bool Insere(Veiculo pVeiculo)
         {
-            //Tentativa
-            try
-            {
+            
                 //Conexão com o Banco de Dados
                 AutoResendeDataContext oDB = new AutoResendeDataContext();
 
@@ -23,20 +21,12 @@ namespace AutoResende.Model
 
                 //Retorno TRUE para configuração de mensagem de sucesso
                 return true;
-            }
-            //Exceção
-            catch (Exception)
-            {
-                //Retorno FALSE para configuração de mensagem de erro
-                return false;
-            }
+           
         }
 
         public static bool Deleta(int pCodigoVeiculo)
         {
-            //Tentativa
-            try
-            {
+            
                 //Conexão com o Banco de Dados
                 AutoResendeDataContext oDB = new AutoResendeDataContext();
 
@@ -50,13 +40,7 @@ namespace AutoResende.Model
 
                 //Retorno TRUE para configuração de mensagem de sucesso
                 return true;
-            }
-            //Exceção
-            catch (Exception)
-            {
-                //Retorno FALSE para configuração de mensagem de erro
-                return false;
-            }
+            
         }
 
         public static Veiculo Seleciona(int pCodigoVeiculo)

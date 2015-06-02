@@ -1,47 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 10.25" name="AutoResende">
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 10.625" name="AutoResende">
   <DataContextMoniker Name="/AutoResendeDataContext" />
   <nestedChildShapes>
-    <classShape Id="24c04503-3a75-4ff9-9402-bce171602450" absoluteBounds="0.75, 0.75, 2, 3.5016097005208326">
+    <classShape Id="d9f2cee1-3804-42a9-92a1-8120b144b899" absoluteBounds="0.75, 0.75, 2, 3.8862125651041666">
       <DataClassMoniker Name="/AutoResendeDataContext/Cliente" />
       <nestedChildShapes>
-        <elementListCompartment Id="63ceff03-0cc1-438e-8894-f97f6daf25a1" absoluteBounds="0.765, 1.21, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="fa53eae3-1c22-4bcf-a833-8863ba10c9af" absoluteBounds="0.765, 1.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="73d7f14b-97a1-4445-aad2-d3b65256c0a9" absoluteBounds="3.75, 0.75, 2, 2.1554996744791666">
+    <classShape Id="103a32e7-f0d8-4496-8cef-f14ac4051373" absoluteBounds="3.75, 0.75, 2, 2.1554996744791666">
       <DataClassMoniker Name="/AutoResendeDataContext/Veiculo" />
       <nestedChildShapes>
-        <elementListCompartment Id="bb2ba9ef-8f0c-4998-a55d-5becb9b72fee" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="973befcd-4b1c-461b-9c82-0f0c77c6cbfa" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="210d8986-d464-4d91-81ea-3772ce0ea0f7" absoluteBounds="6.75, 5.75, 2, 1.9631982421875005">
-      <DataClassMoniker Name="/AutoResendeDataContext/Mercadoria" />
-      <nestedChildShapes>
-        <elementListCompartment Id="8edbd027-3b5a-4dcf-beee-ab22f6d48616" absoluteBounds="6.765, 6.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="5299f5f7-c8ba-4f38-b70a-e29c87b449f0" absoluteBounds="0.75, 7.75, 2, 1.5785953776041666">
-      <DataClassMoniker Name="/AutoResendeDataContext/OrdemServico" />
-      <nestedChildShapes>
-        <elementListCompartment Id="c2963c03-f52a-4588-8b8b-8f89f042912a" absoluteBounds="0.765, 8.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="8441b83e-9ba4-44f0-b142-755ec985430a" absoluteBounds="3.75, 8.75, 2, 1.1939925130208344">
-      <DataClassMoniker Name="/AutoResendeDataContext/TipoServico" />
-      <nestedChildShapes>
-        <elementListCompartment Id="44118230-c480-4bdb-8b61-58b84d71bac2" absoluteBounds="3.765, 9.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="0877a33c-b8ed-4873-88c6-cc27ac02dc12" absoluteBounds="4.25, 4.25, 2, 3.6939111328124996">
+    <classShape Id="7630203a-6138-4de8-8339-1f70d148988a" absoluteBounds="3.75, 3.75, 2, 3.6939111328124992">
       <DataClassMoniker Name="/AutoResendeDataContext/Fornecedor" />
       <nestedChildShapes>
-        <elementListCompartment Id="ad015020-16b0-4744-98b5-868f315021ea" absoluteBounds="4.265, 4.71, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="85c92add-5ead-4d29-a0ca-6b5453b1f626" absoluteBounds="3.765, 4.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="1e486128-69ef-4528-95b5-95487fc5a818" absoluteBounds="7, 0.75, 2, 3.8862125651041666">
+    <classShape Id="681f1ebe-e3d1-47a2-a2a8-ffaa002924f0" absoluteBounds="6.75, 0.75, 2, 3.8862125651041666">
       <DataClassMoniker Name="/AutoResendeDataContext/Funcionario" />
       <nestedChildShapes>
-        <elementListCompartment Id="bcfb4790-0c28-41b9-a6a8-bbc22f5f5090" absoluteBounds="7.015, 1.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="523aa0bb-8583-435a-9d7e-9ab69f14ffe5" absoluteBounds="6.765, 1.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ef406549-821a-4fbb-ab67-e647796342a1" absoluteBounds="6.75, 5.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/AutoResendeDataContext/Mercadoria" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d94b0e8b-3d4e-4161-8a6f-8e25aef20343" absoluteBounds="6.765, 6.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b888cb9b-4b19-4d09-99d8-df0977b1a689" absoluteBounds="0.75, 8.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AutoResendeDataContext/OrdemServico" />
+      <nestedChildShapes>
+        <elementListCompartment Id="60c124c7-35d7-46c0-ba45-a6e55f7d74d2" absoluteBounds="0.765, 9.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f8de6109-cd85-4fa7-91c8-3b8ac13169c1" absoluteBounds="3.75, 8.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/AutoResendeDataContext/TipoServico" />
+      <nestedChildShapes>
+        <elementListCompartment Id="45fc44a8-78dc-460a-8e52-e2c774af1040" absoluteBounds="3.765, 9.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

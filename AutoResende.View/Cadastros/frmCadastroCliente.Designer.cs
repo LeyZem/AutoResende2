@@ -105,7 +105,6 @@
             this.Cad_clientes.Size = new System.Drawing.Size(215, 25);
             this.Cad_clientes.TabIndex = 38;
             this.Cad_clientes.Text = "Cadastro de Clientes";
-            this.Cad_clientes.Click += new System.EventHandler(this.label2_Click);
             // 
             // label18
             // 
@@ -129,7 +128,6 @@
             this.picimg_cliente.Size = new System.Drawing.Size(87, 85);
             this.picimg_cliente.TabIndex = 94;
             this.picimg_cliente.TabStop = false;
-            this.picimg_cliente.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -161,6 +159,7 @@
             this.btnApagar.TabIndex = 196;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = false;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // pictureBox3
             // 
@@ -211,6 +210,7 @@
             this.Btn_Gravar.TabIndex = 192;
             this.Btn_Gravar.Text = "Gravar";
             this.Btn_Gravar.UseVisualStyleBackColor = false;
+            this.Btn_Gravar.Click += new System.EventHandler(this.Btn_Gravar_Click);
             // 
             // txtDataNasc
             // 
@@ -863,7 +863,6 @@
             this.Name = "frmCadastroCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCadastroCliente";
-            this.Load += new System.EventHandler(this.frmCadastroCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

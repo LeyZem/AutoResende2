@@ -6,3 +6,11 @@ C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.Controller\bin\AutoRese
 C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.Controller\obj\Debug\AutoResende.Controller.csprojResolveAssemblyReference.cache
 C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.Controller\obj\Debug\AutoResende.Controller.dll
 C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.Controller\obj\Debug\AutoResende.Controller.pdb
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.Controller\bin\AutoResende.Controller.dll.config
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.Controller\bin\AutoResende.Controller.dll
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.Controller\bin\AutoResende.Controller.pdb
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.Controller\bin\AutoResende.Model.dll
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.Controller\bin\AutoResende.Model.pdb
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.Controller\obj\Debug\AutoResende.Controller.csprojResolveAssemblyReference.cache
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.Controller\obj\Debug\AutoResende.Controller.dll
+E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.Controller\obj\Debug\AutoResende.Controller.pdb

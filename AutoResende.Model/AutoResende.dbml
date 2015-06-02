@@ -2,7 +2,7 @@
   <Connection Mode="AppSettings" ConnectionString="Data Source=ThiagoDiniz-PC;Initial Catalog=AutoResende.DataBase;Integrated Security=True" SettingsObjectName="AutoResende.Model.Properties.Settings" SettingsPropertyName="AutoResende_DataBaseConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Cliente" Member="Clientes">
     <Type Name="Cliente">
-      <Column Name="idCliente" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idCliente" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="Nome" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="CPF" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="RG" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -16,11 +16,13 @@
       <Column Name="TelRes" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="TelCel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Comentario" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Pais" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
   <Table Name="dbo.Veiculo" Member="Veiculos">
     <Type Name="Veiculo">
-      <Column Name="idVeiculo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idVeiculo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="Modelo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Cor" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Placa" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -29,33 +31,9 @@
       <Column Name="Odometro" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Mercadoria" Member="Mercadorias">
-    <Type Name="Mercadoria">
-      <Column Name="idMercadoria" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Descricao" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="ValorCusto" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="ValorVenda" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
-      <Column Name="QuantidadeEstoque" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Marca" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.OrdemServico" Member="OrdemServicos">
-    <Type Name="OrdemServico">
-      <Column Name="idOrdemServico" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Descricao" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="Data" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="DataEntrega" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.TipoServico" Member="TipoServicos">
-    <Type Name="TipoServico">
-      <Column Name="idTipoServico" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Descricao" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
   <Table Name="dbo.Fornecedor" Member="Fornecedors">
     <Type Name="Fornecedor">
-      <Column Name="idFornecedor" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idFornecedor" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="NomeFantasia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="RazaoSocial" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="CNPJ" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -74,7 +52,7 @@
   </Table>
   <Table Name="dbo.Funcionario" Member="Funcionarios">
     <Type Name="Funcionario">
-      <Column Name="idFuncionario" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idFuncionario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="Nome" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="CPF" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="RG" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -90,6 +68,30 @@
       <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="Pais" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="Comentario" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Mercadoria" Member="Mercadorias">
+    <Type Name="Mercadoria">
+      <Column Name="idMercadoria" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ValorCusto" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ValorVenda" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="QuantidadeEstoque" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Marca" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OrdemServico" Member="OrdemServicos">
+    <Type Name="OrdemServico">
+      <Column Name="idOrdemServico" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Data" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DataEntrega" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoServico" Member="TipoServicos">
+    <Type Name="TipoServico">
+      <Column Name="idTipoServico" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
 </Database>
