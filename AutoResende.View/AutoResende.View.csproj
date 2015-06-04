@@ -89,6 +89,12 @@
     <Compile Include="Cadastros\frmCadastroVeiculo.Designer.cs">
       <DependentUpon>frmCadastroVeiculo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cadastros\FrmMovimentoCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FrmMovimentoCompra.Designer.cs">
+      <DependentUpon>FrmMovimentoCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cadastros\frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cadastros\frmCadastroVeiculo.resx">
       <DependentUpon>frmCadastroVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FrmMovimentoCompra.resx">
+      <DependentUpon>FrmMovimentoCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cadastros\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>

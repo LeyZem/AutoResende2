@@ -395,6 +395,7 @@
             this.ptpConsultaMercadoria.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ptpConsultaMercadoria.Name = "ptpConsultaMercadoria";
             this.ptpConsultaMercadoria.Size = new System.Drawing.Size(222, 202);
+            this.ptpConsultaMercadoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptpConsultaMercadoria.TabIndex = 55;
             this.ptpConsultaMercadoria.TabStop = false;
             this.ptpConsultaMercadoria.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptpConsultaMercadoria_MouseClick);

@@ -79,3 +79,4 @@ D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\
 D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmConsultaVeiculo.resources
 D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.Properties.Resources.resources
 D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.csproj.GenerateResource.Cache
+D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.Cadastros.frmMovimentoCompra.resources

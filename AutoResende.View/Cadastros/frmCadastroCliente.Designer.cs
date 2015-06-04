@@ -102,7 +102,7 @@
             this.Cad_clientes.ForeColor = System.Drawing.Color.White;
             this.Cad_clientes.Location = new System.Drawing.Point(137, 14);
             this.Cad_clientes.Name = "Cad_clientes";
-            this.Cad_clientes.Size = new System.Drawing.Size(215, 25);
+            this.Cad_clientes.Size = new System.Drawing.Size(311, 36);
             this.Cad_clientes.TabIndex = 38;
             this.Cad_clientes.Text = "Cadastro de Clientes";
             // 
@@ -114,7 +114,7 @@
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label18.Location = new System.Drawing.Point(139, 59);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(127, 18);
+            this.label18.Size = new System.Drawing.Size(185, 26);
             this.label18.TabIndex = 80;
             this.label18.Text = "Dados Cadastrais";
             // 
@@ -190,10 +190,10 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Brown;
-            this.label7.Location = new System.Drawing.Point(137, 289);
+            this.label7.Location = new System.Drawing.Point(137, 280);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(94, 18);
+            this.label7.Size = new System.Drawing.Size(136, 26);
             this.label7.TabIndex = 193;
             this.label7.Text = "Comentários";
             // 
@@ -217,7 +217,7 @@
             this.txtDataNasc.Location = new System.Drawing.Point(548, 126);
             this.txtDataNasc.Mask = "00/00/0000";
             this.txtDataNasc.Name = "txtDataNasc";
-            this.txtDataNasc.Size = new System.Drawing.Size(81, 20);
+            this.txtDataNasc.Size = new System.Drawing.Size(81, 26);
             this.txtDataNasc.TabIndex = 225;
             this.txtDataNasc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtDataNasc.ValidatingType = typeof(System.DateTime);
@@ -231,7 +231,7 @@
             this.lblBairro.Location = new System.Drawing.Point(653, 153);
             this.lblBairro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Size = new System.Drawing.Size(40, 13);
+            this.lblBairro.Size = new System.Drawing.Size(57, 20);
             this.lblBairro.TabIndex = 223;
             this.lblBairro.Text = "Bairro";
             // 
@@ -241,7 +241,7 @@
             this.txtBairro.Location = new System.Drawing.Point(701, 153);
             this.txtBairro.Margin = new System.Windows.Forms.Padding(2);
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(155, 20);
+            this.txtBairro.Size = new System.Drawing.Size(155, 26);
             this.txtBairro.TabIndex = 224;
             // 
             // label1
@@ -253,7 +253,7 @@
             this.label1.Location = new System.Drawing.Point(143, 208);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.Size = new System.Drawing.Size(59, 20);
             this.label1.TabIndex = 222;
             this.label1.Text = "E-mail";
             // 
@@ -264,7 +264,7 @@
             this.txtLogradouro.Margin = new System.Windows.Forms.Padding(2);
             this.txtLogradouro.MaxLength = 40;
             this.txtLogradouro.Name = "txtLogradouro";
-            this.txtLogradouro.Size = new System.Drawing.Size(412, 20);
+            this.txtLogradouro.Size = new System.Drawing.Size(412, 26);
             this.txtLogradouro.TabIndex = 221;
             // 
             // txtCPF
@@ -273,7 +273,7 @@
             this.txtCPF.Location = new System.Drawing.Point(217, 126);
             this.txtCPF.Margin = new System.Windows.Forms.Padding(2);
             this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(131, 20);
+            this.txtCPF.Size = new System.Drawing.Size(131, 26);
             this.txtCPF.TabIndex = 220;
             // 
             // lblcel
@@ -285,7 +285,7 @@
             this.lblcel.Location = new System.Drawing.Point(494, 252);
             this.lblcel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblcel.Name = "lblcel";
-            this.lblcel.Size = new System.Drawing.Size(25, 13);
+            this.lblcel.Size = new System.Drawing.Size(35, 20);
             this.lblcel.TabIndex = 219;
             this.lblcel.Text = "Cel";
             // 
@@ -295,7 +295,7 @@
             this.txtCel.Location = new System.Drawing.Point(538, 250);
             this.txtCel.Margin = new System.Windows.Forms.Padding(2);
             this.txtCel.Name = "txtCel";
-            this.txtCel.Size = new System.Drawing.Size(91, 20);
+            this.txtCel.Size = new System.Drawing.Size(91, 26);
             this.txtCel.TabIndex = 218;
             // 
             // cmbEstado
@@ -333,7 +333,7 @@
             this.cmbEstado.Location = new System.Drawing.Point(747, 177);
             this.cmbEstado.Margin = new System.Windows.Forms.Padding(2);
             this.cmbEstado.Name = "cmbEstado";
-            this.cmbEstado.Size = new System.Drawing.Size(109, 21);
+            this.cmbEstado.Size = new System.Drawing.Size(109, 28);
             this.cmbEstado.TabIndex = 217;
             // 
             // cmbPais
@@ -600,7 +600,7 @@
             this.cmbPais.Location = new System.Drawing.Point(701, 202);
             this.cmbPais.Margin = new System.Windows.Forms.Padding(2);
             this.cmbPais.Name = "cmbPais";
-            this.cmbPais.Size = new System.Drawing.Size(155, 21);
+            this.cmbPais.Size = new System.Drawing.Size(155, 28);
             this.cmbPais.TabIndex = 216;
             // 
             // lblpais
@@ -612,7 +612,7 @@
             this.lblpais.Location = new System.Drawing.Point(660, 207);
             this.lblpais.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblpais.Name = "lblpais";
-            this.lblpais.Size = new System.Drawing.Size(33, 13);
+            this.lblpais.Size = new System.Drawing.Size(43, 20);
             this.lblpais.TabIndex = 211;
             this.lblpais.Text = "País";
             // 
@@ -625,7 +625,7 @@
             this.lblestado.Location = new System.Drawing.Point(697, 179);
             this.lblestado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblestado.Name = "lblestado";
-            this.lblestado.Size = new System.Drawing.Size(46, 13);
+            this.lblestado.Size = new System.Drawing.Size(66, 20);
             this.lblestado.TabIndex = 210;
             this.lblestado.Text = "Estado";
             // 
@@ -635,7 +635,7 @@
             this.txtOrgaoExpedidor.Location = new System.Drawing.Point(701, 124);
             this.txtOrgaoExpedidor.Margin = new System.Windows.Forms.Padding(2);
             this.txtOrgaoExpedidor.Name = "txtOrgaoExpedidor";
-            this.txtOrgaoExpedidor.Size = new System.Drawing.Size(155, 20);
+            this.txtOrgaoExpedidor.Size = new System.Drawing.Size(155, 26);
             this.txtOrgaoExpedidor.TabIndex = 209;
             // 
             // lblOrgExped
@@ -647,7 +647,7 @@
             this.lblOrgExped.Location = new System.Drawing.Point(637, 128);
             this.lblOrgExped.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblOrgExped.Name = "lblOrgExped";
-            this.lblOrgExped.Size = new System.Drawing.Size(60, 13);
+            this.lblOrgExped.Size = new System.Drawing.Size(83, 20);
             this.lblOrgExped.TabIndex = 208;
             this.lblOrgExped.Text = "Org. Exp.";
             // 
@@ -660,7 +660,7 @@
             this.lblinscestadual.Location = new System.Drawing.Point(466, 130);
             this.lblinscestadual.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblinscestadual.Name = "lblinscestadual";
-            this.lblinscestadual.Size = new System.Drawing.Size(71, 13);
+            this.lblinscestadual.Size = new System.Drawing.Size(98, 20);
             this.lblinscestadual.TabIndex = 207;
             this.lblinscestadual.Text = "Data Nasc.";
             // 
@@ -673,7 +673,7 @@
             this.lbllogradouro.Location = new System.Drawing.Point(142, 153);
             this.lbllogradouro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbllogradouro.Name = "lbllogradouro";
-            this.lbllogradouro.Size = new System.Drawing.Size(71, 13);
+            this.lbllogradouro.Size = new System.Drawing.Size(101, 20);
             this.lbllogradouro.TabIndex = 206;
             this.lbllogradouro.Text = "Logradouro";
             // 
@@ -684,7 +684,7 @@
             this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.MaxLength = 40;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(412, 20);
+            this.txtEmail.Size = new System.Drawing.Size(412, 26);
             this.txtEmail.TabIndex = 205;
             // 
             // lblRG
@@ -696,7 +696,7 @@
             this.lblRG.Location = new System.Drawing.Point(668, 100);
             this.lblRG.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRG.Name = "lblRG";
-            this.lblRG.Size = new System.Drawing.Size(25, 13);
+            this.lblRG.Size = new System.Drawing.Size(36, 20);
             this.lblRG.TabIndex = 204;
             this.lblRG.Text = "RG";
             // 
@@ -707,7 +707,7 @@
             this.txtRG.Margin = new System.Windows.Forms.Padding(2);
             this.txtRG.MaxLength = 40;
             this.txtRG.Name = "txtRG";
-            this.txtRG.Size = new System.Drawing.Size(155, 20);
+            this.txtRG.Size = new System.Drawing.Size(155, 26);
             this.txtRG.TabIndex = 203;
             // 
             // lblnome
@@ -719,7 +719,7 @@
             this.lblnome.Location = new System.Drawing.Point(141, 103);
             this.lblnome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblnome.Name = "lblnome";
-            this.lblnome.Size = new System.Drawing.Size(39, 13);
+            this.lblnome.Size = new System.Drawing.Size(55, 20);
             this.lblnome.TabIndex = 202;
             this.lblnome.Text = "Nome";
             // 
@@ -730,7 +730,7 @@
             this.txtNome.Margin = new System.Windows.Forms.Padding(2);
             this.txtNome.MaxLength = 40;
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(412, 20);
+            this.txtNome.Size = new System.Drawing.Size(412, 26);
             this.txtNome.TabIndex = 201;
             // 
             // lbltel
@@ -742,7 +742,7 @@
             this.lbltel.Location = new System.Drawing.Point(142, 250);
             this.lbltel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbltel.Name = "lbltel";
-            this.lbltel.Size = new System.Drawing.Size(57, 13);
+            this.lbltel.Size = new System.Drawing.Size(79, 20);
             this.lbltel.TabIndex = 200;
             this.lbltel.Text = "Telefone";
             // 
@@ -755,7 +755,7 @@
             this.lblcidade.Location = new System.Drawing.Point(416, 176);
             this.lblcidade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblcidade.Name = "lblcidade";
-            this.lblcidade.Size = new System.Drawing.Size(46, 13);
+            this.lblcidade.Size = new System.Drawing.Size(65, 20);
             this.lblcidade.TabIndex = 199;
             this.lblcidade.Text = "Cidade";
             // 
@@ -768,7 +768,7 @@
             this.lblcep.Location = new System.Drawing.Point(142, 176);
             this.lblcep.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblcep.Name = "lblcep";
-            this.lblcep.Size = new System.Drawing.Size(29, 13);
+            this.lblcep.Size = new System.Drawing.Size(41, 20);
             this.lblcep.TabIndex = 198;
             this.lblcep.Text = "Cep";
             // 
@@ -781,7 +781,7 @@
             this.lblCPF.Location = new System.Drawing.Point(143, 130);
             this.lblCPF.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCPF.Name = "lblCPF";
-            this.lblCPF.Size = new System.Drawing.Size(30, 13);
+            this.lblCPF.Size = new System.Drawing.Size(43, 20);
             this.lblCPF.TabIndex = 197;
             this.lblCPF.Text = "CPF";
             // 
@@ -791,7 +791,7 @@
             this.txtCidade.Location = new System.Drawing.Point(469, 174);
             this.txtCidade.Margin = new System.Windows.Forms.Padding(2);
             this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(160, 20);
+            this.txtCidade.Size = new System.Drawing.Size(160, 26);
             this.txtCidade.TabIndex = 215;
             // 
             // txtCep
@@ -800,7 +800,7 @@
             this.txtCep.Location = new System.Drawing.Point(217, 174);
             this.txtCep.Margin = new System.Windows.Forms.Padding(2);
             this.txtCep.Name = "txtCep";
-            this.txtCep.Size = new System.Drawing.Size(131, 20);
+            this.txtCep.Size = new System.Drawing.Size(131, 26);
             this.txtCep.TabIndex = 214;
             // 
             // txtTelRes
@@ -809,12 +809,12 @@
             this.txtTelRes.Location = new System.Drawing.Point(217, 248);
             this.txtTelRes.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelRes.Name = "txtTelRes";
-            this.txtTelRes.Size = new System.Drawing.Size(131, 20);
+            this.txtTelRes.Size = new System.Drawing.Size(131, 26);
             this.txtTelRes.TabIndex = 213;
             // 
             // frmCadastroCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(867, 507);
