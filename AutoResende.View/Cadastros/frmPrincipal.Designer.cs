@@ -62,8 +62,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblcompra = new System.Windows.Forms.Label();
+            this.lblvenda = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCadastroTipoServico)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCadastroVeiculo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCadastroCliente)).BeginInit();
@@ -329,11 +329,11 @@
             this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(804, 538);
+            this.pictureBox10.Location = new System.Drawing.Point(803, 537);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(222, 202);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 51;
             this.pictureBox10.TabStop = false;
             // 
@@ -395,7 +395,6 @@
             this.ptpConsultaMercadoria.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ptpConsultaMercadoria.Name = "ptpConsultaMercadoria";
             this.ptpConsultaMercadoria.Size = new System.Drawing.Size(222, 202);
-            this.ptpConsultaMercadoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ptpConsultaMercadoria.TabIndex = 55;
             this.ptpConsultaMercadoria.TabStop = false;
             this.ptpConsultaMercadoria.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptpConsultaMercadoria_MouseClick);
@@ -588,33 +587,33 @@
             this.label10.Text = "Fornecedor";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label11
+            // lblcompra
             // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label11.BackColor = System.Drawing.Color.SlateGray;
-            this.label11.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label11.Location = new System.Drawing.Point(804, 695);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(224, 46);
-            this.label11.TabIndex = 70;
-            this.label11.Text = "Movimentação?????";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblcompra.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblcompra.BackColor = System.Drawing.Color.SlateGray;
+            this.lblcompra.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcompra.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.lblcompra.Location = new System.Drawing.Point(804, 695);
+            this.lblcompra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblcompra.Name = "lblcompra";
+            this.lblcompra.Size = new System.Drawing.Size(224, 46);
+            this.lblcompra.TabIndex = 70;
+            this.lblcompra.Text = "Compra";
+            this.lblcompra.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label12
+            // lblvenda
             // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label12.BackColor = System.Drawing.Color.SlateGray;
-            this.label12.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label12.Location = new System.Drawing.Point(1032, 695);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(224, 46);
-            this.label12.TabIndex = 71;
-            this.label12.Text = "Movimentação?????";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblvenda.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblvenda.BackColor = System.Drawing.Color.SlateGray;
+            this.lblvenda.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvenda.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.lblvenda.Location = new System.Drawing.Point(1032, 695);
+            this.lblvenda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblvenda.Name = "lblvenda";
+            this.lblvenda.Size = new System.Drawing.Size(224, 46);
+            this.lblvenda.TabIndex = 71;
+            this.lblvenda.Text = "Venda";
+            this.lblvenda.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmPrincipal
             // 
@@ -622,8 +621,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1472, 806);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.lblvenda);
+            this.Controls.Add(this.lblcompra);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -718,8 +717,8 @@
         internal System.Windows.Forms.Label label8;
         internal System.Windows.Forms.Label label9;
         internal System.Windows.Forms.Label label10;
-        internal System.Windows.Forms.Label label11;
-        internal System.Windows.Forms.Label label12;
+        internal System.Windows.Forms.Label lblcompra;
+        internal System.Windows.Forms.Label lblvenda;
     }
 }
 
