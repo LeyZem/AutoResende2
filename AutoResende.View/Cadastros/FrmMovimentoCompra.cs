@@ -56,5 +56,10 @@ namespace AutoResende.View.Cadastros
         {
 
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

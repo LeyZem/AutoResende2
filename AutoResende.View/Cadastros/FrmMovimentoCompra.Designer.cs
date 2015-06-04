@@ -40,27 +40,26 @@
             this.lblqtde = new System.Windows.Forms.Label();
             this.txtqtdetotal = new System.Windows.Forms.TextBox();
             this.lblpreço = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPreço = new System.Windows.Forms.TextBox();
+            this.lblPreçoTotal = new System.Windows.Forms.Label();
+            this.txtPreçoTotal = new System.Windows.Forms.TextBox();
+            this.lblPreçoFinal = new System.Windows.Forms.Label();
+            this.TxtPreçoFinal = new System.Windows.Forms.TextBox();
+            this.lblDescPorc = new System.Windows.Forms.Label();
+            this.txtDescPorc = new System.Windows.Forms.TextBox();
+            this.lblPreçoUnit = new System.Windows.Forms.Label();
+            this.txtPreçoUnit = new System.Windows.Forms.TextBox();
+            this.lblDescReal = new System.Windows.Forms.Label();
+            this.txtDescReal = new System.Windows.Forms.TextBox();
+            this.lblIPI = new System.Windows.Forms.Label();
+            this.txtIPI = new System.Windows.Forms.TextBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.btnPagar = new System.Windows.Forms.Button();
-            this.lblnome = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
+            this.lblObservação = new System.Windows.Forms.Label();
+            this.txtObservação = new System.Windows.Forms.TextBox();
             this.btnGravar = new System.Windows.Forms.Button();
-            this.btnLimpar = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.lblFrete = new System.Windows.Forms.Label();
+            this.txtValorFrete = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Código = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,29 +70,32 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.lblOperação = new System.Windows.Forms.Label();
+            this.txtSeqGeral = new System.Windows.Forms.TextBox();
+            this.cbxOperação = new System.Windows.Forms.ComboBox();
+            this.lblFornecedor = new System.Windows.Forms.Label();
+            this.lblSeqGeral = new System.Windows.Forms.Label();
+            this.lblFuncionario = new System.Windows.Forms.Label();
+            this.txtFuncionario = new System.Windows.Forms.TextBox();
+            this.lblData = new System.Windows.Forms.Label();
+            this.dtpData = new System.Windows.Forms.DateTimePicker();
+            this.cbxTabela = new System.Windows.Forms.ComboBox();
+            this.lblTabela = new System.Windows.Forms.Label();
+            this.lblPedido = new System.Windows.Forms.Label();
+            this.txtPedido = new System.Windows.Forms.TextBox();
+            this.dtPrevReceb = new System.Windows.Forms.DateTimePicker();
+            this.dtplPrevReceb = new System.Windows.Forms.Label();
+            this.lblChaveNFe = new System.Windows.Forms.Label();
+            this.txtChaveNFe = new System.Windows.Forms.TextBox();
+            this.cbxModelo = new System.Windows.Forms.ComboBox();
+            this.lblModelo = new System.Windows.Forms.Label();
+            this.atpEmissao = new System.Windows.Forms.DateTimePicker();
+            this.lblEmissao = new System.Windows.Forms.Label();
+            this.lblNumero = new System.Windows.Forms.Label();
+            this.txtNumero = new System.Windows.Forms.TextBox();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -120,7 +122,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.BackColor = System.Drawing.Color.Green;
+            this.pictureBox1.BackColor = System.Drawing.Color.DimGray;
             this.pictureBox1.Location = new System.Drawing.Point(12, 142);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1273, 10);
@@ -224,142 +226,142 @@
             this.lblpreço.TabIndex = 195;
             this.lblpreço.Text = "Preço";
             // 
-            // textBox4
+            // txtPreço
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox4.Location = new System.Drawing.Point(323, 254);
-            this.textBox4.MaxLength = 40;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(161, 26);
-            this.textBox4.TabIndex = 194;
+            this.txtPreço.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPreço.Location = new System.Drawing.Point(323, 254);
+            this.txtPreço.MaxLength = 40;
+            this.txtPreço.Name = "txtPreço";
+            this.txtPreço.Size = new System.Drawing.Size(161, 26);
+            this.txtPreço.TabIndex = 194;
             // 
-            // label5
+            // lblPreçoTotal
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(576, 290);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 20);
-            this.label5.TabIndex = 197;
-            this.label5.Text = "Preço Total";
+            this.lblPreçoTotal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblPreçoTotal.AutoSize = true;
+            this.lblPreçoTotal.BackColor = System.Drawing.Color.Transparent;
+            this.lblPreçoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreçoTotal.Location = new System.Drawing.Point(576, 290);
+            this.lblPreçoTotal.Name = "lblPreçoTotal";
+            this.lblPreçoTotal.Size = new System.Drawing.Size(100, 20);
+            this.lblPreçoTotal.TabIndex = 197;
+            this.lblPreçoTotal.Text = "Preço Total";
             // 
-            // textBox5
+            // txtPreçoTotal
             // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox5.Location = new System.Drawing.Point(490, 313);
-            this.textBox5.MaxLength = 40;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(186, 26);
-            this.textBox5.TabIndex = 196;
+            this.txtPreçoTotal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPreçoTotal.Location = new System.Drawing.Point(490, 313);
+            this.txtPreçoTotal.MaxLength = 40;
+            this.txtPreçoTotal.Name = "txtPreçoTotal";
+            this.txtPreçoTotal.Size = new System.Drawing.Size(186, 26);
+            this.txtPreçoTotal.TabIndex = 196;
             // 
-            // label6
+            // lblPreçoFinal
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1175, 231);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 20);
-            this.label6.TabIndex = 199;
-            this.label6.Text = "Preço Final";
+            this.lblPreçoFinal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblPreçoFinal.AutoSize = true;
+            this.lblPreçoFinal.BackColor = System.Drawing.Color.Transparent;
+            this.lblPreçoFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreçoFinal.Location = new System.Drawing.Point(1175, 231);
+            this.lblPreçoFinal.Name = "lblPreçoFinal";
+            this.lblPreçoFinal.Size = new System.Drawing.Size(99, 20);
+            this.lblPreçoFinal.TabIndex = 199;
+            this.lblPreçoFinal.Text = "Preço Final";
             // 
-            // textBox6
+            // TxtPreçoFinal
             // 
-            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox6.Location = new System.Drawing.Point(1081, 254);
-            this.textBox6.MaxLength = 40;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(193, 26);
-            this.textBox6.TabIndex = 198;
+            this.TxtPreçoFinal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtPreçoFinal.Location = new System.Drawing.Point(1081, 254);
+            this.TxtPreçoFinal.MaxLength = 40;
+            this.TxtPreçoFinal.Name = "TxtPreçoFinal";
+            this.TxtPreçoFinal.Size = new System.Drawing.Size(193, 26);
+            this.TxtPreçoFinal.TabIndex = 198;
             // 
-            // label7
+            // lblDescPorc
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(698, 231);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 20);
-            this.label7.TabIndex = 201;
-            this.label7.Text = "Desc (%)";
+            this.lblDescPorc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblDescPorc.AutoSize = true;
+            this.lblDescPorc.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescPorc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescPorc.Location = new System.Drawing.Point(698, 231);
+            this.lblDescPorc.Name = "lblDescPorc";
+            this.lblDescPorc.Size = new System.Drawing.Size(82, 20);
+            this.lblDescPorc.TabIndex = 201;
+            this.lblDescPorc.Text = "Desc (%)";
             // 
-            // textBox7
+            // txtDescPorc
             // 
-            this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox7.Location = new System.Drawing.Point(682, 254);
-            this.textBox7.MaxLength = 40;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(98, 26);
-            this.textBox7.TabIndex = 200;
+            this.txtDescPorc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDescPorc.Location = new System.Drawing.Point(682, 254);
+            this.txtDescPorc.MaxLength = 40;
+            this.txtDescPorc.Name = "txtDescPorc";
+            this.txtDescPorc.Size = new System.Drawing.Size(98, 26);
+            this.txtDescPorc.TabIndex = 200;
             // 
-            // label8
+            // lblPreçoUnit
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(553, 231);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(123, 20);
-            this.label8.TabIndex = 203;
-            this.label8.Text = "Preço Unitário";
+            this.lblPreçoUnit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblPreçoUnit.AutoSize = true;
+            this.lblPreçoUnit.BackColor = System.Drawing.Color.Transparent;
+            this.lblPreçoUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreçoUnit.Location = new System.Drawing.Point(553, 231);
+            this.lblPreçoUnit.Name = "lblPreçoUnit";
+            this.lblPreçoUnit.Size = new System.Drawing.Size(123, 20);
+            this.lblPreçoUnit.TabIndex = 203;
+            this.lblPreçoUnit.Text = "Preço Unitário";
             // 
-            // textBox8
+            // txtPreçoUnit
             // 
-            this.textBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox8.Location = new System.Drawing.Point(490, 254);
-            this.textBox8.MaxLength = 40;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(186, 26);
-            this.textBox8.TabIndex = 202;
+            this.txtPreçoUnit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPreçoUnit.Location = new System.Drawing.Point(490, 254);
+            this.txtPreçoUnit.MaxLength = 40;
+            this.txtPreçoUnit.Name = "txtPreçoUnit";
+            this.txtPreçoUnit.Size = new System.Drawing.Size(186, 26);
+            this.txtPreçoUnit.TabIndex = 202;
             // 
-            // label1
+            // lblDescReal
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(802, 231);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 20);
-            this.label1.TabIndex = 205;
-            this.label1.Text = "Desc ($)";
+            this.lblDescReal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblDescReal.AutoSize = true;
+            this.lblDescReal.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescReal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescReal.Location = new System.Drawing.Point(802, 231);
+            this.lblDescReal.Name = "lblDescReal";
+            this.lblDescReal.Size = new System.Drawing.Size(77, 20);
+            this.lblDescReal.TabIndex = 205;
+            this.lblDescReal.Text = "Desc ($)";
             // 
-            // textBox1
+            // txtDescReal
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(786, 254);
-            this.textBox1.MaxLength = 40;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(98, 26);
-            this.textBox1.TabIndex = 204;
+            this.txtDescReal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDescReal.Location = new System.Drawing.Point(786, 254);
+            this.txtDescReal.MaxLength = 40;
+            this.txtDescReal.Name = "txtDescReal";
+            this.txtDescReal.Size = new System.Drawing.Size(98, 26);
+            this.txtDescReal.TabIndex = 204;
             // 
-            // label2
+            // lblIPI
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(939, 231);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 20);
-            this.label2.TabIndex = 207;
-            this.label2.Text = "IPI (%)";
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
+            this.lblIPI.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblIPI.AutoSize = true;
+            this.lblIPI.BackColor = System.Drawing.Color.Transparent;
+            this.lblIPI.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIPI.Location = new System.Drawing.Point(939, 231);
+            this.lblIPI.Name = "lblIPI";
+            this.lblIPI.Size = new System.Drawing.Size(64, 20);
+            this.lblIPI.TabIndex = 207;
+            this.lblIPI.Text = "IPI (%)";
+            this.lblIPI.Click += new System.EventHandler(this.label2_Click_1);
             // 
-            // textBox2
+            // txtIPI
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Location = new System.Drawing.Point(890, 254);
-            this.textBox2.MaxLength = 40;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(113, 26);
-            this.textBox2.TabIndex = 206;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtIPI.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtIPI.Location = new System.Drawing.Point(890, 254);
+            this.txtIPI.MaxLength = 40;
+            this.txtIPI.Name = "txtIPI";
+            this.txtIPI.Size = new System.Drawing.Size(113, 26);
+            this.txtIPI.TabIndex = 206;
+            this.txtIPI.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // progressBar1
             // 
@@ -373,7 +375,7 @@
             // 
             this.btnPagar.BackColor = System.Drawing.Color.Gainsboro;
             this.btnPagar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPagar.Location = new System.Drawing.Point(232, 674);
+            this.btnPagar.Location = new System.Drawing.Point(215, 672);
             this.btnPagar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPagar.Name = "btnPagar";
             this.btnPagar.Size = new System.Drawing.Size(172, 38);
@@ -381,26 +383,26 @@
             this.btnPagar.Text = "Pagar";
             this.btnPagar.UseVisualStyleBackColor = false;
             // 
-            // lblnome
+            // lblObservação
             // 
-            this.lblnome.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblnome.AutoSize = true;
-            this.lblnome.BackColor = System.Drawing.Color.Transparent;
-            this.lblnome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnome.Location = new System.Drawing.Point(32, 96);
-            this.lblnome.Name = "lblnome";
-            this.lblnome.Size = new System.Drawing.Size(113, 20);
-            this.lblnome.TabIndex = 211;
-            this.lblnome.Text = "Observações";
+            this.lblObservação.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblObservação.AutoSize = true;
+            this.lblObservação.BackColor = System.Drawing.Color.Transparent;
+            this.lblObservação.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblObservação.Location = new System.Drawing.Point(32, 96);
+            this.lblObservação.Name = "lblObservação";
+            this.lblObservação.Size = new System.Drawing.Size(118, 20);
+            this.lblObservação.TabIndex = 211;
+            this.lblObservação.Text = "Observações:";
             // 
-            // txtNome
+            // txtObservação
             // 
-            this.txtNome.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNome.Location = new System.Drawing.Point(151, 96);
-            this.txtNome.MaxLength = 40;
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(312, 26);
-            this.txtNome.TabIndex = 210;
+            this.txtObservação.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtObservação.Location = new System.Drawing.Point(151, 96);
+            this.txtObservação.MaxLength = 40;
+            this.txtObservação.Name = "txtObservação";
+            this.txtObservação.Size = new System.Drawing.Size(312, 26);
+            this.txtObservação.TabIndex = 210;
             // 
             // btnGravar
             // 
@@ -415,39 +417,26 @@
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = false;
             // 
-            // btnLimpar
+            // lblFrete
             // 
-            this.btnLimpar.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnLimpar.Location = new System.Drawing.Point(429, 674);
-            this.btnLimpar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(172, 38);
-            this.btnLimpar.TabIndex = 214;
-            this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.lblFrete.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblFrete.AutoSize = true;
+            this.lblFrete.BackColor = System.Drawing.Color.Transparent;
+            this.lblFrete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFrete.Location = new System.Drawing.Point(764, 290);
+            this.lblFrete.Name = "lblFrete";
+            this.lblFrete.Size = new System.Drawing.Size(124, 20);
+            this.lblFrete.TabIndex = 216;
+            this.lblFrete.Text = "Valor do Frete";
             // 
-            // label3
+            // txtValorFrete
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(764, 290);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(124, 20);
-            this.label3.TabIndex = 216;
-            this.label3.Text = "Valor do Frete";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.Location = new System.Drawing.Point(702, 313);
-            this.textBox3.MaxLength = 40;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(186, 26);
-            this.textBox3.TabIndex = 215;
+            this.txtValorFrete.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtValorFrete.Location = new System.Drawing.Point(702, 313);
+            this.txtValorFrete.MaxLength = 40;
+            this.txtValorFrete.Name = "txtValorFrete";
+            this.txtValorFrete.Size = new System.Drawing.Size(186, 26);
+            this.txtValorFrete.TabIndex = 215;
             // 
             // dataGridView1
             // 
@@ -463,7 +452,7 @@
             this.Column6,
             this.Column7,
             this.Column8});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 347);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 354);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(1273, 304);
@@ -520,254 +509,293 @@
             this.progressBar2.Size = new System.Drawing.Size(359, 29);
             this.progressBar2.TabIndex = 220;
             // 
-            // label4
+            // lblOperação
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(32, 17);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 20);
-            this.label4.TabIndex = 219;
-            this.label4.Text = "Operação:";
+            this.lblOperação.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblOperação.AutoSize = true;
+            this.lblOperação.BackColor = System.Drawing.Color.Transparent;
+            this.lblOperação.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOperação.Location = new System.Drawing.Point(32, 17);
+            this.lblOperação.Name = "lblOperação";
+            this.lblOperação.Size = new System.Drawing.Size(92, 20);
+            this.lblOperação.TabIndex = 219;
+            this.lblOperação.Text = "Operação:";
             // 
-            // textBox9
+            // txtSeqGeral
             // 
-            this.textBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox9.Location = new System.Drawing.Point(854, 13);
-            this.textBox9.MaxLength = 40;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(95, 26);
-            this.textBox9.TabIndex = 218;
+            this.txtSeqGeral.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtSeqGeral.Location = new System.Drawing.Point(854, 13);
+            this.txtSeqGeral.MaxLength = 40;
+            this.txtSeqGeral.Name = "txtSeqGeral";
+            this.txtSeqGeral.Size = new System.Drawing.Size(95, 26);
+            this.txtSeqGeral.TabIndex = 218;
             // 
-            // comboBox1
+            // cbxOperação
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbxOperação.FormattingEnabled = true;
+            this.cbxOperação.Items.AddRange(new object[] {
             "Compra",
             "Ajuste de Entrada",
             "Acerto de Estoque",
             "Grátis Fornecedor"});
-            this.comboBox1.Location = new System.Drawing.Point(122, 14);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(148, 28);
-            this.comboBox1.TabIndex = 221;
+            this.cbxOperação.Location = new System.Drawing.Point(122, 14);
+            this.cbxOperação.Name = "cbxOperação";
+            this.cbxOperação.Size = new System.Drawing.Size(148, 28);
+            this.cbxOperação.TabIndex = 221;
             // 
-            // label9
+            // lblFornecedor
             // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(276, 17);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(106, 20);
-            this.label9.TabIndex = 222;
-            this.label9.Text = "Fornecedor:";
+            this.lblFornecedor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblFornecedor.AutoSize = true;
+            this.lblFornecedor.BackColor = System.Drawing.Color.Transparent;
+            this.lblFornecedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFornecedor.Location = new System.Drawing.Point(276, 17);
+            this.lblFornecedor.Name = "lblFornecedor";
+            this.lblFornecedor.Size = new System.Drawing.Size(106, 20);
+            this.lblFornecedor.TabIndex = 222;
+            this.lblFornecedor.Text = "Fornecedor:";
             // 
-            // label10
+            // lblSeqGeral
             // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(753, 16);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(95, 20);
-            this.label10.TabIndex = 223;
-            this.label10.Text = "Seq. Geral";
+            this.lblSeqGeral.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblSeqGeral.AutoSize = true;
+            this.lblSeqGeral.BackColor = System.Drawing.Color.Transparent;
+            this.lblSeqGeral.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeqGeral.Location = new System.Drawing.Point(753, 16);
+            this.lblSeqGeral.Name = "lblSeqGeral";
+            this.lblSeqGeral.Size = new System.Drawing.Size(95, 20);
+            this.lblSeqGeral.TabIndex = 223;
+            this.lblSeqGeral.Text = "Seq. Geral";
             // 
-            // label11
+            // lblFuncionario
             // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(32, 57);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(108, 20);
-            this.label11.TabIndex = 225;
-            this.label11.Text = "Funcionário:";
+            this.lblFuncionario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblFuncionario.AutoSize = true;
+            this.lblFuncionario.BackColor = System.Drawing.Color.Transparent;
+            this.lblFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFuncionario.Location = new System.Drawing.Point(32, 57);
+            this.lblFuncionario.Name = "lblFuncionario";
+            this.lblFuncionario.Size = new System.Drawing.Size(108, 20);
+            this.lblFuncionario.TabIndex = 225;
+            this.lblFuncionario.Text = "Funcionário:";
             // 
-            // textBox10
+            // txtFuncionario
             // 
-            this.textBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox10.Location = new System.Drawing.Point(143, 57);
-            this.textBox10.MaxLength = 40;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(273, 26);
-            this.textBox10.TabIndex = 224;
+            this.txtFuncionario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtFuncionario.Location = new System.Drawing.Point(143, 57);
+            this.txtFuncionario.MaxLength = 40;
+            this.txtFuncionario.Name = "txtFuncionario";
+            this.txtFuncionario.Size = new System.Drawing.Size(273, 26);
+            this.txtFuncionario.TabIndex = 224;
             // 
-            // label12
+            // lblData
             // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(955, 16);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(48, 20);
-            this.label12.TabIndex = 226;
-            this.label12.Text = "Data";
+            this.lblData.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblData.AutoSize = true;
+            this.lblData.BackColor = System.Drawing.Color.Transparent;
+            this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblData.Location = new System.Drawing.Point(955, 16);
+            this.lblData.Name = "lblData";
+            this.lblData.Size = new System.Drawing.Size(48, 20);
+            this.lblData.TabIndex = 226;
+            this.lblData.Text = "Data";
             // 
-            // dateTimePicker1
+            // dtpData
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(1009, 14);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
-            this.dateTimePicker1.TabIndex = 227;
+            this.dtpData.Location = new System.Drawing.Point(1009, 10);
+            this.dtpData.Name = "dtpData";
+            this.dtpData.Size = new System.Drawing.Size(200, 26);
+            this.dtpData.TabIndex = 227;
             // 
-            // comboBox2
+            // cbxTabela
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbxTabela.FormattingEnabled = true;
+            this.cbxTabela.Items.AddRange(new object[] {
             "Custo",
             "Venda",
             "Custo Médio"});
-            this.comboBox2.Location = new System.Drawing.Point(493, 54);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(155, 28);
-            this.comboBox2.TabIndex = 229;
+            this.cbxTabela.Location = new System.Drawing.Point(493, 54);
+            this.cbxTabela.Name = "cbxTabela";
+            this.cbxTabela.Size = new System.Drawing.Size(155, 28);
+            this.cbxTabela.TabIndex = 229;
             // 
-            // label13
+            // lblTabela
             // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(419, 57);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(68, 20);
-            this.label13.TabIndex = 228;
-            this.label13.Text = "Tabela:";
+            this.lblTabela.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTabela.AutoSize = true;
+            this.lblTabela.BackColor = System.Drawing.Color.Transparent;
+            this.lblTabela.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTabela.Location = new System.Drawing.Point(419, 57);
+            this.lblTabela.Name = "lblTabela";
+            this.lblTabela.Size = new System.Drawing.Size(68, 20);
+            this.lblTabela.TabIndex = 228;
+            this.lblTabela.Text = "Tabela:";
             // 
-            // label14
+            // lblPedido
             // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(469, 100);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(69, 20);
-            this.label14.TabIndex = 231;
-            this.label14.Text = "Pedido:";
+            this.lblPedido.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblPedido.AutoSize = true;
+            this.lblPedido.BackColor = System.Drawing.Color.Transparent;
+            this.lblPedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPedido.Location = new System.Drawing.Point(469, 100);
+            this.lblPedido.Name = "lblPedido";
+            this.lblPedido.Size = new System.Drawing.Size(69, 20);
+            this.lblPedido.TabIndex = 231;
+            this.lblPedido.Text = "Pedido:";
             // 
-            // textBox11
+            // txtPedido
             // 
-            this.textBox11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox11.Location = new System.Drawing.Point(544, 94);
-            this.textBox11.MaxLength = 40;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(132, 26);
-            this.textBox11.TabIndex = 230;
+            this.txtPedido.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPedido.Location = new System.Drawing.Point(544, 94);
+            this.txtPedido.MaxLength = 40;
+            this.txtPedido.Name = "txtPedido";
+            this.txtPedido.Size = new System.Drawing.Size(132, 26);
+            this.txtPedido.TabIndex = 230;
             // 
-            // dateTimePicker2
+            // dtPrevReceb
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(790, 96);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(191, 26);
-            this.dateTimePicker2.TabIndex = 233;
+            this.dtPrevReceb.Location = new System.Drawing.Point(790, 96);
+            this.dtPrevReceb.Name = "dtPrevReceb";
+            this.dtPrevReceb.Size = new System.Drawing.Size(191, 26);
+            this.dtPrevReceb.TabIndex = 233;
             // 
-            // label15
+            // dtplPrevReceb
             // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(682, 99);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(111, 20);
-            this.label15.TabIndex = 232;
-            this.label15.Text = "Prev. Receb.";
+            this.dtplPrevReceb.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtplPrevReceb.AutoSize = true;
+            this.dtplPrevReceb.BackColor = System.Drawing.Color.Transparent;
+            this.dtplPrevReceb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtplPrevReceb.Location = new System.Drawing.Point(682, 99);
+            this.dtplPrevReceb.Name = "dtplPrevReceb";
+            this.dtplPrevReceb.Size = new System.Drawing.Size(111, 20);
+            this.dtplPrevReceb.TabIndex = 232;
+            this.dtplPrevReceb.Text = "Prev. Receb.";
             // 
-            // label16
+            // lblChaveNFe
             // 
-            this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(983, 100);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(102, 20);
-            this.label16.TabIndex = 235;
-            this.label16.Text = "Chave NFe:";
+            this.lblChaveNFe.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblChaveNFe.AutoSize = true;
+            this.lblChaveNFe.BackColor = System.Drawing.Color.Transparent;
+            this.lblChaveNFe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChaveNFe.Location = new System.Drawing.Point(983, 100);
+            this.lblChaveNFe.Name = "lblChaveNFe";
+            this.lblChaveNFe.Size = new System.Drawing.Size(102, 20);
+            this.lblChaveNFe.TabIndex = 235;
+            this.lblChaveNFe.Text = "Chave NFe:";
             // 
-            // textBox12
+            // txtChaveNFe
             // 
-            this.textBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox12.Location = new System.Drawing.Point(1085, 96);
-            this.textBox12.MaxLength = 40;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(200, 26);
-            this.textBox12.TabIndex = 234;
+            this.txtChaveNFe.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtChaveNFe.Location = new System.Drawing.Point(1085, 96);
+            this.txtChaveNFe.MaxLength = 40;
+            this.txtChaveNFe.Name = "txtChaveNFe";
+            this.txtChaveNFe.Size = new System.Drawing.Size(200, 26);
+            this.txtChaveNFe.TabIndex = 234;
             // 
-            // comboBox3
+            // cbxModelo
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cbxModelo.FormattingEnabled = true;
+            this.cbxModelo.Items.AddRange(new object[] {
             "1",
             "1A",
             "1B",
             "04",
             "55"});
-            this.comboBox3.Location = new System.Drawing.Point(726, 57);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(68, 28);
-            this.comboBox3.TabIndex = 237;
+            this.cbxModelo.Location = new System.Drawing.Point(726, 57);
+            this.cbxModelo.Name = "cbxModelo";
+            this.cbxModelo.Size = new System.Drawing.Size(68, 28);
+            this.cbxModelo.TabIndex = 237;
             // 
-            // label17
+            // lblModelo
             // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(651, 60);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(72, 20);
-            this.label17.TabIndex = 236;
-            this.label17.Text = "Modelo:";
+            this.lblModelo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblModelo.AutoSize = true;
+            this.lblModelo.BackColor = System.Drawing.Color.Transparent;
+            this.lblModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModelo.Location = new System.Drawing.Point(651, 60);
+            this.lblModelo.Name = "lblModelo";
+            this.lblModelo.Size = new System.Drawing.Size(72, 20);
+            this.lblModelo.TabIndex = 236;
+            this.lblModelo.Text = "Modelo:";
             // 
-            // dateTimePicker3
+            // atpEmissao
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(1085, 59);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 26);
-            this.dateTimePicker3.TabIndex = 239;
+            this.atpEmissao.Location = new System.Drawing.Point(1085, 59);
+            this.atpEmissao.Name = "atpEmissao";
+            this.atpEmissao.Size = new System.Drawing.Size(200, 26);
+            this.atpEmissao.TabIndex = 239;
             // 
-            // label18
+            // lblEmissao
             // 
-            this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(1003, 63);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(82, 20);
-            this.label18.TabIndex = 238;
-            this.label18.Text = "Emissão:";
+            this.lblEmissao.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblEmissao.AutoSize = true;
+            this.lblEmissao.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmissao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmissao.Location = new System.Drawing.Point(1003, 63);
+            this.lblEmissao.Name = "lblEmissao";
+            this.lblEmissao.Size = new System.Drawing.Size(82, 20);
+            this.lblEmissao.TabIndex = 238;
+            this.lblEmissao.Text = "Emissão:";
             // 
-            // label19
+            // lblNumero
             // 
-            this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(796, 62);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(76, 20);
-            this.label19.TabIndex = 242;
-            this.label19.Text = "Número:";
+            this.lblNumero.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblNumero.AutoSize = true;
+            this.lblNumero.BackColor = System.Drawing.Color.Transparent;
+            this.lblNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumero.Location = new System.Drawing.Point(796, 62);
+            this.lblNumero.Name = "lblNumero";
+            this.lblNumero.Size = new System.Drawing.Size(76, 20);
+            this.lblNumero.TabIndex = 242;
+            this.lblNumero.Text = "Número:";
             // 
-            // textBox13
+            // txtNumero
             // 
-            this.textBox13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox13.Location = new System.Drawing.Point(878, 59);
-            this.textBox13.MaxLength = 40;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(115, 26);
-            this.textBox13.TabIndex = 241;
+            this.txtNumero.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNumero.Location = new System.Drawing.Point(878, 59);
+            this.txtNumero.MaxLength = 40;
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(115, 26);
+            this.txtNumero.TabIndex = 241;
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnLimpar.Location = new System.Drawing.Point(575, 674);
+            this.btnLimpar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(172, 38);
+            this.btnLimpar.TabIndex = 243;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSalvar.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalvar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSalvar.Location = new System.Drawing.Point(36, 674);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(172, 38);
+            this.btnSalvar.TabIndex = 209;
+            this.btnSalvar.Text = "Gravar";
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnBuscar.Location = new System.Drawing.Point(395, 674);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(172, 38);
+            this.btnBuscar.TabIndex = 214;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // frmMovimentoCompra
             // 
@@ -775,53 +803,55 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1300, 724);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.dateTimePicker3);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.progressBar2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.lblNumero);
+            this.Controls.Add(this.txtNumero);
+            this.Controls.Add(this.atpEmissao);
+            this.Controls.Add(this.lblEmissao);
+            this.Controls.Add(this.cbxModelo);
+            this.Controls.Add(this.lblModelo);
+            this.Controls.Add(this.lblChaveNFe);
+            this.Controls.Add(this.txtChaveNFe);
+            this.Controls.Add(this.dtPrevReceb);
+            this.Controls.Add(this.dtplPrevReceb);
+            this.Controls.Add(this.lblPedido);
+            this.Controls.Add(this.txtPedido);
+            this.Controls.Add(this.cbxTabela);
+            this.Controls.Add(this.lblTabela);
+            this.Controls.Add(this.dtpData);
+            this.Controls.Add(this.lblData);
+            this.Controls.Add(this.lblFuncionario);
+            this.Controls.Add(this.txtFuncionario);
+            this.Controls.Add(this.lblSeqGeral);
+            this.Controls.Add(this.lblFornecedor);
+            this.Controls.Add(this.cbxOperação);
+            this.Controls.Add(this.progressBar2);
+            this.Controls.Add(this.lblOperação);
+            this.Controls.Add(this.txtSeqGeral);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.lblFrete);
+            this.Controls.Add(this.txtValorFrete);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnPagar);
-            this.Controls.Add(this.lblnome);
-            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.lblObservação);
+            this.Controls.Add(this.txtObservação);
+            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnGravar);
             this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.lblIPI);
+            this.Controls.Add(this.txtIPI);
+            this.Controls.Add(this.lblDescReal);
+            this.Controls.Add(this.txtDescReal);
+            this.Controls.Add(this.lblPreçoUnit);
+            this.Controls.Add(this.txtPreçoUnit);
+            this.Controls.Add(this.lblDescPorc);
+            this.Controls.Add(this.txtDescPorc);
+            this.Controls.Add(this.lblPreçoFinal);
+            this.Controls.Add(this.TxtPreçoFinal);
+            this.Controls.Add(this.lblPreçoTotal);
+            this.Controls.Add(this.txtPreçoTotal);
             this.Controls.Add(this.lblpreço);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtPreço);
             this.Controls.Add(this.lblqtde);
             this.Controls.Add(this.txtqtdetotal);
             this.Controls.Add(this.lblcxcom);
@@ -857,27 +887,26 @@
         private System.Windows.Forms.Label lblqtde;
         private System.Windows.Forms.TextBox txtqtdetotal;
         private System.Windows.Forms.Label lblpreço;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPreço;
+        private System.Windows.Forms.Label lblPreçoTotal;
+        private System.Windows.Forms.TextBox txtPreçoTotal;
+        private System.Windows.Forms.Label lblPreçoFinal;
+        private System.Windows.Forms.TextBox TxtPreçoFinal;
+        private System.Windows.Forms.Label lblDescPorc;
+        private System.Windows.Forms.TextBox txtDescPorc;
+        private System.Windows.Forms.Label lblPreçoUnit;
+        private System.Windows.Forms.TextBox txtPreçoUnit;
+        private System.Windows.Forms.Label lblDescReal;
+        private System.Windows.Forms.TextBox txtDescReal;
+        private System.Windows.Forms.Label lblIPI;
+        private System.Windows.Forms.TextBox txtIPI;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button btnPagar;
-        private System.Windows.Forms.Label lblnome;
-        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.Label lblObservação;
+        private System.Windows.Forms.TextBox txtObservação;
         private System.Windows.Forms.Button btnGravar;
-        private System.Windows.Forms.Button btnLimpar;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label lblFrete;
+        private System.Windows.Forms.TextBox txtValorFrete;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Código;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -888,28 +917,31 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.ProgressBar progressBar2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label lblOperação;
+        private System.Windows.Forms.TextBox txtSeqGeral;
+        private System.Windows.Forms.ComboBox cbxOperação;
+        private System.Windows.Forms.Label lblFornecedor;
+        private System.Windows.Forms.Label lblSeqGeral;
+        private System.Windows.Forms.Label lblFuncionario;
+        private System.Windows.Forms.TextBox txtFuncionario;
+        private System.Windows.Forms.Label lblData;
+        private System.Windows.Forms.DateTimePicker dtpData;
+        private System.Windows.Forms.ComboBox cbxTabela;
+        private System.Windows.Forms.Label lblTabela;
+        private System.Windows.Forms.Label lblPedido;
+        private System.Windows.Forms.TextBox txtPedido;
+        private System.Windows.Forms.DateTimePicker dtPrevReceb;
+        private System.Windows.Forms.Label dtplPrevReceb;
+        private System.Windows.Forms.Label lblChaveNFe;
+        private System.Windows.Forms.TextBox txtChaveNFe;
+        private System.Windows.Forms.ComboBox cbxModelo;
+        private System.Windows.Forms.Label lblModelo;
+        private System.Windows.Forms.DateTimePicker atpEmissao;
+        private System.Windows.Forms.Label lblEmissao;
+        private System.Windows.Forms.Label lblNumero;
+        private System.Windows.Forms.TextBox txtNumero;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }
