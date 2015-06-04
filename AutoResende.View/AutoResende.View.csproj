@@ -95,6 +95,12 @@
     <Compile Include="Cadastros\FrmMovimentoCompra.Designer.cs">
       <DependentUpon>FrmMovimentoCompra.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cadastros\FrmMovimentoVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FrmMovimentoVenda.Designer.cs">
+      <DependentUpon>FrmMovimentoVenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cadastros\frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cadastros\FrmMovimentoCompra.resx">
       <DependentUpon>FrmMovimentoCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FrmMovimentoVenda.resx">
+      <DependentUpon>FrmMovimentoVenda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cadastros\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>

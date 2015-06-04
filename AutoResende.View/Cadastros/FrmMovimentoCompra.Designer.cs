@@ -94,7 +94,6 @@
             this.lblNumero = new System.Windows.Forms.Label();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.btnSalvar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -771,19 +770,6 @@
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
             // 
-            // btnSalvar
-            // 
-            this.btnSalvar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSalvar.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSalvar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSalvar.Location = new System.Drawing.Point(36, 674);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(172, 38);
-            this.btnSalvar.TabIndex = 209;
-            this.btnSalvar.Text = "Gravar";
-            this.btnSalvar.UseVisualStyleBackColor = false;
-            // 
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.Gainsboro;
@@ -835,7 +821,6 @@
             this.Controls.Add(this.btnPagar);
             this.Controls.Add(this.lblObservação);
             this.Controls.Add(this.txtObservação);
-            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnGravar);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.lblIPI);
@@ -941,7 +926,6 @@
         private System.Windows.Forms.Label lblNumero;
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Button btnLimpar;
-        private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnBuscar;
     }
 }
