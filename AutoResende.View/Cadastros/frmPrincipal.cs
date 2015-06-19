@@ -145,5 +145,10 @@ namespace AutoResende.View
             frmConsultaFornecedor frm = new frmConsultaFornecedor();
             frm.Show();
         }
+
+        private void ptbCompra_MouseClick(object sender, MouseEventArgs e)
+        {
+            
+        }
     }
 }
