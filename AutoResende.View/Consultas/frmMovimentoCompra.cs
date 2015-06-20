@@ -61,5 +61,10 @@ namespace AutoResende.View.Cadastros
         {
 
         }
+
+        private void button1_MouseClick(object sender, MouseEventArgs e)
+        {
+            Close();
+        }
     }
 }

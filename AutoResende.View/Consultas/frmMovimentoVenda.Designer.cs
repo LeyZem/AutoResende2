@@ -75,7 +75,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.txtproduto = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnFechar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -548,24 +548,25 @@
             this.txtproduto.Size = new System.Drawing.Size(186, 26);
             this.txtproduto.TabIndex = 245;
             // 
-            // button1
+            // btnFechar
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(1244, 13);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(44, 37);
-            this.button1.TabIndex = 244;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFechar.BackColor = System.Drawing.Color.Transparent;
+            this.btnFechar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFechar.BackgroundImage")));
+            this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFechar.FlatAppearance.BorderSize = 0;
+            this.btnFechar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnFechar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFechar.ForeColor = System.Drawing.Color.Transparent;
+            this.btnFechar.Location = new System.Drawing.Point(1244, 13);
+            this.btnFechar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(44, 37);
+            this.btnFechar.TabIndex = 244;
+            this.btnFechar.UseVisualStyleBackColor = false;
+            this.btnFechar.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnFechar_MouseClick);
             // 
             // FrmMovimentoVenda
             // 
@@ -611,9 +612,10 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.txtproduto);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnFechar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmMovimentoVenda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMovimentoVenda";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -670,6 +672,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.TextBox txtproduto;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnFechar;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AutoResende.View.Cadastros;
 
 namespace AutoResende.View
 {
@@ -148,7 +149,14 @@ namespace AutoResende.View
 
         private void ptbCompra_MouseClick(object sender, MouseEventArgs e)
         {
-            
+            frmMovimentoCompra frm = new frmMovimentoCompra();
+            frm.Show();
+        }
+
+        private void ptbVenda_MouseClick(object sender, MouseEventArgs e)
+        {
+            FrmMovimentoVenda frm = new FrmMovimentoVenda();
+            frm.Show();
         }
     }
 }
