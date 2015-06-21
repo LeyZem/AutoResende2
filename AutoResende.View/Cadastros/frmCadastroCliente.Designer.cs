@@ -657,7 +657,7 @@
             this.lblinscestadual.AutoSize = true;
             this.lblinscestadual.BackColor = System.Drawing.Color.Transparent;
             this.lblinscestadual.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblinscestadual.Location = new System.Drawing.Point(466, 130);
+            this.lblinscestadual.Location = new System.Drawing.Point(453, 130);
             this.lblinscestadual.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblinscestadual.Name = "lblinscestadual";
             this.lblinscestadual.Size = new System.Drawing.Size(98, 20);
