@@ -134,5 +134,10 @@ namespace AutoResende.View
         {
 
         }
+
+        private void frmCadastroFornecedor_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
