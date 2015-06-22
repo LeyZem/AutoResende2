@@ -127,7 +127,6 @@
             this.ptbCadastroTipoServico.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ptbCadastroTipoServico.Name = "ptbCadastroTipoServico";
             this.ptbCadastroTipoServico.Size = new System.Drawing.Size(110, 94);
-            this.ptbCadastroTipoServico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbCadastroTipoServico.TabIndex = 43;
             this.ptbCadastroTipoServico.TabStop = false;
             this.ptbCadastroTipoServico.Click += new System.EventHandler(this.ptbCadastroTipoServico_Click);
@@ -264,7 +263,7 @@
             this.ptpConsultaFuncionario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptpConsultaFuncionario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptpConsultaFuncionario.Image = ((System.Drawing.Image)(resources.GetObject("ptpConsultaFuncionario.Image")));
-            this.ptpConsultaFuncionario.Location = new System.Drawing.Point(576, 122);
+            this.ptpConsultaFuncionario.Location = new System.Drawing.Point(579, 93);
             this.ptpConsultaFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ptpConsultaFuncionario.Name = "ptpConsultaFuncionario";
             this.ptpConsultaFuncionario.Size = new System.Drawing.Size(224, 202);
@@ -281,11 +280,11 @@
             this.ptpConsultaTipoServico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptpConsultaTipoServico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptpConsultaTipoServico.Image = ((System.Drawing.Image)(resources.GetObject("ptpConsultaTipoServico.Image")));
-            this.ptpConsultaTipoServico.Location = new System.Drawing.Point(804, 329);
+            this.ptpConsultaTipoServico.Location = new System.Drawing.Point(807, 300);
             this.ptpConsultaTipoServico.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ptpConsultaTipoServico.Name = "ptpConsultaTipoServico";
-            this.ptpConsultaTipoServico.Size = new System.Drawing.Size(222, 202);
-            this.ptpConsultaTipoServico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptpConsultaTipoServico.Size = new System.Drawing.Size(224, 164);
+            this.ptpConsultaTipoServico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ptpConsultaTipoServico.TabIndex = 48;
             this.ptpConsultaTipoServico.TabStop = false;
             this.ptpConsultaTipoServico.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ptpConsultaTipoServico_MouseClick);
@@ -297,7 +296,7 @@
             this.ptpConsultaVeiculo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptpConsultaVeiculo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptpConsultaVeiculo.Image = ((System.Drawing.Image)(resources.GetObject("ptpConsultaVeiculo.Image")));
-            this.ptpConsultaVeiculo.Location = new System.Drawing.Point(576, 329);
+            this.ptpConsultaVeiculo.Location = new System.Drawing.Point(579, 300);
             this.ptpConsultaVeiculo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ptpConsultaVeiculo.Name = "ptpConsultaVeiculo";
             this.ptpConsultaVeiculo.Size = new System.Drawing.Size(222, 202);
@@ -313,7 +312,7 @@
             this.ptpConsultaFornecedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptpConsultaFornecedor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptpConsultaFornecedor.Image = ((System.Drawing.Image)(resources.GetObject("ptpConsultaFornecedor.Image")));
-            this.ptpConsultaFornecedor.Location = new System.Drawing.Point(576, 538);
+            this.ptpConsultaFornecedor.Location = new System.Drawing.Point(579, 509);
             this.ptpConsultaFornecedor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ptpConsultaFornecedor.Name = "ptpConsultaFornecedor";
             this.ptpConsultaFornecedor.Size = new System.Drawing.Size(222, 202);
@@ -329,10 +328,10 @@
             this.ptbCompra.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbCompra.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbCompra.Image = ((System.Drawing.Image)(resources.GetObject("ptbCompra.Image")));
-            this.ptbCompra.Location = new System.Drawing.Point(802, 537);
+            this.ptbCompra.Location = new System.Drawing.Point(805, 508);
             this.ptbCompra.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ptbCompra.Name = "ptbCompra";
-            this.ptbCompra.Size = new System.Drawing.Size(222, 202);
+            this.ptbCompra.Size = new System.Drawing.Size(227, 202);
             this.ptbCompra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbCompra.TabIndex = 51;
             this.ptbCompra.TabStop = false;
@@ -345,7 +344,7 @@
             this.ptbVenda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbVenda.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbVenda.Image = ((System.Drawing.Image)(resources.GetObject("ptbVenda.Image")));
-            this.ptbVenda.Location = new System.Drawing.Point(1032, 538);
+            this.ptbVenda.Location = new System.Drawing.Point(1035, 509);
             this.ptbVenda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ptbVenda.Name = "ptbVenda";
             this.ptbVenda.Size = new System.Drawing.Size(222, 202);
@@ -361,7 +360,7 @@
             this.ptpConsultaCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptpConsultaCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptpConsultaCliente.Image = ((System.Drawing.Image)(resources.GetObject("ptpConsultaCliente.Image")));
-            this.ptpConsultaCliente.Location = new System.Drawing.Point(1032, 329);
+            this.ptpConsultaCliente.Location = new System.Drawing.Point(1035, 300);
             this.ptpConsultaCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ptpConsultaCliente.Name = "ptpConsultaCliente";
             this.ptpConsultaCliente.Size = new System.Drawing.Size(222, 202);
@@ -377,7 +376,7 @@
             this.ptpConsultaOrdemServico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptpConsultaOrdemServico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptpConsultaOrdemServico.Image = ((System.Drawing.Image)(resources.GetObject("ptpConsultaOrdemServico.Image")));
-            this.ptpConsultaOrdemServico.Location = new System.Drawing.Point(1032, 122);
+            this.ptpConsultaOrdemServico.Location = new System.Drawing.Point(1035, 93);
             this.ptpConsultaOrdemServico.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ptpConsultaOrdemServico.Name = "ptpConsultaOrdemServico";
             this.ptpConsultaOrdemServico.Size = new System.Drawing.Size(222, 202);
@@ -393,7 +392,7 @@
             this.ptpConsultaMercadoria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptpConsultaMercadoria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptpConsultaMercadoria.Image = ((System.Drawing.Image)(resources.GetObject("ptpConsultaMercadoria.Image")));
-            this.ptpConsultaMercadoria.Location = new System.Drawing.Point(804, 122);
+            this.ptpConsultaMercadoria.Location = new System.Drawing.Point(807, 93);
             this.ptpConsultaMercadoria.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ptpConsultaMercadoria.Name = "ptpConsultaMercadoria";
             this.ptpConsultaMercadoria.Size = new System.Drawing.Size(222, 202);
@@ -440,7 +439,7 @@
             this.lblCadastroOrdemServico.BackColor = System.Drawing.Color.Transparent;
             this.lblCadastroOrdemServico.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadastroOrdemServico.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.lblCadastroOrdemServico.Location = new System.Drawing.Point(286, 312);
+            this.lblCadastroOrdemServico.Location = new System.Drawing.Point(296, 315);
             this.lblCadastroOrdemServico.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCadastroOrdemServico.Name = "lblCadastroOrdemServico";
             this.lblCadastroOrdemServico.Size = new System.Drawing.Size(251, 29);
@@ -498,7 +497,7 @@
             this.label4.BackColor = System.Drawing.Color.SlateGray;
             this.label4.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label4.Location = new System.Drawing.Point(576, 278);
+            this.label4.Location = new System.Drawing.Point(579, 249);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(224, 46);
@@ -512,7 +511,7 @@
             this.label5.BackColor = System.Drawing.Color.SlateGray;
             this.label5.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label5.Location = new System.Drawing.Point(576, 486);
+            this.label5.Location = new System.Drawing.Point(579, 457);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(224, 46);
@@ -526,10 +525,10 @@
             this.label6.BackColor = System.Drawing.Color.SlateGray;
             this.label6.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label6.Location = new System.Drawing.Point(804, 278);
+            this.label6.Location = new System.Drawing.Point(807, 249);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(224, 46);
+            this.label6.Size = new System.Drawing.Size(222, 46);
             this.label6.TabIndex = 65;
             this.label6.Text = "Mercadoria";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -540,7 +539,7 @@
             this.label7.BackColor = System.Drawing.Color.SlateGray;
             this.label7.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label7.Location = new System.Drawing.Point(804, 486);
+            this.label7.Location = new System.Drawing.Point(807, 457);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(224, 46);
@@ -554,7 +553,7 @@
             this.label8.BackColor = System.Drawing.Color.SlateGray;
             this.label8.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label8.Location = new System.Drawing.Point(1032, 278);
+            this.label8.Location = new System.Drawing.Point(1035, 249);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(224, 46);
@@ -568,7 +567,7 @@
             this.label9.BackColor = System.Drawing.Color.SlateGray;
             this.label9.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label9.Location = new System.Drawing.Point(1032, 486);
+            this.label9.Location = new System.Drawing.Point(1035, 457);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(224, 46);
@@ -582,7 +581,7 @@
             this.label10.BackColor = System.Drawing.Color.SlateGray;
             this.label10.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label10.Location = new System.Drawing.Point(576, 695);
+            this.label10.Location = new System.Drawing.Point(579, 666);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(224, 46);
@@ -596,7 +595,7 @@
             this.lblcompra.BackColor = System.Drawing.Color.SlateGray;
             this.lblcompra.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcompra.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.lblcompra.Location = new System.Drawing.Point(804, 695);
+            this.lblcompra.Location = new System.Drawing.Point(807, 666);
             this.lblcompra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblcompra.Name = "lblcompra";
             this.lblcompra.Size = new System.Drawing.Size(224, 46);
@@ -610,7 +609,7 @@
             this.lblvenda.BackColor = System.Drawing.Color.SlateGray;
             this.lblvenda.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblvenda.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.lblvenda.Location = new System.Drawing.Point(1032, 695);
+            this.lblvenda.Location = new System.Drawing.Point(1035, 666);
             this.lblvenda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblvenda.Name = "lblvenda";
             this.lblvenda.Size = new System.Drawing.Size(224, 46);

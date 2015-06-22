@@ -84,7 +84,7 @@
             // 
             this.btnLimpa.BackColor = System.Drawing.Color.Salmon;
             this.btnLimpa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpa.Location = new System.Drawing.Point(348, 701);
+            this.btnLimpa.Location = new System.Drawing.Point(348, 674);
             this.btnLimpa.Name = "btnLimpa";
             this.btnLimpa.Size = new System.Drawing.Size(115, 37);
             this.btnLimpa.TabIndex = 236;
@@ -97,7 +97,7 @@
             this.btn_Sair.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btn_Sair.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Sair.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_Sair.Location = new System.Drawing.Point(500, 701);
+            this.btn_Sair.Location = new System.Drawing.Point(509, 674);
             this.btn_Sair.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Sair.Name = "btn_Sair";
             this.btn_Sair.Size = new System.Drawing.Size(115, 37);
@@ -304,7 +304,7 @@
             this.btnBusca.BackColor = System.Drawing.Color.Orange;
             this.btnBusca.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBusca.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBusca.Location = new System.Drawing.Point(193, 701);
+            this.btnBusca.Location = new System.Drawing.Point(180, 674);
             this.btnBusca.Margin = new System.Windows.Forms.Padding(2);
             this.btnBusca.Name = "btnBusca";
             this.btnBusca.Size = new System.Drawing.Size(115, 37);
