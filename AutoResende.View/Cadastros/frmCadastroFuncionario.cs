@@ -55,7 +55,18 @@ namespace AutoResende.View
                 oFuncionario.TelRes = txtTelRes.Text;
                 oFuncionario.TelCel = txtCel.Text;
                 oFuncionario.Comentario = txtComentario.Text;
-                MessageBox.Show("Cadastro realizado com sucesso!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                
+                try
+                {
+                    CAutoResende.Insere(oFuncionario);
+                    MessageBox.Show("Cadastro realizado com sucesso!", "CONFIRMAÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
                 LimpaCampos();
             }
         }

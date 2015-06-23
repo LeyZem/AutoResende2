@@ -115,7 +115,7 @@ namespace AutoResende.View
                 oFornecedor.email = txtemail.Text;
                 oFornecedor.Comentario = txtComentarios.Text;
 
-                //Método do WebService
+                
                 try
                 {
                     CAutoResende.Insere(oFornecedor);

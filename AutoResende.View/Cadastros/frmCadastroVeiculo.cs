@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AutoResende.Model;
+using AutoResende.Controller;
 
 namespace AutoResende.View
 {
@@ -82,7 +83,17 @@ namespace AutoResende.View
                 oVeiculo.Odometro = Convert.ToInt32(txtOdometro.Text);
                 oVeiculo.Cor = txtCor.Text;
                 oVeiculo.Combustivel = cmbCombustivel.Text;
-                MessageBox.Show("Cadastro realizado com sucesso!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                try
+                {
+                    CAutoResende.Insere(oVeiculo);
+                    MessageBox.Show("Cadastro realizado com sucesso!", "CONFIRMAÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
                 LimpaCampos();
 
             }

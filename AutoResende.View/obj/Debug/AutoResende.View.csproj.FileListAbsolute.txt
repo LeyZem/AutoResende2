@@ -81,3 +81,5 @@ D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\
 D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.csproj.GenerateResource.Cache
 D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.Cadastros.frmMovimentoCompra.resources
 D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.Cadastros.FrmMovimentoVenda.resources
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.Cadastros.frmMovimentoCompra.resources
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.Cadastros.FrmMovimentoVenda.resources
