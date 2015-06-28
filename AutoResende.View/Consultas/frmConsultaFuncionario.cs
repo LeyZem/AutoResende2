@@ -26,5 +26,12 @@ namespace AutoResende.View
         {
             Close();
         }
+
+        private void frmConsultaFuncionario_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the '_AutoResende_DataBaseDataSet1.Funcionario' table. You can move, or remove it, as needed.
+            this.funcionarioTableAdapter.Fill(this._AutoResende_DataBaseDataSet1.Funcionario);
+
+        }
     }
 }

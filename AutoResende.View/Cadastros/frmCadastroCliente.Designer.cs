@@ -283,7 +283,7 @@
             this.lblcel.AutoSize = true;
             this.lblcel.BackColor = System.Drawing.Color.Transparent;
             this.lblcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcel.Location = new System.Drawing.Point(494, 252);
+            this.lblcel.Location = new System.Drawing.Point(437, 250);
             this.lblcel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblcel.Name = "lblcel";
             this.lblcel.Size = new System.Drawing.Size(25, 13);
@@ -293,10 +293,10 @@
             // txtCel
             // 
             this.txtCel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCel.Location = new System.Drawing.Point(538, 250);
+            this.txtCel.Location = new System.Drawing.Point(469, 250);
             this.txtCel.Margin = new System.Windows.Forms.Padding(2);
             this.txtCel.Name = "txtCel";
-            this.txtCel.Size = new System.Drawing.Size(91, 20);
+            this.txtCel.Size = new System.Drawing.Size(160, 20);
             this.txtCel.TabIndex = 218;
             // 
             // cmbEstado
