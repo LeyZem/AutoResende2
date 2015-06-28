@@ -56,9 +56,10 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Purple;
-            this.pictureBox1.Location = new System.Drawing.Point(212, 195);
+            this.pictureBox1.Location = new System.Drawing.Point(141, 127);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1070, 9);
+            this.pictureBox1.Size = new System.Drawing.Size(713, 6);
             this.pictureBox1.TabIndex = 218;
             this.pictureBox1.TabStop = false;
             // 
@@ -69,9 +70,10 @@
             this.lblCamposPesquisa.BackColor = System.Drawing.Color.Transparent;
             this.lblCamposPesquisa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCamposPesquisa.ForeColor = System.Drawing.Color.Purple;
-            this.lblCamposPesquisa.Location = new System.Drawing.Point(214, 160);
+            this.lblCamposPesquisa.Location = new System.Drawing.Point(143, 104);
+            this.lblCamposPesquisa.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCamposPesquisa.Name = "lblCamposPesquisa";
-            this.lblCamposPesquisa.Size = new System.Drawing.Size(251, 26);
+            this.lblCamposPesquisa.Size = new System.Drawing.Size(172, 18);
             this.lblCamposPesquisa.TabIndex = 217;
             this.lblCamposPesquisa.Text = "Campos onde Pesquisar";
             // 
@@ -80,10 +82,11 @@
             this.picimg_cliente.BackColor = System.Drawing.Color.Transparent;
             this.picimg_cliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.picimg_cliente.Image = ((System.Drawing.Image)(resources.GetObject("picimg_cliente.Image")));
-            this.picimg_cliente.Location = new System.Drawing.Point(39, 24);
+            this.picimg_cliente.Location = new System.Drawing.Point(26, 16);
+            this.picimg_cliente.Margin = new System.Windows.Forms.Padding(2);
             this.picimg_cliente.Name = "picimg_cliente";
-            this.picimg_cliente.Size = new System.Drawing.Size(128, 129);
-            this.picimg_cliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picimg_cliente.Size = new System.Drawing.Size(87, 85);
+            this.picimg_cliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picimg_cliente.TabIndex = 215;
             this.picimg_cliente.TabStop = false;
             // 
@@ -93,9 +96,10 @@
             this.lblConsultaMercadoria.BackColor = System.Drawing.Color.Purple;
             this.lblConsultaMercadoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConsultaMercadoria.ForeColor = System.Drawing.Color.White;
-            this.lblConsultaMercadoria.Location = new System.Drawing.Point(213, 24);
+            this.lblConsultaMercadoria.Location = new System.Drawing.Point(142, 16);
+            this.lblConsultaMercadoria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblConsultaMercadoria.Name = "lblConsultaMercadoria";
-            this.lblConsultaMercadoria.Size = new System.Drawing.Size(311, 36);
+            this.lblConsultaMercadoria.Size = new System.Drawing.Size(212, 25);
             this.lblConsultaMercadoria.TabIndex = 214;
             this.lblConsultaMercadoria.Text = "Encontra Mercadoria";
             // 
@@ -111,12 +115,12 @@
             this.btnFechar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFechar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFechar.Location = new System.Drawing.Point(1243, 17);
-            this.btnFechar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnFechar.Location = new System.Drawing.Point(829, 11);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(39, 37);
+            this.btnFechar.Size = new System.Drawing.Size(26, 24);
             this.btnFechar.TabIndex = 213;
             this.btnFechar.UseVisualStyleBackColor = false;
+            this.btnFechar.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnFechar_MouseClick_1);
             // 
             // pictureBox2
             // 
@@ -124,8 +128,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.Purple;
             this.pictureBox2.Location = new System.Drawing.Point(1, 1);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1299, 69);
+            this.pictureBox2.Size = new System.Drawing.Size(866, 45);
             this.pictureBox2.TabIndex = 216;
             this.pictureBox2.TabStop = false;
             // 
@@ -135,10 +140,10 @@
             this.btnBusca.BackColor = System.Drawing.Color.Orange;
             this.btnBusca.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBusca.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBusca.Location = new System.Drawing.Point(196, 697);
-            this.btnBusca.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBusca.Location = new System.Drawing.Point(131, 453);
+            this.btnBusca.Margin = new System.Windows.Forms.Padding(1);
             this.btnBusca.Name = "btnBusca";
-            this.btnBusca.Size = new System.Drawing.Size(115, 37);
+            this.btnBusca.Size = new System.Drawing.Size(77, 24);
             this.btnBusca.TabIndex = 276;
             this.btnBusca.Text = "Busca";
             this.btnBusca.UseVisualStyleBackColor = false;
@@ -147,9 +152,10 @@
             // 
             this.btnLimpa.BackColor = System.Drawing.Color.Salmon;
             this.btnLimpa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpa.Location = new System.Drawing.Point(351, 697);
+            this.btnLimpa.Location = new System.Drawing.Point(234, 453);
+            this.btnLimpa.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpa.Name = "btnLimpa";
-            this.btnLimpa.Size = new System.Drawing.Size(115, 37);
+            this.btnLimpa.Size = new System.Drawing.Size(77, 24);
             this.btnLimpa.TabIndex = 275;
             this.btnLimpa.Text = "Limpa";
             this.btnLimpa.UseVisualStyleBackColor = false;
@@ -160,10 +166,10 @@
             this.btn_Sair.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btn_Sair.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Sair.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_Sair.Location = new System.Drawing.Point(503, 697);
-            this.btn_Sair.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Sair.Location = new System.Drawing.Point(335, 453);
+            this.btn_Sair.Margin = new System.Windows.Forms.Padding(1);
             this.btn_Sair.Name = "btn_Sair";
-            this.btn_Sair.Size = new System.Drawing.Size(115, 37);
+            this.btn_Sair.Size = new System.Drawing.Size(77, 24);
             this.btn_Sair.TabIndex = 274;
             this.btn_Sair.Text = "Sair";
             this.btn_Sair.UseVisualStyleBackColor = false;
@@ -174,30 +180,31 @@
             this.lblNomeCliente.AutoSize = true;
             this.lblNomeCliente.BackColor = System.Drawing.Color.Transparent;
             this.lblNomeCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeCliente.Location = new System.Drawing.Point(204, 105);
-            this.lblNomeCliente.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNomeCliente.Location = new System.Drawing.Point(136, 68);
+            this.lblNomeCliente.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblNomeCliente.Name = "lblNomeCliente";
-            this.lblNomeCliente.Size = new System.Drawing.Size(165, 20);
+            this.lblNomeCliente.Size = new System.Drawing.Size(118, 13);
             this.lblNomeCliente.TabIndex = 278;
             this.lblNomeCliente.Text = "Digite a Mercadoria";
             // 
             // txtBuscaMercadoria
             // 
             this.txtBuscaMercadoria.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBuscaMercadoria.Location = new System.Drawing.Point(385, 99);
-            this.txtBuscaMercadoria.Margin = new System.Windows.Forms.Padding(2);
+            this.txtBuscaMercadoria.Location = new System.Drawing.Point(257, 64);
+            this.txtBuscaMercadoria.Margin = new System.Windows.Forms.Padding(1);
             this.txtBuscaMercadoria.MaxLength = 40;
             this.txtBuscaMercadoria.Name = "txtBuscaMercadoria";
-            this.txtBuscaMercadoria.Size = new System.Drawing.Size(701, 26);
+            this.txtBuscaMercadoria.Size = new System.Drawing.Size(469, 20);
             this.txtBuscaMercadoria.TabIndex = 277;
             // 
             // cbxValorVenda
             // 
             this.cbxValorVenda.AutoSize = true;
             this.cbxValorVenda.BackColor = System.Drawing.Color.Transparent;
-            this.cbxValorVenda.Location = new System.Drawing.Point(680, 240);
+            this.cbxValorVenda.Location = new System.Drawing.Point(453, 156);
+            this.cbxValorVenda.Margin = new System.Windows.Forms.Padding(2);
             this.cbxValorVenda.Name = "cbxValorVenda";
-            this.cbxValorVenda.Size = new System.Drawing.Size(101, 24);
+            this.cbxValorVenda.Size = new System.Drawing.Size(70, 17);
             this.cbxValorVenda.TabIndex = 287;
             this.cbxValorVenda.Text = "V. Venda";
             this.cbxValorVenda.UseVisualStyleBackColor = false;
@@ -206,9 +213,10 @@
             // 
             this.cbxValorCusto.AutoSize = true;
             this.cbxValorCusto.BackColor = System.Drawing.Color.Transparent;
-            this.cbxValorCusto.Location = new System.Drawing.Point(440, 327);
+            this.cbxValorCusto.Location = new System.Drawing.Point(293, 213);
+            this.cbxValorCusto.Margin = new System.Windows.Forms.Padding(2);
             this.cbxValorCusto.Name = "cbxValorCusto";
-            this.cbxValorCusto.Size = new System.Drawing.Size(96, 24);
+            this.cbxValorCusto.Size = new System.Drawing.Size(66, 17);
             this.cbxValorCusto.TabIndex = 285;
             this.cbxValorCusto.Text = "V. Custo";
             this.cbxValorCusto.UseVisualStyleBackColor = false;
@@ -217,9 +225,10 @@
             // 
             this.cbxCombustivel.AutoSize = true;
             this.cbxCombustivel.BackColor = System.Drawing.Color.Transparent;
-            this.cbxCombustivel.Location = new System.Drawing.Point(440, 285);
+            this.cbxCombustivel.Location = new System.Drawing.Point(293, 185);
+            this.cbxCombustivel.Margin = new System.Windows.Forms.Padding(2);
             this.cbxCombustivel.Name = "cbxCombustivel";
-            this.cbxCombustivel.Size = new System.Drawing.Size(121, 24);
+            this.cbxCombustivel.Size = new System.Drawing.Size(85, 17);
             this.cbxCombustivel.TabIndex = 284;
             this.cbxCombustivel.Text = "Combustível";
             this.cbxCombustivel.UseVisualStyleBackColor = false;
@@ -228,9 +237,10 @@
             // 
             this.cbxMarca.AutoSize = true;
             this.cbxMarca.BackColor = System.Drawing.Color.Transparent;
-            this.cbxMarca.Location = new System.Drawing.Point(440, 240);
+            this.cbxMarca.Location = new System.Drawing.Point(293, 156);
+            this.cbxMarca.Margin = new System.Windows.Forms.Padding(2);
             this.cbxMarca.Name = "cbxMarca";
-            this.cbxMarca.Size = new System.Drawing.Size(79, 24);
+            this.cbxMarca.Size = new System.Drawing.Size(56, 17);
             this.cbxMarca.TabIndex = 283;
             this.cbxMarca.Text = "Marca";
             this.cbxMarca.UseVisualStyleBackColor = false;
@@ -239,9 +249,10 @@
             // 
             this.cbxPlaca.AutoSize = true;
             this.cbxPlaca.BackColor = System.Drawing.Color.Transparent;
-            this.cbxPlaca.Location = new System.Drawing.Point(208, 327);
+            this.cbxPlaca.Location = new System.Drawing.Point(139, 213);
+            this.cbxPlaca.Margin = new System.Windows.Forms.Padding(2);
             this.cbxPlaca.Name = "cbxPlaca";
-            this.cbxPlaca.Size = new System.Drawing.Size(74, 24);
+            this.cbxPlaca.Size = new System.Drawing.Size(53, 17);
             this.cbxPlaca.TabIndex = 281;
             this.cbxPlaca.Text = "Placa";
             this.cbxPlaca.UseVisualStyleBackColor = false;
@@ -250,9 +261,10 @@
             // 
             this.cbxDescricao.AutoSize = true;
             this.cbxDescricao.BackColor = System.Drawing.Color.Transparent;
-            this.cbxDescricao.Location = new System.Drawing.Point(208, 285);
+            this.cbxDescricao.Location = new System.Drawing.Point(139, 185);
+            this.cbxDescricao.Margin = new System.Windows.Forms.Padding(2);
             this.cbxDescricao.Name = "cbxDescricao";
-            this.cbxDescricao.Size = new System.Drawing.Size(106, 24);
+            this.cbxDescricao.Size = new System.Drawing.Size(74, 17);
             this.cbxDescricao.TabIndex = 280;
             this.cbxDescricao.Text = "Descrição";
             this.cbxDescricao.UseVisualStyleBackColor = false;
@@ -261,19 +273,20 @@
             // 
             this.cbxCod.AutoSize = true;
             this.cbxCod.BackColor = System.Drawing.Color.Transparent;
-            this.cbxCod.Location = new System.Drawing.Point(208, 240);
+            this.cbxCod.Location = new System.Drawing.Point(139, 156);
+            this.cbxCod.Margin = new System.Windows.Forms.Padding(2);
             this.cbxCod.Name = "cbxCod";
-            this.cbxCod.Size = new System.Drawing.Size(85, 24);
+            this.cbxCod.Size = new System.Drawing.Size(59, 17);
             this.cbxCod.TabIndex = 279;
             this.cbxCod.Text = "Código";
             this.cbxCod.UseVisualStyleBackColor = false;
             // 
             // frmConsultaMercadoria
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1300, 780);
+            this.ClientSize = new System.Drawing.Size(867, 507);
             this.Controls.Add(this.cbxValorVenda);
             this.Controls.Add(this.cbxValorCusto);
             this.Controls.Add(this.cbxCombustivel);
@@ -293,7 +306,6 @@
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmConsultaMercadoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmConsultaMercadoria";

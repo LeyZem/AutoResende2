@@ -138,7 +138,7 @@
             this.picimg_cliente.Margin = new System.Windows.Forms.Padding(2);
             this.picimg_cliente.Name = "picimg_cliente";
             this.picimg_cliente.Size = new System.Drawing.Size(87, 85);
-            this.picimg_cliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picimg_cliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picimg_cliente.TabIndex = 182;
             this.picimg_cliente.TabStop = false;
             // 

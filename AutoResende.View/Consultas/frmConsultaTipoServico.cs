@@ -21,5 +21,10 @@ namespace AutoResende.View
         {
             Close();
         }
+
+        private void button1_MouseClick(object sender, MouseEventArgs e)
+        {
+            Close();
+        }
     }
 }

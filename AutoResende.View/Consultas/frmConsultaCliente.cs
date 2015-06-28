@@ -36,5 +36,10 @@ namespace AutoResende.View
         {
             
         }
+
+        private void btnFechar_MouseClick_2(object sender, MouseEventArgs e)
+        {
+            Close();
+        }
     }
 }

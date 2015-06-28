@@ -158,5 +158,11 @@ namespace AutoResende.View
             FrmMovimentoVenda frm = new FrmMovimentoVenda();
             frm.Show();
         }
+
+        private void button1_MouseClick(object sender, MouseEventArgs e)
+        {
+            Close();
+        }
+        
     }
 }

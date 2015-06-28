@@ -52,10 +52,10 @@
             this.btnBusca.BackColor = System.Drawing.Color.Orange;
             this.btnBusca.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBusca.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBusca.Location = new System.Drawing.Point(157, 681);
-            this.btnBusca.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBusca.Location = new System.Drawing.Point(105, 443);
+            this.btnBusca.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btnBusca.Name = "btnBusca";
-            this.btnBusca.Size = new System.Drawing.Size(115, 37);
+            this.btnBusca.Size = new System.Drawing.Size(77, 24);
             this.btnBusca.TabIndex = 276;
             this.btnBusca.Text = "Busca";
             this.btnBusca.UseVisualStyleBackColor = false;
@@ -64,9 +64,10 @@
             // 
             this.btnLimpa.BackColor = System.Drawing.Color.Salmon;
             this.btnLimpa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpa.Location = new System.Drawing.Point(309, 681);
+            this.btnLimpa.Location = new System.Drawing.Point(206, 443);
+            this.btnLimpa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLimpa.Name = "btnLimpa";
-            this.btnLimpa.Size = new System.Drawing.Size(115, 37);
+            this.btnLimpa.Size = new System.Drawing.Size(77, 24);
             this.btnLimpa.TabIndex = 275;
             this.btnLimpa.Text = "Limpa";
             this.btnLimpa.UseVisualStyleBackColor = false;
@@ -77,10 +78,10 @@
             this.btn_Sair.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btn_Sair.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Sair.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_Sair.Location = new System.Drawing.Point(463, 681);
-            this.btn_Sair.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Sair.Location = new System.Drawing.Point(309, 443);
+            this.btn_Sair.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btn_Sair.Name = "btn_Sair";
-            this.btn_Sair.Size = new System.Drawing.Size(115, 37);
+            this.btn_Sair.Size = new System.Drawing.Size(77, 24);
             this.btn_Sair.TabIndex = 274;
             this.btn_Sair.Text = "Sair";
             this.btn_Sair.UseVisualStyleBackColor = false;
@@ -90,9 +91,10 @@
             this.picimg_cliente.BackColor = System.Drawing.Color.Transparent;
             this.picimg_cliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.picimg_cliente.Image = ((System.Drawing.Image)(resources.GetObject("picimg_cliente.Image")));
-            this.picimg_cliente.Location = new System.Drawing.Point(39, 23);
+            this.picimg_cliente.Location = new System.Drawing.Point(26, 15);
+            this.picimg_cliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picimg_cliente.Name = "picimg_cliente";
-            this.picimg_cliente.Size = new System.Drawing.Size(128, 129);
+            this.picimg_cliente.Size = new System.Drawing.Size(87, 85);
             this.picimg_cliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picimg_cliente.TabIndex = 280;
             this.picimg_cliente.TabStop = false;
@@ -103,9 +105,10 @@
             this.lblConsultaOrdemServico.BackColor = System.Drawing.Color.Coral;
             this.lblConsultaOrdemServico.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConsultaOrdemServico.ForeColor = System.Drawing.Color.White;
-            this.lblConsultaOrdemServico.Location = new System.Drawing.Point(213, 23);
+            this.lblConsultaOrdemServico.Location = new System.Drawing.Point(142, 15);
+            this.lblConsultaOrdemServico.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblConsultaOrdemServico.Name = "lblConsultaOrdemServico";
-            this.lblConsultaOrdemServico.Size = new System.Drawing.Size(405, 36);
+            this.lblConsultaOrdemServico.Size = new System.Drawing.Size(278, 25);
             this.lblConsultaOrdemServico.TabIndex = 278;
             this.lblConsultaOrdemServico.Text = "Encontra Ordem de Serviço";
             // 
@@ -121,12 +124,12 @@
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(1244, 13);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(829, 8);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(44, 37);
+            this.button1.Size = new System.Drawing.Size(29, 24);
             this.button1.TabIndex = 277;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             // 
             // pictureBox2
             // 
@@ -134,8 +137,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.Coral;
             this.pictureBox2.Location = new System.Drawing.Point(1, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1299, 69);
+            this.pictureBox2.Size = new System.Drawing.Size(866, 45);
             this.pictureBox2.TabIndex = 281;
             this.pictureBox2.TabStop = false;
             // 
@@ -145,37 +149,39 @@
             this.lblOrdemServico.AutoSize = true;
             this.lblOrdemServico.BackColor = System.Drawing.Color.Transparent;
             this.lblOrdemServico.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrdemServico.Location = new System.Drawing.Point(187, 99);
-            this.lblOrdemServico.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblOrdemServico.Location = new System.Drawing.Point(125, 64);
+            this.lblOrdemServico.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblOrdemServico.Name = "lblOrdemServico";
-            this.lblOrdemServico.Size = new System.Drawing.Size(204, 20);
+            this.lblOrdemServico.Size = new System.Drawing.Size(147, 13);
             this.lblOrdemServico.TabIndex = 284;
             this.lblOrdemServico.Text = "Digite a Orde de Serviço";
             // 
             // txtBuscaOrdemServico
             // 
             this.txtBuscaOrdemServico.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBuscaOrdemServico.Location = new System.Drawing.Point(395, 93);
-            this.txtBuscaOrdemServico.Margin = new System.Windows.Forms.Padding(2);
+            this.txtBuscaOrdemServico.Location = new System.Drawing.Point(263, 60);
+            this.txtBuscaOrdemServico.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txtBuscaOrdemServico.MaxLength = 40;
             this.txtBuscaOrdemServico.Name = "txtBuscaOrdemServico";
-            this.txtBuscaOrdemServico.Size = new System.Drawing.Size(701, 26);
+            this.txtBuscaOrdemServico.Size = new System.Drawing.Size(469, 20);
             this.txtBuscaOrdemServico.TabIndex = 283;
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker2.Location = new System.Drawing.Point(777, 159);
+            this.dateTimePicker2.Location = new System.Drawing.Point(518, 103);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 26);
+            this.dateTimePicker2.Size = new System.Drawing.Size(135, 20);
             this.dateTimePicker2.TabIndex = 288;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker1.Location = new System.Drawing.Point(395, 159);
+            this.dateTimePicker1.Location = new System.Drawing.Point(263, 103);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(135, 20);
             this.dateTimePicker1.TabIndex = 287;
             // 
             // lblinscestadual
@@ -184,9 +190,10 @@
             this.lblinscestadual.AutoSize = true;
             this.lblinscestadual.BackColor = System.Drawing.Color.Transparent;
             this.lblinscestadual.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblinscestadual.Location = new System.Drawing.Point(283, 166);
+            this.lblinscestadual.Location = new System.Drawing.Point(189, 108);
+            this.lblinscestadual.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblinscestadual.Name = "lblinscestadual";
-            this.lblinscestadual.Size = new System.Drawing.Size(98, 20);
+            this.lblinscestadual.Size = new System.Drawing.Size(71, 13);
             this.lblinscestadual.TabIndex = 286;
             this.lblinscestadual.Text = "Data inicial";
             // 
@@ -196,18 +203,19 @@
             this.lblfantasia.AutoSize = true;
             this.lblfantasia.BackColor = System.Drawing.Color.Transparent;
             this.lblfantasia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblfantasia.Location = new System.Drawing.Point(643, 166);
+            this.lblfantasia.Location = new System.Drawing.Point(429, 108);
+            this.lblfantasia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblfantasia.Name = "lblfantasia";
-            this.lblfantasia.Size = new System.Drawing.Size(117, 20);
+            this.lblfantasia.Size = new System.Drawing.Size(82, 13);
             this.lblfantasia.TabIndex = 285;
             this.lblfantasia.Text = "Data Entrega";
             // 
             // frmConsultaOrdemServico
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1300, 780);
+            this.ClientSize = new System.Drawing.Size(867, 507);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.lblinscestadual);
@@ -222,7 +230,6 @@
             this.Controls.Add(this.btnLimpa);
             this.Controls.Add(this.btn_Sair);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmConsultaOrdemServico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmConsultaOrdemServico";
