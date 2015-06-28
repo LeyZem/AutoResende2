@@ -151,15 +151,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="_AutoResende_DataBaseDataSet.Designer.cs">
+    <Compile Include="_AutoResende_DataBaseDataSet_Clientes.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>_AutoResende_DataBaseDataSet.xsd</DependentUpon>
+      <DependentUpon>_AutoResende_DataBaseDataSet_Clientes.xsd</DependentUpon>
     </Compile>
     <Compile Include="_AutoResende_DataBaseDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>_AutoResende_DataBaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_AutoResende_DataBaseDataSet_Fornecedores.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_AutoResende_DataBaseDataSet_Fornecedores.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_AutoResende_DataBaseDataSet_TipoServico.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_AutoResende_DataBaseDataSet_TipoServico.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_AutoResende_DataBaseDataSet_Veiculo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_AutoResende_DataBaseDataSet_Veiculo.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Cadastros\frmCadastroCliente.resx">
       <DependentUpon>frmCadastroCliente.cs</DependentUpon>
@@ -230,16 +245,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="_AutoResende_DataBaseDataSet.xsc">
-      <DependentUpon>_AutoResende_DataBaseDataSet.xsd</DependentUpon>
+    <None Include="_AutoResende_DataBaseDataSet_Clientes.xsc">
+      <DependentUpon>_AutoResende_DataBaseDataSet_Clientes.xsd</DependentUpon>
     </None>
-    <None Include="_AutoResende_DataBaseDataSet.xsd">
+    <None Include="_AutoResende_DataBaseDataSet_Clientes.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_AutoResende_DataBaseDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>_AutoResende_DataBaseDataSet_Clientes.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="_AutoResende_DataBaseDataSet.xss">
-      <DependentUpon>_AutoResende_DataBaseDataSet.xsd</DependentUpon>
+    <None Include="_AutoResende_DataBaseDataSet_Clientes.xss">
+      <DependentUpon>_AutoResende_DataBaseDataSet_Clientes.xsd</DependentUpon>
     </None>
     <None Include="_AutoResende_DataBaseDataSet1.xsc">
       <DependentUpon>_AutoResende_DataBaseDataSet1.xsd</DependentUpon>
@@ -251,6 +266,39 @@
     </None>
     <None Include="_AutoResende_DataBaseDataSet1.xss">
       <DependentUpon>_AutoResende_DataBaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_AutoResende_DataBaseDataSet_Fornecedores.xsc">
+      <DependentUpon>_AutoResende_DataBaseDataSet_Fornecedores.xsd</DependentUpon>
+    </None>
+    <None Include="_AutoResende_DataBaseDataSet_Fornecedores.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_AutoResende_DataBaseDataSet_Fornecedores.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_AutoResende_DataBaseDataSet_Fornecedores.xss">
+      <DependentUpon>_AutoResende_DataBaseDataSet_Fornecedores.xsd</DependentUpon>
+    </None>
+    <None Include="_AutoResende_DataBaseDataSet_TipoServico.xsc">
+      <DependentUpon>_AutoResende_DataBaseDataSet_TipoServico.xsd</DependentUpon>
+    </None>
+    <None Include="_AutoResende_DataBaseDataSet_TipoServico.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_AutoResende_DataBaseDataSet_TipoServico.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_AutoResende_DataBaseDataSet_TipoServico.xss">
+      <DependentUpon>_AutoResende_DataBaseDataSet_TipoServico.xsd</DependentUpon>
+    </None>
+    <None Include="_AutoResende_DataBaseDataSet_Veiculo.xsc">
+      <DependentUpon>_AutoResende_DataBaseDataSet_Veiculo.xsd</DependentUpon>
+    </None>
+    <None Include="_AutoResende_DataBaseDataSet_Veiculo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_AutoResende_DataBaseDataSet_Veiculo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_AutoResende_DataBaseDataSet_Veiculo.xss">
+      <DependentUpon>_AutoResende_DataBaseDataSet_Veiculo.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

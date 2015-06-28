@@ -567,6 +567,8 @@ namespace AutoResende.Model
 		
 		private int _idVeiculo;
 		
+		private string _Marca;
+		
 		private string _Modelo;
 		
 		private string _Cor;
@@ -585,6 +587,8 @@ namespace AutoResende.Model
     partial void OnCreated();
     partial void OnidVeiculoChanging(int value);
     partial void OnidVeiculoChanged();
+    partial void OnMarcaChanging(string value);
+    partial void OnMarcaChanged();
     partial void OnModeloChanging(string value);
     partial void OnModeloChanged();
     partial void OnCorChanging(string value);
@@ -620,6 +624,26 @@ namespace AutoResende.Model
 					this._idVeiculo = value;
 					this.SendPropertyChanged("idVeiculo");
 					this.OnidVeiculoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Marca", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string Marca
+		{
+			get
+			{
+				return this._Marca;
+			}
+			set
+			{
+				if ((this._Marca != value))
+				{
+					this.OnMarcaChanging(value);
+					this.SendPropertyChanging();
+					this._Marca = value;
+					this.SendPropertyChanged("Marca");
+					this.OnMarcaChanged();
 				}
 			}
 		}
@@ -1907,6 +1931,8 @@ namespace AutoResende.Model
 		
 		private int _idTipoServico;
 		
+		private string _NomeServiço;
+		
 		private string _Descricao;
 		
 		public TipoServico()
@@ -1929,7 +1955,23 @@ namespace AutoResende.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Descricao", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NomeServiço", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string NomeServiço
+		{
+			get
+			{
+				return this._NomeServiço;
+			}
+			set
+			{
+				if ((this._NomeServiço != value))
+				{
+					this._NomeServiço = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Descricao", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
 		public string Descricao
 		{
 			get

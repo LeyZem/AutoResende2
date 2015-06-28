@@ -31,5 +31,12 @@ namespace AutoResende.View
         {
             Close();
         }
+
+        private void frmConsultaFornecedor_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the '_AutoResende_DataBaseDataSet_Fornecedores.Fornecedor' table. You can move, or remove it, as needed.
+            this.fornecedorTableAdapter.Fill(this._AutoResende_DataBaseDataSet_Fornecedores.Fornecedor);
+
+        }
     }
 }

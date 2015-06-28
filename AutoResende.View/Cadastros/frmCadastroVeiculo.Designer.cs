@@ -50,6 +50,8 @@
             this.lbldescrição = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtMarca = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -77,9 +79,9 @@
             // 
             // txtModelo
             // 
-            this.txtModelo.Location = new System.Drawing.Point(217, 118);
+            this.txtModelo.Location = new System.Drawing.Point(528, 122);
             this.txtModelo.Name = "txtModelo";
-            this.txtModelo.Size = new System.Drawing.Size(114, 20);
+            this.txtModelo.Size = new System.Drawing.Size(218, 20);
             this.txtModelo.TabIndex = 42;
             // 
             // lblModelo
@@ -87,7 +89,7 @@
             this.lblModelo.AutoSize = true;
             this.lblModelo.BackColor = System.Drawing.Color.Transparent;
             this.lblModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModelo.Location = new System.Drawing.Point(143, 118);
+            this.lblModelo.Location = new System.Drawing.Point(460, 125);
             this.lblModelo.Name = "lblModelo";
             this.lblModelo.Size = new System.Drawing.Size(48, 13);
             this.lblModelo.TabIndex = 43;
@@ -98,7 +100,7 @@
             this.lblPlaca.AutoSize = true;
             this.lblPlaca.BackColor = System.Drawing.Color.Transparent;
             this.lblPlaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlaca.Location = new System.Drawing.Point(143, 149);
+            this.lblPlaca.Location = new System.Drawing.Point(144, 152);
             this.lblPlaca.Name = "lblPlaca";
             this.lblPlaca.Size = new System.Drawing.Size(39, 13);
             this.lblPlaca.TabIndex = 45;
@@ -123,7 +125,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(395, 116);
+            this.label2.Location = new System.Drawing.Point(447, 155);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 49;
@@ -131,7 +133,7 @@
             // 
             // txtOdometro
             // 
-            this.txtOdometro.Location = new System.Drawing.Point(492, 116);
+            this.txtOdometro.Location = new System.Drawing.Point(528, 152);
             this.txtOdometro.Name = "txtOdometro";
             this.txtOdometro.Size = new System.Drawing.Size(114, 20);
             this.txtOdometro.TabIndex = 48;
@@ -146,7 +148,7 @@
             "Flex",
             "Gás",
             "Diesel"});
-            this.cmbCombustivel.Location = new System.Drawing.Point(492, 148);
+            this.cmbCombustivel.Location = new System.Drawing.Point(528, 183);
             this.cmbCombustivel.Name = "cmbCombustivel";
             this.cmbCombustivel.Size = new System.Drawing.Size(114, 21);
             this.cmbCombustivel.TabIndex = 93;
@@ -156,7 +158,7 @@
             this.lblCombustivel.AutoSize = true;
             this.lblCombustivel.BackColor = System.Drawing.Color.Transparent;
             this.lblCombustivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCombustivel.Location = new System.Drawing.Point(395, 153);
+            this.lblCombustivel.Location = new System.Drawing.Point(431, 186);
             this.lblCombustivel.Name = "lblCombustivel";
             this.lblCombustivel.Size = new System.Drawing.Size(77, 13);
             this.lblCombustivel.TabIndex = 92;
@@ -167,7 +169,7 @@
             this.lblCor.AutoSize = true;
             this.lblCor.BackColor = System.Drawing.Color.Transparent;
             this.lblCor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCor.Location = new System.Drawing.Point(139, 179);
+            this.lblCor.Location = new System.Drawing.Point(144, 182);
             this.lblCor.Name = "lblCor";
             this.lblCor.Size = new System.Drawing.Size(26, 13);
             this.lblCor.TabIndex = 95;
@@ -297,12 +299,32 @@
             this.label18.TabIndex = 190;
             this.label18.Text = "Dados Cadastrais";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(144, 121);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 13);
+            this.label1.TabIndex = 193;
+            this.label1.Text = "Marca";
+            // 
+            // txtMarca
+            // 
+            this.txtMarca.Location = new System.Drawing.Point(217, 118);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(208, 20);
+            this.txtMarca.TabIndex = 192;
+            // 
             // frmCadastroVeiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(867, 507);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtMarca);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.pictureBox3);
@@ -360,5 +382,7 @@
         private System.Windows.Forms.Label lbldescrição;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtMarca;
     }
 }

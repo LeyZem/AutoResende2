@@ -23,6 +23,7 @@
   <Table Name="dbo.Veiculo" Member="Veiculos">
     <Type Name="Veiculo">
       <Column Name="idVeiculo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Marca" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Modelo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Cor" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Placa" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -91,7 +92,8 @@
   <Table Name="dbo.TipoServico" Member="TipoServicos">
     <Type Name="TipoServico">
       <Column Name="idTipoServico" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Descricao" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NomeServiço" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
 </Database>

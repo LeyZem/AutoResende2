@@ -31,14 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaCliente));
             this.lblNomeCliente = new System.Windows.Forms.Label();
-            this.txtBuscaCliente = new System.Windows.Forms.TextBox();
+            this.txtNomeCliente = new System.Windows.Forms.TextBox();
             this.picimg_cliente = new System.Windows.Forms.PictureBox();
             this.EncontraCliente = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnFechar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCPFCliente = new System.Windows.Forms.TextBox();
             this.btnPesquisaCliente = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.idClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,15 +81,15 @@
             this.lblNomeCliente.TabIndex = 242;
             this.lblNomeCliente.Text = "Nome";
             // 
-            // txtBuscaCliente
+            // txtNomeCliente
             // 
-            this.txtBuscaCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBuscaCliente.Location = new System.Drawing.Point(206, 66);
-            this.txtBuscaCliente.Margin = new System.Windows.Forms.Padding(1);
-            this.txtBuscaCliente.MaxLength = 40;
-            this.txtBuscaCliente.Name = "txtBuscaCliente";
-            this.txtBuscaCliente.Size = new System.Drawing.Size(469, 20);
-            this.txtBuscaCliente.TabIndex = 241;
+            this.txtNomeCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNomeCliente.Location = new System.Drawing.Point(206, 66);
+            this.txtNomeCliente.Margin = new System.Windows.Forms.Padding(1);
+            this.txtNomeCliente.MaxLength = 40;
+            this.txtNomeCliente.Name = "txtNomeCliente";
+            this.txtNomeCliente.Size = new System.Drawing.Size(469, 20);
+            this.txtNomeCliente.TabIndex = 241;
             // 
             // picimg_cliente
             // 
@@ -172,15 +172,15 @@
             this.label1.TabIndex = 276;
             this.label1.Text = "CPF";
             // 
-            // textBox1
+            // txtCPFCliente
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(206, 97);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(1);
-            this.textBox1.MaxLength = 40;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 20);
-            this.textBox1.TabIndex = 275;
+            this.txtCPFCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCPFCliente.Location = new System.Drawing.Point(206, 97);
+            this.txtCPFCliente.Margin = new System.Windows.Forms.Padding(1);
+            this.txtCPFCliente.MaxLength = 40;
+            this.txtCPFCliente.Name = "txtCPFCliente";
+            this.txtCPFCliente.Size = new System.Drawing.Size(230, 20);
+            this.txtCPFCliente.TabIndex = 275;
             // 
             // btnPesquisaCliente
             // 
@@ -371,11 +371,11 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnPesquisaCliente);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCPFCliente);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.lblNomeCliente);
-            this.Controls.Add(this.txtBuscaCliente);
+            this.Controls.Add(this.txtNomeCliente);
             this.Controls.Add(this.picimg_cliente);
             this.Controls.Add(this.EncontraCliente);
             this.Controls.Add(this.pictureBox2);
@@ -398,14 +398,14 @@
         #endregion
 
         private System.Windows.Forms.Label lblNomeCliente;
-        private System.Windows.Forms.TextBox txtBuscaCliente;
+        private System.Windows.Forms.TextBox txtNomeCliente;
         private System.Windows.Forms.PictureBox picimg_cliente;
         private System.Windows.Forms.Label EncontraCliente;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCPFCliente;
         private System.Windows.Forms.Button btnPesquisaCliente;
         private System.Windows.Forms.DataGridView dataGridView1;
         private _AutoResende_DataBaseDataSet _AutoResende_DataBaseDataSet;

@@ -26,5 +26,12 @@ namespace AutoResende.View
         {
             Close();
         }
+
+        private void frmConsultaVeiculo_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the '_AutoResende_DataBaseDataSet_Veiculo.Veiculo' table. You can move, or remove it, as needed.
+            this.veiculoTableAdapter.Fill(this._AutoResende_DataBaseDataSet_Veiculo.Veiculo);
+
+        }
     }
 }

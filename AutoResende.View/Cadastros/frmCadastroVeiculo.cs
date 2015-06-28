@@ -29,6 +29,7 @@ namespace AutoResende.View
             txtCor.Text = "";
             txtDescricao.Text = "";
             txtModelo.Text = "";
+            txtMarca.Text = "";
             txtOdometro.Text = "";
             txtPlaca.Text = "";
             cmbCombustivel.SelectedItem = null;
@@ -46,7 +47,7 @@ namespace AutoResende.View
                 MessageBox.Show("Todos os campos devem ser preenchidos!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
             }
-            else if (txtCor.Text.Trim() == "")
+            else if (txtMarca.Text.Trim() == "")
             {
                 MessageBox.Show("Todos os campos devem ser preenchidos!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
@@ -66,6 +67,11 @@ namespace AutoResende.View
                 MessageBox.Show("Todos os campos devem ser preenchidos!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
             }
+            else if (cmbCombustivel.Text.Trim() == "")
+            {
+                MessageBox.Show("Todos os campos devem ser preenchidos!", ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return false;
+            }
             else
             {
                 return true;
@@ -77,6 +83,7 @@ namespace AutoResende.View
             if (ValidaCampos()==true)
             {
                 Veiculo oVeiculo = new Veiculo();
+                oVeiculo.Marca = txtMarca.Text;
                 oVeiculo.Modelo = txtModelo.Text;
                 oVeiculo.Descricao = txtCor.Text;
                 oVeiculo.Placa = txtPlaca.Text;

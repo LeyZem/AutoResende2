@@ -30,9 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroTipoServico));
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picimg_cliente = new System.Windows.Forms.PictureBox();
-            this.label18 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbldescrição = new System.Windows.Forms.Label();
             this.Btn_Gravar = new System.Windows.Forms.Button();
@@ -42,7 +40,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Fechar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -51,23 +48,12 @@
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.BackColor = System.Drawing.Color.Plum;
-            this.pictureBox3.Location = new System.Drawing.Point(133, 175);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(133, 146);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(500, 6);
+            this.pictureBox3.Size = new System.Drawing.Size(681, 6);
             this.pictureBox3.TabIndex = 235;
             this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.BackColor = System.Drawing.Color.Plum;
-            this.pictureBox1.Location = new System.Drawing.Point(133, 75);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(713, 6);
-            this.pictureBox1.TabIndex = 234;
-            this.pictureBox1.TabStop = false;
             // 
             // picimg_cliente
             // 
@@ -75,36 +61,22 @@
             this.picimg_cliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.picimg_cliente.Image = ((System.Drawing.Image)(resources.GetObject("picimg_cliente.Image")));
             this.picimg_cliente.Location = new System.Drawing.Point(26, 15);
-            this.picimg_cliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picimg_cliente.Margin = new System.Windows.Forms.Padding(2);
             this.picimg_cliente.Name = "picimg_cliente";
             this.picimg_cliente.Size = new System.Drawing.Size(87, 85);
             this.picimg_cliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picimg_cliente.TabIndex = 232;
             this.picimg_cliente.TabStop = false;
             // 
-            // label18
-            // 
-            this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Plum;
-            this.label18.Location = new System.Drawing.Point(134, 49);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(147, 18);
-            this.label18.TabIndex = 231;
-            this.label18.Text = "Dados da do Serviço";
-            // 
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(133, 226);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Location = new System.Drawing.Point(133, 183);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.MaxLength = 40;
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(501, 213);
+            this.textBox1.Size = new System.Drawing.Size(681, 256);
             this.textBox1.TabIndex = 230;
             // 
             // lbldescrição
@@ -114,7 +86,7 @@
             this.lbldescrição.BackColor = System.Drawing.Color.Transparent;
             this.lbldescrição.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldescrição.ForeColor = System.Drawing.Color.Plum;
-            this.lbldescrição.Location = new System.Drawing.Point(134, 156);
+            this.lbldescrição.Location = new System.Drawing.Point(134, 126);
             this.lbldescrição.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbldescrição.Name = "lbldescrição";
             this.lbldescrição.Size = new System.Drawing.Size(76, 18);
@@ -127,8 +99,8 @@
             this.Btn_Gravar.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.Btn_Gravar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_Gravar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Btn_Gravar.Location = new System.Drawing.Point(137, 443);
-            this.Btn_Gravar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_Gravar.Location = new System.Drawing.Point(133, 461);
+            this.Btn_Gravar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_Gravar.Name = "Btn_Gravar";
             this.Btn_Gravar.Size = new System.Drawing.Size(115, 25);
             this.Btn_Gravar.TabIndex = 227;
@@ -154,20 +126,20 @@
             this.lblCódigo.AutoSize = true;
             this.lblCódigo.BackColor = System.Drawing.Color.Transparent;
             this.lblCódigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCódigo.Location = new System.Drawing.Point(133, 95);
+            this.lblCódigo.Location = new System.Drawing.Point(134, 75);
             this.lblCódigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCódigo.Name = "lblCódigo";
-            this.lblCódigo.Size = new System.Drawing.Size(46, 13);
+            this.lblCódigo.Size = new System.Drawing.Size(104, 13);
             this.lblCódigo.TabIndex = 225;
-            this.lblCódigo.Text = "Código";
+            this.lblCódigo.Text = "Nome do Serviço";
             // 
             // txt_Codigo
             // 
             this.txt_Codigo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_Codigo.Location = new System.Drawing.Point(207, 93);
-            this.txt_Codigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Codigo.Location = new System.Drawing.Point(256, 72);
+            this.txt_Codigo.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Codigo.Name = "txt_Codigo";
-            this.txt_Codigo.Size = new System.Drawing.Size(77, 20);
+            this.txt_Codigo.Size = new System.Drawing.Size(558, 20);
             this.txt_Codigo.TabIndex = 228;
             // 
             // pictureBox2
@@ -176,7 +148,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.Plum;
             this.pictureBox2.Location = new System.Drawing.Point(1, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(866, 45);
             this.pictureBox2.TabIndex = 233;
@@ -209,9 +181,7 @@
             this.ClientSize = new System.Drawing.Size(867, 507);
             this.Controls.Add(this.Fechar);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.picimg_cliente);
-            this.Controls.Add(this.label18);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lbldescrição);
             this.Controls.Add(this.Btn_Gravar);
@@ -224,7 +194,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCadastroServico";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -235,9 +204,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox picimg_cliente;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lbldescrição;
         private System.Windows.Forms.Button Btn_Gravar;

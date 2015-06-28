@@ -28,33 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaFornecedor));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picimg_cliente = new System.Windows.Forms.PictureBox();
-            this.label18 = new System.Windows.Forms.Label();
             this.lblfornecedor = new System.Windows.Forms.Label();
             this.btnFechar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnBusca = new System.Windows.Forms.Button();
-            this.cbxComentarios = new System.Windows.Forms.CheckBox();
-            this.cbxFantasia = new System.Windows.Forms.CheckBox();
-            this.cbxPais = new System.Windows.Forms.CheckBox();
-            this.cbxBairro = new System.Windows.Forms.CheckBox();
-            this.cbxCidade = new System.Windows.Forms.CheckBox();
-            this.cbxCel = new System.Windows.Forms.CheckBox();
-            this.cbxTelefone = new System.Windows.Forms.CheckBox();
-            this.cbxEmail = new System.Windows.Forms.CheckBox();
-            this.cbxCep = new System.Windows.Forms.CheckBox();
-            this.cbxLogradouro = new System.Windows.Forms.CheckBox();
-            this.cbxCnpj = new System.Windows.Forms.CheckBox();
-            this.cbxRazaoSocial = new System.Windows.Forms.CheckBox();
-            this.btnLimpa = new System.Windows.Forms.Button();
-            this.btn_Sair = new System.Windows.Forms.Button();
-            this.lblNomeFornecedor = new System.Windows.Forms.Label();
-            this.txtBuscaFornecedor = new System.Windows.Forms.TextBox();
+            this.btnPesquisaCliente = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtCNPJ = new System.Windows.Forms.TextBox();
+            this.lblNomeFornecedores = new System.Windows.Forms.Label();
+            this.txtRazaoSocial = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtNomeFantasia = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this._AutoResende_DataBaseDataSet_Fornecedores = new AutoResende.View._AutoResende_DataBaseDataSet_Fornecedores();
+            this.fornecedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fornecedorTableAdapter = new AutoResende.View._AutoResende_DataBaseDataSet_FornecedoresTableAdapters.FornecedorTableAdapter();
+            this.idFornecedorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeFantasiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.razaoSocialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNPJDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.inscricaoEstadualDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.logradouroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bairroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cEPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telResDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telCelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comentarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet_Fornecedores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fornecedorBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -81,20 +93,6 @@
             this.picimg_cliente.TabIndex = 149;
             this.picimg_cliente.TabStop = false;
             // 
-            // label18
-            // 
-            this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Blue;
-            this.label18.Location = new System.Drawing.Point(131, 109);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(172, 18);
-            this.label18.TabIndex = 148;
-            this.label18.Text = "Campos onde Pesquisar";
-            // 
             // lblfornecedor
             // 
             this.lblfornecedor.AutoSize = true;
@@ -104,9 +102,9 @@
             this.lblfornecedor.Location = new System.Drawing.Point(130, 15);
             this.lblfornecedor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblfornecedor.Name = "lblfornecedor";
-            this.lblfornecedor.Size = new System.Drawing.Size(237, 25);
+            this.lblfornecedor.Size = new System.Drawing.Size(244, 25);
             this.lblfornecedor.TabIndex = 147;
-            this.lblfornecedor.Text = "Encontra Fornecedores";
+            this.lblfornecedor.Text = "Consultar Fornecedores";
             // 
             // btnFechar
             // 
@@ -139,212 +137,242 @@
             this.pictureBox2.TabIndex = 150;
             this.pictureBox2.TabStop = false;
             // 
-            // btnBusca
+            // btnPesquisaCliente
             // 
-            this.btnBusca.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnBusca.BackColor = System.Drawing.Color.Orange;
-            this.btnBusca.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBusca.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBusca.Location = new System.Drawing.Point(148, 447);
-            this.btnBusca.Margin = new System.Windows.Forms.Padding(1);
-            this.btnBusca.Name = "btnBusca";
-            this.btnBusca.Size = new System.Drawing.Size(77, 24);
-            this.btnBusca.TabIndex = 290;
-            this.btnBusca.Text = "Busca";
-            this.btnBusca.UseVisualStyleBackColor = false;
+            this.btnPesquisaCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPesquisaCliente.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnPesquisaCliente.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPesquisaCliente.BackgroundImage")));
+            this.btnPesquisaCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPesquisaCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPesquisaCliente.Location = new System.Drawing.Point(776, 62);
+            this.btnPesquisaCliente.Name = "btnPesquisaCliente";
+            this.btnPesquisaCliente.Size = new System.Drawing.Size(59, 51);
+            this.btnPesquisaCliente.TabIndex = 287;
+            this.btnPesquisaCliente.UseVisualStyleBackColor = false;
             // 
-            // cbxComentarios
+            // label1
             // 
-            this.cbxComentarios.AutoSize = true;
-            this.cbxComentarios.BackColor = System.Drawing.Color.Transparent;
-            this.cbxComentarios.Location = new System.Drawing.Point(463, 268);
-            this.cbxComentarios.Margin = new System.Windows.Forms.Padding(2);
-            this.cbxComentarios.Name = "cbxComentarios";
-            this.cbxComentarios.Size = new System.Drawing.Size(84, 17);
-            this.cbxComentarios.TabIndex = 289;
-            this.cbxComentarios.Text = "Comentários";
-            this.cbxComentarios.UseVisualStyleBackColor = false;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(133, 96);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.TabIndex = 286;
+            this.label1.Text = "CNPJ";
             // 
-            // cbxFantasia
+            // txtCNPJ
             // 
-            this.cbxFantasia.AutoSize = true;
-            this.cbxFantasia.BackColor = System.Drawing.Color.Transparent;
-            this.cbxFantasia.Location = new System.Drawing.Point(146, 239);
-            this.cbxFantasia.Margin = new System.Windows.Forms.Padding(2);
-            this.cbxFantasia.Name = "cbxFantasia";
-            this.cbxFantasia.Size = new System.Drawing.Size(66, 17);
-            this.cbxFantasia.TabIndex = 288;
-            this.cbxFantasia.Text = "Fantasia";
-            this.cbxFantasia.UseVisualStyleBackColor = false;
+            this.txtCNPJ.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCNPJ.Location = new System.Drawing.Point(217, 93);
+            this.txtCNPJ.Margin = new System.Windows.Forms.Padding(1);
+            this.txtCNPJ.MaxLength = 40;
+            this.txtCNPJ.Name = "txtCNPJ";
+            this.txtCNPJ.Size = new System.Drawing.Size(187, 20);
+            this.txtCNPJ.TabIndex = 285;
             // 
-            // cbxPais
+            // lblNomeFornecedores
             // 
-            this.cbxPais.AutoSize = true;
-            this.cbxPais.BackColor = System.Drawing.Color.Transparent;
-            this.cbxPais.Location = new System.Drawing.Point(463, 239);
-            this.cbxPais.Margin = new System.Windows.Forms.Padding(2);
-            this.cbxPais.Name = "cbxPais";
-            this.cbxPais.Size = new System.Drawing.Size(48, 17);
-            this.cbxPais.TabIndex = 287;
-            this.cbxPais.Text = "País";
-            this.cbxPais.UseVisualStyleBackColor = false;
+            this.lblNomeFornecedores.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblNomeFornecedores.AutoSize = true;
+            this.lblNomeFornecedores.BackColor = System.Drawing.Color.Transparent;
+            this.lblNomeFornecedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeFornecedores.Location = new System.Drawing.Point(133, 65);
+            this.lblNomeFornecedores.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lblNomeFornecedores.Name = "lblNomeFornecedores";
+            this.lblNomeFornecedores.Size = new System.Drawing.Size(82, 13);
+            this.lblNomeFornecedores.TabIndex = 284;
+            this.lblNomeFornecedores.Text = "Razão Social";
             // 
-            // cbxBairro
+            // txtRazaoSocial
             // 
-            this.cbxBairro.AutoSize = true;
-            this.cbxBairro.BackColor = System.Drawing.Color.Transparent;
-            this.cbxBairro.Location = new System.Drawing.Point(463, 211);
-            this.cbxBairro.Margin = new System.Windows.Forms.Padding(2);
-            this.cbxBairro.Name = "cbxBairro";
-            this.cbxBairro.Size = new System.Drawing.Size(53, 17);
-            this.cbxBairro.TabIndex = 286;
-            this.cbxBairro.Text = "Bairro";
-            this.cbxBairro.UseVisualStyleBackColor = false;
+            this.txtRazaoSocial.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtRazaoSocial.Location = new System.Drawing.Point(217, 62);
+            this.txtRazaoSocial.Margin = new System.Windows.Forms.Padding(1);
+            this.txtRazaoSocial.MaxLength = 40;
+            this.txtRazaoSocial.Name = "txtRazaoSocial";
+            this.txtRazaoSocial.Size = new System.Drawing.Size(538, 20);
+            this.txtRazaoSocial.TabIndex = 283;
             // 
-            // cbxCidade
+            // label2
             // 
-            this.cbxCidade.AutoSize = true;
-            this.cbxCidade.BackColor = System.Drawing.Color.Transparent;
-            this.cbxCidade.Location = new System.Drawing.Point(463, 182);
-            this.cbxCidade.Margin = new System.Windows.Forms.Padding(2);
-            this.cbxCidade.Name = "cbxCidade";
-            this.cbxCidade.Size = new System.Drawing.Size(59, 17);
-            this.cbxCidade.TabIndex = 285;
-            this.cbxCidade.Text = "Cidade";
-            this.cbxCidade.UseVisualStyleBackColor = false;
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(415, 96);
+            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 13);
+            this.label2.TabIndex = 289;
+            this.label2.Text = "Nome Fantasia";
             // 
-            // cbxCel
+            // txtNomeFantasia
             // 
-            this.cbxCel.AutoSize = true;
-            this.cbxCel.BackColor = System.Drawing.Color.Transparent;
-            this.cbxCel.Location = new System.Drawing.Point(303, 268);
-            this.cbxCel.Margin = new System.Windows.Forms.Padding(2);
-            this.cbxCel.Name = "cbxCel";
-            this.cbxCel.Size = new System.Drawing.Size(41, 17);
-            this.cbxCel.TabIndex = 284;
-            this.cbxCel.Text = "Cel";
-            this.cbxCel.UseVisualStyleBackColor = false;
+            this.txtNomeFantasia.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNomeFantasia.Location = new System.Drawing.Point(508, 93);
+            this.txtNomeFantasia.Margin = new System.Windows.Forms.Padding(1);
+            this.txtNomeFantasia.MaxLength = 40;
+            this.txtNomeFantasia.Name = "txtNomeFantasia";
+            this.txtNomeFantasia.Size = new System.Drawing.Size(247, 20);
+            this.txtNomeFantasia.TabIndex = 288;
             // 
-            // cbxTelefone
+            // dataGridView1
             // 
-            this.cbxTelefone.AutoSize = true;
-            this.cbxTelefone.BackColor = System.Drawing.Color.Transparent;
-            this.cbxTelefone.Location = new System.Drawing.Point(303, 239);
-            this.cbxTelefone.Margin = new System.Windows.Forms.Padding(2);
-            this.cbxTelefone.Name = "cbxTelefone";
-            this.cbxTelefone.Size = new System.Drawing.Size(68, 17);
-            this.cbxTelefone.TabIndex = 283;
-            this.cbxTelefone.Text = "Telefone";
-            this.cbxTelefone.UseVisualStyleBackColor = false;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idFornecedorDataGridViewTextBoxColumn,
+            this.nomeFantasiaDataGridViewTextBoxColumn,
+            this.razaoSocialDataGridViewTextBoxColumn,
+            this.cNPJDataGridViewTextBoxColumn,
+            this.inscricaoEstadualDataGridViewTextBoxColumn,
+            this.logradouroDataGridViewTextBoxColumn,
+            this.bairroDataGridViewTextBoxColumn,
+            this.cidadeDataGridViewTextBoxColumn,
+            this.uFDataGridViewTextBoxColumn,
+            this.paisDataGridViewTextBoxColumn,
+            this.cEPDataGridViewTextBoxColumn,
+            this.telResDataGridViewTextBoxColumn,
+            this.telCelDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.comentarioDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.fornecedorBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(135, 198);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(700, 277);
+            this.dataGridView1.TabIndex = 290;
             // 
-            // cbxEmail
+            // _AutoResende_DataBaseDataSet_Fornecedores
             // 
-            this.cbxEmail.AutoSize = true;
-            this.cbxEmail.BackColor = System.Drawing.Color.Transparent;
-            this.cbxEmail.Location = new System.Drawing.Point(303, 211);
-            this.cbxEmail.Margin = new System.Windows.Forms.Padding(2);
-            this.cbxEmail.Name = "cbxEmail";
-            this.cbxEmail.Size = new System.Drawing.Size(55, 17);
-            this.cbxEmail.TabIndex = 282;
-            this.cbxEmail.Text = "E-Mail";
-            this.cbxEmail.UseVisualStyleBackColor = false;
+            this._AutoResende_DataBaseDataSet_Fornecedores.DataSetName = "_AutoResende_DataBaseDataSet_Fornecedores";
+            this._AutoResende_DataBaseDataSet_Fornecedores.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // cbxCep
+            // fornecedorBindingSource
             // 
-            this.cbxCep.AutoSize = true;
-            this.cbxCep.BackColor = System.Drawing.Color.Transparent;
-            this.cbxCep.Location = new System.Drawing.Point(303, 182);
-            this.cbxCep.Margin = new System.Windows.Forms.Padding(2);
-            this.cbxCep.Name = "cbxCep";
-            this.cbxCep.Size = new System.Drawing.Size(45, 17);
-            this.cbxCep.TabIndex = 281;
-            this.cbxCep.Text = "Cep";
-            this.cbxCep.UseVisualStyleBackColor = false;
+            this.fornecedorBindingSource.DataMember = "Fornecedor";
+            this.fornecedorBindingSource.DataSource = this._AutoResende_DataBaseDataSet_Fornecedores;
             // 
-            // cbxLogradouro
+            // fornecedorTableAdapter
             // 
-            this.cbxLogradouro.AutoSize = true;
-            this.cbxLogradouro.BackColor = System.Drawing.Color.Transparent;
-            this.cbxLogradouro.Location = new System.Drawing.Point(148, 268);
-            this.cbxLogradouro.Margin = new System.Windows.Forms.Padding(2);
-            this.cbxLogradouro.Name = "cbxLogradouro";
-            this.cbxLogradouro.Size = new System.Drawing.Size(80, 17);
-            this.cbxLogradouro.TabIndex = 280;
-            this.cbxLogradouro.Text = "Logradouro";
-            this.cbxLogradouro.UseVisualStyleBackColor = false;
+            this.fornecedorTableAdapter.ClearBeforeFill = true;
             // 
-            // cbxCnpj
+            // idFornecedorDataGridViewTextBoxColumn
             // 
-            this.cbxCnpj.AutoSize = true;
-            this.cbxCnpj.BackColor = System.Drawing.Color.Transparent;
-            this.cbxCnpj.Location = new System.Drawing.Point(148, 211);
-            this.cbxCnpj.Margin = new System.Windows.Forms.Padding(2);
-            this.cbxCnpj.Name = "cbxCnpj";
-            this.cbxCnpj.Size = new System.Drawing.Size(53, 17);
-            this.cbxCnpj.TabIndex = 279;
-            this.cbxCnpj.Text = "CNPJ";
-            this.cbxCnpj.UseVisualStyleBackColor = false;
+            this.idFornecedorDataGridViewTextBoxColumn.DataPropertyName = "idFornecedor";
+            this.idFornecedorDataGridViewTextBoxColumn.HeaderText = "Código";
+            this.idFornecedorDataGridViewTextBoxColumn.Name = "idFornecedorDataGridViewTextBoxColumn";
+            this.idFornecedorDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // cbxRazaoSocial
+            // nomeFantasiaDataGridViewTextBoxColumn
             // 
-            this.cbxRazaoSocial.AutoSize = true;
-            this.cbxRazaoSocial.BackColor = System.Drawing.Color.Transparent;
-            this.cbxRazaoSocial.Location = new System.Drawing.Point(148, 182);
-            this.cbxRazaoSocial.Margin = new System.Windows.Forms.Padding(2);
-            this.cbxRazaoSocial.Name = "cbxRazaoSocial";
-            this.cbxRazaoSocial.Size = new System.Drawing.Size(89, 17);
-            this.cbxRazaoSocial.TabIndex = 278;
-            this.cbxRazaoSocial.Text = "Razão Social";
-            this.cbxRazaoSocial.UseVisualStyleBackColor = false;
+            this.nomeFantasiaDataGridViewTextBoxColumn.DataPropertyName = "NomeFantasia";
+            this.nomeFantasiaDataGridViewTextBoxColumn.HeaderText = "Nome Fantasia";
+            this.nomeFantasiaDataGridViewTextBoxColumn.Name = "nomeFantasiaDataGridViewTextBoxColumn";
+            this.nomeFantasiaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nomeFantasiaDataGridViewTextBoxColumn.Width = 200;
             // 
-            // btnLimpa
+            // razaoSocialDataGridViewTextBoxColumn
             // 
-            this.btnLimpa.BackColor = System.Drawing.Color.Salmon;
-            this.btnLimpa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpa.Location = new System.Drawing.Point(251, 447);
-            this.btnLimpa.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLimpa.Name = "btnLimpa";
-            this.btnLimpa.Size = new System.Drawing.Size(77, 24);
-            this.btnLimpa.TabIndex = 275;
-            this.btnLimpa.Text = "Limpa";
-            this.btnLimpa.UseVisualStyleBackColor = false;
+            this.razaoSocialDataGridViewTextBoxColumn.DataPropertyName = "RazaoSocial";
+            this.razaoSocialDataGridViewTextBoxColumn.HeaderText = "Razão Social";
+            this.razaoSocialDataGridViewTextBoxColumn.Name = "razaoSocialDataGridViewTextBoxColumn";
+            this.razaoSocialDataGridViewTextBoxColumn.ReadOnly = true;
+            this.razaoSocialDataGridViewTextBoxColumn.Width = 200;
             // 
-            // btn_Sair
+            // cNPJDataGridViewTextBoxColumn
             // 
-            this.btn_Sair.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_Sair.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.btn_Sair.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Sair.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_Sair.Location = new System.Drawing.Point(353, 447);
-            this.btn_Sair.Margin = new System.Windows.Forms.Padding(1);
-            this.btn_Sair.Name = "btn_Sair";
-            this.btn_Sair.Size = new System.Drawing.Size(77, 24);
-            this.btn_Sair.TabIndex = 274;
-            this.btn_Sair.Text = "Sair";
-            this.btn_Sair.UseVisualStyleBackColor = false;
+            this.cNPJDataGridViewTextBoxColumn.DataPropertyName = "CNPJ";
+            this.cNPJDataGridViewTextBoxColumn.HeaderText = "CNPJ";
+            this.cNPJDataGridViewTextBoxColumn.Name = "cNPJDataGridViewTextBoxColumn";
+            this.cNPJDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // lblNomeFornecedor
+            // inscricaoEstadualDataGridViewTextBoxColumn
             // 
-            this.lblNomeFornecedor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblNomeFornecedor.AutoSize = true;
-            this.lblNomeFornecedor.BackColor = System.Drawing.Color.Transparent;
-            this.lblNomeFornecedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeFornecedor.Location = new System.Drawing.Point(142, 66);
-            this.lblNomeFornecedor.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblNomeFornecedor.Name = "lblNomeFornecedor";
-            this.lblNomeFornecedor.Size = new System.Drawing.Size(119, 13);
-            this.lblNomeFornecedor.TabIndex = 292;
-            this.lblNomeFornecedor.Text = "Digite o Fornecedor";
+            this.inscricaoEstadualDataGridViewTextBoxColumn.DataPropertyName = "InscricaoEstadual";
+            this.inscricaoEstadualDataGridViewTextBoxColumn.HeaderText = "Inscrição Estadual";
+            this.inscricaoEstadualDataGridViewTextBoxColumn.Name = "inscricaoEstadualDataGridViewTextBoxColumn";
+            this.inscricaoEstadualDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // txtBuscaFornecedor
+            // logradouroDataGridViewTextBoxColumn
             // 
-            this.txtBuscaFornecedor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBuscaFornecedor.Location = new System.Drawing.Point(259, 62);
-            this.txtBuscaFornecedor.Margin = new System.Windows.Forms.Padding(1);
-            this.txtBuscaFornecedor.MaxLength = 40;
-            this.txtBuscaFornecedor.Name = "txtBuscaFornecedor";
-            this.txtBuscaFornecedor.Size = new System.Drawing.Size(469, 20);
-            this.txtBuscaFornecedor.TabIndex = 291;
+            this.logradouroDataGridViewTextBoxColumn.DataPropertyName = "Logradouro";
+            this.logradouroDataGridViewTextBoxColumn.HeaderText = "Logradouro";
+            this.logradouroDataGridViewTextBoxColumn.Name = "logradouroDataGridViewTextBoxColumn";
+            this.logradouroDataGridViewTextBoxColumn.ReadOnly = true;
+            this.logradouroDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // bairroDataGridViewTextBoxColumn
+            // 
+            this.bairroDataGridViewTextBoxColumn.DataPropertyName = "Bairro";
+            this.bairroDataGridViewTextBoxColumn.HeaderText = "Bairro";
+            this.bairroDataGridViewTextBoxColumn.Name = "bairroDataGridViewTextBoxColumn";
+            this.bairroDataGridViewTextBoxColumn.ReadOnly = true;
+            this.bairroDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // cidadeDataGridViewTextBoxColumn
+            // 
+            this.cidadeDataGridViewTextBoxColumn.DataPropertyName = "Cidade";
+            this.cidadeDataGridViewTextBoxColumn.HeaderText = "Cidade";
+            this.cidadeDataGridViewTextBoxColumn.Name = "cidadeDataGridViewTextBoxColumn";
+            this.cidadeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cidadeDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // uFDataGridViewTextBoxColumn
+            // 
+            this.uFDataGridViewTextBoxColumn.DataPropertyName = "UF";
+            this.uFDataGridViewTextBoxColumn.HeaderText = "UF";
+            this.uFDataGridViewTextBoxColumn.Name = "uFDataGridViewTextBoxColumn";
+            this.uFDataGridViewTextBoxColumn.ReadOnly = true;
+            this.uFDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // paisDataGridViewTextBoxColumn
+            // 
+            this.paisDataGridViewTextBoxColumn.DataPropertyName = "Pais";
+            this.paisDataGridViewTextBoxColumn.HeaderText = "País";
+            this.paisDataGridViewTextBoxColumn.Name = "paisDataGridViewTextBoxColumn";
+            this.paisDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cEPDataGridViewTextBoxColumn
+            // 
+            this.cEPDataGridViewTextBoxColumn.DataPropertyName = "CEP";
+            this.cEPDataGridViewTextBoxColumn.HeaderText = "CEP";
+            this.cEPDataGridViewTextBoxColumn.Name = "cEPDataGridViewTextBoxColumn";
+            this.cEPDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // telResDataGridViewTextBoxColumn
+            // 
+            this.telResDataGridViewTextBoxColumn.DataPropertyName = "TelRes";
+            this.telResDataGridViewTextBoxColumn.HeaderText = "TelRes";
+            this.telResDataGridViewTextBoxColumn.Name = "telResDataGridViewTextBoxColumn";
+            this.telResDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // telCelDataGridViewTextBoxColumn
+            // 
+            this.telCelDataGridViewTextBoxColumn.DataPropertyName = "TelCel";
+            this.telCelDataGridViewTextBoxColumn.HeaderText = "TelCel";
+            this.telCelDataGridViewTextBoxColumn.Name = "telCelDataGridViewTextBoxColumn";
+            this.telCelDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // comentarioDataGridViewTextBoxColumn
+            // 
+            this.comentarioDataGridViewTextBoxColumn.DataPropertyName = "Comentario";
+            this.comentarioDataGridViewTextBoxColumn.HeaderText = "Comentário";
+            this.comentarioDataGridViewTextBoxColumn.Name = "comentarioDataGridViewTextBoxColumn";
+            this.comentarioDataGridViewTextBoxColumn.ReadOnly = true;
+            this.comentarioDataGridViewTextBoxColumn.Width = 400;
             // 
             // frmConsultaFornecedor
             // 
@@ -352,26 +380,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(867, 507);
-            this.Controls.Add(this.lblNomeFornecedor);
-            this.Controls.Add(this.txtBuscaFornecedor);
-            this.Controls.Add(this.btnBusca);
-            this.Controls.Add(this.cbxComentarios);
-            this.Controls.Add(this.cbxFantasia);
-            this.Controls.Add(this.cbxPais);
-            this.Controls.Add(this.cbxBairro);
-            this.Controls.Add(this.cbxCidade);
-            this.Controls.Add(this.cbxCel);
-            this.Controls.Add(this.cbxTelefone);
-            this.Controls.Add(this.cbxEmail);
-            this.Controls.Add(this.cbxCep);
-            this.Controls.Add(this.cbxLogradouro);
-            this.Controls.Add(this.cbxCnpj);
-            this.Controls.Add(this.cbxRazaoSocial);
-            this.Controls.Add(this.btnLimpa);
-            this.Controls.Add(this.btn_Sair);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtNomeFantasia);
+            this.Controls.Add(this.btnPesquisaCliente);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtCNPJ);
+            this.Controls.Add(this.lblNomeFornecedores);
+            this.Controls.Add(this.txtRazaoSocial);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.picimg_cliente);
-            this.Controls.Add(this.label18);
             this.Controls.Add(this.lblfornecedor);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.pictureBox2);
@@ -379,9 +397,13 @@
             this.Name = "frmConsultaFornecedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmConsultaFornecedor";
+            this.Load += new System.EventHandler(this.frmConsultaFornecedor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet_Fornecedores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fornecedorBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -391,26 +413,34 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox picimg_cliente;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label lblfornecedor;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button btnBusca;
-        private System.Windows.Forms.CheckBox cbxComentarios;
-        private System.Windows.Forms.CheckBox cbxFantasia;
-        private System.Windows.Forms.CheckBox cbxPais;
-        private System.Windows.Forms.CheckBox cbxBairro;
-        private System.Windows.Forms.CheckBox cbxCidade;
-        private System.Windows.Forms.CheckBox cbxCel;
-        private System.Windows.Forms.CheckBox cbxTelefone;
-        private System.Windows.Forms.CheckBox cbxEmail;
-        private System.Windows.Forms.CheckBox cbxCep;
-        private System.Windows.Forms.CheckBox cbxLogradouro;
-        private System.Windows.Forms.CheckBox cbxCnpj;
-        private System.Windows.Forms.CheckBox cbxRazaoSocial;
-        private System.Windows.Forms.Button btnLimpa;
-        private System.Windows.Forms.Button btn_Sair;
-        private System.Windows.Forms.Label lblNomeFornecedor;
-        private System.Windows.Forms.TextBox txtBuscaFornecedor;
+        private System.Windows.Forms.Button btnPesquisaCliente;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtCNPJ;
+        private System.Windows.Forms.Label lblNomeFornecedores;
+        private System.Windows.Forms.TextBox txtRazaoSocial;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtNomeFantasia;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private _AutoResende_DataBaseDataSet_Fornecedores _AutoResende_DataBaseDataSet_Fornecedores;
+        private System.Windows.Forms.BindingSource fornecedorBindingSource;
+        private _AutoResende_DataBaseDataSet_FornecedoresTableAdapters.FornecedorTableAdapter fornecedorTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idFornecedorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeFantasiaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn razaoSocialDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNPJDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn inscricaoEstadualDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn logradouroDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bairroDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cidadeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn uFDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn paisDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cEPDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telResDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telCelDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn comentarioDataGridViewTextBoxColumn;
     }
 }

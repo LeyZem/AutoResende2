@@ -26,5 +26,12 @@ namespace AutoResende.View
         {
             Close();
         }
+
+        private void frmConsultaTipoServico_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the '_AutoResende_DataBaseDataSet_TipoServico.TipoServico' table. You can move, or remove it, as needed.
+            this.tipoServicoTableAdapter.Fill(this._AutoResende_DataBaseDataSet_TipoServico.TipoServico);
+
+        }
     }
 }

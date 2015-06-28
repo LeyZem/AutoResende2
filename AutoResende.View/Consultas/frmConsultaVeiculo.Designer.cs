@@ -28,52 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaVeiculo));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label18 = new System.Windows.Forms.Label();
             this.btnFechar = new System.Windows.Forms.Button();
             this.picimg_cliente = new System.Windows.Forms.PictureBox();
             this.lblfuncionários = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnBusca = new System.Windows.Forms.Button();
-            this.btnLimpa = new System.Windows.Forms.Button();
-            this.btn_Sair = new System.Windows.Forms.Button();
-            this.lblConsultaVeiculo = new System.Windows.Forms.Label();
-            this.txtBuscaVeiculo = new System.Windows.Forms.TextBox();
-            this.cbxCombustivel = new System.Windows.Forms.CheckBox();
-            this.cbxOdometro = new System.Windows.Forms.CheckBox();
-            this.cbxCor = new System.Windows.Forms.CheckBox();
-            this.cbxPlaca = new System.Windows.Forms.CheckBox();
-            this.cbxModelo = new System.Windows.Forms.CheckBox();
+            this.btnPesquisaVeiculo = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtMarca = new System.Windows.Forms.TextBox();
+            this.lblPlaca = new System.Windows.Forms.Label();
+            this.cmbCombustivel = new System.Windows.Forms.ComboBox();
+            this.lblCombustivel = new System.Windows.Forms.Label();
+            this.lblModelo = new System.Windows.Forms.Label();
+            this.txtModelo = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this._AutoResende_DataBaseDataSet_Veiculo = new AutoResende.View._AutoResende_DataBaseDataSet_Veiculo();
+            this.veiculoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.veiculoTableAdapter = new AutoResende.View._AutoResende_DataBaseDataSet_VeiculoTableAdapters.VeiculoTableAdapter();
+            this.idVeiculoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.marcaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modeloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.corDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.placaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.combustivelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.odometroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descricaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtPlaca = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet_Veiculo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veiculoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.SaddleBrown;
-            this.pictureBox1.Location = new System.Drawing.Point(139, 135);
+            this.pictureBox1.Location = new System.Drawing.Point(139, 156);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(713, 6);
+            this.pictureBox1.Size = new System.Drawing.Size(685, 6);
             this.pictureBox1.TabIndex = 197;
             this.pictureBox1.TabStop = false;
-            // 
-            // label18
-            // 
-            this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label18.Location = new System.Drawing.Point(139, 111);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(172, 18);
-            this.label18.TabIndex = 196;
-            this.label18.Text = "Campos onde Pesquisar";
             // 
             // btnFechar
             // 
@@ -116,9 +116,9 @@
             this.lblfuncionários.Location = new System.Drawing.Point(141, 16);
             this.lblfuncionários.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblfuncionários.Name = "lblfuncionários";
-            this.lblfuncionários.Size = new System.Drawing.Size(176, 25);
+            this.lblfuncionários.Size = new System.Drawing.Size(194, 25);
             this.lblfuncionários.TabIndex = 193;
-            this.lblfuncionários.Text = "Encontra Veículo";
+            this.lblfuncionários.Text = "Consultar Veículos";
             // 
             // pictureBox2
             // 
@@ -132,128 +132,192 @@
             this.pictureBox2.TabIndex = 195;
             this.pictureBox2.TabStop = false;
             // 
-            // btnBusca
+            // btnPesquisaVeiculo
             // 
-            this.btnBusca.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnBusca.BackColor = System.Drawing.Color.Orange;
-            this.btnBusca.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBusca.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBusca.Location = new System.Drawing.Point(143, 459);
-            this.btnBusca.Margin = new System.Windows.Forms.Padding(1);
-            this.btnBusca.Name = "btnBusca";
-            this.btnBusca.Size = new System.Drawing.Size(77, 24);
-            this.btnBusca.TabIndex = 282;
-            this.btnBusca.Text = "Busca";
-            this.btnBusca.UseVisualStyleBackColor = false;
+            this.btnPesquisaVeiculo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPesquisaVeiculo.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnPesquisaVeiculo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPesquisaVeiculo.BackgroundImage")));
+            this.btnPesquisaVeiculo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPesquisaVeiculo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPesquisaVeiculo.Location = new System.Drawing.Point(751, 56);
+            this.btnPesquisaVeiculo.Name = "btnPesquisaVeiculo";
+            this.btnPesquisaVeiculo.Size = new System.Drawing.Size(59, 51);
+            this.btnPesquisaVeiculo.TabIndex = 287;
+            this.btnPesquisaVeiculo.UseVisualStyleBackColor = false;
             // 
-            // btnLimpa
+            // label1
             // 
-            this.btnLimpa.BackColor = System.Drawing.Color.Salmon;
-            this.btnLimpa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpa.Location = new System.Drawing.Point(247, 459);
-            this.btnLimpa.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLimpa.Name = "btnLimpa";
-            this.btnLimpa.Size = new System.Drawing.Size(77, 24);
-            this.btnLimpa.TabIndex = 281;
-            this.btnLimpa.Text = "Limpa";
-            this.btnLimpa.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(141, 75);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 13);
+            this.label1.TabIndex = 291;
+            this.label1.Text = "Marca";
             // 
-            // btn_Sair
+            // txtMarca
             // 
-            this.btn_Sair.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_Sair.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.btn_Sair.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Sair.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_Sair.Location = new System.Drawing.Point(348, 459);
-            this.btn_Sair.Margin = new System.Windows.Forms.Padding(1);
-            this.btn_Sair.Name = "btn_Sair";
-            this.btn_Sair.Size = new System.Drawing.Size(77, 24);
-            this.btn_Sair.TabIndex = 280;
-            this.btn_Sair.Text = "Sair";
-            this.btn_Sair.UseVisualStyleBackColor = false;
+            this.txtMarca.Location = new System.Drawing.Point(214, 72);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(208, 20);
+            this.txtMarca.TabIndex = 290;
             // 
-            // lblConsultaVeiculo
+            // lblPlaca
             // 
-            this.lblConsultaVeiculo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblConsultaVeiculo.AutoSize = true;
-            this.lblConsultaVeiculo.BackColor = System.Drawing.Color.Transparent;
-            this.lblConsultaVeiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConsultaVeiculo.Location = new System.Drawing.Point(141, 75);
-            this.lblConsultaVeiculo.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblConsultaVeiculo.Name = "lblConsultaVeiculo";
-            this.lblConsultaVeiculo.Size = new System.Drawing.Size(99, 13);
-            this.lblConsultaVeiculo.TabIndex = 284;
-            this.lblConsultaVeiculo.Text = "Digite o Veículo";
+            this.lblPlaca.AutoSize = true;
+            this.lblPlaca.BackColor = System.Drawing.Color.Transparent;
+            this.lblPlaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlaca.Location = new System.Drawing.Point(141, 106);
+            this.lblPlaca.Name = "lblPlaca";
+            this.lblPlaca.Size = new System.Drawing.Size(39, 13);
+            this.lblPlaca.TabIndex = 289;
+            this.lblPlaca.Text = "Placa";
             // 
-            // txtBuscaVeiculo
+            // cmbCombustivel
             // 
-            this.txtBuscaVeiculo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBuscaVeiculo.Location = new System.Drawing.Point(239, 71);
-            this.txtBuscaVeiculo.Margin = new System.Windows.Forms.Padding(1);
-            this.txtBuscaVeiculo.MaxLength = 40;
-            this.txtBuscaVeiculo.Name = "txtBuscaVeiculo";
-            this.txtBuscaVeiculo.Size = new System.Drawing.Size(469, 20);
-            this.txtBuscaVeiculo.TabIndex = 283;
+            this.cmbCombustivel.FormattingEnabled = true;
+            this.cmbCombustivel.Items.AddRange(new object[] {
+            "Gasolina",
+            "Etanol",
+            "Flex",
+            "Gás",
+            "Diesel"});
+            this.cmbCombustivel.Location = new System.Drawing.Point(515, 106);
+            this.cmbCombustivel.Name = "cmbCombustivel";
+            this.cmbCombustivel.Size = new System.Drawing.Size(114, 21);
+            this.cmbCombustivel.TabIndex = 295;
             // 
-            // cbxCombustivel
+            // lblCombustivel
             // 
-            this.cbxCombustivel.AutoSize = true;
-            this.cbxCombustivel.BackColor = System.Drawing.Color.Transparent;
-            this.cbxCombustivel.Location = new System.Drawing.Point(294, 201);
-            this.cbxCombustivel.Margin = new System.Windows.Forms.Padding(2);
-            this.cbxCombustivel.Name = "cbxCombustivel";
-            this.cbxCombustivel.Size = new System.Drawing.Size(85, 17);
-            this.cbxCombustivel.TabIndex = 290;
-            this.cbxCombustivel.Text = "Combustível";
-            this.cbxCombustivel.UseVisualStyleBackColor = false;
+            this.lblCombustivel.AutoSize = true;
+            this.lblCombustivel.BackColor = System.Drawing.Color.Transparent;
+            this.lblCombustivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCombustivel.Location = new System.Drawing.Point(418, 109);
+            this.lblCombustivel.Name = "lblCombustivel";
+            this.lblCombustivel.Size = new System.Drawing.Size(77, 13);
+            this.lblCombustivel.TabIndex = 294;
+            this.lblCombustivel.Text = "Combustível";
             // 
-            // cbxOdometro
+            // lblModelo
             // 
-            this.cbxOdometro.AutoSize = true;
-            this.cbxOdometro.BackColor = System.Drawing.Color.Transparent;
-            this.cbxOdometro.Location = new System.Drawing.Point(294, 172);
-            this.cbxOdometro.Margin = new System.Windows.Forms.Padding(2);
-            this.cbxOdometro.Name = "cbxOdometro";
-            this.cbxOdometro.Size = new System.Drawing.Size(72, 17);
-            this.cbxOdometro.TabIndex = 289;
-            this.cbxOdometro.Text = "Odômetro";
-            this.cbxOdometro.UseVisualStyleBackColor = false;
+            this.lblModelo.AutoSize = true;
+            this.lblModelo.BackColor = System.Drawing.Color.Transparent;
+            this.lblModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModelo.Location = new System.Drawing.Point(447, 75);
+            this.lblModelo.Name = "lblModelo";
+            this.lblModelo.Size = new System.Drawing.Size(48, 13);
+            this.lblModelo.TabIndex = 293;
+            this.lblModelo.Text = "Modelo";
             // 
-            // cbxCor
+            // txtModelo
             // 
-            this.cbxCor.AutoSize = true;
-            this.cbxCor.BackColor = System.Drawing.Color.Transparent;
-            this.cbxCor.Location = new System.Drawing.Point(483, 172);
-            this.cbxCor.Margin = new System.Windows.Forms.Padding(2);
-            this.cbxCor.Name = "cbxCor";
-            this.cbxCor.Size = new System.Drawing.Size(42, 17);
-            this.cbxCor.TabIndex = 287;
-            this.cbxCor.Text = "Cor";
-            this.cbxCor.UseVisualStyleBackColor = false;
+            this.txtModelo.Location = new System.Drawing.Point(515, 72);
+            this.txtModelo.Name = "txtModelo";
+            this.txtModelo.Size = new System.Drawing.Size(218, 20);
+            this.txtModelo.TabIndex = 292;
             // 
-            // cbxPlaca
+            // dataGridView1
             // 
-            this.cbxPlaca.AutoSize = true;
-            this.cbxPlaca.BackColor = System.Drawing.Color.Transparent;
-            this.cbxPlaca.Location = new System.Drawing.Point(139, 201);
-            this.cbxPlaca.Margin = new System.Windows.Forms.Padding(2);
-            this.cbxPlaca.Name = "cbxPlaca";
-            this.cbxPlaca.Size = new System.Drawing.Size(53, 17);
-            this.cbxPlaca.TabIndex = 286;
-            this.cbxPlaca.Text = "Placa";
-            this.cbxPlaca.UseVisualStyleBackColor = false;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idVeiculoDataGridViewTextBoxColumn,
+            this.marcaDataGridViewTextBoxColumn,
+            this.modeloDataGridViewTextBoxColumn,
+            this.corDataGridViewTextBoxColumn,
+            this.placaDataGridViewTextBoxColumn,
+            this.combustivelDataGridViewTextBoxColumn,
+            this.odometroDataGridViewTextBoxColumn,
+            this.descricaoDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.veiculoBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(139, 205);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(685, 268);
+            this.dataGridView1.TabIndex = 296;
             // 
-            // cbxModelo
+            // _AutoResende_DataBaseDataSet_Veiculo
             // 
-            this.cbxModelo.AutoSize = true;
-            this.cbxModelo.BackColor = System.Drawing.Color.Transparent;
-            this.cbxModelo.Location = new System.Drawing.Point(139, 172);
-            this.cbxModelo.Margin = new System.Windows.Forms.Padding(2);
-            this.cbxModelo.Name = "cbxModelo";
-            this.cbxModelo.Size = new System.Drawing.Size(61, 17);
-            this.cbxModelo.TabIndex = 285;
-            this.cbxModelo.Text = "Modelo";
-            this.cbxModelo.UseVisualStyleBackColor = false;
+            this._AutoResende_DataBaseDataSet_Veiculo.DataSetName = "_AutoResende_DataBaseDataSet_Veiculo";
+            this._AutoResende_DataBaseDataSet_Veiculo.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // veiculoBindingSource
+            // 
+            this.veiculoBindingSource.DataMember = "Veiculo";
+            this.veiculoBindingSource.DataSource = this._AutoResende_DataBaseDataSet_Veiculo;
+            // 
+            // veiculoTableAdapter
+            // 
+            this.veiculoTableAdapter.ClearBeforeFill = true;
+            // 
+            // idVeiculoDataGridViewTextBoxColumn
+            // 
+            this.idVeiculoDataGridViewTextBoxColumn.DataPropertyName = "idVeiculo";
+            this.idVeiculoDataGridViewTextBoxColumn.HeaderText = "Código";
+            this.idVeiculoDataGridViewTextBoxColumn.Name = "idVeiculoDataGridViewTextBoxColumn";
+            this.idVeiculoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // marcaDataGridViewTextBoxColumn
+            // 
+            this.marcaDataGridViewTextBoxColumn.DataPropertyName = "Marca";
+            this.marcaDataGridViewTextBoxColumn.HeaderText = "Marca";
+            this.marcaDataGridViewTextBoxColumn.Name = "marcaDataGridViewTextBoxColumn";
+            this.marcaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // modeloDataGridViewTextBoxColumn
+            // 
+            this.modeloDataGridViewTextBoxColumn.DataPropertyName = "Modelo";
+            this.modeloDataGridViewTextBoxColumn.HeaderText = "Modelo";
+            this.modeloDataGridViewTextBoxColumn.Name = "modeloDataGridViewTextBoxColumn";
+            this.modeloDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // corDataGridViewTextBoxColumn
+            // 
+            this.corDataGridViewTextBoxColumn.DataPropertyName = "Cor";
+            this.corDataGridViewTextBoxColumn.HeaderText = "Cor";
+            this.corDataGridViewTextBoxColumn.Name = "corDataGridViewTextBoxColumn";
+            this.corDataGridViewTextBoxColumn.ReadOnly = true;
+            this.corDataGridViewTextBoxColumn.Width = 70;
+            // 
+            // placaDataGridViewTextBoxColumn
+            // 
+            this.placaDataGridViewTextBoxColumn.DataPropertyName = "Placa";
+            this.placaDataGridViewTextBoxColumn.HeaderText = "Placa";
+            this.placaDataGridViewTextBoxColumn.Name = "placaDataGridViewTextBoxColumn";
+            this.placaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.placaDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // combustivelDataGridViewTextBoxColumn
+            // 
+            this.combustivelDataGridViewTextBoxColumn.DataPropertyName = "Combustivel";
+            this.combustivelDataGridViewTextBoxColumn.HeaderText = "Combustível";
+            this.combustivelDataGridViewTextBoxColumn.Name = "combustivelDataGridViewTextBoxColumn";
+            this.combustivelDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // odometroDataGridViewTextBoxColumn
+            // 
+            this.odometroDataGridViewTextBoxColumn.DataPropertyName = "Odometro";
+            this.odometroDataGridViewTextBoxColumn.HeaderText = "Odômetro";
+            this.odometroDataGridViewTextBoxColumn.Name = "odometroDataGridViewTextBoxColumn";
+            this.odometroDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // descricaoDataGridViewTextBoxColumn
+            // 
+            this.descricaoDataGridViewTextBoxColumn.DataPropertyName = "Descricao";
+            this.descricaoDataGridViewTextBoxColumn.HeaderText = "Descrição";
+            this.descricaoDataGridViewTextBoxColumn.Name = "descricaoDataGridViewTextBoxColumn";
+            this.descricaoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.descricaoDataGridViewTextBoxColumn.Width = 300;
+            // 
+            // txtPlaca
+            // 
+            this.txtPlaca.Location = new System.Drawing.Point(214, 103);
+            this.txtPlaca.Name = "txtPlaca";
+            this.txtPlaca.Size = new System.Drawing.Size(114, 20);
+            this.txtPlaca.TabIndex = 288;
             // 
             // frmConsultaVeiculo
             // 
@@ -261,18 +325,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(867, 507);
-            this.Controls.Add(this.cbxCombustivel);
-            this.Controls.Add(this.cbxOdometro);
-            this.Controls.Add(this.cbxCor);
-            this.Controls.Add(this.cbxPlaca);
-            this.Controls.Add(this.cbxModelo);
-            this.Controls.Add(this.lblConsultaVeiculo);
-            this.Controls.Add(this.txtBuscaVeiculo);
-            this.Controls.Add(this.btnBusca);
-            this.Controls.Add(this.btnLimpa);
-            this.Controls.Add(this.btn_Sair);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.cmbCombustivel);
+            this.Controls.Add(this.lblCombustivel);
+            this.Controls.Add(this.lblModelo);
+            this.Controls.Add(this.txtModelo);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtMarca);
+            this.Controls.Add(this.lblPlaca);
+            this.Controls.Add(this.txtPlaca);
+            this.Controls.Add(this.btnPesquisaVeiculo);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label18);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.picimg_cliente);
             this.Controls.Add(this.lblfuncionários);
@@ -281,9 +344,13 @@
             this.Name = "frmConsultaVeiculo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmConsultaVeiculo";
+            this.Load += new System.EventHandler(this.frmConsultaVeiculo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet_Veiculo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veiculoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,20 +359,30 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.PictureBox picimg_cliente;
         private System.Windows.Forms.Label lblfuncionários;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button btnBusca;
-        private System.Windows.Forms.Button btnLimpa;
-        private System.Windows.Forms.Button btn_Sair;
-        private System.Windows.Forms.Label lblConsultaVeiculo;
-        private System.Windows.Forms.TextBox txtBuscaVeiculo;
-        private System.Windows.Forms.CheckBox cbxCombustivel;
-        private System.Windows.Forms.CheckBox cbxOdometro;
-        private System.Windows.Forms.CheckBox cbxCor;
-        private System.Windows.Forms.CheckBox cbxPlaca;
-        private System.Windows.Forms.CheckBox cbxModelo;
+        private System.Windows.Forms.Button btnPesquisaVeiculo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtMarca;
+        private System.Windows.Forms.Label lblPlaca;
+        private System.Windows.Forms.ComboBox cmbCombustivel;
+        private System.Windows.Forms.Label lblCombustivel;
+        private System.Windows.Forms.Label lblModelo;
+        private System.Windows.Forms.TextBox txtModelo;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private _AutoResende_DataBaseDataSet_Veiculo _AutoResende_DataBaseDataSet_Veiculo;
+        private System.Windows.Forms.BindingSource veiculoBindingSource;
+        private _AutoResende_DataBaseDataSet_VeiculoTableAdapters.VeiculoTableAdapter veiculoTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idVeiculoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn marcaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn modeloDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn corDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn placaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn combustivelDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn odometroDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descricaoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox txtPlaca;
     }
 }

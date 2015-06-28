@@ -35,15 +35,12 @@
             this.lblBuscaFuncionários = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnPesquisaCliente = new System.Windows.Forms.Button();
+            this.btnPesquisaFuncionario = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCpfFuncionario = new System.Windows.Forms.TextBox();
             this.lblNomeCliente = new System.Windows.Forms.Label();
-            this.txtBuscaCliente = new System.Windows.Forms.TextBox();
+            this.txtNomeFuncionario = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this._AutoResende_DataBaseDataSet1 = new AutoResende.View._AutoResende_DataBaseDataSet1();
-            this.funcionarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.funcionarioTableAdapter = new AutoResende.View._AutoResende_DataBaseDataSet1TableAdapters.FuncionarioTableAdapter();
             this.idFuncionarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cPFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,12 +57,15 @@
             this.telCelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comentarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.funcionarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._AutoResende_DataBaseDataSet1 = new AutoResende.View._AutoResende_DataBaseDataSet1();
+            this.funcionarioTableAdapter = new AutoResende.View._AutoResende_DataBaseDataSet1TableAdapters.FuncionarioTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.funcionarioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -136,18 +136,18 @@
             this.pictureBox2.TabIndex = 189;
             this.pictureBox2.TabStop = false;
             // 
-            // btnPesquisaCliente
+            // btnPesquisaFuncionario
             // 
-            this.btnPesquisaCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPesquisaCliente.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.btnPesquisaCliente.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPesquisaCliente.BackgroundImage")));
-            this.btnPesquisaCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPesquisaCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPesquisaCliente.Location = new System.Drawing.Point(760, 60);
-            this.btnPesquisaCliente.Name = "btnPesquisaCliente";
-            this.btnPesquisaCliente.Size = new System.Drawing.Size(59, 51);
-            this.btnPesquisaCliente.TabIndex = 282;
-            this.btnPesquisaCliente.UseVisualStyleBackColor = false;
+            this.btnPesquisaFuncionario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPesquisaFuncionario.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnPesquisaFuncionario.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPesquisaFuncionario.BackgroundImage")));
+            this.btnPesquisaFuncionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPesquisaFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPesquisaFuncionario.Location = new System.Drawing.Point(760, 60);
+            this.btnPesquisaFuncionario.Name = "btnPesquisaFuncionario";
+            this.btnPesquisaFuncionario.Size = new System.Drawing.Size(59, 51);
+            this.btnPesquisaFuncionario.TabIndex = 282;
+            this.btnPesquisaFuncionario.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -162,15 +162,15 @@
             this.label1.TabIndex = 281;
             this.label1.Text = "CPF";
             // 
-            // textBox1
+            // txtCpfFuncionario
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(193, 91);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(1);
-            this.textBox1.MaxLength = 40;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 20);
-            this.textBox1.TabIndex = 280;
+            this.txtCpfFuncionario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCpfFuncionario.Location = new System.Drawing.Point(193, 91);
+            this.txtCpfFuncionario.Margin = new System.Windows.Forms.Padding(1);
+            this.txtCpfFuncionario.MaxLength = 40;
+            this.txtCpfFuncionario.Name = "txtCpfFuncionario";
+            this.txtCpfFuncionario.Size = new System.Drawing.Size(230, 20);
+            this.txtCpfFuncionario.TabIndex = 280;
             // 
             // lblNomeCliente
             // 
@@ -185,15 +185,15 @@
             this.lblNomeCliente.TabIndex = 279;
             this.lblNomeCliente.Text = "Nome";
             // 
-            // txtBuscaCliente
+            // txtNomeFuncionario
             // 
-            this.txtBuscaCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBuscaCliente.Location = new System.Drawing.Point(193, 60);
-            this.txtBuscaCliente.Margin = new System.Windows.Forms.Padding(1);
-            this.txtBuscaCliente.MaxLength = 40;
-            this.txtBuscaCliente.Name = "txtBuscaCliente";
-            this.txtBuscaCliente.Size = new System.Drawing.Size(469, 20);
-            this.txtBuscaCliente.TabIndex = 278;
+            this.txtNomeFuncionario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNomeFuncionario.Location = new System.Drawing.Point(193, 60);
+            this.txtNomeFuncionario.Margin = new System.Windows.Forms.Padding(1);
+            this.txtNomeFuncionario.MaxLength = 40;
+            this.txtNomeFuncionario.Name = "txtNomeFuncionario";
+            this.txtNomeFuncionario.Size = new System.Drawing.Size(469, 20);
+            this.txtNomeFuncionario.TabIndex = 278;
             // 
             // dataGridView1
             // 
@@ -224,20 +224,6 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(690, 295);
             this.dataGridView1.TabIndex = 283;
-            // 
-            // _AutoResende_DataBaseDataSet1
-            // 
-            this._AutoResende_DataBaseDataSet1.DataSetName = "_AutoResende_DataBaseDataSet1";
-            this._AutoResende_DataBaseDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // funcionarioBindingSource
-            // 
-            this.funcionarioBindingSource.DataMember = "Funcionario";
-            this.funcionarioBindingSource.DataSource = this._AutoResende_DataBaseDataSet1;
-            // 
-            // funcionarioTableAdapter
-            // 
-            this.funcionarioTableAdapter.ClearBeforeFill = true;
             // 
             // idFuncionarioDataGridViewTextBoxColumn
             // 
@@ -358,6 +344,20 @@
             this.comentarioDataGridViewTextBoxColumn.ReadOnly = true;
             this.comentarioDataGridViewTextBoxColumn.Width = 500;
             // 
+            // funcionarioBindingSource
+            // 
+            this.funcionarioBindingSource.DataMember = "Funcionario";
+            this.funcionarioBindingSource.DataSource = this._AutoResende_DataBaseDataSet1;
+            // 
+            // _AutoResende_DataBaseDataSet1
+            // 
+            this._AutoResende_DataBaseDataSet1.DataSetName = "_AutoResende_DataBaseDataSet1";
+            this._AutoResende_DataBaseDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // funcionarioTableAdapter
+            // 
+            this.funcionarioTableAdapter.ClearBeforeFill = true;
+            // 
             // frmConsultaFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -365,11 +365,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(867, 507);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnPesquisaCliente);
+            this.Controls.Add(this.btnPesquisaFuncionario);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCpfFuncionario);
             this.Controls.Add(this.lblNomeCliente);
-            this.Controls.Add(this.txtBuscaCliente);
+            this.Controls.Add(this.txtNomeFuncionario);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.picimg_cliente);
             this.Controls.Add(this.lblBuscaFuncionários);
@@ -384,8 +384,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.funcionarioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,11 +398,11 @@
         private System.Windows.Forms.Label lblBuscaFuncionários;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button btnPesquisaCliente;
+        private System.Windows.Forms.Button btnPesquisaFuncionario;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCpfFuncionario;
         private System.Windows.Forms.Label lblNomeCliente;
-        private System.Windows.Forms.TextBox txtBuscaCliente;
+        private System.Windows.Forms.TextBox txtNomeFuncionario;
         private System.Windows.Forms.DataGridView dataGridView1;
         private _AutoResende_DataBaseDataSet1 _AutoResende_DataBaseDataSet1;
         private System.Windows.Forms.BindingSource funcionarioBindingSource;
