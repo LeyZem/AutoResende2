@@ -43,13 +43,13 @@ namespace AutoResende.Model
             
         }
 
-        public static Veiculo Seleciona(int pCodigoVeiculo)
+        public static Veiculo Seleciona(string Placa)
         {
             //Conexão com o Banco de Dados
             AutoResendeDataContext oDB = new AutoResendeDataContext();
 
             //String de Seleção
-            Veiculo oVeiculo = (from Seleciona in oDB.Veiculos where Seleciona.idVeiculo == pCodigoVeiculo select Seleciona).SingleOrDefault();
+            Veiculo oVeiculo = (from Seleciona in oDB.Veiculos where Seleciona.Placa == Placa select Seleciona).SingleOrDefault();
 
             //Retorno do Veiculo
             return oVeiculo;

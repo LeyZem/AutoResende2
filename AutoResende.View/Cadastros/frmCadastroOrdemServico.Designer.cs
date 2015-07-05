@@ -53,7 +53,7 @@
             this.txtPlaca = new System.Windows.Forms.TextBox();
             this.lblModelo = new System.Windows.Forms.Label();
             this.txtModelo = new System.Windows.Forms.TextBox();
-            this.btnPesquisaVeiculo = new System.Windows.Forms.Button();
+            this.btnPesquisarCliente = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtCPFCliente = new System.Windows.Forms.TextBox();
             this.lblNomeCliente = new System.Windows.Forms.Label();
@@ -61,7 +61,9 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
+            this.TipoServico = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DescricaoComplementar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnPesquisarVeiculo = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -350,18 +352,18 @@
             this.txtModelo.Size = new System.Drawing.Size(143, 20);
             this.txtModelo.TabIndex = 228;
             // 
-            // btnPesquisaVeiculo
+            // btnPesquisarCliente
             // 
-            this.btnPesquisaVeiculo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPesquisaVeiculo.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.btnPesquisaVeiculo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPesquisaVeiculo.BackgroundImage")));
-            this.btnPesquisaVeiculo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPesquisaVeiculo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPesquisaVeiculo.Location = new System.Drawing.Point(821, 89);
-            this.btnPesquisaVeiculo.Name = "btnPesquisaVeiculo";
-            this.btnPesquisaVeiculo.Size = new System.Drawing.Size(26, 21);
-            this.btnPesquisaVeiculo.TabIndex = 288;
-            this.btnPesquisaVeiculo.UseVisualStyleBackColor = false;
+            this.btnPesquisarCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPesquisarCliente.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnPesquisarCliente.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPesquisarCliente.BackgroundImage")));
+            this.btnPesquisarCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPesquisarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPesquisarCliente.Location = new System.Drawing.Point(821, 89);
+            this.btnPesquisarCliente.Name = "btnPesquisarCliente";
+            this.btnPesquisarCliente.Size = new System.Drawing.Size(26, 21);
+            this.btnPesquisarCliente.TabIndex = 288;
+            this.btnPesquisarCliente.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -414,7 +416,7 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(121, 0);
+            this.comboBox1.Location = new System.Drawing.Point(114, 0);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(117, 21);
             this.comboBox1.TabIndex = 294;
@@ -433,23 +435,41 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.TipoServico,
+            this.DescricaoComplementar});
             this.dataGridView1.Location = new System.Drawing.Point(25, 165);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(821, 143);
             this.dataGridView1.TabIndex = 297;
             // 
-            // button2
+            // TipoServico
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(821, 116);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(26, 21);
-            this.button2.TabIndex = 298;
-            this.button2.UseVisualStyleBackColor = false;
+            this.TipoServico.HeaderText = "Tipo de Serviço";
+            this.TipoServico.Name = "TipoServico";
+            this.TipoServico.ReadOnly = true;
+            this.TipoServico.Width = 300;
+            // 
+            // DescricaoComplementar
+            // 
+            this.DescricaoComplementar.HeaderText = "Descrição Complementar";
+            this.DescricaoComplementar.Name = "DescricaoComplementar";
+            this.DescricaoComplementar.ReadOnly = true;
+            this.DescricaoComplementar.Width = 500;
+            // 
+            // btnPesquisarVeiculo
+            // 
+            this.btnPesquisarVeiculo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPesquisarVeiculo.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnPesquisarVeiculo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPesquisarVeiculo.BackgroundImage")));
+            this.btnPesquisarVeiculo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPesquisarVeiculo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPesquisarVeiculo.Location = new System.Drawing.Point(821, 116);
+            this.btnPesquisarVeiculo.Name = "btnPesquisarVeiculo";
+            this.btnPesquisarVeiculo.Size = new System.Drawing.Size(26, 21);
+            this.btnPesquisarVeiculo.TabIndex = 298;
+            this.btnPesquisarVeiculo.UseVisualStyleBackColor = false;
+            this.btnPesquisarVeiculo.Click += new System.EventHandler(this.btnPesquisarVeiculo_Click);
             // 
             // label2
             // 
@@ -511,14 +531,14 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnPesquisarVeiculo);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCPFCliente);
             this.Controls.Add(this.lblNomeCliente);
             this.Controls.Add(this.txtNomeCliente);
-            this.Controls.Add(this.btnPesquisaVeiculo);
+            this.Controls.Add(this.btnPesquisarCliente);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtMarca);
             this.Controls.Add(this.lblCor);
@@ -584,7 +604,7 @@
         private System.Windows.Forms.TextBox txtPlaca;
         private System.Windows.Forms.Label lblModelo;
         private System.Windows.Forms.TextBox txtModelo;
-        private System.Windows.Forms.Button btnPesquisaVeiculo;
+        private System.Windows.Forms.Button btnPesquisarCliente;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtCPFCliente;
         private System.Windows.Forms.Label lblNomeCliente;
@@ -592,10 +612,12 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnPesquisarVeiculo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox txtCombustivel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TipoServico;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DescricaoComplementar;
     }
 }
