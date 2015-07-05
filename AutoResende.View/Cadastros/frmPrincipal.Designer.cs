@@ -104,7 +104,7 @@
             // 
             // lblTipoServico
             // 
-            this.lblTipoServico.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTipoServico.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblTipoServico.AutoSize = true;
             this.lblTipoServico.BackColor = System.Drawing.Color.Transparent;
             this.lblTipoServico.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -117,7 +117,7 @@
             // 
             // ptbCadastroTipoServico
             // 
-            this.ptbCadastroTipoServico.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptbCadastroTipoServico.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ptbCadastroTipoServico.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ptbCadastroTipoServico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbCadastroTipoServico.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -133,7 +133,7 @@
             // 
             // lblVeiculo
             // 
-            this.lblVeiculo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblVeiculo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblVeiculo.AutoSize = true;
             this.lblVeiculo.BackColor = System.Drawing.Color.Transparent;
             this.lblVeiculo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -146,7 +146,7 @@
             // 
             // lblCadastroCliente
             // 
-            this.lblCadastroCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCadastroCliente.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblCadastroCliente.AutoSize = true;
             this.lblCadastroCliente.BackColor = System.Drawing.Color.Transparent;
             this.lblCadastroCliente.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -159,7 +159,7 @@
             // 
             // lblFuncionario
             // 
-            this.lblFuncionario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblFuncionario.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblFuncionario.AutoSize = true;
             this.lblFuncionario.BackColor = System.Drawing.Color.Transparent;
             this.lblFuncionario.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -172,7 +172,7 @@
             // 
             // ptbCadastroVeiculo
             // 
-            this.ptbCadastroVeiculo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptbCadastroVeiculo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ptbCadastroVeiculo.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ptbCadastroVeiculo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbCadastroVeiculo.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -188,7 +188,7 @@
             // 
             // ptbCadastroCliente
             // 
-            this.ptbCadastroCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptbCadastroCliente.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ptbCadastroCliente.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ptbCadastroCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbCadastroCliente.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -204,7 +204,7 @@
             // 
             // ptbCadastroFuncionario
             // 
-            this.ptbCadastroFuncionario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptbCadastroFuncionario.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ptbCadastroFuncionario.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ptbCadastroFuncionario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbCadastroFuncionario.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -220,7 +220,7 @@
             // 
             // lblFornecedor
             // 
-            this.lblFornecedor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblFornecedor.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblFornecedor.AutoSize = true;
             this.lblFornecedor.BackColor = System.Drawing.Color.Transparent;
             this.lblFornecedor.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -233,7 +233,7 @@
             // 
             // ptbCadastroFornecedor
             // 
-            this.ptbCadastroFornecedor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptbCadastroFornecedor.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ptbCadastroFornecedor.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ptbCadastroFornecedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbCadastroFornecedor.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -249,7 +249,7 @@
             // 
             // ptpConsultaFuncionario
             // 
-            this.ptpConsultaFuncionario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptpConsultaFuncionario.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ptpConsultaFuncionario.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ptpConsultaFuncionario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptpConsultaFuncionario.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -265,7 +265,7 @@
             // 
             // ptpConsultaTipoServico
             // 
-            this.ptpConsultaTipoServico.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptpConsultaTipoServico.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ptpConsultaTipoServico.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ptpConsultaTipoServico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptpConsultaTipoServico.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -280,7 +280,7 @@
             // 
             // ptpConsultaVeiculo
             // 
-            this.ptpConsultaVeiculo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptpConsultaVeiculo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ptpConsultaVeiculo.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ptpConsultaVeiculo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptpConsultaVeiculo.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -295,7 +295,7 @@
             // 
             // ptpConsultaFornecedor
             // 
-            this.ptpConsultaFornecedor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptpConsultaFornecedor.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ptpConsultaFornecedor.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ptpConsultaFornecedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptpConsultaFornecedor.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -310,7 +310,7 @@
             // 
             // ptbCompra
             // 
-            this.ptbCompra.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptbCompra.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ptbCompra.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ptbCompra.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbCompra.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -325,7 +325,7 @@
             // 
             // ptbVenda
             // 
-            this.ptbVenda.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptbVenda.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ptbVenda.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ptbVenda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbVenda.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -340,7 +340,7 @@
             // 
             // ptpConsultaCliente
             // 
-            this.ptpConsultaCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptpConsultaCliente.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ptpConsultaCliente.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ptpConsultaCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptpConsultaCliente.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -355,7 +355,7 @@
             // 
             // ptpConsultaOrdemServico
             // 
-            this.ptpConsultaOrdemServico.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptpConsultaOrdemServico.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ptpConsultaOrdemServico.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ptpConsultaOrdemServico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptpConsultaOrdemServico.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -370,7 +370,7 @@
             // 
             // ptpConsultaMercadoria
             // 
-            this.ptpConsultaMercadoria.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptpConsultaMercadoria.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ptpConsultaMercadoria.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ptpConsultaMercadoria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptpConsultaMercadoria.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -385,7 +385,7 @@
             // 
             // lblCadastroMercadoria
             // 
-            this.lblCadastroMercadoria.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCadastroMercadoria.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblCadastroMercadoria.AutoSize = true;
             this.lblCadastroMercadoria.BackColor = System.Drawing.Color.Transparent;
             this.lblCadastroMercadoria.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -398,7 +398,7 @@
             // 
             // ptbCadastroMercadoria
             // 
-            this.ptbCadastroMercadoria.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptbCadastroMercadoria.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ptbCadastroMercadoria.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ptbCadastroMercadoria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbCadastroMercadoria.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -414,7 +414,7 @@
             // 
             // lblCadastroOrdemServico
             // 
-            this.lblCadastroOrdemServico.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCadastroOrdemServico.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblCadastroOrdemServico.AutoSize = true;
             this.lblCadastroOrdemServico.BackColor = System.Drawing.Color.Transparent;
             this.lblCadastroOrdemServico.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -427,7 +427,7 @@
             // 
             // ptbOrdemServico
             // 
-            this.ptbOrdemServico.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ptbOrdemServico.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ptbOrdemServico.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ptbOrdemServico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbOrdemServico.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -443,7 +443,7 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -456,7 +456,7 @@
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -469,7 +469,7 @@
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label4.BackColor = System.Drawing.Color.SlateGray;
             this.label4.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.InactiveBorder;
@@ -482,7 +482,7 @@
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label5.BackColor = System.Drawing.Color.SlateGray;
             this.label5.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.InactiveBorder;
@@ -495,7 +495,7 @@
             // 
             // label6
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label6.BackColor = System.Drawing.Color.SlateGray;
             this.label6.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.InactiveBorder;
@@ -508,7 +508,7 @@
             // 
             // label7
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label7.BackColor = System.Drawing.Color.SlateGray;
             this.label7.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.InactiveBorder;
@@ -521,7 +521,7 @@
             // 
             // label8
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label8.BackColor = System.Drawing.Color.SlateGray;
             this.label8.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.InactiveBorder;
@@ -534,7 +534,7 @@
             // 
             // label9
             // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label9.BackColor = System.Drawing.Color.SlateGray;
             this.label9.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.InactiveBorder;
@@ -547,7 +547,7 @@
             // 
             // label10
             // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label10.BackColor = System.Drawing.Color.SlateGray;
             this.label10.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.InactiveBorder;
@@ -560,7 +560,7 @@
             // 
             // lblcompra
             // 
-            this.lblcompra.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblcompra.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblcompra.BackColor = System.Drawing.Color.SlateGray;
             this.lblcompra.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcompra.ForeColor = System.Drawing.SystemColors.InactiveBorder;
@@ -573,7 +573,7 @@
             // 
             // lblvenda
             // 
-            this.lblvenda.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblvenda.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblvenda.BackColor = System.Drawing.Color.SlateGray;
             this.lblvenda.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblvenda.ForeColor = System.Drawing.SystemColors.InactiveBorder;
