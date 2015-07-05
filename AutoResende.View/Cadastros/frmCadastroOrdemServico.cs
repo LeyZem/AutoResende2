@@ -47,7 +47,7 @@ namespace AutoResende.View
 
             try
             {
-                oVeiculo = CAutoResende.Seleciona(strPlaca);
+                oVeiculo = CAutoResende.SelecionaPlacaVeiculo(strPlaca);
 
                 txtMarca.Text = oVeiculo.Marca;
                 txtModelo.Text = oVeiculo.Modelo;

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AutoResende.Controller;
 
 namespace AutoResende.View
 {
@@ -27,11 +28,18 @@ namespace AutoResende.View
             Close();
         }
 
-        private void frmConsultaVeiculo_Load(object sender, EventArgs e)
+        private void btnPesquisaVeiculo_Click(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the '_AutoResende_DataBaseDataSet_Veiculo.Veiculo' table. You can move, or remove it, as needed.
-            this.veiculoTableAdapter.Fill(this._AutoResende_DataBaseDataSet_Veiculo.Veiculo);
+            try
+            {
+                string var = txtPlaca.Text;
+                dtgVeiculos.DataSource = CAutoResende.SelecionaVeiculo(txtPlaca.Text);
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message, "Carregar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

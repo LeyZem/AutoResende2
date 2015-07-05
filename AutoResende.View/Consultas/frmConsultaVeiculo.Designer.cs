@@ -43,10 +43,7 @@
             this.lblCombustivel = new System.Windows.Forms.Label();
             this.lblModelo = new System.Windows.Forms.Label();
             this.txtModelo = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this._AutoResende_DataBaseDataSet_Veiculo = new AutoResende.View._AutoResende_DataBaseDataSet_Veiculo();
-            this.veiculoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.veiculoTableAdapter = new AutoResende.View._AutoResende_DataBaseDataSet_VeiculoTableAdapters.VeiculoTableAdapter();
+            this.dtgVeiculos = new System.Windows.Forms.DataGridView();
             this.idVeiculoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.marcaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.modeloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,13 +52,15 @@
             this.combustivelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.odometroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descricaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.veiculoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._AutoResende_DataBaseDataSet_Veiculo = new AutoResende.View._AutoResende_DataBaseDataSet_Veiculo();
             this.txtPlaca = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet_Veiculo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgVeiculos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.veiculoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet_Veiculo)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -144,6 +143,7 @@
             this.btnPesquisaVeiculo.Size = new System.Drawing.Size(59, 51);
             this.btnPesquisaVeiculo.TabIndex = 287;
             this.btnPesquisaVeiculo.UseVisualStyleBackColor = false;
+            this.btnPesquisaVeiculo.Click += new System.EventHandler(this.btnPesquisaVeiculo_Click);
             // 
             // label1
             // 
@@ -217,13 +217,13 @@
             this.txtModelo.Size = new System.Drawing.Size(218, 20);
             this.txtModelo.TabIndex = 292;
             // 
-            // dataGridView1
+            // dtgVeiculos
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgVeiculos.AllowUserToAddRows = false;
+            this.dtgVeiculos.AllowUserToDeleteRows = false;
+            this.dtgVeiculos.AutoGenerateColumns = false;
+            this.dtgVeiculos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgVeiculos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idVeiculoDataGridViewTextBoxColumn,
             this.marcaDataGridViewTextBoxColumn,
             this.modeloDataGridViewTextBoxColumn,
@@ -232,26 +232,12 @@
             this.combustivelDataGridViewTextBoxColumn,
             this.odometroDataGridViewTextBoxColumn,
             this.descricaoDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.veiculoBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(139, 205);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(685, 268);
-            this.dataGridView1.TabIndex = 296;
-            // 
-            // _AutoResende_DataBaseDataSet_Veiculo
-            // 
-            this._AutoResende_DataBaseDataSet_Veiculo.DataSetName = "_AutoResende_DataBaseDataSet_Veiculo";
-            this._AutoResende_DataBaseDataSet_Veiculo.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // veiculoBindingSource
-            // 
-            this.veiculoBindingSource.DataMember = "Veiculo";
-            this.veiculoBindingSource.DataSource = this._AutoResende_DataBaseDataSet_Veiculo;
-            // 
-            // veiculoTableAdapter
-            // 
-            this.veiculoTableAdapter.ClearBeforeFill = true;
+            this.dtgVeiculos.DataSource = this.veiculoBindingSource;
+            this.dtgVeiculos.Location = new System.Drawing.Point(139, 205);
+            this.dtgVeiculos.Name = "dtgVeiculos";
+            this.dtgVeiculos.ReadOnly = true;
+            this.dtgVeiculos.Size = new System.Drawing.Size(685, 268);
+            this.dtgVeiculos.TabIndex = 296;
             // 
             // idVeiculoDataGridViewTextBoxColumn
             // 
@@ -312,6 +298,16 @@
             this.descricaoDataGridViewTextBoxColumn.ReadOnly = true;
             this.descricaoDataGridViewTextBoxColumn.Width = 300;
             // 
+            // veiculoBindingSource
+            // 
+            this.veiculoBindingSource.DataMember = "Veiculo";
+            this.veiculoBindingSource.DataSource = this._AutoResende_DataBaseDataSet_Veiculo;
+            // 
+            // _AutoResende_DataBaseDataSet_Veiculo
+            // 
+            this._AutoResende_DataBaseDataSet_Veiculo.DataSetName = "_AutoResende_DataBaseDataSet_Veiculo";
+            this._AutoResende_DataBaseDataSet_Veiculo.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // txtPlaca
             // 
             this.txtPlaca.Location = new System.Drawing.Point(214, 103);
@@ -325,7 +321,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(867, 507);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgVeiculos);
             this.Controls.Add(this.cmbCombustivel);
             this.Controls.Add(this.lblCombustivel);
             this.Controls.Add(this.lblModelo);
@@ -344,13 +340,12 @@
             this.Name = "frmConsultaVeiculo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmConsultaVeiculo";
-            this.Load += new System.EventHandler(this.frmConsultaVeiculo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet_Veiculo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgVeiculos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.veiculoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet_Veiculo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -371,10 +366,9 @@
         private System.Windows.Forms.Label lblCombustivel;
         private System.Windows.Forms.Label lblModelo;
         private System.Windows.Forms.TextBox txtModelo;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgVeiculos;
         private _AutoResende_DataBaseDataSet_Veiculo _AutoResende_DataBaseDataSet_Veiculo;
         private System.Windows.Forms.BindingSource veiculoBindingSource;
-        private _AutoResende_DataBaseDataSet_VeiculoTableAdapters.VeiculoTableAdapter veiculoTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idVeiculoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn marcaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn modeloDataGridViewTextBoxColumn;

@@ -96,10 +96,15 @@ namespace AutoResende.Controller
             VeiculoMetod.Insere(oVeiculo);
         }
 
-        public static Veiculo Seleciona (string Placa)
+        public static Veiculo SelecionaPlacaVeiculo (string Placa)
         {
-            Veiculo oVeiculo = VeiculoMetod.Seleciona(Placa);
+            Veiculo oVeiculo = VeiculoMetod.SelecionaPlacaVeiculo(Placa);
             return oVeiculo;
+        }
+
+        public static IQueryable<Veiculo> SelecionaVeiculo(string pVeiculo)
+        {
+            return VeiculoMetod.SelecionaVeiculo(pVeiculo);
         }
 
     }
