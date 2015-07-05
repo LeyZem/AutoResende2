@@ -74,5 +74,20 @@ namespace AutoResende.Model
             //Retorno da Lista de Fornecedor
             return oFornecedores;
         }
+
+        public static IQueryable<Fornecedor> SelecionaFornecedor(string Fornecedor)
+        {
+            try
+            {
+                AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+                IQueryable<Fornecedor> oForncedor = (from Seleciona in oDB.Fornecedors where Seleciona.CNPJ == Fornecedor select Seleciona);
+                return oForncedor;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }

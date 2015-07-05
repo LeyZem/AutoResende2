@@ -31,8 +31,8 @@ namespace AutoResende.View
 
         private void dtgServicosCadastrados_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            OrdemServico OS = new OrdemServico();
-            frmCadastroOrdemServico frm = new frmCadastroOrdemServico (OS);
+            //OrdemServico OS = new OrdemServico();
+            frmCadastroOrdemServico frm = new frmCadastroOrdemServico(); //(OS);
             frm.Show();
             this.Close();
 

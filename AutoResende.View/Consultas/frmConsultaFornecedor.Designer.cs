@@ -42,10 +42,7 @@
             this.txtRazaoSocial = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNomeFantasia = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this._AutoResende_DataBaseDataSet_Fornecedores = new AutoResende.View._AutoResende_DataBaseDataSet_Fornecedores();
-            this.fornecedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fornecedorTableAdapter = new AutoResende.View._AutoResende_DataBaseDataSet_FornecedoresTableAdapters.FornecedorTableAdapter();
+            this.dtgFornecedores = new System.Windows.Forms.DataGridView();
             this.idFornecedorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeFantasiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.razaoSocialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,12 +58,14 @@
             this.telCelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comentarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fornecedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._AutoResende_DataBaseDataSet_Fornecedores = new AutoResende.View._AutoResende_DataBaseDataSet_Fornecedores();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet_Fornecedores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgFornecedores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fornecedorBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet_Fornecedores)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -149,6 +148,7 @@
             this.btnPesquisaCliente.Size = new System.Drawing.Size(59, 51);
             this.btnPesquisaCliente.TabIndex = 287;
             this.btnPesquisaCliente.UseVisualStyleBackColor = false;
+            this.btnPesquisaCliente.Click += new System.EventHandler(this.btnPesquisaCliente_Click);
             // 
             // label1
             // 
@@ -219,13 +219,13 @@
             this.txtNomeFantasia.Size = new System.Drawing.Size(247, 20);
             this.txtNomeFantasia.TabIndex = 288;
             // 
-            // dataGridView1
+            // dtgFornecedores
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgFornecedores.AllowUserToAddRows = false;
+            this.dtgFornecedores.AllowUserToDeleteRows = false;
+            this.dtgFornecedores.AutoGenerateColumns = false;
+            this.dtgFornecedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgFornecedores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idFornecedorDataGridViewTextBoxColumn,
             this.nomeFantasiaDataGridViewTextBoxColumn,
             this.razaoSocialDataGridViewTextBoxColumn,
@@ -241,26 +241,12 @@
             this.telCelDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn,
             this.comentarioDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.fornecedorBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(135, 198);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(700, 277);
-            this.dataGridView1.TabIndex = 290;
-            // 
-            // _AutoResende_DataBaseDataSet_Fornecedores
-            // 
-            this._AutoResende_DataBaseDataSet_Fornecedores.DataSetName = "_AutoResende_DataBaseDataSet_Fornecedores";
-            this._AutoResende_DataBaseDataSet_Fornecedores.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // fornecedorBindingSource
-            // 
-            this.fornecedorBindingSource.DataMember = "Fornecedor";
-            this.fornecedorBindingSource.DataSource = this._AutoResende_DataBaseDataSet_Fornecedores;
-            // 
-            // fornecedorTableAdapter
-            // 
-            this.fornecedorTableAdapter.ClearBeforeFill = true;
+            this.dtgFornecedores.DataSource = this.fornecedorBindingSource;
+            this.dtgFornecedores.Location = new System.Drawing.Point(135, 198);
+            this.dtgFornecedores.Name = "dtgFornecedores";
+            this.dtgFornecedores.ReadOnly = true;
+            this.dtgFornecedores.Size = new System.Drawing.Size(700, 277);
+            this.dtgFornecedores.TabIndex = 290;
             // 
             // idFornecedorDataGridViewTextBoxColumn
             // 
@@ -374,13 +360,23 @@
             this.comentarioDataGridViewTextBoxColumn.ReadOnly = true;
             this.comentarioDataGridViewTextBoxColumn.Width = 400;
             // 
+            // fornecedorBindingSource
+            // 
+            this.fornecedorBindingSource.DataMember = "Fornecedor";
+            this.fornecedorBindingSource.DataSource = this._AutoResende_DataBaseDataSet_Fornecedores;
+            // 
+            // _AutoResende_DataBaseDataSet_Fornecedores
+            // 
+            this._AutoResende_DataBaseDataSet_Fornecedores.DataSetName = "_AutoResende_DataBaseDataSet_Fornecedores";
+            this._AutoResende_DataBaseDataSet_Fornecedores.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // frmConsultaFornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(867, 507);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgFornecedores);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNomeFantasia);
             this.Controls.Add(this.btnPesquisaCliente);
@@ -401,9 +397,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet_Fornecedores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgFornecedores)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fornecedorBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet_Fornecedores)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -423,10 +419,9 @@
         private System.Windows.Forms.TextBox txtRazaoSocial;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNomeFantasia;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgFornecedores;
         private _AutoResende_DataBaseDataSet_Fornecedores _AutoResende_DataBaseDataSet_Fornecedores;
         private System.Windows.Forms.BindingSource fornecedorBindingSource;
-        private _AutoResende_DataBaseDataSet_FornecedoresTableAdapters.FornecedorTableAdapter fornecedorTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idFornecedorDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeFantasiaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn razaoSocialDataGridViewTextBoxColumn;
