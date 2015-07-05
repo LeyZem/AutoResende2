@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AutoResende.Controller;
 
 namespace AutoResende.View
 {
@@ -42,50 +43,18 @@ namespace AutoResende.View
             Close();
         }
 
-        private void frmConsultaCliente_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the '_AutoResende_DataBaseDataSet.Cliente' table. You can move, or remove it, as needed.
-            this.clienteTableAdapter.Fill(this._AutoResende_DataBaseDataSet.Cliente);
-
-        }
-
-        private void pesquisarClienteToolStripButton_Click(object sender, EventArgs e)
+        private void btnPesquisaCliente_Click(object sender, EventArgs e)
         {
             try
             {
-                this.clienteTableAdapter.PesquisarCliente(this._AutoResende_DataBaseDataSet.Cliente);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
+                string var = txtNomeCliente.Text;
+                dtgClientes.DataSource = CAutoResende.SelecionaCliente(txtNomeCliente.Text);
 
-        }
-
-        private void pesquisarClienteToolStripButton_Click_1(object sender, EventArgs e)
-        {
-            try
-            {
-                this.clienteTableAdapter.PesquisarCliente(this._AutoResende_DataBaseDataSet.Cliente);
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
+                MessageBox.Show("Erro: " + ex.Message, "Carregar", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-        }
-
-        private void pesquisarClienteToolStripButton_Click_2(object sender, EventArgs e)
-        {
-            try
-            {
-                this.clienteTableAdapter.PesquisarCliente(this._AutoResende_DataBaseDataSet.Cliente);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-
         }
     }
 }

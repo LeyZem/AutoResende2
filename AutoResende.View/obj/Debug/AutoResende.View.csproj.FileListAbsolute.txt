@@ -86,3 +86,4 @@ C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoRese
 E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.Cadastros.frmMovimentoCompra.resources
 E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.Cadastros.FrmMovimentoVenda.resources
 E:\Dropbox\FACULDADE\3º Ano\Sistemas Desktop\2º BI\AutoResende\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmTelaInicial.resources
+C:\Users\-Fabs\Documents\GitHub\AutoResende2\AutoResende.View\obj\Debug\AutoResende.View.frmTelaInicial.resources
