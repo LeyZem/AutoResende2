@@ -22,3 +22,11 @@ D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.Controlle
 D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.Controller\obj\Debug\AutoResende.Controller.csprojResolveAssemblyReference.cache
 D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.Controller\obj\Debug\AutoResende.Controller.dll
 D:\OneDrive\Projetos Programaçao\AutoResende\AutoResende2\AutoResende.Controller\obj\Debug\AutoResende.Controller.pdb
+D:\OneDrive\Projetos Programaçao\AutoResende2\AutoResende.Controller\bin\AutoResende.Controller.dll.config
+D:\OneDrive\Projetos Programaçao\AutoResende2\AutoResende.Controller\bin\AutoResende.Controller.dll
+D:\OneDrive\Projetos Programaçao\AutoResende2\AutoResende.Controller\bin\AutoResende.Controller.pdb
+D:\OneDrive\Projetos Programaçao\AutoResende2\AutoResende.Controller\bin\AutoResende.Model.dll
+D:\OneDrive\Projetos Programaçao\AutoResende2\AutoResende.Controller\bin\AutoResende.Model.pdb
+D:\OneDrive\Projetos Programaçao\AutoResende2\AutoResende.Controller\obj\Debug\AutoResende.Controller.csprojResolveAssemblyReference.cache
+D:\OneDrive\Projetos Programaçao\AutoResende2\AutoResende.Controller\obj\Debug\AutoResende.Controller.dll
+D:\OneDrive\Projetos Programaçao\AutoResende2\AutoResende.Controller\obj\Debug\AutoResende.Controller.pdb
