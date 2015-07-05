@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AutoResende.Controller;
 
 namespace AutoResende.View
 {
@@ -27,11 +28,18 @@ namespace AutoResende.View
             Close();
         }
 
-        private void frmConsultaTipoServico_Load(object sender, EventArgs e)
+        private void btnPesquisaTipoServico_Click(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the '_AutoResende_DataBaseDataSet_TipoServico.TipoServico' table. You can move, or remove it, as needed.
-            this.tipoServicoTableAdapter.Fill(this._AutoResende_DataBaseDataSet_TipoServico.TipoServico);
+            try
+            {
+                string var = txtNomeServico.Text;
+                dtgTipoServico.DataSource = CAutoResende.SelecionaTipoServico(txtNomeServico.Text);
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message, "Carregar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

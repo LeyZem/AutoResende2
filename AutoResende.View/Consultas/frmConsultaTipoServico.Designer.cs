@@ -38,19 +38,18 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnPesquisaTipoServico = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this._AutoResende_DataBaseDataSet_TipoServico = new AutoResende.View._AutoResende_DataBaseDataSet_TipoServico();
-            this.tipoServicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tipoServicoTableAdapter = new AutoResende.View._AutoResende_DataBaseDataSet_TipoServicoTableAdapters.TipoServicoTableAdapter();
+            this.dtgTipoServico = new System.Windows.Forms.DataGridView();
             this.idTipoServicoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeServiçoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descricaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipoServicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._AutoResende_DataBaseDataSet_TipoServico = new AutoResende.View._AutoResende_DataBaseDataSet_TipoServico();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet_TipoServico)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTipoServico)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipoServicoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet_TipoServico)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -144,6 +143,7 @@
             this.btnPesquisaTipoServico.Size = new System.Drawing.Size(59, 51);
             this.btnPesquisaTipoServico.TabIndex = 286;
             this.btnPesquisaTipoServico.UseVisualStyleBackColor = false;
+            this.btnPesquisaTipoServico.Click += new System.EventHandler(this.btnPesquisaTipoServico_Click);
             // 
             // pictureBox3
             // 
@@ -156,36 +156,22 @@
             this.pictureBox3.TabIndex = 287;
             this.pictureBox3.TabStop = false;
             // 
-            // dataGridView1
+            // dtgTipoServico
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgTipoServico.AllowUserToAddRows = false;
+            this.dtgTipoServico.AllowUserToDeleteRows = false;
+            this.dtgTipoServico.AutoGenerateColumns = false;
+            this.dtgTipoServico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgTipoServico.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idTipoServicoDataGridViewTextBoxColumn,
             this.nomeServiçoDataGridViewTextBoxColumn,
             this.descricaoDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.tipoServicoBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(137, 169);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(681, 304);
-            this.dataGridView1.TabIndex = 288;
-            // 
-            // _AutoResende_DataBaseDataSet_TipoServico
-            // 
-            this._AutoResende_DataBaseDataSet_TipoServico.DataSetName = "_AutoResende_DataBaseDataSet_TipoServico";
-            this._AutoResende_DataBaseDataSet_TipoServico.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tipoServicoBindingSource
-            // 
-            this.tipoServicoBindingSource.DataMember = "TipoServico";
-            this.tipoServicoBindingSource.DataSource = this._AutoResende_DataBaseDataSet_TipoServico;
-            // 
-            // tipoServicoTableAdapter
-            // 
-            this.tipoServicoTableAdapter.ClearBeforeFill = true;
+            this.dtgTipoServico.DataSource = this.tipoServicoBindingSource;
+            this.dtgTipoServico.Location = new System.Drawing.Point(137, 169);
+            this.dtgTipoServico.Name = "dtgTipoServico";
+            this.dtgTipoServico.ReadOnly = true;
+            this.dtgTipoServico.Size = new System.Drawing.Size(681, 304);
+            this.dtgTipoServico.TabIndex = 288;
             // 
             // idTipoServicoDataGridViewTextBoxColumn
             // 
@@ -210,13 +196,23 @@
             this.descricaoDataGridViewTextBoxColumn.ReadOnly = true;
             this.descricaoDataGridViewTextBoxColumn.Width = 500;
             // 
+            // tipoServicoBindingSource
+            // 
+            this.tipoServicoBindingSource.DataMember = "TipoServico";
+            this.tipoServicoBindingSource.DataSource = this._AutoResende_DataBaseDataSet_TipoServico;
+            // 
+            // _AutoResende_DataBaseDataSet_TipoServico
+            // 
+            this._AutoResende_DataBaseDataSet_TipoServico.DataSetName = "_AutoResende_DataBaseDataSet_TipoServico";
+            this._AutoResende_DataBaseDataSet_TipoServico.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // frmConsultaTipoServico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(867, 507);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgTipoServico);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnPesquisaTipoServico);
             this.Controls.Add(this.picimg_cliente);
@@ -229,13 +225,12 @@
             this.Name = "frmConsultaTipoServico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmConsultaTipoServico";
-            this.Load += new System.EventHandler(this.frmConsultaTipoServico_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet_TipoServico)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTipoServico)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipoServicoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet_TipoServico)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,10 +245,9 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnPesquisaTipoServico;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgTipoServico;
         private _AutoResende_DataBaseDataSet_TipoServico _AutoResende_DataBaseDataSet_TipoServico;
         private System.Windows.Forms.BindingSource tipoServicoBindingSource;
-        private _AutoResende_DataBaseDataSet_TipoServicoTableAdapters.TipoServicoTableAdapter tipoServicoTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idTipoServicoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeServiçoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descricaoDataGridViewTextBoxColumn;

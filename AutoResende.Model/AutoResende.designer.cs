@@ -45,6 +45,9 @@ namespace AutoResende.Model
     partial void InsertOrdemServico(OrdemServico instance);
     partial void UpdateOrdemServico(OrdemServico instance);
     partial void DeleteOrdemServico(OrdemServico instance);
+    partial void InsertTipoServico(TipoServico instance);
+    partial void UpdateTipoServico(TipoServico instance);
+    partial void DeleteTipoServico(TipoServico instance);
     partial void InsertVeiculo(Veiculo instance);
     partial void UpdateVeiculo(Veiculo instance);
     partial void DeleteVeiculo(Veiculo instance);
@@ -1696,8 +1699,10 @@ namespace AutoResende.Model
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TipoServico")]
-	public partial class TipoServico
+	public partial class TipoServico : INotifyPropertyChanging, INotifyPropertyChanged
 	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private int _idTipoServico;
 		
@@ -1705,11 +1710,24 @@ namespace AutoResende.Model
 		
 		private string _Descricao;
 		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidTipoServicoChanging(int value);
+    partial void OnidTipoServicoChanged();
+    partial void OnNomeServiçoChanging(string value);
+    partial void OnNomeServiçoChanged();
+    partial void OnDescricaoChanging(string value);
+    partial void OnDescricaoChanged();
+    #endregion
+		
 		public TipoServico()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTipoServico", AutoSync=AutoSync.Always, DbType="Int NOT NULL IDENTITY", IsDbGenerated=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTipoServico", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
 		public int idTipoServico
 		{
 			get
@@ -1720,7 +1738,11 @@ namespace AutoResende.Model
 			{
 				if ((this._idTipoServico != value))
 				{
+					this.OnidTipoServicoChanging(value);
+					this.SendPropertyChanging();
 					this._idTipoServico = value;
+					this.SendPropertyChanged("idTipoServico");
+					this.OnidTipoServicoChanged();
 				}
 			}
 		}
@@ -1736,7 +1758,11 @@ namespace AutoResende.Model
 			{
 				if ((this._NomeServiço != value))
 				{
+					this.OnNomeServiçoChanging(value);
+					this.SendPropertyChanging();
 					this._NomeServiço = value;
+					this.SendPropertyChanged("NomeServiço");
+					this.OnNomeServiçoChanged();
 				}
 			}
 		}
@@ -1752,8 +1778,32 @@ namespace AutoResende.Model
 			{
 				if ((this._Descricao != value))
 				{
+					this.OnDescricaoChanging(value);
+					this.SendPropertyChanging();
 					this._Descricao = value;
+					this.SendPropertyChanged("Descricao");
+					this.OnDescricaoChanged();
 				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}

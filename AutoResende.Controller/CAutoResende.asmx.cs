@@ -88,6 +88,10 @@ namespace AutoResende.Controller
             return oTipoServicos;
         }
 
+        public static IQueryable<TipoServico> SelecionaTipoServico(string pTipoServico)
+        {
+            return TipoServicoMetod.SelecionaTipoServico(pTipoServico);
+        }
 
 
         //VEÍCULO
