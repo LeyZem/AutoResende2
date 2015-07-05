@@ -66,5 +66,20 @@ namespace AutoResende.Model
             //Retorno da Lista de Funcionarios
             return oFuncionarios;
         }
+
+        public static IQueryable<Funcionario> SelecionaFuncionario(string Funcionario)
+        {
+            try
+            {
+                AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+                IQueryable<Funcionario> oFuncionario = (from Seleciona in oDB.Funcionarios where Seleciona.Nome == Funcionario select Seleciona);
+                return oFuncionario;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }

@@ -50,6 +50,11 @@ namespace AutoResende.Controller
             FuncionarioMetod.Insere(oFuncionario);
         }
 
+        public static IQueryable<Funcionario> SelecionaFuncionario(string pFuncionario)
+        {
+            return FuncionarioMetod.SelecionaFuncionario(pFuncionario);
+        }
+
 
 
         //MERCADORIA
