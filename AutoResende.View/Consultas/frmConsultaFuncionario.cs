@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AutoResende.Controller;
 
 namespace AutoResende.View
 {
@@ -29,9 +30,21 @@ namespace AutoResende.View
 
         private void frmConsultaFuncionario_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the '_AutoResende_DataBaseDataSet1.Funcionario' table. You can move, or remove it, as needed.
-            this.funcionarioTableAdapter.Fill(this._AutoResende_DataBaseDataSet1.Funcionario);
+ 
+        }
 
+        private void btnPesquisaFuncionario_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string var = txtNomeFuncionario.Text;
+                dtgFuncionarios.DataSource = CAutoResende.SelecionaFuncionario(txtNomeFuncionario.Text);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message, "Carregar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

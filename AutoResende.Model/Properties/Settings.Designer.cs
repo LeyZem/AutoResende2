@@ -33,5 +33,16 @@ namespace AutoResende.Model.Properties {
                 return ((string)(this["AutoResende_DataBaseConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=FABS-PC;Initial Catalog=AutoResende.DataBase;Integrated Security=True" +
+            "")]
+        public string AutoResende_DataBaseConnectionString1 {
+            get {
+                return ((string)(this["AutoResende_DataBaseConnectionString1"]));
+            }
+        }
     }
 }

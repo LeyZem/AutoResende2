@@ -8,11 +8,6 @@ using AutoResende.Model;
 namespace AutoResende.Controller
 {
     
-    [WebService(Namespace = "http://tempuri.org/")]
-    [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
-    [System.ComponentModel.ToolboxItem(false)]
-   
-
     public class CAutoResende : System.Web.Services.WebService
     {
         //CLIENTE
@@ -34,6 +29,10 @@ namespace AutoResende.Controller
             return oCliente;
         }
 
+        public static IQueryable<Cliente> SelecionaCliente(string pCliente)
+        {
+            return ClienteMetod.SelecionaCliente(pCliente);
+        }
 
 
 
@@ -49,6 +48,11 @@ namespace AutoResende.Controller
         public static void Insere(Funcionario oFuncionario)
         {
             FuncionarioMetod.Insere(oFuncionario);
+        }
+
+        public static IQueryable<Funcionario> SelecionaFuncionario(string pFuncionario)
+        {
+            return FuncionarioMetod.SelecionaFuncionario(pFuncionario);
         }
 
 

@@ -80,5 +80,21 @@ namespace AutoResende.Model
             //Retorno da Lista de Clientes
             return oClientes;
         }
+
+        public static IQueryable<Cliente> SelecionaCliente(string Cliente)
+        {
+            try
+            {
+                AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+                IQueryable<Cliente> oCliente = (from Seleciona in oDB.Clientes where Seleciona.Nome == Cliente select Seleciona);
+                return oCliente;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
     }
 }

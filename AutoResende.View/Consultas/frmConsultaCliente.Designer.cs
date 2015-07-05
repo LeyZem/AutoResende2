@@ -40,7 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtCPFCliente = new System.Windows.Forms.TextBox();
             this.btnPesquisaCliente = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgClientes = new System.Windows.Forms.DataGridView();
             this.idClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cPFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,14 +58,11 @@
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comentarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this._AutoResende_DataBaseDataSet = new AutoResende.View._AutoResende_DataBaseDataSet();
-            this.clienteTableAdapter = new AutoResende.View._AutoResende_DataBaseDataSetTableAdapters.ClienteTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgClientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNomeCliente
@@ -194,17 +191,17 @@
             this.btnPesquisaCliente.Size = new System.Drawing.Size(59, 51);
             this.btnPesquisaCliente.TabIndex = 277;
             this.btnPesquisaCliente.UseVisualStyleBackColor = false;
+            this.btnPesquisaCliente.Click += new System.EventHandler(this.btnPesquisaCliente_Click);
             // 
-            // dataGridView1
+            // dtgClientes
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dtgClientes.AllowUserToAddRows = false;
+            this.dtgClientes.AllowUserToDeleteRows = false;
+            this.dtgClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idClienteDataGridViewTextBoxColumn,
             this.nomeDataGridViewTextBoxColumn,
             this.cPFDataGridViewTextBoxColumn,
@@ -221,12 +218,11 @@
             this.telCelDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn,
             this.comentarioDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.clienteBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(137, 193);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(747, 284);
-            this.dataGridView1.TabIndex = 278;
+            this.dtgClientes.Location = new System.Drawing.Point(137, 193);
+            this.dtgClientes.Name = "dtgClientes";
+            this.dtgClientes.ReadOnly = true;
+            this.dtgClientes.Size = new System.Drawing.Size(747, 284);
+            this.dtgClientes.TabIndex = 278;
             // 
             // idClienteDataGridViewTextBoxColumn
             // 
@@ -348,27 +344,13 @@
             this.comentarioDataGridViewTextBoxColumn.ReadOnly = true;
             this.comentarioDataGridViewTextBoxColumn.Width = 500;
             // 
-            // clienteBindingSource
-            // 
-            this.clienteBindingSource.DataMember = "Cliente";
-            this.clienteBindingSource.DataSource = this._AutoResende_DataBaseDataSet;
-            // 
-            // _AutoResende_DataBaseDataSet
-            // 
-            this._AutoResende_DataBaseDataSet.DataSetName = "_AutoResende_DataBaseDataSet";
-            this._AutoResende_DataBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clienteTableAdapter
-            // 
-            this.clienteTableAdapter.ClearBeforeFill = true;
-            // 
             // frmConsultaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(907, 507);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgClientes);
             this.Controls.Add(this.btnPesquisaCliente);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCPFCliente);
@@ -383,13 +365,11 @@
             this.Name = "frmConsultaCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmConsultaCliente";
-            this.Load += new System.EventHandler(this.frmConsultaCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgClientes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -407,10 +387,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCPFCliente;
         private System.Windows.Forms.Button btnPesquisaCliente;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private _AutoResende_DataBaseDataSet _AutoResende_DataBaseDataSet;
-        private System.Windows.Forms.BindingSource clienteBindingSource;
-        private _AutoResende_DataBaseDataSetTableAdapters.ClienteTableAdapter clienteTableAdapter;
+        private System.Windows.Forms.DataGridView dtgClientes;
         private System.Windows.Forms.DataGridViewTextBoxColumn idClienteDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cPFDataGridViewTextBoxColumn;
@@ -427,5 +404,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn telCelDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn comentarioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource clienteBindingSource;
     }
 }
