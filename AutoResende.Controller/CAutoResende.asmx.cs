@@ -21,7 +21,20 @@ namespace AutoResende.Controller
         {
             ClienteMetod.Insere(oCliente);
         }
-       
+
+        public static Cliente SelecionaCPFCliente(string CPF)
+        {
+            Cliente oCliente = ClienteMetod.SelecionaCPFCliente(CPF);
+            return oCliente;
+        }
+
+        public static Cliente SelecionaNomeCliente(string Nome)
+        {
+            Cliente oCliente = ClienteMetod.SelecionaNomeCliente(Nome);
+            return oCliente;
+        }
+
+
 
 
         //FORNECEDOR
@@ -62,6 +75,12 @@ namespace AutoResende.Controller
             TipoServicoMetod.Insere(oTipoServico);
         }
 
+        public static List<TipoServico> ListaTiposServico()
+        {
+            List<TipoServico> oTipoServicos = TipoServicoMetod.ListaTipoServicos();
+            return oTipoServicos;
+        }
+
 
 
         //VEÍCULO
@@ -72,8 +91,7 @@ namespace AutoResende.Controller
 
         public static Veiculo Seleciona (string Placa)
         {
-            Veiculo oVeiculo = new Veiculo();
-            oVeiculo = VeiculoMetod.Seleciona(Placa);
+            Veiculo oVeiculo = VeiculoMetod.Seleciona(Placa);
             return oVeiculo;
         }
 

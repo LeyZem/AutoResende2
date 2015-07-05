@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroTipoServico));
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.picimg_cliente = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
             this.lbldescrição = new System.Windows.Forms.Label();
             this.Btn_Gravar = new System.Windows.Forms.Button();
             this.lblTipoServico = new System.Windows.Forms.Label();
             this.lblCódigo = new System.Windows.Forms.Label();
-            this.txt_Codigo = new System.Windows.Forms.TextBox();
+            this.txtNomeServico = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Fechar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -68,16 +68,16 @@
             this.picimg_cliente.TabIndex = 232;
             this.picimg_cliente.TabStop = false;
             // 
-            // textBox1
+            // txtDescricao
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(133, 183);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.MaxLength = 40;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(681, 256);
-            this.textBox1.TabIndex = 230;
+            this.txtDescricao.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDescricao.Location = new System.Drawing.Point(133, 183);
+            this.txtDescricao.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDescricao.MaxLength = 40;
+            this.txtDescricao.Multiline = true;
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(681, 256);
+            this.txtDescricao.TabIndex = 230;
             // 
             // lbldescrição
             // 
@@ -106,6 +106,7 @@
             this.Btn_Gravar.TabIndex = 227;
             this.Btn_Gravar.Text = "Gravar";
             this.Btn_Gravar.UseVisualStyleBackColor = false;
+            this.Btn_Gravar.Click += new System.EventHandler(this.Btn_Gravar_Click);
             // 
             // lblTipoServico
             // 
@@ -133,14 +134,14 @@
             this.lblCódigo.TabIndex = 225;
             this.lblCódigo.Text = "Nome do Serviço";
             // 
-            // txt_Codigo
+            // txtNomeServico
             // 
-            this.txt_Codigo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_Codigo.Location = new System.Drawing.Point(256, 72);
-            this.txt_Codigo.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_Codigo.Name = "txt_Codigo";
-            this.txt_Codigo.Size = new System.Drawing.Size(558, 20);
-            this.txt_Codigo.TabIndex = 228;
+            this.txtNomeServico.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNomeServico.Location = new System.Drawing.Point(256, 72);
+            this.txtNomeServico.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNomeServico.Name = "txtNomeServico";
+            this.txtNomeServico.Size = new System.Drawing.Size(558, 20);
+            this.txtNomeServico.TabIndex = 228;
             // 
             // pictureBox2
             // 
@@ -182,12 +183,12 @@
             this.Controls.Add(this.Fechar);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.picimg_cliente);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.lbldescrição);
             this.Controls.Add(this.Btn_Gravar);
             this.Controls.Add(this.lblTipoServico);
             this.Controls.Add(this.lblCódigo);
-            this.Controls.Add(this.txt_Codigo);
+            this.Controls.Add(this.txtNomeServico);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCadastroTipoServico";
@@ -205,12 +206,12 @@
 
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox picimg_cliente;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.Label lbldescrição;
         private System.Windows.Forms.Button Btn_Gravar;
         private System.Windows.Forms.Label lblTipoServico;
         private System.Windows.Forms.Label lblCódigo;
-        private System.Windows.Forms.TextBox txt_Codigo;
+        private System.Windows.Forms.TextBox txtNomeServico;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button Fechar;
     }

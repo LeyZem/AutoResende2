@@ -33,16 +33,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picimg_cliente = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDescricaoComplementar = new System.Windows.Forms.TextBox();
             this.lbldescrição = new System.Windows.Forms.Label();
-            this.lblinscestadual = new System.Windows.Forms.Label();
             this.lblfantasia = new System.Windows.Forms.Label();
             this.Btn_Apagar = new System.Windows.Forms.Button();
             this.Btn_Gravar = new System.Windows.Forms.Button();
             this.lblfuncionários = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.txtMarca = new System.Windows.Forms.TextBox();
@@ -58,22 +56,23 @@
             this.txtCPFCliente = new System.Windows.Forms.TextBox();
             this.lblNomeCliente = new System.Windows.Forms.Label();
             this.txtNomeCliente = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbTipoServico = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgServicosCadastrados = new System.Windows.Forms.DataGridView();
             this.TipoServico = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DescricaoComplementar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnPesquisarVeiculo = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnIncluirServico = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.txtCombustivel = new System.Windows.Forms.TextBox();
+            this.rtbDescricao = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgServicosCadastrados)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox3
@@ -125,17 +124,18 @@
             this.label18.TabIndex = 213;
             this.label18.Text = "Dados da do Serviço";
             // 
-            // textBox1
+            // txtDescricaoComplementar
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(27, 340);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.MaxLength = 40;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(381, 130);
-            this.textBox1.TabIndex = 212;
-            this.textBox1.Text = "Descrição Complementar";
+            this.txtDescricaoComplementar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDescricaoComplementar.Location = new System.Drawing.Point(27, 340);
+            this.txtDescricaoComplementar.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDescricaoComplementar.MaxLength = 40;
+            this.txtDescricaoComplementar.Multiline = true;
+            this.txtDescricaoComplementar.Name = "txtDescricaoComplementar";
+            this.txtDescricaoComplementar.Size = new System.Drawing.Size(381, 130);
+            this.txtDescricaoComplementar.TabIndex = 212;
+            this.txtDescricaoComplementar.Text = "Descrição Complementar";
+            this.txtDescricaoComplementar.Click += new System.EventHandler(this.txtDescricaoComplementar_Click);
             // 
             // lbldescrição
             // 
@@ -150,19 +150,6 @@
             this.lbldescrição.Size = new System.Drawing.Size(287, 18);
             this.lbldescrição.TabIndex = 211;
             this.lbldescrição.Text = "Cadastro de Serviço a Ser Realizado";
-            // 
-            // lblinscestadual
-            // 
-            this.lblinscestadual.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblinscestadual.AutoSize = true;
-            this.lblinscestadual.BackColor = System.Drawing.Color.Transparent;
-            this.lblinscestadual.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblinscestadual.Location = new System.Drawing.Point(300, 58);
-            this.lblinscestadual.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblinscestadual.Name = "lblinscestadual";
-            this.lblinscestadual.Size = new System.Drawing.Size(71, 13);
-            this.lblinscestadual.TabIndex = 205;
-            this.lblinscestadual.Text = "Data inicial";
             // 
             // lblfantasia
             // 
@@ -248,19 +235,11 @@
             this.pictureBox2.TabIndex = 222;
             this.pictureBox2.TabStop = false;
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker1.Location = new System.Drawing.Point(375, 53);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(135, 20);
-            this.dateTimePicker1.TabIndex = 226;
-            // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker2.Location = new System.Drawing.Point(682, 52);
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(712, 50);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(135, 20);
@@ -364,6 +343,7 @@
             this.btnPesquisarCliente.Size = new System.Drawing.Size(26, 21);
             this.btnPesquisarCliente.TabIndex = 288;
             this.btnPesquisarCliente.UseVisualStyleBackColor = false;
+            this.btnPesquisarCliente.Click += new System.EventHandler(this.btnPesquisarCliente_Click);
             // 
             // label3
             // 
@@ -412,36 +392,43 @@
             this.txtNomeCliente.Size = new System.Drawing.Size(402, 20);
             this.txtNomeCliente.TabIndex = 289;
             // 
-            // comboBox1
+            // cmbTipoServico
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(114, 0);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(117, 21);
-            this.comboBox1.TabIndex = 294;
-            this.comboBox1.Text = "Tipo de Serviço";
+            this.cmbTipoServico.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTipoServico.FormattingEnabled = true;
+            this.cmbTipoServico.Location = new System.Drawing.Point(114, 0);
+            this.cmbTipoServico.Name = "cmbTipoServico";
+            this.cmbTipoServico.Size = new System.Drawing.Size(117, 21);
+            this.cmbTipoServico.TabIndex = 294;
+            this.cmbTipoServico.Text = "Tipo de Serviço";
+            this.cmbTipoServico.SelectedIndexChanged += new System.EventHandler(this.cmbTipoServico_SelectedIndexChanged);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.rtbDescricao);
+            this.groupBox1.Controls.Add(this.cmbTipoServico);
             this.groupBox1.Location = new System.Drawing.Point(413, 340);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(338, 130);
             this.groupBox1.TabIndex = 295;
             this.groupBox1.TabStop = false;
             // 
-            // dataGridView1
+            // dtgServicosCadastrados
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgServicosCadastrados.AllowUserToAddRows = false;
+            this.dtgServicosCadastrados.AllowUserToDeleteRows = false;
+            this.dtgServicosCadastrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgServicosCadastrados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.TipoServico,
             this.DescricaoComplementar});
-            this.dataGridView1.Location = new System.Drawing.Point(25, 165);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(821, 143);
-            this.dataGridView1.TabIndex = 297;
+            this.dtgServicosCadastrados.Location = new System.Drawing.Point(25, 165);
+            this.dtgServicosCadastrados.MultiSelect = false;
+            this.dtgServicosCadastrados.Name = "dtgServicosCadastrados";
+            this.dtgServicosCadastrados.ReadOnly = true;
+            this.dtgServicosCadastrados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgServicosCadastrados.Size = new System.Drawing.Size(821, 143);
+            this.dtgServicosCadastrados.TabIndex = 297;
             // 
             // TipoServico
             // 
@@ -485,19 +472,20 @@
             this.label2.TabIndex = 299;
             this.label2.Text = "Serviços Cadastrados";
             // 
-            // button3
+            // btnIncluirServico
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.BackColor = System.Drawing.Color.Coral;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(756, 370);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 25);
-            this.button3.TabIndex = 300;
-            this.button3.Text = "Incluir";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnIncluirServico.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnIncluirServico.BackColor = System.Drawing.Color.Coral;
+            this.btnIncluirServico.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnIncluirServico.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnIncluirServico.Location = new System.Drawing.Point(756, 370);
+            this.btnIncluirServico.Margin = new System.Windows.Forms.Padding(2);
+            this.btnIncluirServico.Name = "btnIncluirServico";
+            this.btnIncluirServico.Size = new System.Drawing.Size(91, 25);
+            this.btnIncluirServico.TabIndex = 300;
+            this.btnIncluirServico.Text = "Incluir";
+            this.btnIncluirServico.UseVisualStyleBackColor = false;
+            this.btnIncluirServico.Click += new System.EventHandler(this.btnIncluirServico_Click);
             // 
             // button4
             // 
@@ -512,6 +500,7 @@
             this.button4.TabIndex = 301;
             this.button4.Text = "Excluir";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // txtCombustivel
             // 
@@ -521,6 +510,16 @@
             this.txtCombustivel.Size = new System.Drawing.Size(88, 20);
             this.txtCombustivel.TabIndex = 302;
             // 
+            // rtbDescricao
+            // 
+            this.rtbDescricao.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbDescricao.Enabled = false;
+            this.rtbDescricao.Location = new System.Drawing.Point(3, 16);
+            this.rtbDescricao.Name = "rtbDescricao";
+            this.rtbDescricao.Size = new System.Drawing.Size(332, 111);
+            this.rtbDescricao.TabIndex = 295;
+            this.rtbDescricao.Text = "";
+            // 
             // frmCadastroOrdemServico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -529,10 +528,10 @@
             this.ClientSize = new System.Drawing.Size(867, 507);
             this.Controls.Add(this.txtCombustivel);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnIncluirServico);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnPesquisarVeiculo);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgServicosCadastrados);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCPFCliente);
@@ -549,14 +548,12 @@
             this.Controls.Add(this.lblModelo);
             this.Controls.Add(this.txtModelo);
             this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.picimg_cliente);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDescricaoComplementar);
             this.Controls.Add(this.lbldescrição);
-            this.Controls.Add(this.lblinscestadual);
             this.Controls.Add(this.lblfantasia);
             this.Controls.Add(this.Btn_Apagar);
             this.Controls.Add(this.Btn_Gravar);
@@ -567,12 +564,13 @@
             this.Name = "frmCadastroOrdemServico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCadastroOrdemServico";
+            this.Load += new System.EventHandler(this.frmCadastroOrdemServico_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgServicosCadastrados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -584,16 +582,14 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox picimg_cliente;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDescricaoComplementar;
         private System.Windows.Forms.Label lbldescrição;
-        private System.Windows.Forms.Label lblinscestadual;
         private System.Windows.Forms.Label lblfantasia;
         private System.Windows.Forms.Button Btn_Apagar;
         private System.Windows.Forms.Button Btn_Gravar;
         private System.Windows.Forms.Label lblfuncionários;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtMarca;
@@ -609,15 +605,16 @@
         private System.Windows.Forms.TextBox txtCPFCliente;
         private System.Windows.Forms.Label lblNomeCliente;
         private System.Windows.Forms.TextBox txtNomeCliente;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbTipoServico;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgServicosCadastrados;
         private System.Windows.Forms.Button btnPesquisarVeiculo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnIncluirServico;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox txtCombustivel;
         private System.Windows.Forms.DataGridViewTextBoxColumn TipoServico;
         private System.Windows.Forms.DataGridViewTextBoxColumn DescricaoComplementar;
+        private System.Windows.Forms.RichTextBox rtbDescricao;
     }
 }

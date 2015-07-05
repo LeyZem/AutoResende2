@@ -69,9 +69,9 @@ namespace AutoResende.View
                 oCliente.Bairro = txtBairro.Text;
                 oCliente.CEP = txtCep.Text;
                 oCliente.Cidade = txtCidade.Text;
-                oCliente.email = cmbEstado.Text;
-                oCliente.Pais = cmbPais.Text;
                 oCliente.email = txtEmail.Text;
+                oCliente.Pais = cmbPais.Text;
+                oCliente.UF = cmbEstado.Text;
                 oCliente.TelRes = txtTelRes.Text;
                 oCliente.TelCel = txtCel.Text;
                 oCliente.Comentario = txtComentario.Text;

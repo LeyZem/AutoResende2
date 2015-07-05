@@ -33,9 +33,6 @@ namespace AutoResende.Model
     partial void InsertCliente(Cliente instance);
     partial void UpdateCliente(Cliente instance);
     partial void DeleteCliente(Cliente instance);
-    partial void InsertVeiculo(Veiculo instance);
-    partial void UpdateVeiculo(Veiculo instance);
-    partial void DeleteVeiculo(Veiculo instance);
     partial void InsertFornecedor(Fornecedor instance);
     partial void UpdateFornecedor(Fornecedor instance);
     partial void DeleteFornecedor(Fornecedor instance);
@@ -48,6 +45,12 @@ namespace AutoResende.Model
     partial void InsertOrdemServico(OrdemServico instance);
     partial void UpdateOrdemServico(OrdemServico instance);
     partial void DeleteOrdemServico(OrdemServico instance);
+    partial void InsertVeiculo(Veiculo instance);
+    partial void UpdateVeiculo(Veiculo instance);
+    partial void DeleteVeiculo(Veiculo instance);
+    partial void InsertTipoServico1(TipoServico1 instance);
+    partial void UpdateTipoServico1(TipoServico1 instance);
+    partial void DeleteTipoServico1(TipoServico1 instance);
     #endregion
 		
 		public AutoResendeDataContext() : 
@@ -80,19 +83,19 @@ namespace AutoResende.Model
 			OnCreated();
 		}
 		
+		public System.Data.Linq.Table<TipoServico> TipoServicos
+		{
+			get
+			{
+				return this.GetTable<TipoServico>();
+			}
+		}
+		
 		public System.Data.Linq.Table<Cliente> Clientes
 		{
 			get
 			{
 				return this.GetTable<Cliente>();
-			}
-		}
-		
-		public System.Data.Linq.Table<Veiculo> Veiculos
-		{
-			get
-			{
-				return this.GetTable<Veiculo>();
 			}
 		}
 		
@@ -128,11 +131,82 @@ namespace AutoResende.Model
 			}
 		}
 		
-		public System.Data.Linq.Table<TipoServico> TipoServicos
+		public System.Data.Linq.Table<Veiculo> Veiculos
 		{
 			get
 			{
-				return this.GetTable<TipoServico>();
+				return this.GetTable<Veiculo>();
+			}
+		}
+		
+		public System.Data.Linq.Table<TipoServico1> TipoServico1s
+		{
+			get
+			{
+				return this.GetTable<TipoServico1>();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TipoServico")]
+	public partial class TipoServico
+	{
+		
+		private int _idTipoServico;
+		
+		private string _NomeServiço;
+		
+		private string _Descricao;
+		
+		public TipoServico()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTipoServico", AutoSync=AutoSync.Always, DbType="Int NOT NULL IDENTITY", IsDbGenerated=true)]
+		public int idTipoServico
+		{
+			get
+			{
+				return this._idTipoServico;
+			}
+			set
+			{
+				if ((this._idTipoServico != value))
+				{
+					this._idTipoServico = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NomeServiço", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string NomeServiço
+		{
+			get
+			{
+				return this._NomeServiço;
+			}
+			set
+			{
+				if ((this._NomeServiço != value))
+				{
+					this._NomeServiço = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Descricao", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
+		public string Descricao
+		{
+			get
+			{
+				return this._Descricao;
+			}
+			set
+			{
+				if ((this._Descricao != value))
+				{
+					this._Descricao = value;
+				}
 			}
 		}
 	}
@@ -534,236 +608,6 @@ namespace AutoResende.Model
 					this._Pais = value;
 					this.SendPropertyChanged("Pais");
 					this.OnPaisChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Veiculo")]
-	public partial class Veiculo : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _idVeiculo;
-		
-		private string _Marca;
-		
-		private string _Modelo;
-		
-		private string _Cor;
-		
-		private string _Placa;
-		
-		private string _Descricao;
-		
-		private string _Combustivel;
-		
-		private System.Nullable<int> _Odometro;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidVeiculoChanging(int value);
-    partial void OnidVeiculoChanged();
-    partial void OnMarcaChanging(string value);
-    partial void OnMarcaChanged();
-    partial void OnModeloChanging(string value);
-    partial void OnModeloChanged();
-    partial void OnCorChanging(string value);
-    partial void OnCorChanged();
-    partial void OnPlacaChanging(string value);
-    partial void OnPlacaChanged();
-    partial void OnDescricaoChanging(string value);
-    partial void OnDescricaoChanged();
-    partial void OnCombustivelChanging(string value);
-    partial void OnCombustivelChanged();
-    partial void OnOdometroChanging(System.Nullable<int> value);
-    partial void OnOdometroChanged();
-    #endregion
-		
-		public Veiculo()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idVeiculo", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int idVeiculo
-		{
-			get
-			{
-				return this._idVeiculo;
-			}
-			set
-			{
-				if ((this._idVeiculo != value))
-				{
-					this.OnidVeiculoChanging(value);
-					this.SendPropertyChanging();
-					this._idVeiculo = value;
-					this.SendPropertyChanged("idVeiculo");
-					this.OnidVeiculoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Marca", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string Marca
-		{
-			get
-			{
-				return this._Marca;
-			}
-			set
-			{
-				if ((this._Marca != value))
-				{
-					this.OnMarcaChanging(value);
-					this.SendPropertyChanging();
-					this._Marca = value;
-					this.SendPropertyChanged("Marca");
-					this.OnMarcaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Modelo", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string Modelo
-		{
-			get
-			{
-				return this._Modelo;
-			}
-			set
-			{
-				if ((this._Modelo != value))
-				{
-					this.OnModeloChanging(value);
-					this.SendPropertyChanging();
-					this._Modelo = value;
-					this.SendPropertyChanged("Modelo");
-					this.OnModeloChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cor", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string Cor
-		{
-			get
-			{
-				return this._Cor;
-			}
-			set
-			{
-				if ((this._Cor != value))
-				{
-					this.OnCorChanging(value);
-					this.SendPropertyChanging();
-					this._Cor = value;
-					this.SendPropertyChanged("Cor");
-					this.OnCorChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Placa", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string Placa
-		{
-			get
-			{
-				return this._Placa;
-			}
-			set
-			{
-				if ((this._Placa != value))
-				{
-					this.OnPlacaChanging(value);
-					this.SendPropertyChanging();
-					this._Placa = value;
-					this.SendPropertyChanged("Placa");
-					this.OnPlacaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Descricao", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string Descricao
-		{
-			get
-			{
-				return this._Descricao;
-			}
-			set
-			{
-				if ((this._Descricao != value))
-				{
-					this.OnDescricaoChanging(value);
-					this.SendPropertyChanging();
-					this._Descricao = value;
-					this.SendPropertyChanged("Descricao");
-					this.OnDescricaoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Combustivel", DbType="VarChar(50)")]
-		public string Combustivel
-		{
-			get
-			{
-				return this._Combustivel;
-			}
-			set
-			{
-				if ((this._Combustivel != value))
-				{
-					this.OnCombustivelChanging(value);
-					this.SendPropertyChanging();
-					this._Combustivel = value;
-					this.SendPropertyChanged("Combustivel");
-					this.OnCombustivelChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Odometro", DbType="Int")]
-		public System.Nullable<int> Odometro
-		{
-			get
-			{
-				return this._Odometro;
-			}
-			set
-			{
-				if ((this._Odometro != value))
-				{
-					this.OnOdometroChanging(value);
-					this.SendPropertyChanging();
-					this._Odometro = value;
-					this.SendPropertyChanged("Odometro");
-					this.OnOdometroChanged();
 				}
 			}
 		}
@@ -1925,9 +1769,241 @@ namespace AutoResende.Model
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TipoServico")]
-	public partial class TipoServico
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Veiculo")]
+	public partial class Veiculo : INotifyPropertyChanging, INotifyPropertyChanged
 	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _idVeiculo;
+		
+		private string _Marca;
+		
+		private string _Modelo;
+		
+		private string _Cor;
+		
+		private string _Placa;
+		
+		private string _Descricao;
+		
+		private string _Combustivel;
+		
+		private System.Nullable<int> _Odometro;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidVeiculoChanging(int value);
+    partial void OnidVeiculoChanged();
+    partial void OnMarcaChanging(string value);
+    partial void OnMarcaChanged();
+    partial void OnModeloChanging(string value);
+    partial void OnModeloChanged();
+    partial void OnCorChanging(string value);
+    partial void OnCorChanged();
+    partial void OnPlacaChanging(string value);
+    partial void OnPlacaChanged();
+    partial void OnDescricaoChanging(string value);
+    partial void OnDescricaoChanged();
+    partial void OnCombustivelChanging(string value);
+    partial void OnCombustivelChanged();
+    partial void OnOdometroChanging(System.Nullable<int> value);
+    partial void OnOdometroChanged();
+    #endregion
+		
+		public Veiculo()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idVeiculo", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int idVeiculo
+		{
+			get
+			{
+				return this._idVeiculo;
+			}
+			set
+			{
+				if ((this._idVeiculo != value))
+				{
+					this.OnidVeiculoChanging(value);
+					this.SendPropertyChanging();
+					this._idVeiculo = value;
+					this.SendPropertyChanged("idVeiculo");
+					this.OnidVeiculoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Marca", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string Marca
+		{
+			get
+			{
+				return this._Marca;
+			}
+			set
+			{
+				if ((this._Marca != value))
+				{
+					this.OnMarcaChanging(value);
+					this.SendPropertyChanging();
+					this._Marca = value;
+					this.SendPropertyChanged("Marca");
+					this.OnMarcaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Modelo", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string Modelo
+		{
+			get
+			{
+				return this._Modelo;
+			}
+			set
+			{
+				if ((this._Modelo != value))
+				{
+					this.OnModeloChanging(value);
+					this.SendPropertyChanging();
+					this._Modelo = value;
+					this.SendPropertyChanged("Modelo");
+					this.OnModeloChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cor", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string Cor
+		{
+			get
+			{
+				return this._Cor;
+			}
+			set
+			{
+				if ((this._Cor != value))
+				{
+					this.OnCorChanging(value);
+					this.SendPropertyChanging();
+					this._Cor = value;
+					this.SendPropertyChanged("Cor");
+					this.OnCorChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Placa", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string Placa
+		{
+			get
+			{
+				return this._Placa;
+			}
+			set
+			{
+				if ((this._Placa != value))
+				{
+					this.OnPlacaChanging(value);
+					this.SendPropertyChanging();
+					this._Placa = value;
+					this.SendPropertyChanged("Placa");
+					this.OnPlacaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Descricao", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string Descricao
+		{
+			get
+			{
+				return this._Descricao;
+			}
+			set
+			{
+				if ((this._Descricao != value))
+				{
+					this.OnDescricaoChanging(value);
+					this.SendPropertyChanging();
+					this._Descricao = value;
+					this.SendPropertyChanged("Descricao");
+					this.OnDescricaoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Combustivel", DbType="VarChar(50)")]
+		public string Combustivel
+		{
+			get
+			{
+				return this._Combustivel;
+			}
+			set
+			{
+				if ((this._Combustivel != value))
+				{
+					this.OnCombustivelChanging(value);
+					this.SendPropertyChanging();
+					this._Combustivel = value;
+					this.SendPropertyChanged("Combustivel");
+					this.OnCombustivelChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Odometro", DbType="Int")]
+		public System.Nullable<int> Odometro
+		{
+			get
+			{
+				return this._Odometro;
+			}
+			set
+			{
+				if ((this._Odometro != value))
+				{
+					this.OnOdometroChanging(value);
+					this.SendPropertyChanging();
+					this._Odometro = value;
+					this.SendPropertyChanged("Odometro");
+					this.OnOdometroChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TipoServico")]
+	public partial class TipoServico1 : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private int _idTipoServico;
 		
@@ -1935,11 +2011,24 @@ namespace AutoResende.Model
 		
 		private string _Descricao;
 		
-		public TipoServico()
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidTipoServicoChanging(int value);
+    partial void OnidTipoServicoChanged();
+    partial void OnNomeServiçoChanging(string value);
+    partial void OnNomeServiçoChanged();
+    partial void OnDescricaoChanging(string value);
+    partial void OnDescricaoChanged();
+    #endregion
+		
+		public TipoServico1()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTipoServico", AutoSync=AutoSync.Always, DbType="Int NOT NULL IDENTITY", IsDbGenerated=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTipoServico", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
 		public int idTipoServico
 		{
 			get
@@ -1950,7 +2039,11 @@ namespace AutoResende.Model
 			{
 				if ((this._idTipoServico != value))
 				{
+					this.OnidTipoServicoChanging(value);
+					this.SendPropertyChanging();
 					this._idTipoServico = value;
+					this.SendPropertyChanged("idTipoServico");
+					this.OnidTipoServicoChanged();
 				}
 			}
 		}
@@ -1966,7 +2059,11 @@ namespace AutoResende.Model
 			{
 				if ((this._NomeServiço != value))
 				{
+					this.OnNomeServiçoChanging(value);
+					this.SendPropertyChanging();
 					this._NomeServiço = value;
+					this.SendPropertyChanged("NomeServiço");
+					this.OnNomeServiçoChanged();
 				}
 			}
 		}
@@ -1982,8 +2079,32 @@ namespace AutoResende.Model
 			{
 				if ((this._Descricao != value))
 				{
+					this.OnDescricaoChanging(value);
+					this.SendPropertyChanging();
 					this._Descricao = value;
+					this.SendPropertyChanged("Descricao");
+					this.OnDescricaoChanged();
 				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}

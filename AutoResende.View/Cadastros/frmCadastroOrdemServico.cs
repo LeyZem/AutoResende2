@@ -14,6 +14,8 @@ namespace AutoResende.View
 {
     public partial class frmCadastroOrdemServico : Form
     {
+        int Cont = 0;
+
         public frmCadastroOrdemServico()
         {
             InitializeComponent();
@@ -52,6 +54,102 @@ namespace AutoResende.View
             catch (Exception)
             {
                 MessageBox.Show("Veículo não encontrado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void frmCadastroOrdemServico_Load(object sender, EventArgs e)
+        {
+            List<TipoServico> oTipoServicos = CAutoResende.ListaTiposServico();
+
+            for (int i = 0; i < oTipoServicos.Count; i++)
+            {
+                cmbTipoServico.Items.Add(oTipoServicos[i].NomeServiço);
+            }
+
+        }
+
+        private void cmbTipoServico_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            List<TipoServico> oTipoServicos = CAutoResende.ListaTiposServico();
+
+
+            int index = cmbTipoServico.SelectedIndex;
+
+            for (int i = 0; i < oTipoServicos.Count; i++)
+            {
+                if (i == index)
+                {
+                    rtbDescricao.Text = oTipoServicos[i].Descricao;
+                    break;
+                }
+            }
+
+        }
+
+        private void btnIncluirServico_Click(object sender, EventArgs e)
+        {
+            dtgServicosCadastrados.Rows.Add(cmbTipoServico.Text, txtDescricaoComplementar.Text);
+            dtgServicosCadastrados.Refresh();
+            Cont = 0;
+        }
+
+        private void txtDescricaoComplementar_Click(object sender, EventArgs e)
+        { 
+            if (Cont==0)
+            {
+                txtDescricaoComplementar.Text = "";
+                Cont++;
+            }
+        }
+
+        private void btnPesquisarCliente_Click(object sender, EventArgs e)
+        {
+            string CPF = txtCPFCliente.Text.Trim();
+            string Nome = txtNomeCliente.Text.Trim();
+
+            if (!(CPF == ""))
+            {
+                try
+                {
+                    Cliente oCliente = CAutoResende.SelecionaCPFCliente(CPF);
+
+                    txtNomeCliente.Text = oCliente.Nome;
+                    txtCPFCliente.Text = oCliente.CPF;
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Cliente não encontrado", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+            else if (!(Nome == ""))
+            {
+                try
+                {
+                    Cliente oCliente = CAutoResende.SelecionaNomeCliente(Nome);
+
+                    txtNomeCliente.Text = oCliente.Nome;
+                    txtCPFCliente.Text = oCliente.CPF;
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Cliente não encontrado", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }else
+            {
+                MessageBox.Show("Digite um Nome ou um CPF para a pesquisa", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (dtgServicosCadastrados.SelectedRows != null)
+            {
+                dtgServicosCadastrados.Rows.Remove(dtgServicosCadastrados.CurrentRow);
             }
             
         }

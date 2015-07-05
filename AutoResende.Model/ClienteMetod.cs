@@ -45,13 +45,25 @@ namespace AutoResende.Model
            
         }
 
-        public static Cliente Seleciona(int pCodigoCliente)
+        public static Cliente SelecionaCPFCliente(string pCliente)
         {
             //Conexão com o Banco de Dados
             AutoResendeDataContext oDB = new AutoResendeDataContext();
 
             //String de Seleção
-            Cliente oCliente = (from Seleciona in oDB.Clientes where Seleciona.idCliente == pCodigoCliente select Seleciona).SingleOrDefault();
+            Cliente oCliente = (from Seleciona in oDB.Clientes where Seleciona.CPF == pCliente select Seleciona).SingleOrDefault();
+
+            //Retorno do Cliente
+            return oCliente;
+        }
+
+        public static Cliente SelecionaNomeCliente(string pCliente)
+        {
+            //Conexão com o Banco de Dados
+            AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+            //String de Seleção
+            Cliente oCliente = (from Seleciona in oDB.Clientes where Seleciona.Nome == pCliente select Seleciona).SingleOrDefault();
 
             //Retorno do Cliente
             return oCliente;

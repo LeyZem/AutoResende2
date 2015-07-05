@@ -49,7 +49,7 @@ namespace AutoResende.View
                 oFuncionario.Bairro = txtBairro.Text;
                 oFuncionario.CEP = txtCep.Text;
                 oFuncionario.Cidade = txtCidade.Text;
-                oFuncionario.email = cmbEstado.Text;
+                oFuncionario.UF = cmbEstado.Text;
                 oFuncionario.Pais = cmbPais.Text;
                 oFuncionario.email = txtEmail.Text;
                 oFuncionario.TelRes = txtTelRes.Text;
