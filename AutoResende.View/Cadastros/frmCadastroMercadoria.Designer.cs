@@ -38,20 +38,14 @@
             this.btnApagar = new System.Windows.Forms.Button();
             this.btnGravar = new System.Windows.Forms.Button();
             this.lblMarca = new System.Windows.Forms.Label();
-            this.cmbCombustivel = new System.Windows.Forms.ComboBox();
-            this.lblCombustivel = new System.Windows.Forms.Label();
             this.lblValorVenda = new System.Windows.Forms.Label();
             this.txtValorVenda = new System.Windows.Forms.TextBox();
             this.txtDescricao = new System.Windows.Forms.TextBox();
-            this.lblPlaca = new System.Windows.Forms.Label();
-            this.txtPlaca = new System.Windows.Forms.TextBox();
             this.lblDescricao = new System.Windows.Forms.Label();
             this.txtModelo = new System.Windows.Forms.TextBox();
             this.picimg_cliente = new System.Windows.Forms.PictureBox();
             this.lblfuncionários = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblCodigo = new System.Windows.Forms.Label();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.lblQdeEstoque = new System.Windows.Forms.Label();
             this.lblValorCusto = new System.Windows.Forms.Label();
             this.txtValorCusto = new System.Windows.Forms.TextBox();
@@ -86,7 +80,7 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Purple;
             this.pictureBox1.Location = new System.Drawing.Point(140, 82);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(713, 6);
             this.pictureBox1.TabIndex = 212;
@@ -111,7 +105,7 @@
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.BackColor = System.Drawing.Color.Purple;
             this.pictureBox3.Location = new System.Drawing.Point(141, 276);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(500, 6);
             this.pictureBox3.TabIndex = 210;
@@ -121,7 +115,7 @@
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.Location = new System.Drawing.Point(141, 287);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.MaxLength = 40;
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -176,31 +170,6 @@
             this.lblMarca.TabIndex = 202;
             this.lblMarca.Text = "Marca";
             // 
-            // cmbCombustivel
-            // 
-            this.cmbCombustivel.FormattingEnabled = true;
-            this.cmbCombustivel.Items.AddRange(new object[] {
-            "Gasolina",
-            "Etanol",
-            "Flex",
-            "Gás",
-            "Diesel"});
-            this.cmbCombustivel.Location = new System.Drawing.Point(489, 107);
-            this.cmbCombustivel.Name = "cmbCombustivel";
-            this.cmbCombustivel.Size = new System.Drawing.Size(114, 21);
-            this.cmbCombustivel.TabIndex = 201;
-            // 
-            // lblCombustivel
-            // 
-            this.lblCombustivel.AutoSize = true;
-            this.lblCombustivel.BackColor = System.Drawing.Color.Transparent;
-            this.lblCombustivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCombustivel.Location = new System.Drawing.Point(392, 110);
-            this.lblCombustivel.Name = "lblCombustivel";
-            this.lblCombustivel.Size = new System.Drawing.Size(77, 13);
-            this.lblCombustivel.TabIndex = 200;
-            this.lblCombustivel.Text = "Combustível";
-            // 
             // lblValorVenda
             // 
             this.lblValorVenda.AutoSize = true;
@@ -226,24 +195,6 @@
             this.txtDescricao.Size = new System.Drawing.Size(114, 20);
             this.txtDescricao.TabIndex = 197;
             // 
-            // lblPlaca
-            // 
-            this.lblPlaca.AutoSize = true;
-            this.lblPlaca.BackColor = System.Drawing.Color.Transparent;
-            this.lblPlaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlaca.Location = new System.Drawing.Point(138, 169);
-            this.lblPlaca.Name = "lblPlaca";
-            this.lblPlaca.Size = new System.Drawing.Size(39, 13);
-            this.lblPlaca.TabIndex = 196;
-            this.lblPlaca.Text = "Placa";
-            // 
-            // txtPlaca
-            // 
-            this.txtPlaca.Location = new System.Drawing.Point(215, 171);
-            this.txtPlaca.Name = "txtPlaca";
-            this.txtPlaca.Size = new System.Drawing.Size(114, 20);
-            this.txtPlaca.TabIndex = 195;
-            // 
             // lblDescricao
             // 
             this.lblDescricao.AutoSize = true;
@@ -268,7 +219,7 @@
             this.picimg_cliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.picimg_cliente.Image = ((System.Drawing.Image)(resources.GetObject("picimg_cliente.Image")));
             this.picimg_cliente.Location = new System.Drawing.Point(25, 16);
-            this.picimg_cliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picimg_cliente.Margin = new System.Windows.Forms.Padding(2);
             this.picimg_cliente.Name = "picimg_cliente";
             this.picimg_cliente.Size = new System.Drawing.Size(87, 85);
             this.picimg_cliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -294,31 +245,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.Purple;
             this.pictureBox2.Location = new System.Drawing.Point(0, 1);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(866, 45);
             this.pictureBox2.TabIndex = 207;
             this.pictureBox2.TabStop = false;
-            // 
-            // lblCodigo
-            // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.BackColor = System.Drawing.Color.Transparent;
-            this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(140, 109);
-            this.lblCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(46, 13);
-            this.lblCodigo.TabIndex = 213;
-            this.lblCodigo.Text = "Código";
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Location = new System.Drawing.Point(215, 107);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(77, 20);
-            this.txtCodigo.TabIndex = 214;
             // 
             // lblQdeEstoque
             // 
@@ -366,8 +297,6 @@
             this.Controls.Add(this.lblValorCusto);
             this.Controls.Add(this.txtValorCusto);
             this.Controls.Add(this.lblQdeEstoque);
-            this.Controls.Add(this.lblCodigo);
-            this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.pictureBox3);
@@ -376,13 +305,9 @@
             this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.btnGravar);
             this.Controls.Add(this.lblMarca);
-            this.Controls.Add(this.cmbCombustivel);
-            this.Controls.Add(this.lblCombustivel);
             this.Controls.Add(this.lblValorVenda);
             this.Controls.Add(this.txtValorVenda);
             this.Controls.Add(this.txtDescricao);
-            this.Controls.Add(this.lblPlaca);
-            this.Controls.Add(this.txtPlaca);
             this.Controls.Add(this.lblDescricao);
             this.Controls.Add(this.txtModelo);
             this.Controls.Add(this.picimg_cliente);
@@ -413,20 +338,14 @@
         private System.Windows.Forms.Button btnApagar;
         private System.Windows.Forms.Button btnGravar;
         private System.Windows.Forms.Label lblMarca;
-        private System.Windows.Forms.ComboBox cmbCombustivel;
-        private System.Windows.Forms.Label lblCombustivel;
         private System.Windows.Forms.Label lblValorVenda;
         private System.Windows.Forms.TextBox txtValorVenda;
         private System.Windows.Forms.TextBox txtDescricao;
-        private System.Windows.Forms.Label lblPlaca;
-        private System.Windows.Forms.TextBox txtPlaca;
         private System.Windows.Forms.Label lblDescricao;
         private System.Windows.Forms.TextBox txtModelo;
         private System.Windows.Forms.PictureBox picimg_cliente;
         private System.Windows.Forms.Label lblfuncionários;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label lblCodigo;
-        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label lblQdeEstoque;
         private System.Windows.Forms.Label lblValorCusto;
         private System.Windows.Forms.TextBox txtValorCusto;

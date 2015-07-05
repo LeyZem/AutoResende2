@@ -26,5 +26,10 @@ namespace AutoResende.View
         {
             Close();
         }
+
+        private void lblNomeCliente_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -161,7 +161,7 @@ namespace AutoResende.View
 
         private void button1_MouseClick(object sender, MouseEventArgs e)
         {
-            Close();
+            Application.Exit();
         }
         
     }

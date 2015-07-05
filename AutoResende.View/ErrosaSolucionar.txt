@@ -2,3 +2,36 @@
 1 - Ajustar o Campo Data de Nascimento (frmCadastroCliente)
 2 - A tela de cadastro de ordem de serviço tem que relacionar o cliente e o carro
 3 - A tela de consulta de ordem de ordem se serviço tem que relacionar que executou o serviço
+
+form cadastro de mercado
+
+vender mercadorias
+
+frm cadastro de ordem de serviço
+
+os campos do veículo devem iniciar bloqueados
+ao digitar a placa e clicar em buscar, os dados do veículo devem ser carregados nos campos.
+caso o cadastro não exista, uma mensagem deve ser mostrada solicitando o cadastro do mesmo.
+
+TIPO DE SERVIÇO
+
+CAIXA PARA COLOCAR O PREÇO DO SERVIÇO
+
+CADASTRO DE MERCADORIA
+
+RELACIONAR A UM FORNECEDOR CADASTRADO
+
+CONSULTA DE MERCADORIA
+
+COLOCAR NO GRID AO LADO DA MERCADORIA O NOME DO FORNECEDOR E O CNPJ
+
+COLOCAR TELA DE LOGIN??????
+
+
+CONSULTA DE OS
+
+PELO CÓDIGO, CPF OU PLACA
+
+GARREGAR UM GRID
+
+DEFINIR COMO APARECERÁ OS SERVIÇOS DE CADA ORDEM????? 
