@@ -42,10 +42,7 @@ namespace AutoResende.Controller
             FornecedorMetod.Insere(oFornecedor);
         }
 
-        public static IQueryable<Fornecedor> SelecionaFornecedor(string pFornecedor)
-        {
-            return FornecedorMetod.SelecionaFornecedor(pFornecedor);
-        }
+
 
         //FUNCIONÁRIO
         public static void Insere(Funcionario oFuncionario)
@@ -100,15 +97,10 @@ namespace AutoResende.Controller
             VeiculoMetod.Insere(oVeiculo);
         }
 
-        public static Veiculo SelecionaPlacaVeiculo (string Placa)
+        public static Veiculo Seleciona (string Placa)
         {
-            Veiculo oVeiculo = VeiculoMetod.SelecionaPlacaVeiculo(Placa);
+            Veiculo oVeiculo = VeiculoMetod.Seleciona(Placa);
             return oVeiculo;
-        }
-
-        public static IQueryable<Veiculo> SelecionaVeiculo(string pVeiculo)
-        {
-            return VeiculoMetod.SelecionaVeiculo(pVeiculo);
         }
 
     }

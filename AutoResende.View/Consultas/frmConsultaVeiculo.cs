@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AutoResende.Model;
 using AutoResende.Controller;
 
 namespace AutoResende.View
@@ -28,18 +29,14 @@ namespace AutoResende.View
             Close();
         }
 
+        private void frmConsultaVeiculo_Load(object sender, EventArgs e)
+        {
+           
+        }
+
         private void btnPesquisaVeiculo_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string var = txtPlaca.Text;
-                dtgVeiculos.DataSource = CAutoResende.SelecionaVeiculo(txtPlaca.Text);
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro: " + ex.Message, "Carregar", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
     }
 }

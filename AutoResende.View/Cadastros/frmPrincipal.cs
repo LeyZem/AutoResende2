@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AutoResende.View.Cadastros;
+using AutoResende.Controller;
+using AutoResende.Model;
 
 namespace AutoResende.View
 {
@@ -68,7 +70,8 @@ namespace AutoResende.View
 
         private void ptbOrdemServico_MouseClick(object sender, MouseEventArgs e)
         {
-            frmCadastroOrdemServico frm = new frmCadastroOrdemServico();
+            OrdemServico OS = new OrdemServico();
+            frmCadastroOrdemServico frm = new frmCadastroOrdemServico (OS);
             frm.Show();
         }
 

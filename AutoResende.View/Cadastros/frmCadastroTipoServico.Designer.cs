@@ -73,7 +73,7 @@
             this.txtDescricao.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtDescricao.Location = new System.Drawing.Point(133, 183);
             this.txtDescricao.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDescricao.MaxLength = 40;
+            this.txtDescricao.MaxLength = 200;
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(681, 256);

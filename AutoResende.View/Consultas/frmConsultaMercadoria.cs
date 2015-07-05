@@ -26,5 +26,15 @@ namespace AutoResende.View
         {
             Close();
         }
+
+        private void lblValorCusto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtValorCusto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

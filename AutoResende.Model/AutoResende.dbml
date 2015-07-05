@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AutoResende.DataBase" Class="AutoResendeDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=FABS-PC;Initial Catalog=AutoResende.DataBase;Integrated Security=True" SettingsObjectName="AutoResende.Model.Properties.Settings" SettingsPropertyName="AutoResende_DataBaseConnectionString1" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ThiagoDiniz-PC;Initial Catalog=AutoResende.DataBase;Integrated Security=True" SettingsObjectName="AutoResende.Model.Properties.Settings" SettingsPropertyName="AutoResende_DataBaseConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Cliente" Member="Clientes">
     <Type Name="Cliente">
       <Column Name="idCliente" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -18,6 +18,18 @@
       <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="Comentario" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="Pais" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Veiculo" Member="Veiculos">
+    <Type Name="Veiculo">
+      <Column Name="idVeiculo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Marca" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Modelo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Cor" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Placa" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Combustivel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Odometro" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.Fornecedor" Member="Fornecedors">
@@ -82,18 +94,6 @@
       <Column Name="idTipoServico" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="NomeServiço" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Descricao" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Veiculo" Member="Veiculos">
-    <Type Name="Veiculo">
-      <Column Name="idVeiculo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Marca" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="Modelo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="Cor" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="Placa" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="Descricao" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="Combustivel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Odometro" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

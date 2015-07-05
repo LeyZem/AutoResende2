@@ -16,11 +16,11 @@ namespace AutoResende.View
     {
         int Cont = 0;
 
-        public frmCadastroOrdemServico()//(OrdemServico OS)
+        public frmCadastroOrdemServico(OrdemServico OS)
         {
             InitializeComponent();
 
-            //dtpDataEntrega.Value = Convert.ToDateTime(OS.DataEntrega);
+            //dtpDataEntrega.Value = DateTime OS = new OS.DataEntrega.ToString;
             
 
         }
@@ -47,7 +47,7 @@ namespace AutoResende.View
 
             try
             {
-                oVeiculo = CAutoResende.SelecionaPlacaVeiculo(strPlaca);
+                oVeiculo = CAutoResende.Seleciona(strPlaca);
 
                 txtMarca.Text = oVeiculo.Marca;
                 txtModelo.Text = oVeiculo.Modelo;
