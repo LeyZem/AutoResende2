@@ -16,9 +16,13 @@ namespace AutoResende.View
     {
         int Cont = 0;
 
-        public frmCadastroOrdemServico()
+        public frmCadastroOrdemServico(OrdemServico OS)
         {
             InitializeComponent();
+
+            dtpDataEntrega.Value = Convert.ToDateTime(OS.DataEntrega);
+            
+
         }
 
         private void btnFechar_MouseClick(object sender, MouseEventArgs e)

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AutoResende.Controller;
+using AutoResende.Model;
 
 namespace AutoResende.View
 {
@@ -25,6 +27,16 @@ namespace AutoResende.View
         private void button1_MouseClick(object sender, MouseEventArgs e)
         {
             Close();
+        }
+
+        private void dtgServicosCadastrados_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            OrdemServico OS = new OrdemServico();
+            frmCadastroOrdemServico frm = new frmCadastroOrdemServico (OS);
+            frm.Show();
+            this.Close();
+
+            
         }
     }
 }

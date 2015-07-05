@@ -9,9 +9,9 @@ vender mercadorias
 
 frm cadastro de ordem de serviço
 
-os campos do veículo devem iniciar bloqueados
-ao digitar a placa e clicar em buscar, os dados do veículo devem ser carregados nos campos.
-caso o cadastro não exista, uma mensagem deve ser mostrada solicitando o cadastro do mesmo.
+ok - os campos do veículo devem iniciar bloqueados
+ok - ao digitar a placa e clicar em buscar, os dados do veículo devem ser carregados nos campos.
+ok - caso o cadastro não exista, uma mensagem deve ser mostrada solicitando o cadastro do mesmo.
 
 arrumar erro no botão excluir
 

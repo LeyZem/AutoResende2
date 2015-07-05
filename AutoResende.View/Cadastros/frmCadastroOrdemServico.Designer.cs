@@ -41,7 +41,7 @@
             this.lblfuncionários = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataEntrega = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.txtMarca = new System.Windows.Forms.TextBox();
             this.lblCor = new System.Windows.Forms.Label();
@@ -58,6 +58,7 @@
             this.txtNomeCliente = new System.Windows.Forms.TextBox();
             this.cmbTipoServico = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rtbDescricao = new System.Windows.Forms.RichTextBox();
             this.dtgServicosCadastrados = new System.Windows.Forms.DataGridView();
             this.TipoServico = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DescricaoComplementar = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,7 +67,6 @@
             this.btnIncluirServico = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.txtCombustivel = new System.Windows.Forms.TextBox();
-            this.rtbDescricao = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
@@ -235,15 +235,15 @@
             this.pictureBox2.TabIndex = 222;
             this.pictureBox2.TabStop = false;
             // 
-            // dateTimePicker2
+            // dtpDataEntrega
             // 
-            this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(712, 50);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(135, 20);
-            this.dateTimePicker2.TabIndex = 227;
+            this.dtpDataEntrega.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtpDataEntrega.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataEntrega.Location = new System.Drawing.Point(712, 50);
+            this.dtpDataEntrega.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpDataEntrega.Name = "dtpDataEntrega";
+            this.dtpDataEntrega.Size = new System.Drawing.Size(135, 20);
+            this.dtpDataEntrega.TabIndex = 227;
             // 
             // label1
             // 
@@ -414,6 +414,16 @@
             this.groupBox1.TabIndex = 295;
             this.groupBox1.TabStop = false;
             // 
+            // rtbDescricao
+            // 
+            this.rtbDescricao.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbDescricao.Enabled = false;
+            this.rtbDescricao.Location = new System.Drawing.Point(3, 16);
+            this.rtbDescricao.Name = "rtbDescricao";
+            this.rtbDescricao.Size = new System.Drawing.Size(332, 111);
+            this.rtbDescricao.TabIndex = 295;
+            this.rtbDescricao.Text = "";
+            // 
             // dtgServicosCadastrados
             // 
             this.dtgServicosCadastrados.AllowUserToAddRows = false;
@@ -510,16 +520,6 @@
             this.txtCombustivel.Size = new System.Drawing.Size(88, 20);
             this.txtCombustivel.TabIndex = 302;
             // 
-            // rtbDescricao
-            // 
-            this.rtbDescricao.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbDescricao.Enabled = false;
-            this.rtbDescricao.Location = new System.Drawing.Point(3, 16);
-            this.rtbDescricao.Name = "rtbDescricao";
-            this.rtbDescricao.Size = new System.Drawing.Size(332, 111);
-            this.rtbDescricao.TabIndex = 295;
-            this.rtbDescricao.Text = "";
-            // 
             // frmCadastroOrdemServico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -547,7 +547,7 @@
             this.Controls.Add(this.txtPlaca);
             this.Controls.Add(this.lblModelo);
             this.Controls.Add(this.txtModelo);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dtpDataEntrega);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.picimg_cliente);
@@ -590,7 +590,7 @@
         private System.Windows.Forms.Label lblfuncionários;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpDataEntrega;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.Label lblCor;
