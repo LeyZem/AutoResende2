@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AutoResende.Model;
+using AutoResende.Controller;
 
 namespace AutoResende.View
 {
@@ -29,8 +31,11 @@ namespace AutoResende.View
 
         private void frmConsultaVeiculo_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the '_AutoResende_DataBaseDataSet_Veiculo.Veiculo' table. You can move, or remove it, as needed.
-            this.veiculoTableAdapter.Fill(this._AutoResende_DataBaseDataSet_Veiculo.Veiculo);
+           
+        }
+
+        private void btnPesquisaVeiculo_Click(object sender, EventArgs e)
+        {
 
         }
     }

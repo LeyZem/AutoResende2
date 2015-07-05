@@ -90,7 +90,7 @@
             this.btnFechar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(29, 24);
-            this.btnFechar.TabIndex = 36;
+            this.btnFechar.TabIndex = 17;
             this.btnFechar.UseVisualStyleBackColor = false;
             this.btnFechar.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnFechar_MouseClick);
             // 
@@ -157,7 +157,7 @@
             this.btnApagar.Location = new System.Drawing.Point(291, 463);
             this.btnApagar.Name = "btnApagar";
             this.btnApagar.Size = new System.Drawing.Size(115, 25);
-            this.btnApagar.TabIndex = 196;
+            this.btnApagar.TabIndex = 16;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = false;
             this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
@@ -182,7 +182,7 @@
             this.txtComentario.Multiline = true;
             this.txtComentario.Name = "txtComentario";
             this.txtComentario.Size = new System.Drawing.Size(501, 139);
-            this.txtComentario.TabIndex = 194;
+            this.txtComentario.TabIndex = 14;
             // 
             // label7
             // 
@@ -208,7 +208,7 @@
             this.Btn_Gravar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_Gravar.Name = "Btn_Gravar";
             this.Btn_Gravar.Size = new System.Drawing.Size(115, 25);
-            this.Btn_Gravar.TabIndex = 192;
+            this.Btn_Gravar.TabIndex = 15;
             this.Btn_Gravar.Text = "Gravar";
             this.Btn_Gravar.UseVisualStyleBackColor = false;
             this.Btn_Gravar.Click += new System.EventHandler(this.Btn_Gravar_Click);
@@ -219,7 +219,7 @@
             this.txtDataNasc.Mask = "00/00/0000";
             this.txtDataNasc.Name = "txtDataNasc";
             this.txtDataNasc.Size = new System.Drawing.Size(81, 20);
-            this.txtDataNasc.TabIndex = 225;
+            this.txtDataNasc.TabIndex = 3;
             this.txtDataNasc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtDataNasc.ValidatingType = typeof(System.DateTime);
             // 
@@ -243,7 +243,7 @@
             this.txtBairro.Margin = new System.Windows.Forms.Padding(2);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(155, 20);
-            this.txtBairro.TabIndex = 224;
+            this.txtBairro.TabIndex = 6;
             // 
             // label1
             // 
@@ -266,7 +266,7 @@
             this.txtLogradouro.MaxLength = 40;
             this.txtLogradouro.Name = "txtLogradouro";
             this.txtLogradouro.Size = new System.Drawing.Size(412, 20);
-            this.txtLogradouro.TabIndex = 221;
+            this.txtLogradouro.TabIndex = 5;
             // 
             // txtCPF
             // 
@@ -275,7 +275,7 @@
             this.txtCPF.Margin = new System.Windows.Forms.Padding(2);
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(131, 20);
-            this.txtCPF.TabIndex = 220;
+            this.txtCPF.TabIndex = 2;
             // 
             // lblcel
             // 
@@ -297,7 +297,7 @@
             this.txtCel.Margin = new System.Windows.Forms.Padding(2);
             this.txtCel.Name = "txtCel";
             this.txtCel.Size = new System.Drawing.Size(160, 20);
-            this.txtCel.TabIndex = 218;
+            this.txtCel.TabIndex = 13;
             // 
             // cmbEstado
             // 
@@ -335,7 +335,7 @@
             this.cmbEstado.Margin = new System.Windows.Forms.Padding(2);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.Size = new System.Drawing.Size(109, 21);
-            this.cmbEstado.TabIndex = 217;
+            this.cmbEstado.TabIndex = 9;
             // 
             // cmbPais
             // 
@@ -602,7 +602,7 @@
             this.cmbPais.Margin = new System.Windows.Forms.Padding(2);
             this.cmbPais.Name = "cmbPais";
             this.cmbPais.Size = new System.Drawing.Size(155, 21);
-            this.cmbPais.TabIndex = 216;
+            this.cmbPais.TabIndex = 11;
             // 
             // lblpais
             // 
@@ -637,7 +637,7 @@
             this.txtOrgaoExpedidor.Margin = new System.Windows.Forms.Padding(2);
             this.txtOrgaoExpedidor.Name = "txtOrgaoExpedidor";
             this.txtOrgaoExpedidor.Size = new System.Drawing.Size(155, 20);
-            this.txtOrgaoExpedidor.TabIndex = 209;
+            this.txtOrgaoExpedidor.TabIndex = 4;
             // 
             // lblOrgExped
             // 
@@ -686,7 +686,7 @@
             this.txtEmail.MaxLength = 40;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(412, 20);
-            this.txtEmail.TabIndex = 205;
+            this.txtEmail.TabIndex = 10;
             // 
             // lblRG
             // 
@@ -709,7 +709,7 @@
             this.txtRG.MaxLength = 40;
             this.txtRG.Name = "txtRG";
             this.txtRG.Size = new System.Drawing.Size(155, 20);
-            this.txtRG.TabIndex = 203;
+            this.txtRG.TabIndex = 1;
             // 
             // lblnome
             // 
@@ -732,7 +732,7 @@
             this.txtNome.MaxLength = 40;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(412, 20);
-            this.txtNome.TabIndex = 201;
+            this.txtNome.TabIndex = 0;
             // 
             // lbltel
             // 
@@ -793,7 +793,7 @@
             this.txtCidade.Margin = new System.Windows.Forms.Padding(2);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(160, 20);
-            this.txtCidade.TabIndex = 215;
+            this.txtCidade.TabIndex = 8;
             // 
             // txtCep
             // 
@@ -802,7 +802,7 @@
             this.txtCep.Margin = new System.Windows.Forms.Padding(2);
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(131, 20);
-            this.txtCep.TabIndex = 214;
+            this.txtCep.TabIndex = 7;
             // 
             // txtTelRes
             // 
@@ -811,7 +811,7 @@
             this.txtTelRes.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelRes.Name = "txtTelRes";
             this.txtTelRes.Size = new System.Drawing.Size(131, 20);
-            this.txtTelRes.TabIndex = 213;
+            this.txtTelRes.TabIndex = 12;
             // 
             // frmCadastroCliente
             // 
