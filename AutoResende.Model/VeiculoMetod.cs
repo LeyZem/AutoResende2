@@ -43,7 +43,7 @@ namespace AutoResende.Model
             
         }
 
-        public static Veiculo Seleciona(string Placa)
+        public static Veiculo SelecionaPlacaVeiculo(string Placa)
         {
             //Conexão com o Banco de Dados
             AutoResendeDataContext oDB = new AutoResendeDataContext();
@@ -65,6 +65,21 @@ namespace AutoResende.Model
 
             //Retorno da Ordem de Serviço
             return oVeiculos;
+        }
+
+        public static IQueryable<Veiculo> SelecionaVeiculo(string Veiculo)
+        {
+            try
+            {
+                AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+                IQueryable<Veiculo> oVeiculo = (from Seleciona in oDB.Veiculos where Seleciona.Placa == Veiculo select Seleciona);
+                return oVeiculo;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

@@ -172,6 +172,7 @@
             this.dtgConsultaVeiculo.ReadOnly = true;
             this.dtgConsultaVeiculo.Size = new System.Drawing.Size(685, 317);
             this.dtgConsultaVeiculo.TabIndex = 296;
+            this.dtgConsultaVeiculo.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtgConsultaVeiculo_CellMouseDoubleClick);
             // 
             // idVeiculoDataGridViewTextBoxColumn
             // 

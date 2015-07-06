@@ -14,9 +14,18 @@ namespace AutoResende.View
 {
     public partial class frmCadastroVeiculo : Form
     {
-        public frmCadastroVeiculo()
+        public frmCadastroVeiculo(Veiculo oVeiculo)
         {
             InitializeComponent();
+
+            txtCor.Text = oVeiculo.Cor;
+            txtDescricao.Text = oVeiculo.Descricao;
+            txtModelo.Text = oVeiculo.Modelo;
+            txtMarca.Text = oVeiculo.Marca;
+            txtOdometro.Text = Convert.ToString(oVeiculo.Odometro);
+            txtPlaca.Text = oVeiculo.Placa;
+            cmbCombustivel.Text = oVeiculo.Combustivel;
+
         }
 
         private void btnFechar_MouseClick(object sender, MouseEventArgs e)

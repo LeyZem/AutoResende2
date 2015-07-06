@@ -36,7 +36,25 @@ namespace AutoResende.View
 
         private void btnPesquisaVeiculo_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string var = txtPlaca.Text;
+                dtgConsultaVeiculo.DataSource = CAutoResende.SelecionaVeiculo(txtPlaca.Text);
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message, "Carregar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void dtgConsultaVeiculo_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            Veiculo oVeiculo = new Veiculo();
+            oVeiculo = dtgConsultaVeiculo.Rows[e.RowIndex].DataBoundItem as Veiculo;
+            frmCadastroVeiculo frm = new frmCadastroVeiculo(oVeiculo);
+            frm.Show();
+            this.Close();
         }
     }
 }

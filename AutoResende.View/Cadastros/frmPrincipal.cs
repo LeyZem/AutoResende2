@@ -85,7 +85,8 @@ namespace AutoResende.View
 
         private void ptbCadastroVeiculo_MouseClick(object sender, MouseEventArgs e)
         {
-            frmCadastroVeiculo frm = new frmCadastroVeiculo();
+            Veiculo oVeiculo = new Veiculo();
+            frmCadastroVeiculo frm = new frmCadastroVeiculo(oVeiculo);
             frm.Show();
         }
 
