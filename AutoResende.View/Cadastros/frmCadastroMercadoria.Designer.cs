@@ -50,6 +50,11 @@
             this.lblValorCusto = new System.Windows.Forms.Label();
             this.txtValorCusto = new System.Windows.Forms.TextBox();
             this.txtQdeEstoque = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtCNPJ = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtNomeFantasia = new System.Windows.Forms.TextBox();
+            this.btnPesquisaFuncionario = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
@@ -79,7 +84,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Purple;
-            this.pictureBox1.Location = new System.Drawing.Point(140, 82);
+            this.pictureBox1.Location = new System.Drawing.Point(140, 95);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(713, 6);
@@ -93,7 +98,7 @@
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Purple;
-            this.label18.Location = new System.Drawing.Point(141, 59);
+            this.label18.Location = new System.Drawing.Point(141, 75);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(127, 18);
@@ -177,7 +182,7 @@
             this.lblValorVenda.AutoSize = true;
             this.lblValorVenda.BackColor = System.Drawing.Color.Transparent;
             this.lblValorVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorVenda.Location = new System.Drawing.Point(424, 172);
+            this.lblValorVenda.Location = new System.Drawing.Point(638, 141);
             this.lblValorVenda.Name = "lblValorVenda";
             this.lblValorVenda.Size = new System.Drawing.Size(59, 13);
             this.lblValorVenda.TabIndex = 199;
@@ -185,7 +190,7 @@
             // 
             // txtValorVenda
             // 
-            this.txtValorVenda.Location = new System.Drawing.Point(489, 169);
+            this.txtValorVenda.Location = new System.Drawing.Point(703, 138);
             this.txtValorVenda.Name = "txtValorVenda";
             this.txtValorVenda.Size = new System.Drawing.Size(114, 20);
             this.txtValorVenda.TabIndex = 198;
@@ -289,12 +294,68 @@
             this.txtQdeEstoque.Size = new System.Drawing.Size(114, 20);
             this.txtQdeEstoque.TabIndex = 219;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(595, 63);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.TabIndex = 223;
+            this.label1.Text = "CNPJ";
+            // 
+            // txtCNPJ
+            // 
+            this.txtCNPJ.Location = new System.Drawing.Point(656, 60);
+            this.txtCNPJ.Name = "txtCNPJ";
+            this.txtCNPJ.Size = new System.Drawing.Size(114, 20);
+            this.txtCNPJ.TabIndex = 222;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(309, 63);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 13);
+            this.label2.TabIndex = 221;
+            this.label2.Text = "Nome Fantasia";
+            // 
+            // txtNomeFantasia
+            // 
+            this.txtNomeFantasia.Enabled = false;
+            this.txtNomeFantasia.Location = new System.Drawing.Point(406, 60);
+            this.txtNomeFantasia.Name = "txtNomeFantasia";
+            this.txtNomeFantasia.Size = new System.Drawing.Size(183, 20);
+            this.txtNomeFantasia.TabIndex = 220;
+            // 
+            // btnPesquisaFuncionario
+            // 
+            this.btnPesquisaFuncionario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPesquisaFuncionario.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnPesquisaFuncionario.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPesquisaFuncionario.BackgroundImage")));
+            this.btnPesquisaFuncionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPesquisaFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPesquisaFuncionario.Location = new System.Drawing.Point(819, 51);
+            this.btnPesquisaFuncionario.Name = "btnPesquisaFuncionario";
+            this.btnPesquisaFuncionario.Size = new System.Drawing.Size(36, 36);
+            this.btnPesquisaFuncionario.TabIndex = 283;
+            this.btnPesquisaFuncionario.UseVisualStyleBackColor = false;
+            this.btnPesquisaFuncionario.Click += new System.EventHandler(this.btnPesquisaFuncionario_Click);
+            // 
             // frmCadastroMercadoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(867, 507);
+            this.Controls.Add(this.btnPesquisaFuncionario);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtCNPJ);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtNomeFantasia);
             this.Controls.Add(this.txtQdeEstoque);
             this.Controls.Add(this.lblValorCusto);
             this.Controls.Add(this.txtValorCusto);
@@ -352,5 +413,10 @@
         private System.Windows.Forms.Label lblValorCusto;
         private System.Windows.Forms.TextBox txtValorCusto;
         private System.Windows.Forms.TextBox txtQdeEstoque;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtCNPJ;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtNomeFantasia;
+        private System.Windows.Forms.Button btnPesquisaFuncionario;
     }
 }

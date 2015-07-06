@@ -43,6 +43,7 @@ namespace AutoResende.View
                 oMercadoria.QuantidadeEstoque = Convert.ToInt32(txtQdeEstoque.Text);
                 oMercadoria.ValorCusto = Convert.ToDecimal(txtValorCusto.Text);
                 oMercadoria.ValorVenda = Convert.ToDecimal(txtValorVenda.Text);
+                oMercadoria.CNPJ = txtCNPJ.Text;
 
                 try
                 {
@@ -109,6 +110,22 @@ namespace AutoResende.View
         private void btnApagar_Click(object sender, EventArgs e)
         {
             LimpaCampos();
+        }
+
+        private void btnPesquisaFuncionario_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                
+                Fornecedor oFornecedor =  CAutoResende.SelecionaCNPJFornecedor(txtCNPJ.Text);
+
+                txtNomeFantasia.Text = oFornecedor.NomeFantasia;
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
     

@@ -50,9 +50,14 @@ namespace AutoResende.View
 
         private void btnPesquisaCliente_Click(object sender, EventArgs e)
         {
+            string pCNPJ;
             try
             {
+
                 dtgMercadorias.DataSource = CAutoResende.SelecionaMercadoria(Convert.ToInt32(txtCodigo.Text));
+                //pCNPJ = dtgMercadorias.CurrentRow.Cells[6].Value.ToString();
+               // dtgMercadorias.DataSource =  (CAutoResende.SelecionaFornecedor(pCNPJ));
+
 
             }
             catch (Exception ex)
@@ -84,6 +89,18 @@ namespace AutoResende.View
                 {
                     MessageBox.Show(ex.Message, ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dtgMercadorias.DataSource = CAutoResende.ListaMercadorias();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

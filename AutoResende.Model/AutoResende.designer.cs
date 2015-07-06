@@ -54,7 +54,7 @@ namespace AutoResende.Model
     #endregion
 		
 		public AutoResendeDataContext() : 
-				base(global::AutoResende.Model.Properties.Settings.Default.AutoResende_DataBaseConnectionString1, mappingSource)
+				base(global::AutoResende.Model.Properties.Settings.Default.AutoResende_DataBaseConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -180,6 +180,8 @@ namespace AutoResende.Model
 		
 		private EntitySet<OrdemServico> _OrdemServicos;
 		
+		private EntitySet<OrdemServico> _OrdemServicos1;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -221,6 +223,7 @@ namespace AutoResende.Model
 		public Cliente()
 		{
 			this._OrdemServicos = new EntitySet<OrdemServico>(new Action<OrdemServico>(this.attach_OrdemServicos), new Action<OrdemServico>(this.detach_OrdemServicos));
+			this._OrdemServicos1 = new EntitySet<OrdemServico>(new Action<OrdemServico>(this.attach_OrdemServicos1), new Action<OrdemServico>(this.detach_OrdemServicos1));
 			OnCreated();
 		}
 		
@@ -557,6 +560,19 @@ namespace AutoResende.Model
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Cliente_OrdemServico1", Storage="_OrdemServicos1", ThisKey="CPF", OtherKey="CPF")]
+		public EntitySet<OrdemServico> OrdemServicos1
+		{
+			get
+			{
+				return this._OrdemServicos1;
+			}
+			set
+			{
+				this._OrdemServicos1.Assign(value);
+			}
+		}
+		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -588,6 +604,18 @@ namespace AutoResende.Model
 			this.SendPropertyChanging();
 			entity.Cliente = null;
 		}
+		
+		private void attach_OrdemServicos1(OrdemServico entity)
+		{
+			this.SendPropertyChanging();
+			entity.Cliente1 = this;
+		}
+		
+		private void detach_OrdemServicos1(OrdemServico entity)
+		{
+			this.SendPropertyChanging();
+			entity.Cliente1 = null;
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Veiculo")]
@@ -614,6 +642,8 @@ namespace AutoResende.Model
 		
 		private EntitySet<OrdemServico> _OrdemServicos;
 		
+		private EntitySet<OrdemServico> _OrdemServicos1;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -639,6 +669,7 @@ namespace AutoResende.Model
 		public Veiculo()
 		{
 			this._OrdemServicos = new EntitySet<OrdemServico>(new Action<OrdemServico>(this.attach_OrdemServicos), new Action<OrdemServico>(this.detach_OrdemServicos));
+			this._OrdemServicos1 = new EntitySet<OrdemServico>(new Action<OrdemServico>(this.attach_OrdemServicos1), new Action<OrdemServico>(this.detach_OrdemServicos1));
 			OnCreated();
 		}
 		
@@ -815,6 +846,19 @@ namespace AutoResende.Model
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Veiculo_OrdemServico1", Storage="_OrdemServicos1", ThisKey="Placa", OtherKey="Placa")]
+		public EntitySet<OrdemServico> OrdemServicos1
+		{
+			get
+			{
+				return this._OrdemServicos1;
+			}
+			set
+			{
+				this._OrdemServicos1.Assign(value);
+			}
+		}
+		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -845,6 +889,18 @@ namespace AutoResende.Model
 		{
 			this.SendPropertyChanging();
 			entity.Veiculo = null;
+		}
+		
+		private void attach_OrdemServicos1(OrdemServico entity)
+		{
+			this.SendPropertyChanging();
+			entity.Veiculo1 = this;
+		}
+		
+		private void detach_OrdemServicos1(OrdemServico entity)
+		{
+			this.SendPropertyChanging();
+			entity.Veiculo1 = null;
 		}
 	}
 	
@@ -1989,9 +2045,15 @@ namespace AutoResende.Model
 		
 		private EntityRef<Cliente> _Cliente;
 		
+		private EntityRef<Cliente> _Cliente1;
+		
 		private EntityRef<Veiculo> _Veiculo;
 		
+		private EntityRef<Veiculo> _Veiculo1;
+		
 		private EntityRef<TipoServico> _TipoServico;
+		
+		private EntityRef<TipoServico> _TipoServico1;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -2016,8 +2078,11 @@ namespace AutoResende.Model
 		public OrdemServico()
 		{
 			this._Cliente = default(EntityRef<Cliente>);
+			this._Cliente1 = default(EntityRef<Cliente>);
 			this._Veiculo = default(EntityRef<Veiculo>);
+			this._Veiculo1 = default(EntityRef<Veiculo>);
 			this._TipoServico = default(EntityRef<TipoServico>);
+			this._TipoServico1 = default(EntityRef<TipoServico>);
 			OnCreated();
 		}
 		
@@ -2112,7 +2177,7 @@ namespace AutoResende.Model
 			{
 				if ((this._idTipoServico != value))
 				{
-					if (this._TipoServico.HasLoadedOrAssignedValue)
+					if ((this._TipoServico.HasLoadedOrAssignedValue || this._TipoServico1.HasLoadedOrAssignedValue))
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -2136,7 +2201,7 @@ namespace AutoResende.Model
 			{
 				if ((this._CPF != value))
 				{
-					if (this._Cliente.HasLoadedOrAssignedValue)
+					if ((this._Cliente.HasLoadedOrAssignedValue || this._Cliente1.HasLoadedOrAssignedValue))
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -2160,7 +2225,7 @@ namespace AutoResende.Model
 			{
 				if ((this._Placa != value))
 				{
-					if (this._Veiculo.HasLoadedOrAssignedValue)
+					if ((this._Veiculo.HasLoadedOrAssignedValue || this._Veiculo1.HasLoadedOrAssignedValue))
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -2207,6 +2272,40 @@ namespace AutoResende.Model
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Cliente_OrdemServico1", Storage="_Cliente1", ThisKey="CPF", OtherKey="CPF", IsForeignKey=true)]
+		public Cliente Cliente1
+		{
+			get
+			{
+				return this._Cliente1.Entity;
+			}
+			set
+			{
+				Cliente previousValue = this._Cliente1.Entity;
+				if (((previousValue != value) 
+							|| (this._Cliente1.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Cliente1.Entity = null;
+						previousValue.OrdemServicos1.Remove(this);
+					}
+					this._Cliente1.Entity = value;
+					if ((value != null))
+					{
+						value.OrdemServicos1.Add(this);
+						this._CPF = value.CPF;
+					}
+					else
+					{
+						this._CPF = default(string);
+					}
+					this.SendPropertyChanged("Cliente1");
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Veiculo_OrdemServico", Storage="_Veiculo", ThisKey="Placa", OtherKey="Placa", IsForeignKey=true)]
 		public Veiculo Veiculo
 		{
@@ -2241,6 +2340,40 @@ namespace AutoResende.Model
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Veiculo_OrdemServico1", Storage="_Veiculo1", ThisKey="Placa", OtherKey="Placa", IsForeignKey=true)]
+		public Veiculo Veiculo1
+		{
+			get
+			{
+				return this._Veiculo1.Entity;
+			}
+			set
+			{
+				Veiculo previousValue = this._Veiculo1.Entity;
+				if (((previousValue != value) 
+							|| (this._Veiculo1.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Veiculo1.Entity = null;
+						previousValue.OrdemServicos1.Remove(this);
+					}
+					this._Veiculo1.Entity = value;
+					if ((value != null))
+					{
+						value.OrdemServicos1.Add(this);
+						this._Placa = value.Placa;
+					}
+					else
+					{
+						this._Placa = default(string);
+					}
+					this.SendPropertyChanged("Veiculo1");
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TipoServico_OrdemServico", Storage="_TipoServico", ThisKey="idTipoServico", OtherKey="idTipoServico", IsForeignKey=true)]
 		public TipoServico TipoServico
 		{
@@ -2271,6 +2404,40 @@ namespace AutoResende.Model
 						this._idTipoServico = default(int);
 					}
 					this.SendPropertyChanged("TipoServico");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TipoServico_OrdemServico1", Storage="_TipoServico1", ThisKey="idTipoServico", OtherKey="idTipoServico", IsForeignKey=true)]
+		public TipoServico TipoServico1
+		{
+			get
+			{
+				return this._TipoServico1.Entity;
+			}
+			set
+			{
+				TipoServico previousValue = this._TipoServico1.Entity;
+				if (((previousValue != value) 
+							|| (this._TipoServico1.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._TipoServico1.Entity = null;
+						previousValue.OrdemServicos1.Remove(this);
+					}
+					this._TipoServico1.Entity = value;
+					if ((value != null))
+					{
+						value.OrdemServicos1.Add(this);
+						this._idTipoServico = value.idTipoServico;
+					}
+					else
+					{
+						this._idTipoServico = default(int);
+					}
+					this.SendPropertyChanged("TipoServico1");
 				}
 			}
 		}
@@ -2310,6 +2477,8 @@ namespace AutoResende.Model
 		
 		private EntitySet<OrdemServico> _OrdemServicos;
 		
+		private EntitySet<OrdemServico> _OrdemServicos1;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -2325,6 +2494,7 @@ namespace AutoResende.Model
 		public TipoServico()
 		{
 			this._OrdemServicos = new EntitySet<OrdemServico>(new Action<OrdemServico>(this.attach_OrdemServicos), new Action<OrdemServico>(this.detach_OrdemServicos));
+			this._OrdemServicos1 = new EntitySet<OrdemServico>(new Action<OrdemServico>(this.attach_OrdemServicos1), new Action<OrdemServico>(this.detach_OrdemServicos1));
 			OnCreated();
 		}
 		
@@ -2401,6 +2571,19 @@ namespace AutoResende.Model
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TipoServico_OrdemServico1", Storage="_OrdemServicos1", ThisKey="idTipoServico", OtherKey="idTipoServico")]
+		public EntitySet<OrdemServico> OrdemServicos1
+		{
+			get
+			{
+				return this._OrdemServicos1;
+			}
+			set
+			{
+				this._OrdemServicos1.Assign(value);
+			}
+		}
+		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -2431,6 +2614,18 @@ namespace AutoResende.Model
 		{
 			this.SendPropertyChanging();
 			entity.TipoServico = null;
+		}
+		
+		private void attach_OrdemServicos1(OrdemServico entity)
+		{
+			this.SendPropertyChanging();
+			entity.TipoServico1 = this;
+		}
+		
+		private void detach_OrdemServicos1(OrdemServico entity)
+		{
+			this.SendPropertyChanging();
+			entity.TipoServico1 = null;
 		}
 	}
 }

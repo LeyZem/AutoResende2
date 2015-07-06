@@ -40,6 +40,7 @@
             this._AutoResende_DataBaseDataSet_Mercadoria = new AutoResende.View._AutoResende_DataBaseDataSet_Mercadoria();
             this.dtgMercadorias = new System.Windows.Forms.DataGridView();
             this.btnDeletar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -179,12 +180,28 @@
             this.btnDeletar.UseVisualStyleBackColor = false;
             this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Salmon;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(141, 60);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(208, 51);
+            this.button1.TabIndex = 303;
+            this.button1.Text = "Listar Todas as Mercadorias";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmConsultaMercadoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(867, 507);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.dtgMercadorias);
             this.Controls.Add(this.btnPesquisaCliente);
@@ -223,5 +240,6 @@
         private _AutoResende_DataBaseDataSet_Mercadoria _AutoResende_DataBaseDataSet_Mercadoria;
         private System.Windows.Forms.DataGridView dtgMercadorias;
         private System.Windows.Forms.Button btnDeletar;
+        private System.Windows.Forms.Button button1;
     }
 }

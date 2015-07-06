@@ -55,7 +55,7 @@ namespace AutoResende.Model
             return oMercadoria;
         }
 
-        public static List<Mercadoria> ListaMercadorias()
+        public static List<Mercadoria> Lista_Mercadorias()
         {
             //Conexão com o Banco de Dados
             AutoResendeDataContext oDB = new AutoResendeDataContext();

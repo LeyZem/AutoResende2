@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AutoResende.DataBase" Class="AutoResendeDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=FABS-PC;Initial Catalog=AutoResende.DataBase;Integrated Security=True" SettingsObjectName="AutoResende.Model.Properties.Settings" SettingsPropertyName="AutoResende_DataBaseConnectionString1" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ThiagoDiniz-PC;Initial Catalog=AutoResende.DataBase;Integrated Security=True" SettingsObjectName="AutoResende.Model.Properties.Settings" SettingsPropertyName="AutoResende_DataBaseConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Cliente" Member="Clientes">
     <Type Name="Cliente">
       <Column Name="idCliente" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
@@ -19,6 +19,7 @@
       <Column Name="Comentario" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="Pais" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Association Name="Cliente_OrdemServico" Member="OrdemServicos" ThisKey="CPF" OtherKey="CPF" Type="OrdemServico" />
+      <Association Name="Cliente_OrdemServico1" Member="OrdemServicos1" ThisKey="CPF" OtherKey="CPF" Type="OrdemServico" />
     </Type>
   </Table>
   <Table Name="dbo.Veiculo" Member="Veiculos">
@@ -32,6 +33,7 @@
       <Column Name="Combustivel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="Odometro" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="Veiculo_OrdemServico" Member="OrdemServicos" ThisKey="Placa" OtherKey="Placa" Type="OrdemServico" />
+      <Association Name="Veiculo_OrdemServico1" Member="OrdemServicos1" ThisKey="Placa" OtherKey="Placa" Type="OrdemServico" />
     </Type>
   </Table>
   <Table Name="dbo.Fornecedor" Member="Fornecedors">
@@ -97,8 +99,11 @@
       <Column Name="CPF" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Placa" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Association Name="Cliente_OrdemServico" Member="Cliente" ThisKey="CPF" OtherKey="CPF" Type="Cliente" IsForeignKey="true" />
+      <Association Name="Cliente_OrdemServico1" Member="Cliente1" ThisKey="CPF" OtherKey="CPF" Type="Cliente" IsForeignKey="true" />
       <Association Name="Veiculo_OrdemServico" Member="Veiculo" ThisKey="Placa" OtherKey="Placa" Type="Veiculo" IsForeignKey="true" />
+      <Association Name="Veiculo_OrdemServico1" Member="Veiculo1" ThisKey="Placa" OtherKey="Placa" Type="Veiculo" IsForeignKey="true" />
       <Association Name="TipoServico_OrdemServico" Member="TipoServico" ThisKey="idTipoServico" OtherKey="idTipoServico" Type="TipoServico" IsForeignKey="true" />
+      <Association Name="TipoServico_OrdemServico1" Member="TipoServico1" ThisKey="idTipoServico" OtherKey="idTipoServico" Type="TipoServico" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.TipoServico" Member="TipoServicos">
@@ -107,6 +112,7 @@
       <Column Name="NomeServiço" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Descricao" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
       <Association Name="TipoServico_OrdemServico" Member="OrdemServicos" ThisKey="idTipoServico" OtherKey="idTipoServico" Type="OrdemServico" />
+      <Association Name="TipoServico_OrdemServico1" Member="OrdemServicos1" ThisKey="idTipoServico" OtherKey="idTipoServico" Type="OrdemServico" />
     </Type>
   </Table>
 </Database>

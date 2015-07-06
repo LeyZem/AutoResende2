@@ -58,6 +58,11 @@ namespace AutoResende.Controller
             FornecedorMetod.Deleta(pCNPJ);
         }
 
+        public static Fornecedor SelecionaCNPJFornecedor(string CNPJ)
+        {
+            return FornecedorMetod.SelecionaCNPJFornecedor(CNPJ);
+        }
+
 
         //FUNCIONÁRIO
         public static void Insere(Funcionario oFuncionario)
@@ -91,6 +96,11 @@ namespace AutoResende.Controller
         public static void DeletaMercadoria(int Codigo)
         {
             MercadoriaMetod.Deleta(Codigo);
+        }
+
+        public static List<Mercadoria> ListaMercadorias()
+        {
+            return MercadoriaMetod.Lista_Mercadorias();
         }
 
 

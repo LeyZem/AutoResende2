@@ -74,5 +74,17 @@ namespace AutoResende.Model
             //Retorno da Lista de Fornecedor
             return oFornecedores;
         }
+
+        public static Fornecedor SelecionaCNPJFornecedor(string pFornecedor)
+        {
+            //Conexão com o Banco de Dados
+            AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+            //String de Seleção
+            Fornecedor oFornecedor = (from Seleciona in oDB.Fornecedors where Seleciona.CNPJ == pFornecedor select Seleciona).SingleOrDefault();
+
+            //Retorno do Cliente
+            return oFornecedor;
+        }
     }
 }
