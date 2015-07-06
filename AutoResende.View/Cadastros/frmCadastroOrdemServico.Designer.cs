@@ -190,6 +190,7 @@
             this.Btn_Gravar.TabIndex = 192;
             this.Btn_Gravar.Text = "Gravar";
             this.Btn_Gravar.UseVisualStyleBackColor = false;
+            this.Btn_Gravar.Click += new System.EventHandler(this.Btn_Gravar_Click);
             // 
             // lblfuncionários
             // 
