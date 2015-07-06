@@ -32,7 +32,8 @@ namespace AutoResende.View
 
         private void ptbCadastroTipoServico_MouseClick(object sender, MouseEventArgs e)
         {
-            frmCadastroTipoServico frm = new frmCadastroTipoServico();
+            TipoServico oTipoServico = new TipoServico();
+            frmCadastroTipoServico frm = new frmCadastroTipoServico(oTipoServico);
             frm.Show();
         }
 

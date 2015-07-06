@@ -66,5 +66,20 @@ namespace AutoResende.Model
             //Retorno da Lista de Tipo de Servicos
             return oTipoServicos;
         }
+
+        public static IQueryable<TipoServico> SelecionaTipoServico(string TipoServico)
+        {
+            try
+            {
+                AutoResendeDataContext oDB = new AutoResendeDataContext();
+
+                IQueryable<TipoServico> oTipoServico = (from Seleciona in oDB.TipoServicos where Seleciona.NomeServiço == TipoServico select Seleciona);
+                return oTipoServico;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }

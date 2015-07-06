@@ -14,9 +14,13 @@ namespace AutoResende.View
 {
     public partial class frmCadastroTipoServico : Form
     {
-        public frmCadastroTipoServico()
+        public frmCadastroTipoServico(TipoServico oTipoServico)
         {
             InitializeComponent();
+
+            txtDescricao.Text = oTipoServico.Descricao;
+            txtNomeServico.Text = oTipoServico.NomeServiço;
+
         }
 
         private void btnFechar_MouseClick(object sender, MouseEventArgs e)
