@@ -18,7 +18,7 @@ namespace AutoResende.Model
 
             //String de Seleção do usuário
             var ConsultaUsuario = (from cu in oDB.GetTable<Cliente>()
-                                   where cu.CPF == pCliente.CPF
+                                   where cu.idCliente == pCliente.idCliente
                                    select cu).SingleOrDefault();
 
             //Se a consulta retorna NULA ele cadastra o usuário    

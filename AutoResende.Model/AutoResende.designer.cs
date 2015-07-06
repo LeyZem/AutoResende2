@@ -54,7 +54,7 @@ namespace AutoResende.Model
     #endregion
 		
 		public AutoResendeDataContext() : 
-				base(global::AutoResende.Model.Properties.Settings.Default.AutoResende_DataBaseConnectionString, mappingSource)
+				base(global::AutoResende.Model.Properties.Settings.Default.AutoResende_DataBaseConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -178,6 +178,8 @@ namespace AutoResende.Model
 		
 		private string _Pais;
 		
+		private EntitySet<OrdemServico> _OrdemServicos;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -218,10 +220,11 @@ namespace AutoResende.Model
 		
 		public Cliente()
 		{
+			this._OrdemServicos = new EntitySet<OrdemServico>(new Action<OrdemServico>(this.attach_OrdemServicos), new Action<OrdemServico>(this.detach_OrdemServicos));
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idCliente", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idCliente", AutoSync=AutoSync.Always, DbType="Int NOT NULL IDENTITY", IsDbGenerated=true)]
 		public int idCliente
 		{
 			get
@@ -261,7 +264,7 @@ namespace AutoResende.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CPF", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CPF", DbType="VarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string CPF
 		{
 			get
@@ -541,6 +544,19 @@ namespace AutoResende.Model
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Cliente_OrdemServico", Storage="_OrdemServicos", ThisKey="CPF", OtherKey="CPF")]
+		public EntitySet<OrdemServico> OrdemServicos
+		{
+			get
+			{
+				return this._OrdemServicos;
+			}
+			set
+			{
+				this._OrdemServicos.Assign(value);
+			}
+		}
+		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -559,6 +575,18 @@ namespace AutoResende.Model
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+		
+		private void attach_OrdemServicos(OrdemServico entity)
+		{
+			this.SendPropertyChanging();
+			entity.Cliente = this;
+		}
+		
+		private void detach_OrdemServicos(OrdemServico entity)
+		{
+			this.SendPropertyChanging();
+			entity.Cliente = null;
 		}
 	}
 	
@@ -584,6 +612,8 @@ namespace AutoResende.Model
 		
 		private System.Nullable<int> _Odometro;
 		
+		private EntitySet<OrdemServico> _OrdemServicos;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -608,10 +638,11 @@ namespace AutoResende.Model
 		
 		public Veiculo()
 		{
+			this._OrdemServicos = new EntitySet<OrdemServico>(new Action<OrdemServico>(this.attach_OrdemServicos), new Action<OrdemServico>(this.detach_OrdemServicos));
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idVeiculo", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idVeiculo", AutoSync=AutoSync.Always, DbType="Int NOT NULL IDENTITY", IsDbGenerated=true)]
 		public int idVeiculo
 		{
 			get
@@ -691,7 +722,7 @@ namespace AutoResende.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Placa", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Placa", DbType="VarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string Placa
 		{
 			get
@@ -771,6 +802,19 @@ namespace AutoResende.Model
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Veiculo_OrdemServico", Storage="_OrdemServicos", ThisKey="Placa", OtherKey="Placa")]
+		public EntitySet<OrdemServico> OrdemServicos
+		{
+			get
+			{
+				return this._OrdemServicos;
+			}
+			set
+			{
+				this._OrdemServicos.Assign(value);
+			}
+		}
+		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -789,6 +833,18 @@ namespace AutoResende.Model
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+		
+		private void attach_OrdemServicos(OrdemServico entity)
+		{
+			this.SendPropertyChanging();
+			entity.Veiculo = this;
+		}
+		
+		private void detach_OrdemServicos(OrdemServico entity)
+		{
+			this.SendPropertyChanging();
+			entity.Veiculo = null;
 		}
 	}
 	
@@ -828,6 +884,8 @@ namespace AutoResende.Model
 		
 		private string _InscricaoEstadual;
 		
+		private EntitySet<Mercadoria> _Mercadorias;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -866,10 +924,11 @@ namespace AutoResende.Model
 		
 		public Fornecedor()
 		{
+			this._Mercadorias = new EntitySet<Mercadoria>(new Action<Mercadoria>(this.attach_Mercadorias), new Action<Mercadoria>(this.detach_Mercadorias));
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idFornecedor", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idFornecedor", AutoSync=AutoSync.Always, DbType="Int NOT NULL IDENTITY", IsDbGenerated=true)]
 		public int idFornecedor
 		{
 			get
@@ -929,7 +988,7 @@ namespace AutoResende.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CNPJ", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CNPJ", DbType="VarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string CNPJ
 		{
 			get
@@ -1169,6 +1228,19 @@ namespace AutoResende.Model
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Fornecedor_Mercadoria", Storage="_Mercadorias", ThisKey="CNPJ", OtherKey="CNPJ")]
+		public EntitySet<Mercadoria> Mercadorias
+		{
+			get
+			{
+				return this._Mercadorias;
+			}
+			set
+			{
+				this._Mercadorias.Assign(value);
+			}
+		}
+		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -1187,6 +1259,18 @@ namespace AutoResende.Model
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+		
+		private void attach_Mercadorias(Mercadoria entity)
+		{
+			this.SendPropertyChanging();
+			entity.Fornecedor = this;
+		}
+		
+		private void detach_Mercadorias(Mercadoria entity)
+		{
+			this.SendPropertyChanging();
+			entity.Fornecedor = null;
 		}
 	}
 	
@@ -1622,6 +1706,8 @@ namespace AutoResende.Model
 		
 		private string _Descricao;
 		
+		private string _DescricaoDetalhada;
+		
 		private decimal _ValorCusto;
 		
 		private System.Nullable<decimal> _ValorVenda;
@@ -1630,7 +1716,9 @@ namespace AutoResende.Model
 		
 		private string _Marca;
 		
-		private string _DescricaoDetalhada;
+		private string _CNPJ;
+		
+		private EntityRef<Fornecedor> _Fornecedor;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -1640,6 +1728,8 @@ namespace AutoResende.Model
     partial void OnidMercadoriaChanged();
     partial void OnDescricaoChanging(string value);
     partial void OnDescricaoChanged();
+    partial void OnDescricaoDetalhadaChanging(string value);
+    partial void OnDescricaoDetalhadaChanged();
     partial void OnValorCustoChanging(decimal value);
     partial void OnValorCustoChanged();
     partial void OnValorVendaChanging(System.Nullable<decimal> value);
@@ -1648,12 +1738,13 @@ namespace AutoResende.Model
     partial void OnQuantidadeEstoqueChanged();
     partial void OnMarcaChanging(string value);
     partial void OnMarcaChanged();
-    partial void OnDescricaoDetalhadaChanging(string value);
-    partial void OnDescricaoDetalhadaChanged();
+    partial void OnCNPJChanging(string value);
+    partial void OnCNPJChanged();
     #endregion
 		
 		public Mercadoria()
 		{
+			this._Fornecedor = default(EntityRef<Fornecedor>);
 			OnCreated();
 		}
 		
@@ -1693,6 +1784,26 @@ namespace AutoResende.Model
 					this._Descricao = value;
 					this.SendPropertyChanged("Descricao");
 					this.OnDescricaoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DescricaoDetalhada", DbType="VarChar(400)")]
+		public string DescricaoDetalhada
+		{
+			get
+			{
+				return this._DescricaoDetalhada;
+			}
+			set
+			{
+				if ((this._DescricaoDetalhada != value))
+				{
+					this.OnDescricaoDetalhadaChanging(value);
+					this.SendPropertyChanging();
+					this._DescricaoDetalhada = value;
+					this.SendPropertyChanged("DescricaoDetalhada");
+					this.OnDescricaoDetalhadaChanged();
 				}
 			}
 		}
@@ -1777,22 +1888,60 @@ namespace AutoResende.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DescricaoDetalhada", DbType="VarChar(400)")]
-		public string DescricaoDetalhada
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CNPJ", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string CNPJ
 		{
 			get
 			{
-				return this._DescricaoDetalhada;
+				return this._CNPJ;
 			}
 			set
 			{
-				if ((this._DescricaoDetalhada != value))
+				if ((this._CNPJ != value))
 				{
-					this.OnDescricaoDetalhadaChanging(value);
+					if (this._Fornecedor.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnCNPJChanging(value);
 					this.SendPropertyChanging();
-					this._DescricaoDetalhada = value;
-					this.SendPropertyChanged("DescricaoDetalhada");
-					this.OnDescricaoDetalhadaChanged();
+					this._CNPJ = value;
+					this.SendPropertyChanged("CNPJ");
+					this.OnCNPJChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Fornecedor_Mercadoria", Storage="_Fornecedor", ThisKey="CNPJ", OtherKey="CNPJ", IsForeignKey=true)]
+		public Fornecedor Fornecedor
+		{
+			get
+			{
+				return this._Fornecedor.Entity;
+			}
+			set
+			{
+				Fornecedor previousValue = this._Fornecedor.Entity;
+				if (((previousValue != value) 
+							|| (this._Fornecedor.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Fornecedor.Entity = null;
+						previousValue.Mercadorias.Remove(this);
+					}
+					this._Fornecedor.Entity = value;
+					if ((value != null))
+					{
+						value.Mercadorias.Add(this);
+						this._CNPJ = value.CNPJ;
+					}
+					else
+					{
+						this._CNPJ = default(string);
+					}
+					this.SendPropertyChanged("Fornecedor");
 				}
 			}
 		}
@@ -1832,6 +1981,18 @@ namespace AutoResende.Model
 		
 		private System.Nullable<System.DateTime> _DataEntrega;
 		
+		private int _idTipoServico;
+		
+		private string _CPF;
+		
+		private string _Placa;
+		
+		private EntityRef<Cliente> _Cliente;
+		
+		private EntityRef<Veiculo> _Veiculo;
+		
+		private EntityRef<TipoServico> _TipoServico;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -1844,10 +2005,19 @@ namespace AutoResende.Model
     partial void OnDataChanged();
     partial void OnDataEntregaChanging(System.Nullable<System.DateTime> value);
     partial void OnDataEntregaChanged();
+    partial void OnidTipoServicoChanging(int value);
+    partial void OnidTipoServicoChanged();
+    partial void OnCPFChanging(string value);
+    partial void OnCPFChanged();
+    partial void OnPlacaChanging(string value);
+    partial void OnPlacaChanged();
     #endregion
 		
 		public OrdemServico()
 		{
+			this._Cliente = default(EntityRef<Cliente>);
+			this._Veiculo = default(EntityRef<Veiculo>);
+			this._TipoServico = default(EntityRef<TipoServico>);
 			OnCreated();
 		}
 		
@@ -1931,6 +2101,180 @@ namespace AutoResende.Model
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTipoServico", DbType="Int NOT NULL")]
+		public int idTipoServico
+		{
+			get
+			{
+				return this._idTipoServico;
+			}
+			set
+			{
+				if ((this._idTipoServico != value))
+				{
+					if (this._TipoServico.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnidTipoServicoChanging(value);
+					this.SendPropertyChanging();
+					this._idTipoServico = value;
+					this.SendPropertyChanged("idTipoServico");
+					this.OnidTipoServicoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CPF", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string CPF
+		{
+			get
+			{
+				return this._CPF;
+			}
+			set
+			{
+				if ((this._CPF != value))
+				{
+					if (this._Cliente.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnCPFChanging(value);
+					this.SendPropertyChanging();
+					this._CPF = value;
+					this.SendPropertyChanged("CPF");
+					this.OnCPFChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Placa", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string Placa
+		{
+			get
+			{
+				return this._Placa;
+			}
+			set
+			{
+				if ((this._Placa != value))
+				{
+					if (this._Veiculo.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnPlacaChanging(value);
+					this.SendPropertyChanging();
+					this._Placa = value;
+					this.SendPropertyChanged("Placa");
+					this.OnPlacaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Cliente_OrdemServico", Storage="_Cliente", ThisKey="CPF", OtherKey="CPF", IsForeignKey=true)]
+		public Cliente Cliente
+		{
+			get
+			{
+				return this._Cliente.Entity;
+			}
+			set
+			{
+				Cliente previousValue = this._Cliente.Entity;
+				if (((previousValue != value) 
+							|| (this._Cliente.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Cliente.Entity = null;
+						previousValue.OrdemServicos.Remove(this);
+					}
+					this._Cliente.Entity = value;
+					if ((value != null))
+					{
+						value.OrdemServicos.Add(this);
+						this._CPF = value.CPF;
+					}
+					else
+					{
+						this._CPF = default(string);
+					}
+					this.SendPropertyChanged("Cliente");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Veiculo_OrdemServico", Storage="_Veiculo", ThisKey="Placa", OtherKey="Placa", IsForeignKey=true)]
+		public Veiculo Veiculo
+		{
+			get
+			{
+				return this._Veiculo.Entity;
+			}
+			set
+			{
+				Veiculo previousValue = this._Veiculo.Entity;
+				if (((previousValue != value) 
+							|| (this._Veiculo.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Veiculo.Entity = null;
+						previousValue.OrdemServicos.Remove(this);
+					}
+					this._Veiculo.Entity = value;
+					if ((value != null))
+					{
+						value.OrdemServicos.Add(this);
+						this._Placa = value.Placa;
+					}
+					else
+					{
+						this._Placa = default(string);
+					}
+					this.SendPropertyChanged("Veiculo");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TipoServico_OrdemServico", Storage="_TipoServico", ThisKey="idTipoServico", OtherKey="idTipoServico", IsForeignKey=true)]
+		public TipoServico TipoServico
+		{
+			get
+			{
+				return this._TipoServico.Entity;
+			}
+			set
+			{
+				TipoServico previousValue = this._TipoServico.Entity;
+				if (((previousValue != value) 
+							|| (this._TipoServico.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._TipoServico.Entity = null;
+						previousValue.OrdemServicos.Remove(this);
+					}
+					this._TipoServico.Entity = value;
+					if ((value != null))
+					{
+						value.OrdemServicos.Add(this);
+						this._idTipoServico = value.idTipoServico;
+					}
+					else
+					{
+						this._idTipoServico = default(int);
+					}
+					this.SendPropertyChanged("TipoServico");
+				}
+			}
+		}
+		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -1964,6 +2308,8 @@ namespace AutoResende.Model
 		
 		private string _Descricao;
 		
+		private EntitySet<OrdemServico> _OrdemServicos;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -1978,6 +2324,7 @@ namespace AutoResende.Model
 		
 		public TipoServico()
 		{
+			this._OrdemServicos = new EntitySet<OrdemServico>(new Action<OrdemServico>(this.attach_OrdemServicos), new Action<OrdemServico>(this.detach_OrdemServicos));
 			OnCreated();
 		}
 		
@@ -2041,6 +2388,19 @@ namespace AutoResende.Model
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TipoServico_OrdemServico", Storage="_OrdemServicos", ThisKey="idTipoServico", OtherKey="idTipoServico")]
+		public EntitySet<OrdemServico> OrdemServicos
+		{
+			get
+			{
+				return this._OrdemServicos;
+			}
+			set
+			{
+				this._OrdemServicos.Assign(value);
+			}
+		}
+		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -2059,6 +2419,18 @@ namespace AutoResende.Model
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+		
+		private void attach_OrdemServicos(OrdemServico entity)
+		{
+			this.SendPropertyChanging();
+			entity.TipoServico = this;
+		}
+		
+		private void detach_OrdemServicos(OrdemServico entity)
+		{
+			this.SendPropertyChanging();
+			entity.TipoServico = null;
 		}
 	}
 }

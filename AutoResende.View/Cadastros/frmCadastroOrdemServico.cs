@@ -157,5 +157,28 @@ namespace AutoResende.View
             }
             
         }
+
+        private void Btn_Gravar_Click(object sender, EventArgs e)
+        {
+            OrdemServico oOrdemServico = new OrdemServico();
+
+            //oOrdemServico.Data = dtpDataEntrega.Value;
+            oOrdemServico.DataEntrega = dtpDataEntrega.Value;
+            oOrdemServico.Descricao = txtDescricaoComplementar.Text;
+            oOrdemServico.CPF = txtCPFCliente.Text;
+            oOrdemServico.Placa = txtPlaca.Text;
+            oOrdemServico.idTipoServico = cmbTipoServico.SelectedIndex;
+
+            try
+            {
+                CAutoResende.InsereOrdemServico(oOrdemServico);
+                MessageBox.Show("Cadastro realizado com sucesso!", "CONFIRMAÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
     }
 }

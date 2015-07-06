@@ -97,7 +97,7 @@ namespace AutoResende.Controller
 
 
         //ORDEM DE SERVIÇO
-        public static void Insere(OrdemServico oOrdemServico)
+        public static void InsereOrdemServico(OrdemServico oOrdemServico)
         {
             OrdemServicoMetod.Insere(oOrdemServico);
         }
