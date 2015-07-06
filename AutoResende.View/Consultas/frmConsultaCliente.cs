@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AutoResende.Controller;
+using AutoResende.Model;
 
 namespace AutoResende.View
 {
@@ -55,6 +56,15 @@ namespace AutoResende.View
             {
                 MessageBox.Show("Erro: " + ex.Message, "Carregar", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void dtgClientes_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            Cliente oCliente = new Cliente();
+            oCliente = dtgClientes.Rows[e.RowIndex].DataBoundItem as Cliente;
+            frmCadastroCliente frm = new frmCadastroCliente(oCliente);
+            frm.Show();
+            this.Close();
         }
     }
 }

@@ -31,12 +31,16 @@ namespace AutoResende.View
 
         private void dtgServicosCadastrados_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
+
+        }
+
+        private void dtgOS_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
             OrdemServico OS = new OrdemServico();
-            frmCadastroOrdemServico frm = new frmCadastroOrdemServico (OS);
+            OS.Equals(dtgOS.CurrentRow);
+            frmCadastroOrdemServico frm = new frmCadastroOrdemServico(OS);
             frm.Show();
             this.Close();
-
-            
         }
     }
 }

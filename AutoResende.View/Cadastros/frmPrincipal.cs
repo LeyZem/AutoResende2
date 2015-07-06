@@ -93,7 +93,8 @@ namespace AutoResende.View
 
         private void ptbCadastroCliente_MouseClick(object sender, MouseEventArgs e)
         {
-            frmCadastroCliente frm = new frmCadastroCliente();
+            Cliente oCliente = new Cliente();
+            frmCadastroCliente frm = new frmCadastroCliente(oCliente);
             frm.Show();
         }
 

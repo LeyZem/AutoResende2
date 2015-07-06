@@ -223,6 +223,7 @@
             this.dtgClientes.ReadOnly = true;
             this.dtgClientes.Size = new System.Drawing.Size(747, 284);
             this.dtgClientes.TabIndex = 278;
+            this.dtgClientes.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtgClientes_CellMouseDoubleClick);
             // 
             // idClienteDataGridViewTextBoxColumn
             // 

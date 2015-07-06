@@ -20,7 +20,7 @@ namespace AutoResende.View
         {
             InitializeComponent();
 
-            //dtpDataEntrega.Value = DateTime OS = new OS.DataEntrega.ToString;
+            dtpDataEntrega.Value = Convert.ToDateTime(OS.DataEntrega);
             
 
         }

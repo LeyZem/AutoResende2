@@ -41,13 +41,13 @@
             this.txtPlaca = new System.Windows.Forms.TextBox();
             this.btnPesquisarOS = new System.Windows.Forms.Button();
             this.dtgOS = new System.Windows.Forms.DataGridView();
-            this.btnLimpar = new System.Windows.Forms.Button();
             this.DataInicial = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataEntrega = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Veiculo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Placa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -213,18 +213,7 @@
             this.dtgOS.Size = new System.Drawing.Size(821, 325);
             this.dtgOS.TabIndex = 298;
             this.dtgOS.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtgServicosCadastrados_RowHeaderMouseDoubleClick);
-            // 
-            // btnLimpar
-            // 
-            this.btnLimpar.BackColor = System.Drawing.Color.Salmon;
-            this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpar.Location = new System.Drawing.Point(767, 474);
-            this.btnLimpar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(77, 24);
-            this.btnLimpar.TabIndex = 275;
-            this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.dtgOS.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dtgOS_MouseDoubleClick);
             // 
             // DataInicial
             // 
@@ -266,6 +255,18 @@
             this.Placa.Name = "Placa";
             this.Placa.ReadOnly = true;
             this.Placa.Width = 70;
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.BackColor = System.Drawing.Color.Salmon;
+            this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpar.Location = new System.Drawing.Point(767, 474);
+            this.btnLimpar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(77, 24);
+            this.btnLimpar.TabIndex = 275;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
