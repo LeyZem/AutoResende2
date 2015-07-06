@@ -66,5 +66,28 @@ namespace AutoResende.View
             frm.Show();
             this.Close();
         }
+
+        private void btnDeletar_Click(object sender, EventArgs e)
+        {
+            
+
+            if(MessageBox.Show("Tem certeza da excluão?", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                string CPF = dtgClientes.CurrentRow.Cells[2].Value.ToString();
+
+                try
+                {
+                    CAutoResende.DeletaCliente(CPF);
+                    MessageBox.Show("Cliente deletado com sucesso!", "CONFIRMAÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dtgClientes.DataSource = null;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            } 
+            
+
+        }
     }
 }

@@ -34,6 +34,11 @@ namespace AutoResende.Controller
             return ClienteMetod.SelecionaCliente(pCliente);
         }
 
+        public static void DeletaCliente(string pCPF)
+        {
+            ClienteMetod.Deleta(pCPF);
+        }
+
 
 
         //FORNECEDOR

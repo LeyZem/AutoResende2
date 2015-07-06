@@ -26,14 +26,14 @@ namespace AutoResende.Model
            
         }
 
-        public static bool Deleta(int pCodigoCliente)
+        public static bool Deleta(string pCPF)
         {
             
                 //Conexão com o Banco de Dados
                 AutoResendeDataContext oDB = new AutoResendeDataContext();
 
                 //String de Seleção
-                Cliente oCliente = (from Seleciona in oDB.Clientes where Seleciona.idCliente == pCodigoCliente select Seleciona).SingleOrDefault();
+                Cliente oCliente = (from Seleciona in oDB.Clientes where Seleciona.CPF == pCPF select Seleciona).SingleOrDefault();
 
                 //String de Exclusão
                 oDB.Clientes.DeleteOnSubmit(oCliente);
