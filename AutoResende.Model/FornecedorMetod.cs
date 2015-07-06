@@ -51,13 +51,13 @@ namespace AutoResende.Model
            
         }
 
-        public static Fornecedor Seleciona(int pCodigoFornecedor)
+        public static IQueryable<Fornecedor> SelecionaFornecedor(string pCNPJFornecedor)
         {
             //Conexão com o Banco de Dados
             AutoResendeDataContext oDB = new AutoResendeDataContext();
 
             //String de Seleção
-            Fornecedor oFornecedor = (from Seleciona in oDB.Fornecedors where Seleciona.idFornecedor == pCodigoFornecedor select Seleciona).SingleOrDefault();
+            IQueryable <Fornecedor> oFornecedor = (from Seleciona in oDB.Fornecedors where Seleciona.CNPJ == pCNPJFornecedor select Seleciona);
 
             //Retorno do Fornecedor
             return oFornecedor;

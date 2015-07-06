@@ -14,9 +14,24 @@ namespace AutoResende.View
 {
     public partial class frmCadastroFornecedor : Form
     {
-        public frmCadastroFornecedor()
+        public frmCadastroFornecedor(Fornecedor oFornecedor)
         {
             InitializeComponent();
+
+            txtCel.Text = oFornecedor.TelCel;
+            txtcep.Text = oFornecedor.CEP;
+            txtfantasia.Text = oFornecedor.NomeFantasia;
+            txtRazaoSocial.Text = oFornecedor.RazaoSocial;
+            cmbestado.Text = oFornecedor.UF;
+            cmbpais.Text= oFornecedor.Pais;
+            txttel1.Text = oFornecedor.TelRes;
+            txtbairro.Text = oFornecedor.Bairro;
+            txtemail.Text = oFornecedor.email;
+            txtinscEstadual.Text = oFornecedor.InscricaoEstadual;
+            txtLogradouro.Text = oFornecedor.Logradouro;
+            txtCNPJ.Text = oFornecedor.CNPJ;
+            txtComentarios.Text = oFornecedor.Comentario;
+            txtCidade.Text = oFornecedor.Cidade;
         }
 
         private void btnFechar_MouseClick(object sender, MouseEventArgs e)

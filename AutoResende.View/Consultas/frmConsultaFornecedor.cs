@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AutoResende.Controller;
+using AutoResende.Model;
 
 namespace AutoResende.View
 {
@@ -34,9 +36,31 @@ namespace AutoResende.View
 
         private void frmConsultaFornecedor_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the '_AutoResende_DataBaseDataSet_Fornecedores.Fornecedor' table. You can move, or remove it, as needed.
-            this.fornecedorTableAdapter.Fill(this._AutoResende_DataBaseDataSet_Fornecedores.Fornecedor);
+           
 
+        }
+
+        private void dataGridView1_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            Fornecedor oFornecedor= new Fornecedor();
+            oFornecedor = dtgFornecedores.Rows[e.RowIndex].DataBoundItem as Fornecedor;
+            frmCadastroFornecedor frm = new frmCadastroFornecedor(oFornecedor);
+            frm.Show();
+            this.Close();
+        }
+
+        private void btnPesquisaCliente_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string var = txtCNPJ.Text;
+                dtgFornecedores.DataSource = CAutoResende.SelecionaFornecedor(txtCNPJ.Text);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message, "Carregar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

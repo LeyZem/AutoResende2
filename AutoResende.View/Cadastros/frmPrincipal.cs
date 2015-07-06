@@ -105,7 +105,8 @@ namespace AutoResende.View
 
         private void ptbCadastroFornecedor_MouseClick(object sender, MouseEventArgs e)
         {
-            frmCadastroFornecedor frm = new frmCadastroFornecedor();
+            Fornecedor oFornecedor = new Fornecedor();
+            frmCadastroFornecedor frm = new frmCadastroFornecedor(oFornecedor);
             frm.Show();
         }
 

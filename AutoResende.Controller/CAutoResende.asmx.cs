@@ -42,6 +42,11 @@ namespace AutoResende.Controller
             FornecedorMetod.Insere(oFornecedor);
         }
 
+        public static IQueryable<Fornecedor> SelecionaFornecedor(string pFornecedor)
+        {
+            return FornecedorMetod.SelecionaFornecedor(pFornecedor);
+        }
+
 
 
         //FUNCIONÁRIO

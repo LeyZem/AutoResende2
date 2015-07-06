@@ -30,8 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaCliente));
-            this.lblNomeCliente = new System.Windows.Forms.Label();
-            this.txtNomeCliente = new System.Windows.Forms.TextBox();
             this.picimg_cliente = new System.Windows.Forms.PictureBox();
             this.EncontraCliente = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -58,35 +56,13 @@
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comentarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgClientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblNomeCliente
-            // 
-            this.lblNomeCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblNomeCliente.AutoSize = true;
-            this.lblNomeCliente.BackColor = System.Drawing.Color.Transparent;
-            this.lblNomeCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeCliente.Location = new System.Drawing.Point(165, 69);
-            this.lblNomeCliente.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblNomeCliente.Name = "lblNomeCliente";
-            this.lblNomeCliente.Size = new System.Drawing.Size(39, 13);
-            this.lblNomeCliente.TabIndex = 242;
-            this.lblNomeCliente.Text = "Nome";
-            // 
-            // txtNomeCliente
-            // 
-            this.txtNomeCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNomeCliente.Location = new System.Drawing.Point(206, 66);
-            this.txtNomeCliente.Margin = new System.Windows.Forms.Padding(1);
-            this.txtNomeCliente.MaxLength = 40;
-            this.txtNomeCliente.Name = "txtNomeCliente";
-            this.txtNomeCliente.Size = new System.Drawing.Size(469, 20);
-            this.txtNomeCliente.TabIndex = 241;
             // 
             // picimg_cliente
             // 
@@ -162,7 +138,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(165, 100);
+            this.label1.Location = new System.Drawing.Point(355, 81);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 13);
@@ -172,7 +148,7 @@
             // txtCPFCliente
             // 
             this.txtCPFCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCPFCliente.Location = new System.Drawing.Point(206, 97);
+            this.txtCPFCliente.Location = new System.Drawing.Point(396, 78);
             this.txtCPFCliente.Margin = new System.Windows.Forms.Padding(1);
             this.txtCPFCliente.MaxLength = 40;
             this.txtCPFCliente.Name = "txtCPFCliente";
@@ -345,20 +321,29 @@
             this.comentarioDataGridViewTextBoxColumn.ReadOnly = true;
             this.comentarioDataGridViewTextBoxColumn.Width = 500;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(135, 485);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(271, 13);
+            this.label3.TabIndex = 300;
+            this.label3.Text = "*clique duas vezes no cliente para alteração dos dados.";
+            // 
             // frmConsultaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(907, 507);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.dtgClientes);
             this.Controls.Add(this.btnPesquisaCliente);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCPFCliente);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.lblNomeCliente);
-            this.Controls.Add(this.txtNomeCliente);
             this.Controls.Add(this.picimg_cliente);
             this.Controls.Add(this.EncontraCliente);
             this.Controls.Add(this.pictureBox2);
@@ -377,9 +362,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblNomeCliente;
-        private System.Windows.Forms.TextBox txtNomeCliente;
         private System.Windows.Forms.PictureBox picimg_cliente;
         private System.Windows.Forms.Label EncontraCliente;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -406,5 +388,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn comentarioDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource clienteBindingSource;
+        private System.Windows.Forms.Label label3;
     }
 }

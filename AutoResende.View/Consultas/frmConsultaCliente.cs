@@ -46,10 +46,10 @@ namespace AutoResende.View
 
         private void btnPesquisaCliente_Click(object sender, EventArgs e)
         {
+
             try
             {
-                string var = txtNomeCliente.Text;
-                dtgClientes.DataSource = CAutoResende.SelecionaCliente(txtNomeCliente.Text);
+                dtgClientes.DataSource = CAutoResende.SelecionaCliente(txtCPFCliente.Text);
 
             }
             catch (Exception ex)
