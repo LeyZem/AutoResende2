@@ -43,13 +43,13 @@ namespace AutoResende.Model
             
         }
 
-        public static Mercadoria Seleciona(int pCodigoMercadoria)
+        public static IQueryable<Mercadoria> SelecionaMercadoria(int pCodigoMercadoria)
         {
             //Conexão com o Banco de Dados
             AutoResendeDataContext oDB = new AutoResendeDataContext();
 
             //String de Seleção
-            Mercadoria oMercadoria = (from Seleciona in oDB.Mercadorias where Seleciona.idMercadoria == pCodigoMercadoria select Seleciona).SingleOrDefault();
+            IQueryable<Mercadoria> oMercadoria = (from Seleciona in oDB.Mercadorias where Seleciona.idMercadoria == pCodigoMercadoria select Seleciona);
 
             //Retorno da Ordem de Serviço
             return oMercadoria;

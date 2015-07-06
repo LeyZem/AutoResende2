@@ -172,6 +172,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_AutoResende_DataBaseDataSet_Fornecedores.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_AutoResende_DataBaseDataSet_Mercadoria.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_AutoResende_DataBaseDataSet_Mercadoria.xsd</DependentUpon>
+    </Compile>
     <Compile Include="_AutoResende_DataBaseDataSet_TipoServico.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -286,6 +291,17 @@
     </None>
     <None Include="_AutoResende_DataBaseDataSet_Fornecedores.xss">
       <DependentUpon>_AutoResende_DataBaseDataSet_Fornecedores.xsd</DependentUpon>
+    </None>
+    <None Include="_AutoResende_DataBaseDataSet_Mercadoria.xsc">
+      <DependentUpon>_AutoResende_DataBaseDataSet_Mercadoria.xsd</DependentUpon>
+    </None>
+    <None Include="_AutoResende_DataBaseDataSet_Mercadoria.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_AutoResende_DataBaseDataSet_Mercadoria.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_AutoResende_DataBaseDataSet_Mercadoria.xss">
+      <DependentUpon>_AutoResende_DataBaseDataSet_Mercadoria.xsd</DependentUpon>
     </None>
     <None Include="_AutoResende_DataBaseDataSet_TipoServico.xsc">
       <DependentUpon>_AutoResende_DataBaseDataSet_TipoServico.xsd</DependentUpon>

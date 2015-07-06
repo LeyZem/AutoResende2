@@ -14,9 +14,17 @@ namespace AutoResende.View
 {
     public partial class frmCadastroMercadoria : Form
     {
-        public frmCadastroMercadoria()
+        public frmCadastroMercadoria(Mercadoria oMercadoria)
         {
             InitializeComponent();
+
+            txtValorVenda.Text = Convert.ToString(oMercadoria.ValorVenda);
+            txtValorCusto.Text = Convert.ToString(oMercadoria.ValorCusto);
+            txtQdeEstoque.Text = Convert.ToString(oMercadoria.QuantidadeEstoque);
+            txtMarca.Text = oMercadoria.Marca;
+            txtDescricaoDetalhada.Text = oMercadoria.DescricaoDetalhada;
+            txtDescricao.Text = oMercadoria.Descricao;
+
         }
 
         private void btnFechar_MouseClick(object sender, MouseEventArgs e)

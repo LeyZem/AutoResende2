@@ -34,24 +34,16 @@
             this.lblConsultaMercadoria = new System.Windows.Forms.Label();
             this.btnFechar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idMercadoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ValorCusto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ValorVenda = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estoque = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblValorCusto = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.lblMarca = new System.Windows.Forms.Label();
-            this.txtMarca = new System.Windows.Forms.TextBox();
-            this.lblDescricao = new System.Windows.Forms.Label();
-            this.txtDescricao = new System.Windows.Forms.TextBox();
             this.btnPesquisaCliente = new System.Windows.Forms.Button();
+            this._AutoResende_DataBaseDataSet_Mercadoria = new AutoResende.View._AutoResende_DataBaseDataSet_Mercadoria();
+            this.dtgMercadorias = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet_Mercadoria)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgMercadorias)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -122,66 +114,6 @@
             this.pictureBox2.TabIndex = 216;
             this.pictureBox2.TabStop = false;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idMercadoria,
-            this.Descricao,
-            this.ValorCusto,
-            this.ValorVenda,
-            this.Marca,
-            this.Estoque});
-            this.dataGridView1.Location = new System.Drawing.Point(141, 150);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(713, 314);
-            this.dataGridView1.TabIndex = 219;
-            // 
-            // idMercadoria
-            // 
-            this.idMercadoria.HeaderText = "Código";
-            this.idMercadoria.Name = "idMercadoria";
-            this.idMercadoria.ReadOnly = true;
-            this.idMercadoria.Width = 70;
-            // 
-            // Descricao
-            // 
-            this.Descricao.HeaderText = "Descrição";
-            this.Descricao.Name = "Descricao";
-            this.Descricao.ReadOnly = true;
-            this.Descricao.Width = 200;
-            // 
-            // ValorCusto
-            // 
-            this.ValorCusto.HeaderText = "Preço de Custo";
-            this.ValorCusto.Name = "ValorCusto";
-            this.ValorCusto.ReadOnly = true;
-            this.ValorCusto.Width = 70;
-            // 
-            // ValorVenda
-            // 
-            this.ValorVenda.HeaderText = "Preço de Venda";
-            this.ValorVenda.Name = "ValorVenda";
-            this.ValorVenda.ReadOnly = true;
-            this.ValorVenda.Width = 70;
-            // 
-            // Marca
-            // 
-            this.Marca.HeaderText = "Marca";
-            this.Marca.Name = "Marca";
-            this.Marca.ReadOnly = true;
-            this.Marca.Width = 200;
-            // 
-            // Estoque
-            // 
-            this.Estoque.HeaderText = "Qtd Estoque";
-            this.Estoque.Name = "Estoque";
-            this.Estoque.ReadOnly = true;
-            this.Estoque.Width = 50;
-            // 
             // lblValorCusto
             // 
             this.lblValorCusto.AutoSize = true;
@@ -202,42 +134,6 @@
             this.txtCodigo.TabIndex = 224;
             this.txtCodigo.TextChanged += new System.EventHandler(this.txtValorCusto_TextChanged);
             // 
-            // lblMarca
-            // 
-            this.lblMarca.AutoSize = true;
-            this.lblMarca.BackColor = System.Drawing.Color.Transparent;
-            this.lblMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.Location = new System.Drawing.Point(366, 84);
-            this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(42, 13);
-            this.lblMarca.TabIndex = 223;
-            this.lblMarca.Text = "Marca";
-            // 
-            // txtMarca
-            // 
-            this.txtMarca.Location = new System.Drawing.Point(414, 81);
-            this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(181, 20);
-            this.txtMarca.TabIndex = 222;
-            // 
-            // lblDescricao
-            // 
-            this.lblDescricao.AutoSize = true;
-            this.lblDescricao.BackColor = System.Drawing.Color.Transparent;
-            this.lblDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricao.Location = new System.Drawing.Point(140, 84);
-            this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(64, 13);
-            this.lblDescricao.TabIndex = 221;
-            this.lblDescricao.Text = "Descrição";
-            // 
-            // txtDescricao
-            // 
-            this.txtDescricao.Location = new System.Drawing.Point(210, 81);
-            this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(150, 20);
-            this.txtDescricao.TabIndex = 220;
-            // 
             // btnPesquisaCliente
             // 
             this.btnPesquisaCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -250,6 +146,24 @@
             this.btnPesquisaCliente.Size = new System.Drawing.Size(59, 51);
             this.btnPesquisaCliente.TabIndex = 278;
             this.btnPesquisaCliente.UseVisualStyleBackColor = false;
+            this.btnPesquisaCliente.Click += new System.EventHandler(this.btnPesquisaCliente_Click);
+            // 
+            // _AutoResende_DataBaseDataSet_Mercadoria
+            // 
+            this._AutoResende_DataBaseDataSet_Mercadoria.DataSetName = "_AutoResende_DataBaseDataSet_Mercadoria";
+            this._AutoResende_DataBaseDataSet_Mercadoria.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dtgMercadorias
+            // 
+            this.dtgMercadorias.AllowUserToAddRows = false;
+            this.dtgMercadorias.AllowUserToDeleteRows = false;
+            this.dtgMercadorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgMercadorias.Location = new System.Drawing.Point(141, 169);
+            this.dtgMercadorias.Name = "dtgMercadorias";
+            this.dtgMercadorias.ReadOnly = true;
+            this.dtgMercadorias.Size = new System.Drawing.Size(713, 276);
+            this.dtgMercadorias.TabIndex = 279;
+            this.dtgMercadorias.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtgMercadorias_CellMouseDoubleClick);
             // 
             // frmConsultaMercadoria
             // 
@@ -257,14 +171,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(867, 507);
+            this.Controls.Add(this.dtgMercadorias);
             this.Controls.Add(this.btnPesquisaCliente);
             this.Controls.Add(this.lblValorCusto);
             this.Controls.Add(this.txtCodigo);
-            this.Controls.Add(this.lblMarca);
-            this.Controls.Add(this.txtMarca);
-            this.Controls.Add(this.lblDescricao);
-            this.Controls.Add(this.txtDescricao);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.picimg_cliente);
             this.Controls.Add(this.lblConsultaMercadoria);
@@ -274,10 +184,12 @@
             this.Name = "frmConsultaMercadoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmConsultaMercadoria";
+            this.Load += new System.EventHandler(this.frmConsultaMercadoria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._AutoResende_DataBaseDataSet_Mercadoria)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgMercadorias)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,19 +202,10 @@
         private System.Windows.Forms.Label lblConsultaMercadoria;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idMercadoria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descricao;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ValorCusto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ValorVenda;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Marca;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Estoque;
         private System.Windows.Forms.Label lblValorCusto;
         private System.Windows.Forms.TextBox txtCodigo;
-        private System.Windows.Forms.Label lblMarca;
-        private System.Windows.Forms.TextBox txtMarca;
-        private System.Windows.Forms.Label lblDescricao;
-        private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.Button btnPesquisaCliente;
+        private _AutoResende_DataBaseDataSet_Mercadoria _AutoResende_DataBaseDataSet_Mercadoria;
+        private System.Windows.Forms.DataGridView dtgMercadorias;
     }
 }

@@ -60,7 +60,8 @@ namespace AutoResende.View
 
         private void ptbCadastroMercadoria_MouseClick(object sender, MouseEventArgs e)
         {
-            frmCadastroMercadoria frm = new frmCadastroMercadoria();
+            Mercadoria oMercadoria = new Mercadoria();
+            frmCadastroMercadoria frm = new frmCadastroMercadoria(oMercadoria);
             frm.Show();
         }
 

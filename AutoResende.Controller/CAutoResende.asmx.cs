@@ -68,6 +68,12 @@ namespace AutoResende.Controller
             MercadoriaMetod.Insere(oMercadoria);
         }
 
+        public static IQueryable<Mercadoria> SelecionaMercadoria(int pMercadoria)
+        {
+            return MercadoriaMetod.SelecionaMercadoria(pMercadoria);
+        }
+
+
 
 
         //ORDEM DE SERVIÇO
