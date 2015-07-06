@@ -57,6 +57,7 @@
             this.comentarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.funcionarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._AutoResende_DataBaseDataSet1 = new AutoResende.View._AutoResende_DataBaseDataSet1();
+            this.btnDeletar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -330,12 +331,26 @@
             this._AutoResende_DataBaseDataSet1.DataSetName = "_AutoResende_DataBaseDataSet1";
             this._AutoResende_DataBaseDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // btnDeletar
+            // 
+            this.btnDeletar.BackColor = System.Drawing.Color.Salmon;
+            this.btnDeletar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeletar.Location = new System.Drawing.Point(758, 479);
+            this.btnDeletar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Size = new System.Drawing.Size(77, 24);
+            this.btnDeletar.TabIndex = 302;
+            this.btnDeletar.Text = "Deletar";
+            this.btnDeletar.UseVisualStyleBackColor = false;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
+            // 
             // frmConsultaFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(867, 507);
+            this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.dtgFuncionarios);
             this.Controls.Add(this.btnPesquisaFuncionario);
             this.Controls.Add(this.label1);
@@ -390,5 +405,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn telCelDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn comentarioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnDeletar;
     }
 }

@@ -63,14 +63,22 @@ namespace AutoResende.View
                 {
                     CAutoResende.Insere(oTipoServico);
                     MessageBox.Show("Cadastro realizado com sucesso!", "CONFIRMAÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    LimpaCampos();
+
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message, ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+
             }
+        }
 
-
+        public void LimpaCampos()
+        {
+            txtDescricao.Text = "";
+            txtNomeServico.Text = "";
         }
     }
 }

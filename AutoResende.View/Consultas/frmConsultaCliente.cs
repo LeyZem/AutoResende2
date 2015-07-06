@@ -71,7 +71,7 @@ namespace AutoResende.View
         {
             
 
-            if(MessageBox.Show("Tem certeza da excluão?", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if(MessageBox.Show("Tem certeza que deseja excluir?", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 string CPF = dtgClientes.CurrentRow.Cells[2].Value.ToString();
 

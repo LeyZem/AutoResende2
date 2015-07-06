@@ -50,6 +50,7 @@
             this._AutoResende_DataBaseDataSet_Veiculo = new AutoResende.View._AutoResende_DataBaseDataSet_Veiculo();
             this.veiculoTableAdapter = new AutoResende.View._AutoResende_DataBaseDataSet_VeiculoTableAdapters.VeiculoTableAdapter();
             this.txtPlaca = new System.Windows.Forms.TextBox();
+            this.btnDeletar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -254,12 +255,26 @@
             this.txtPlaca.Size = new System.Drawing.Size(114, 20);
             this.txtPlaca.TabIndex = 288;
             // 
+            // btnDeletar
+            // 
+            this.btnDeletar.BackColor = System.Drawing.Color.Salmon;
+            this.btnDeletar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeletar.Location = new System.Drawing.Point(747, 478);
+            this.btnDeletar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Size = new System.Drawing.Size(77, 24);
+            this.btnDeletar.TabIndex = 302;
+            this.btnDeletar.Text = "Deletar";
+            this.btnDeletar.UseVisualStyleBackColor = false;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
+            // 
             // frmConsultaVeiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(867, 507);
+            this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.dtgConsultaVeiculo);
             this.Controls.Add(this.lblPlaca);
             this.Controls.Add(this.txtPlaca);
@@ -307,5 +322,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn odometroDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descricaoDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox txtPlaca;
+        private System.Windows.Forms.Button btnDeletar;
     }
 }

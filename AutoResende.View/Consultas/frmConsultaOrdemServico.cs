@@ -42,5 +42,24 @@ namespace AutoResende.View
             frm.Show();
             this.Close();
         }
+
+        private void btnDeletar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Tem certeza que deseja excluir?", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                int Codigo = Convert.ToInt32(dtgOS.CurrentRow.Cells[0].Value);
+
+                try
+                {
+                    CAutoResende.DeletaOrdemServico(Codigo);
+                    MessageBox.Show("Ordem de Serviço deletada com sucesso!", "CONFIRMAÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dtgOS.DataSource = null;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }

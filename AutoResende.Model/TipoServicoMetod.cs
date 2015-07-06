@@ -24,14 +24,14 @@ namespace AutoResende.Model
             
         }
 
-        public static bool Deleta(int pCodigoTipoServico)
+        public static bool Deleta(string pNome)
         {
             
                 //Conexão com o Banco de Dados
                 AutoResendeDataContext oDB = new AutoResendeDataContext();
 
                 //String de Seleção
-                TipoServico oTipoServico = (from Seleciona in oDB.TipoServicos where Seleciona.idTipoServico == pCodigoTipoServico select Seleciona).SingleOrDefault();
+                TipoServico oTipoServico = (from Seleciona in oDB.TipoServicos where Seleciona.NomeServiço == pNome select Seleciona).SingleOrDefault();
 
                 //String de Exclusão
                 oDB.TipoServicos.DeleteOnSubmit(oTipoServico);

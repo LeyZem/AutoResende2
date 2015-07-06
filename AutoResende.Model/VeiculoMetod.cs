@@ -24,14 +24,14 @@ namespace AutoResende.Model
            
         }
 
-        public static bool Deleta(int pCodigoVeiculo)
+        public static bool Deleta(string pPlaca)
         {
             
                 //Conexão com o Banco de Dados
                 AutoResendeDataContext oDB = new AutoResendeDataContext();
 
                 //String de Seleção
-                Veiculo oVeiculo = (from Seleciona in oDB.Veiculos where Seleciona.idVeiculo == pCodigoVeiculo select Seleciona).SingleOrDefault();
+                Veiculo oVeiculo = (from Seleciona in oDB.Veiculos where Seleciona.Placa == pPlaca select Seleciona).SingleOrDefault();
 
                 //String de Exclusão
                 oDB.Veiculos.DeleteOnSubmit(oVeiculo);

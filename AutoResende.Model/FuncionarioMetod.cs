@@ -24,14 +24,14 @@ namespace AutoResende.Model
             
         }
 
-        public static bool Deleta(int pCodigoFuncionario)
+        public static bool Deleta(string pCPF)
         {
             
                 //Conexão com o Banco de Dados
                 AutoResendeDataContext oDB = new AutoResendeDataContext();
 
                 //String de Seleção
-                Funcionario oFuncionario = (from Seleciona in oDB.Funcionarios where Seleciona.idFuncionario == pCodigoFuncionario select Seleciona).SingleOrDefault();
+                Funcionario oFuncionario = (from Seleciona in oDB.Funcionarios where Seleciona.CPF == pCPF select Seleciona).SingleOrDefault();
 
                 //String de Exclusão
                 oDB.Funcionarios.DeleteOnSubmit(oFuncionario);

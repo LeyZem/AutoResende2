@@ -55,5 +55,24 @@ namespace AutoResende.View
             frm.Show();
             this.Close();
         }
+
+        private void btnDeletar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Tem certeza que deseja excluir?", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                string CPF = dtgFuncionarios.CurrentRow.Cells[2].Value.ToString();
+
+                try
+                {
+                    CAutoResende.DeletaFuncionario(CPF);
+                    MessageBox.Show("Funcionário deletado com sucesso!", "CONFIRMAÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dtgFuncionarios.DataSource = null;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }

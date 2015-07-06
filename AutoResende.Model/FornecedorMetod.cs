@@ -32,14 +32,14 @@ namespace AutoResende.Model
             //}
         }
 
-        public static bool Deleta(int pCodigoFornecedor)
+        public static bool Deleta(string pCNPJ)
         {
             
                 //Conexão com o Banco de Dados
                 AutoResendeDataContext oDB = new AutoResendeDataContext();
 
                 //String de Seleção
-                Fornecedor oFornecedor = (from Seleciona in oDB.Fornecedors where Seleciona.idFornecedor == pCodigoFornecedor select Seleciona).SingleOrDefault();
+                Fornecedor oFornecedor = (from Seleciona in oDB.Fornecedors where Seleciona.CNPJ == pCNPJ select Seleciona).SingleOrDefault();
 
                 //String de Exclusão
                 oDB.Fornecedors.DeleteOnSubmit(oFornecedor);

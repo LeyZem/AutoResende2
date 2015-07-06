@@ -24,14 +24,14 @@ namespace AutoResende.Model
             
         }
 
-        public static bool Deleta(int pCodigoMercadoria)
+        public static bool Deleta(int pCodigo)
         {
             
                 //Conexão com o Banco de Dados
                 AutoResendeDataContext oDB = new AutoResendeDataContext();
 
                 //String de Seleção
-                Mercadoria oMercadoria = (from Seleciona in oDB.Mercadorias where Seleciona.idMercadoria == pCodigoMercadoria select Seleciona).SingleOrDefault();
+                Mercadoria oMercadoria = (from Seleciona in oDB.Mercadorias where Seleciona.idMercadoria == pCodigo select Seleciona).SingleOrDefault();
 
                 //String de Exclusão
                 oDB.Mercadorias.DeleteOnSubmit(oMercadoria);

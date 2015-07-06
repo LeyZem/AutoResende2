@@ -67,5 +67,24 @@ namespace AutoResende.View
             //this.mercadoriaTableAdapter.Fill(this._AutoResende_DataBaseDataSet_Mercadoria.Mercadoria);
 
         }
+
+        private void btnDeletar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Tem certeza que deseja excluir?", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                int Codigo = Convert.ToInt32(dtgMercadorias.CurrentRow.Cells[0].Value);
+
+                try
+                {
+                    CAutoResende.DeletaMercadoria(Codigo);
+                    MessageBox.Show("Mercadoria deletada com sucesso!", "CONFIRMAÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dtgMercadorias.DataSource = null;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }

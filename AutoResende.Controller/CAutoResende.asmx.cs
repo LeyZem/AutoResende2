@@ -53,6 +53,11 @@ namespace AutoResende.Controller
         }
 
 
+        public static void DeletaFornecedor(string pCNPJ)
+        {
+            FornecedorMetod.Deleta(pCNPJ);
+        }
+
 
         //FUNCIONÁRIO
         public static void Insere(Funcionario oFuncionario)
@@ -63,6 +68,11 @@ namespace AutoResende.Controller
         public static IQueryable<Funcionario> SelecionaFuncionario(string pFuncionario)
         {
             return FuncionarioMetod.SelecionaFuncionario(pFuncionario);
+        }
+
+        public static void DeletaFuncionario(string CPF)
+        {
+            FuncionarioMetod.Deleta(CPF);
         }
 
 
@@ -78,6 +88,11 @@ namespace AutoResende.Controller
             return MercadoriaMetod.SelecionaMercadoria(pMercadoria);
         }
 
+        public static void DeletaMercadoria(int Codigo)
+        {
+            MercadoriaMetod.Deleta(Codigo);
+        }
+
 
 
 
@@ -87,6 +102,11 @@ namespace AutoResende.Controller
             OrdemServicoMetod.Insere(oOrdemServico);
         }
 
+
+        public static void DeletaOrdemServico(int Codigo)
+        {
+            OrdemServicoMetod.Deleta(Codigo);
+        }
 
 
         //TIPO DE SERVIÇO
@@ -104,6 +124,11 @@ namespace AutoResende.Controller
         public static IQueryable<TipoServico> SelecionaTipoServico(string pTipoServico)
         {
             return TipoServicoMetod.SelecionaTipoServico(pTipoServico);
+        }
+
+        public static void DeletaTipoServico(string Nome)
+        {
+            TipoServicoMetod.Deleta(Nome);
         }
 
 
@@ -124,6 +149,11 @@ namespace AutoResende.Controller
         public static IQueryable<Veiculo> SelecionaVeiculo(string pVeiculo)
         {
             return VeiculoMetod.SelecionaVeiculo(pVeiculo);
+        }
+
+        public static void DeletaVeiculo(string Placa)
+        {
+            VeiculoMetod.Deleta(Placa);
         }
 
 

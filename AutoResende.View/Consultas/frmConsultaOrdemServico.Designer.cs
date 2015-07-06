@@ -47,8 +47,8 @@
             this.CPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Veiculo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Placa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnLimpar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnDeletar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgOS)).BeginInit();
@@ -256,18 +256,6 @@
             this.Placa.ReadOnly = true;
             this.Placa.Width = 70;
             // 
-            // btnLimpar
-            // 
-            this.btnLimpar.BackColor = System.Drawing.Color.Salmon;
-            this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpar.Location = new System.Drawing.Point(767, 474);
-            this.btnLimpar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(77, 24);
-            this.btnLimpar.TabIndex = 275;
-            this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -278,12 +266,26 @@
             this.label3.TabIndex = 299;
             this.label3.Text = "*clique duas vezes na nota para mais detalhes.";
             // 
+            // btnDeletar
+            // 
+            this.btnDeletar.BackColor = System.Drawing.Color.Salmon;
+            this.btnDeletar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeletar.Location = new System.Drawing.Point(767, 472);
+            this.btnDeletar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Size = new System.Drawing.Size(77, 24);
+            this.btnDeletar.TabIndex = 302;
+            this.btnDeletar.Text = "Deletar";
+            this.btnDeletar.UseVisualStyleBackColor = false;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
+            // 
             // frmConsultaOrdemServico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(867, 507);
+            this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dtgOS);
             this.Controls.Add(this.btnPesquisarOS);
@@ -297,7 +299,6 @@
             this.Controls.Add(this.lblConsultaOrdemServico);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.btnLimpar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmConsultaOrdemServico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -329,7 +330,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn CPF;
         private System.Windows.Forms.DataGridViewTextBoxColumn Veiculo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Placa;
-        private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnDeletar;
     }
 }
