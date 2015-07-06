@@ -33,16 +33,16 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDescricaoDetalhada = new System.Windows.Forms.TextBox();
             this.lbldescrição = new System.Windows.Forms.Label();
             this.btnApagar = new System.Windows.Forms.Button();
             this.btnGravar = new System.Windows.Forms.Button();
             this.lblMarca = new System.Windows.Forms.Label();
             this.lblValorVenda = new System.Windows.Forms.Label();
             this.txtValorVenda = new System.Windows.Forms.TextBox();
-            this.txtDescricao = new System.Windows.Forms.TextBox();
+            this.txtMarca = new System.Windows.Forms.TextBox();
             this.lblDescricao = new System.Windows.Forms.Label();
-            this.txtModelo = new System.Windows.Forms.TextBox();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
             this.picimg_cliente = new System.Windows.Forms.PictureBox();
             this.lblfuncionários = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -111,16 +111,16 @@
             this.pictureBox3.TabIndex = 210;
             this.pictureBox3.TabStop = false;
             // 
-            // textBox1
+            // txtDescricaoDetalhada
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(141, 287);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.MaxLength = 40;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(501, 162);
-            this.textBox1.TabIndex = 209;
+            this.txtDescricaoDetalhada.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDescricaoDetalhada.Location = new System.Drawing.Point(141, 287);
+            this.txtDescricaoDetalhada.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDescricaoDetalhada.MaxLength = 40;
+            this.txtDescricaoDetalhada.Multiline = true;
+            this.txtDescricaoDetalhada.Name = "txtDescricaoDetalhada";
+            this.txtDescricaoDetalhada.Size = new System.Drawing.Size(501, 162);
+            this.txtDescricaoDetalhada.TabIndex = 209;
             // 
             // lbldescrição
             // 
@@ -132,9 +132,9 @@
             this.lbldescrição.Location = new System.Drawing.Point(137, 257);
             this.lbldescrição.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbldescrição.Name = "lbldescrição";
-            this.lbldescrição.Size = new System.Drawing.Size(76, 18);
+            this.lbldescrição.Size = new System.Drawing.Size(143, 18);
             this.lbldescrição.TabIndex = 208;
-            this.lbldescrição.Text = "Descrição";
+            this.lbldescrição.Text = "Descrição detalhada";
             // 
             // btnApagar
             // 
@@ -146,6 +146,7 @@
             this.btnApagar.TabIndex = 204;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = false;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // btnGravar
             // 
@@ -158,13 +159,14 @@
             this.btnGravar.TabIndex = 203;
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = false;
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // lblMarca
             // 
             this.lblMarca.AutoSize = true;
             this.lblMarca.BackColor = System.Drawing.Color.Transparent;
             this.lblMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.Location = new System.Drawing.Point(137, 201);
+            this.lblMarca.Location = new System.Drawing.Point(162, 204);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(42, 13);
             this.lblMarca.TabIndex = 202;
@@ -175,7 +177,7 @@
             this.lblValorVenda.AutoSize = true;
             this.lblValorVenda.BackColor = System.Drawing.Color.Transparent;
             this.lblValorVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorVenda.Location = new System.Drawing.Point(392, 171);
+            this.lblValorVenda.Location = new System.Drawing.Point(424, 172);
             this.lblValorVenda.Name = "lblValorVenda";
             this.lblValorVenda.Size = new System.Drawing.Size(59, 13);
             this.lblValorVenda.TabIndex = 199;
@@ -188,30 +190,30 @@
             this.txtValorVenda.Size = new System.Drawing.Size(114, 20);
             this.txtValorVenda.TabIndex = 198;
             // 
-            // txtDescricao
+            // txtMarca
             // 
-            this.txtDescricao.Location = new System.Drawing.Point(215, 201);
-            this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(114, 20);
-            this.txtDescricao.TabIndex = 197;
+            this.txtMarca.Location = new System.Drawing.Point(215, 201);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(182, 20);
+            this.txtMarca.TabIndex = 197;
             // 
             // lblDescricao
             // 
             this.lblDescricao.AutoSize = true;
             this.lblDescricao.BackColor = System.Drawing.Color.Transparent;
             this.lblDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricao.Location = new System.Drawing.Point(137, 138);
+            this.lblDescricao.Location = new System.Drawing.Point(141, 143);
             this.lblDescricao.Name = "lblDescricao";
             this.lblDescricao.Size = new System.Drawing.Size(64, 13);
             this.lblDescricao.TabIndex = 194;
             this.lblDescricao.Text = "Descrição";
             // 
-            // txtModelo
+            // txtDescricao
             // 
-            this.txtModelo.Location = new System.Drawing.Point(215, 140);
-            this.txtModelo.Name = "txtModelo";
-            this.txtModelo.Size = new System.Drawing.Size(114, 20);
-            this.txtModelo.TabIndex = 193;
+            this.txtDescricao.Location = new System.Drawing.Point(215, 140);
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(183, 20);
+            this.txtDescricao.TabIndex = 193;
             // 
             // picimg_cliente
             // 
@@ -256,7 +258,7 @@
             this.lblQdeEstoque.AutoSize = true;
             this.lblQdeEstoque.BackColor = System.Drawing.Color.Transparent;
             this.lblQdeEstoque.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQdeEstoque.Location = new System.Drawing.Point(392, 205);
+            this.lblQdeEstoque.Location = new System.Drawing.Point(403, 206);
             this.lblQdeEstoque.Name = "lblQdeEstoque";
             this.lblQdeEstoque.Size = new System.Drawing.Size(80, 13);
             this.lblQdeEstoque.TabIndex = 215;
@@ -267,7 +269,7 @@
             this.lblValorCusto.AutoSize = true;
             this.lblValorCusto.BackColor = System.Drawing.Color.Transparent;
             this.lblValorCusto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorCusto.Location = new System.Drawing.Point(392, 138);
+            this.lblValorCusto.Location = new System.Drawing.Point(428, 141);
             this.lblValorCusto.Name = "lblValorCusto";
             this.lblValorCusto.Size = new System.Drawing.Size(55, 13);
             this.lblValorCusto.TabIndex = 218;
@@ -300,16 +302,16 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDescricaoDetalhada);
             this.Controls.Add(this.lbldescrição);
             this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.btnGravar);
             this.Controls.Add(this.lblMarca);
             this.Controls.Add(this.lblValorVenda);
             this.Controls.Add(this.txtValorVenda);
-            this.Controls.Add(this.txtDescricao);
+            this.Controls.Add(this.txtMarca);
             this.Controls.Add(this.lblDescricao);
-            this.Controls.Add(this.txtModelo);
+            this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.picimg_cliente);
             this.Controls.Add(this.lblfuncionários);
             this.Controls.Add(this.btnFechar);
@@ -333,16 +335,16 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDescricaoDetalhada;
         private System.Windows.Forms.Label lbldescrição;
         private System.Windows.Forms.Button btnApagar;
         private System.Windows.Forms.Button btnGravar;
         private System.Windows.Forms.Label lblMarca;
         private System.Windows.Forms.Label lblValorVenda;
         private System.Windows.Forms.TextBox txtValorVenda;
-        private System.Windows.Forms.TextBox txtDescricao;
+        private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.Label lblDescricao;
-        private System.Windows.Forms.TextBox txtModelo;
+        private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.PictureBox picimg_cliente;
         private System.Windows.Forms.Label lblfuncionários;
         private System.Windows.Forms.PictureBox pictureBox2;

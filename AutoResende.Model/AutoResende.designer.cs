@@ -1622,13 +1622,15 @@ namespace AutoResende.Model
 		
 		private string _Descricao;
 		
-		private string _ValorCusto;
+		private decimal _ValorCusto;
 		
 		private System.Nullable<decimal> _ValorVenda;
 		
 		private int _QuantidadeEstoque;
 		
 		private string _Marca;
+		
+		private string _DescricaoDetalhada;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -1638,7 +1640,7 @@ namespace AutoResende.Model
     partial void OnidMercadoriaChanged();
     partial void OnDescricaoChanging(string value);
     partial void OnDescricaoChanged();
-    partial void OnValorCustoChanging(string value);
+    partial void OnValorCustoChanging(decimal value);
     partial void OnValorCustoChanged();
     partial void OnValorVendaChanging(System.Nullable<decimal> value);
     partial void OnValorVendaChanged();
@@ -1646,6 +1648,8 @@ namespace AutoResende.Model
     partial void OnQuantidadeEstoqueChanged();
     partial void OnMarcaChanging(string value);
     partial void OnMarcaChanged();
+    partial void OnDescricaoDetalhadaChanging(string value);
+    partial void OnDescricaoDetalhadaChanged();
     #endregion
 		
 		public Mercadoria()
@@ -1673,7 +1677,7 @@ namespace AutoResende.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Descricao", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Descricao", DbType="VarChar(200) NOT NULL", CanBeNull=false)]
 		public string Descricao
 		{
 			get
@@ -1693,8 +1697,8 @@ namespace AutoResende.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ValorCusto", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string ValorCusto
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ValorCusto", DbType="Decimal(18,2) NOT NULL")]
+		public decimal ValorCusto
 		{
 			get
 			{
@@ -1769,6 +1773,26 @@ namespace AutoResende.Model
 					this._Marca = value;
 					this.SendPropertyChanged("Marca");
 					this.OnMarcaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DescricaoDetalhada", DbType="VarChar(400)")]
+		public string DescricaoDetalhada
+		{
+			get
+			{
+				return this._DescricaoDetalhada;
+			}
+			set
+			{
+				if ((this._DescricaoDetalhada != value))
+				{
+					this.OnDescricaoDetalhadaChanging(value);
+					this.SendPropertyChanging();
+					this._DescricaoDetalhada = value;
+					this.SendPropertyChanged("DescricaoDetalhada");
+					this.OnDescricaoDetalhadaChanged();
 				}
 			}
 		}

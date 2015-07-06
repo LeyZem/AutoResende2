@@ -74,11 +74,12 @@
   <Table Name="dbo.Mercadoria" Member="Mercadorias">
     <Type Name="Mercadoria">
       <Column Name="idMercadoria" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Descricao" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="ValorCusto" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="ValorCusto" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
       <Column Name="ValorVenda" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
       <Column Name="QuantidadeEstoque" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Marca" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DescricaoDetalhada" Type="System.String" DbType="VarChar(400)" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.OrdemServico" Member="OrdemServicos">
