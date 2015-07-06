@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AutoResende.Controller;
+using AutoResende.Model;
 
 namespace AutoResende.View
 {
@@ -37,14 +38,22 @@ namespace AutoResende.View
         {
             try
             {
-                string var = txtNomeFuncionario.Text;
-                dtgFuncionarios.DataSource = CAutoResende.SelecionaFuncionario(txtNomeFuncionario.Text);
+                dtgFuncionarios.DataSource = CAutoResende.SelecionaFuncionario(txtCpfFuncionario.Text);
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro: " + ex.Message, "Carregar", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void dtgFuncionarios_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            Funcionario oFuncionario = new Funcionario();
+            oFuncionario = dtgFuncionarios.Rows[e.RowIndex].DataBoundItem as Funcionario;
+            frmCadastroFuncionario frm = new frmCadastroFuncionario(oFuncionario);
+            frm.Show();
+            this.Close();
         }
     }
 }

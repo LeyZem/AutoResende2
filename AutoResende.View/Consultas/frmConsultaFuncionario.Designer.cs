@@ -38,8 +38,6 @@
             this.btnPesquisaFuncionario = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCpfFuncionario = new System.Windows.Forms.TextBox();
-            this.lblNomeCliente = new System.Windows.Forms.Label();
-            this.txtNomeFuncionario = new System.Windows.Forms.TextBox();
             this.dtgFuncionarios = new System.Windows.Forms.DataGridView();
             this.idFuncionarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -155,7 +153,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(152, 94);
+            this.label1.Location = new System.Drawing.Point(342, 79);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 13);
@@ -165,35 +163,12 @@
             // txtCpfFuncionario
             // 
             this.txtCpfFuncionario.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCpfFuncionario.Location = new System.Drawing.Point(193, 91);
+            this.txtCpfFuncionario.Location = new System.Drawing.Point(383, 76);
             this.txtCpfFuncionario.Margin = new System.Windows.Forms.Padding(1);
             this.txtCpfFuncionario.MaxLength = 40;
             this.txtCpfFuncionario.Name = "txtCpfFuncionario";
             this.txtCpfFuncionario.Size = new System.Drawing.Size(230, 20);
             this.txtCpfFuncionario.TabIndex = 280;
-            // 
-            // lblNomeCliente
-            // 
-            this.lblNomeCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblNomeCliente.AutoSize = true;
-            this.lblNomeCliente.BackColor = System.Drawing.Color.Transparent;
-            this.lblNomeCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeCliente.Location = new System.Drawing.Point(152, 63);
-            this.lblNomeCliente.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblNomeCliente.Name = "lblNomeCliente";
-            this.lblNomeCliente.Size = new System.Drawing.Size(39, 13);
-            this.lblNomeCliente.TabIndex = 279;
-            this.lblNomeCliente.Text = "Nome";
-            // 
-            // txtNomeFuncionario
-            // 
-            this.txtNomeFuncionario.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNomeFuncionario.Location = new System.Drawing.Point(193, 60);
-            this.txtNomeFuncionario.Margin = new System.Windows.Forms.Padding(1);
-            this.txtNomeFuncionario.MaxLength = 40;
-            this.txtNomeFuncionario.Name = "txtNomeFuncionario";
-            this.txtNomeFuncionario.Size = new System.Drawing.Size(469, 20);
-            this.txtNomeFuncionario.TabIndex = 278;
             // 
             // dtgFuncionarios
             // 
@@ -224,6 +199,7 @@
             this.dtgFuncionarios.ReadOnly = true;
             this.dtgFuncionarios.Size = new System.Drawing.Size(690, 295);
             this.dtgFuncionarios.TabIndex = 283;
+            this.dtgFuncionarios.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtgFuncionarios_CellMouseDoubleClick);
             // 
             // idFuncionarioDataGridViewTextBoxColumn
             // 
@@ -364,8 +340,6 @@
             this.Controls.Add(this.btnPesquisaFuncionario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCpfFuncionario);
-            this.Controls.Add(this.lblNomeCliente);
-            this.Controls.Add(this.txtNomeFuncionario);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.picimg_cliente);
             this.Controls.Add(this.lblBuscaFuncionários);
@@ -397,8 +371,6 @@
         private System.Windows.Forms.Button btnPesquisaFuncionario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCpfFuncionario;
-        private System.Windows.Forms.Label lblNomeCliente;
-        private System.Windows.Forms.TextBox txtNomeFuncionario;
         private System.Windows.Forms.DataGridView dtgFuncionarios;
         private _AutoResende_DataBaseDataSet1 _AutoResende_DataBaseDataSet1;
         private System.Windows.Forms.BindingSource funcionarioBindingSource;

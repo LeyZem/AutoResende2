@@ -15,9 +15,27 @@ namespace AutoResende.View
 {
     public partial class frmCadastroFuncionario : Form
     {
-        public frmCadastroFuncionario()
+        public frmCadastroFuncionario(Funcionario oFuncionario)
         {
             InitializeComponent();
+
+            txtNome.Text = oFuncionario.Nome;
+            txtRG.Text = oFuncionario.RG;
+            txtCPF.Text = oFuncionario.CPF;
+            txtDataNasc.Text = Convert.ToString(oFuncionario.DataNascimento);
+            txtOrgaoExpedidor.Text = oFuncionario.OrgaoExpedidor;
+            txtLogradouro.Text = oFuncionario.Logradouro;
+            txtBairro.Text = oFuncionario.Bairro;
+            txtCep.Text = oFuncionario.CEP;
+            txtCidade.Text = oFuncionario.Cidade;
+            cmbEstado.Text = oFuncionario.UF;
+            cmbPais.Text = oFuncionario.Pais;
+            txtEmail.Text = oFuncionario.email;
+            txtTelRes.Text = oFuncionario.TelRes;
+            txtCel.Text = oFuncionario.TelCel;
+            txtComentario.Text = oFuncionario.Comentario;
+
+
         }
 
         private void btnFechar_MouseClick(object sender, MouseEventArgs e)

@@ -48,7 +48,8 @@ namespace AutoResende.View
 
         private void ptbCadastroFuncionario_MouseClick(object sender, MouseEventArgs e)
         {
-            frmCadastroFuncionario frm = new frmCadastroFuncionario();
+            Funcionario oFuncionario = new Funcionario();
+            frmCadastroFuncionario frm = new frmCadastroFuncionario(oFuncionario);
             frm.Show();
         }
 
