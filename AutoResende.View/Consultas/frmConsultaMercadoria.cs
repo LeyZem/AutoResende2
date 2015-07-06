@@ -50,7 +50,7 @@ namespace AutoResende.View
 
         private void btnPesquisaCliente_Click(object sender, EventArgs e)
         {
-            string pCNPJ;
+            //string pCNPJ;
             try
             {
 

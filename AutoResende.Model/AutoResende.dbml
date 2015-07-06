@@ -111,6 +111,7 @@
       <Column Name="idTipoServico" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="NomeServiço" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Descricao" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Preco" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
       <Association Name="TipoServico_OrdemServico" Member="OrdemServicos" ThisKey="idTipoServico" OtherKey="idTipoServico" Type="OrdemServico" />
       <Association Name="TipoServico_OrdemServico1" Member="OrdemServicos1" ThisKey="idTipoServico" OtherKey="idTipoServico" Type="OrdemServico" />
     </Type>

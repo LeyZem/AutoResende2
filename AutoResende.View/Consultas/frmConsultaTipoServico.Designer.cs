@@ -39,13 +39,14 @@
             this.btnPesquisaTipoServico = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.dtgTipoServico = new System.Windows.Forms.DataGridView();
-            this.idTipoServicoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeServiçoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descricaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoServicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._AutoResende_DataBaseDataSet_TipoServico = new AutoResende.View._AutoResende_DataBaseDataSet_TipoServico();
             this.tipoServicoTableAdapter = new AutoResende.View._AutoResende_DataBaseDataSet_TipoServicoTableAdapters.TipoServicoTableAdapter();
             this.btnDeletar = new System.Windows.Forms.Button();
+            this.idTipoServicoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeServiçoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descricaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.picimg_cliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -167,7 +168,8 @@
             this.dtgTipoServico.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idTipoServicoDataGridViewTextBoxColumn,
             this.nomeServiçoDataGridViewTextBoxColumn,
-            this.descricaoDataGridViewTextBoxColumn});
+            this.descricaoDataGridViewTextBoxColumn,
+            this.Preco});
             this.dtgTipoServico.DataSource = this.tipoServicoBindingSource;
             this.dtgTipoServico.Location = new System.Drawing.Point(137, 169);
             this.dtgTipoServico.Name = "dtgTipoServico";
@@ -175,29 +177,6 @@
             this.dtgTipoServico.Size = new System.Drawing.Size(681, 304);
             this.dtgTipoServico.TabIndex = 288;
             this.dtgTipoServico.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtgTipoServico_CellMouseDoubleClick);
-            // 
-            // idTipoServicoDataGridViewTextBoxColumn
-            // 
-            this.idTipoServicoDataGridViewTextBoxColumn.DataPropertyName = "idTipoServico";
-            this.idTipoServicoDataGridViewTextBoxColumn.HeaderText = "Código";
-            this.idTipoServicoDataGridViewTextBoxColumn.Name = "idTipoServicoDataGridViewTextBoxColumn";
-            this.idTipoServicoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nomeServiçoDataGridViewTextBoxColumn
-            // 
-            this.nomeServiçoDataGridViewTextBoxColumn.DataPropertyName = "NomeServiço";
-            this.nomeServiçoDataGridViewTextBoxColumn.HeaderText = "Nome do Serviço";
-            this.nomeServiçoDataGridViewTextBoxColumn.Name = "nomeServiçoDataGridViewTextBoxColumn";
-            this.nomeServiçoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nomeServiçoDataGridViewTextBoxColumn.Width = 300;
-            // 
-            // descricaoDataGridViewTextBoxColumn
-            // 
-            this.descricaoDataGridViewTextBoxColumn.DataPropertyName = "Descricao";
-            this.descricaoDataGridViewTextBoxColumn.HeaderText = "Descricao";
-            this.descricaoDataGridViewTextBoxColumn.Name = "descricaoDataGridViewTextBoxColumn";
-            this.descricaoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.descricaoDataGridViewTextBoxColumn.Width = 500;
             // 
             // tipoServicoBindingSource
             // 
@@ -225,6 +204,36 @@
             this.btnDeletar.Text = "Deletar";
             this.btnDeletar.UseVisualStyleBackColor = false;
             this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
+            // 
+            // idTipoServicoDataGridViewTextBoxColumn
+            // 
+            this.idTipoServicoDataGridViewTextBoxColumn.DataPropertyName = "idTipoServico";
+            this.idTipoServicoDataGridViewTextBoxColumn.HeaderText = "Código";
+            this.idTipoServicoDataGridViewTextBoxColumn.Name = "idTipoServicoDataGridViewTextBoxColumn";
+            this.idTipoServicoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nomeServiçoDataGridViewTextBoxColumn
+            // 
+            this.nomeServiçoDataGridViewTextBoxColumn.DataPropertyName = "NomeServiço";
+            this.nomeServiçoDataGridViewTextBoxColumn.HeaderText = "Nome do Serviço";
+            this.nomeServiçoDataGridViewTextBoxColumn.Name = "nomeServiçoDataGridViewTextBoxColumn";
+            this.nomeServiçoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nomeServiçoDataGridViewTextBoxColumn.Width = 300;
+            // 
+            // descricaoDataGridViewTextBoxColumn
+            // 
+            this.descricaoDataGridViewTextBoxColumn.DataPropertyName = "Descricao";
+            this.descricaoDataGridViewTextBoxColumn.HeaderText = "Descricao";
+            this.descricaoDataGridViewTextBoxColumn.Name = "descricaoDataGridViewTextBoxColumn";
+            this.descricaoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.descricaoDataGridViewTextBoxColumn.Width = 500;
+            // 
+            // Preco
+            // 
+            this.Preco.DataPropertyName = "idTipoServico";
+            this.Preco.HeaderText = "Preço";
+            this.Preco.Name = "Preco";
+            this.Preco.ReadOnly = true;
             // 
             // frmConsultaTipoServico
             // 
@@ -271,9 +280,10 @@
         private _AutoResende_DataBaseDataSet_TipoServico _AutoResende_DataBaseDataSet_TipoServico;
         private System.Windows.Forms.BindingSource tipoServicoBindingSource;
         private _AutoResende_DataBaseDataSet_TipoServicoTableAdapters.TipoServicoTableAdapter tipoServicoTableAdapter;
+        private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.DataGridViewTextBoxColumn idTipoServicoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeServiçoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descricaoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btnDeletar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Preco;
     }
 }

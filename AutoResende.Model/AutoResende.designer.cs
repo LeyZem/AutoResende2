@@ -2475,6 +2475,8 @@ namespace AutoResende.Model
 		
 		private string _Descricao;
 		
+		private System.Nullable<decimal> _Preco;
+		
 		private EntitySet<OrdemServico> _OrdemServicos;
 		
 		private EntitySet<OrdemServico> _OrdemServicos1;
@@ -2489,6 +2491,8 @@ namespace AutoResende.Model
     partial void OnNomeServiçoChanged();
     partial void OnDescricaoChanging(string value);
     partial void OnDescricaoChanged();
+    partial void OnPrecoChanging(System.Nullable<decimal> value);
+    partial void OnPrecoChanged();
     #endregion
 		
 		public TipoServico()
@@ -2554,6 +2558,26 @@ namespace AutoResende.Model
 					this._Descricao = value;
 					this.SendPropertyChanged("Descricao");
 					this.OnDescricaoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Preco", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> Preco
+		{
+			get
+			{
+				return this._Preco;
+			}
+			set
+			{
+				if ((this._Preco != value))
+				{
+					this.OnPrecoChanging(value);
+					this.SendPropertyChanging();
+					this._Preco = value;
+					this.SendPropertyChanged("Preco");
+					this.OnPrecoChanged();
 				}
 			}
 		}

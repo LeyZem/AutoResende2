@@ -20,6 +20,7 @@ namespace AutoResende.View
 
             txtDescricao.Text = oTipoServico.Descricao;
             txtNomeServico.Text = oTipoServico.NomeServiço;
+            txtPreco.Text = Convert.ToString(oTipoServico.Preco);
 
         }
 
@@ -58,6 +59,7 @@ namespace AutoResende.View
                 TipoServico oTipoServico = new TipoServico();
                 oTipoServico.NomeServiço = txtNomeServico.Text;
                 oTipoServico.Descricao = txtDescricao.Text;
+                oTipoServico.Preco = Convert.ToDecimal(txtPreco.Text);
 
                 try
                 {
@@ -79,6 +81,7 @@ namespace AutoResende.View
         {
             txtDescricao.Text = "";
             txtNomeServico.Text = "";
+            txtPreco.Text = "";
         }
     }
 }

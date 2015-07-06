@@ -568,7 +568,7 @@
             this.lblcompra.Name = "lblcompra";
             this.lblcompra.Size = new System.Drawing.Size(149, 30);
             this.lblcompra.TabIndex = 70;
-            this.lblcompra.Text = "Compra";
+            this.lblcompra.Text = "Orçamento";
             this.lblcompra.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblvenda

@@ -159,6 +159,9 @@
             // 
             this.dtgMercadorias.AllowUserToAddRows = false;
             this.dtgMercadorias.AllowUserToDeleteRows = false;
+            this.dtgMercadorias.AllowUserToOrderColumns = true;
+            this.dtgMercadorias.AllowUserToResizeColumns = false;
+            this.dtgMercadorias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dtgMercadorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgMercadorias.Location = new System.Drawing.Point(141, 169);
             this.dtgMercadorias.Name = "dtgMercadorias";
